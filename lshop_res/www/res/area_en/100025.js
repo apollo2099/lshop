@@ -1,0 +1,1 @@
+var provinceData=[{"id":301749,"name":"Grande Comore","nameCn":"Grande Comore","nameTw":"Grande Comore","code":"G"},{"id":301750,"name":"Anjouan","nameCn":"Anjouan","nameTw":"Anjouan","code":"A"},{"id":301751,"name":"Mohéli","nameCn":"Mohéli","nameTw":"Mohéli","code":"M"}];

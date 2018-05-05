@@ -1,0 +1,16 @@
+@charset "utf-8";
+body {background-image: url(../images/bg.gif);background-repeat: repeat;background-position: center;margin: 0px;padding: 0px;font-family: "宋体";}
+.main {height: 325px;width: 508px;margin-right: auto;margin-left: auto;padding-top: 138px;}
+.main_1 {height: 247px;width: 508px;padding-top: 28px;}
+.main_1_a {height: 247px;width: 508px;background-image: url(../images/bg_1.png);background-repeat: no-repeat;background-position: 0px 0px;}
+.wz {
+	display: block;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	padding-top: 149px;
+	width: 458px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.fhsy {display: block;height: 28px;width: 87px;margin-right: auto;margin-left: auto;padding-top: 20px;}

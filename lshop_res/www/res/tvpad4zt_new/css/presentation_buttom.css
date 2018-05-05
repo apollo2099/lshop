@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+.section8_bottom{width:100%; z-index:888; height:437px;position:relative; margin-top:70%;background:#fff;}
+.zpbz{background-color:#fff; width:100%}
+.jybz{width:1000px; margin:0 auto; height:190px; background-image:url(../images/zpbz.jpg); background-repeat:no-repeat; position:relative}
+.tel_contect{margin-top:15px; background-image:url(../images/cotact.jpg); background-repeat:no-repeat; background-position:left top; height:78px; font-size:24px; color:#54c5fd; padding-left:40px; font-family:"微软雅黑"}
+.jybz p{position:absolute;font-size:16px; color:#505050}
+.jybz p span{display:block}
+.zpbz_p{left:75px; top:74px}
+.jybz_p{left:278px; top:75px}
+.qqfw_p{left:538px; top:75px}
+.shzc_p{left:821px; top:75px}
+.help{ clear:both; height:auto; border-top:1px #EFEFEF solid; padding:20px 0}
+.help_center{width:1000px;background-color:#ffffff;margin-top: 0;margin-right: auto;margin-bottom: 0;margin-left: auto;padding-top: 0;padding-right: 0px;padding-bottom: 0;padding-left: 0px;}
+.help_center ul li{width:148px;padding-top:10px;padding-bottom:10px;float: left;display: block; overflow:hidden;}
+.help_center ul li a{color:#878787; }
+.help_center ul li a:hover{ text-decoration:underline; color:#999999; }
+.help_center li.tel{ width:258px}
+.help_center ul li p{margin-bottom:5px}
+.bottom .content{width:1000px;height:40px;line-height:88px;text-align:center; margin:0 auto; height:88px}
+.bottom .content a{ padding-right:5px;}
+.bottom .content span {margin-right: 10px; margin-left: 10px;}

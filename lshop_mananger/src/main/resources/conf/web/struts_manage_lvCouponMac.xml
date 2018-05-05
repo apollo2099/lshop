@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="lvCouponMacAction-default" namespace="/manager" extends="gv-default-manager">
+        <action name="lvCouponMacAction" class="LvCouponMacAction">
+            <result name="list">/manager/lvCouponMac/lvCouponMac_list.jsp</result>
+			<result name="befSave">/manager/lvCouponMac/lvCouponMac_add.jsp</result>
+			<result name="view">/manager/lvCouponMac/lvCouponMac_view.jsp</result>
+			<result name="edit">/manager/lvCouponMac/lvCouponMac_edit.jsp</result>
+			<result name="excel" type="stream">
+                    <param name="contentType">application/vnd.ms-excel</param>     
+                    <param name="inputName">excelStream</param>                    
+                    <param name="contentDisposition">filename="macInfoList.xls"</param>
+                   	<param name="contentLength">${fileSize}</param>
+                    <param name="bufferSize">1024</param>
+            </result>
+		</action>
+	</package>
+	
+</struts>

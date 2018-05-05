@@ -1,0 +1,11 @@
+
+
+
+/*可搜索下拉列表组件*/
+.searchSelect{height:25px;}
+.searchSelect .searchSelectDown{float:left;display:inline-block;background:#fff url("../images/searchselect/ss-down.png") no-repeat center center;width:20px;height:20px;border:1px solid #7f9db9;border-left: 0px solid #fff;}
+.searchSelect .searchSelectInput{float:left;width:100px;height:20px;border:1px solid #7f9db9;border-right: 0px solid #fff;}
+.searchSelectList{position:absolute;left:-999px;top:-999px;width:120px;border:1px solid #ccc;display:none;overflow:auto;background-color:#fff;z-index:999999;}
+.searchSelectList ul{padding:0px;margin:0px;}
+.searchSelectList ul li{list-style:none;height:25px;line-heigth:25px;padding:0px 10px;cursor:default;overflow:hidden;white-space:nowrap;}
+.searchSelectList .selected{background-color:#ccc;}

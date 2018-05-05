@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- 资源管理 -->
+	<package name="resManagerAction-default" namespace="/manager" extends="gv-default-manager" >
+        <action name="resManagerAction" class="ResManagerAction">
+			<result name="list">/manager/res/list.jsp</result>
+			<result name="bfupdate">/manager/res/update.jsp</result>
+			<result name="addfolder">/manager/res/folder_add.jsp</result>
+			<result name="addfile">/manager/res/file_add.jsp</result>
+			<result name="ajax">/manager/common/ajaxDone.jsp</result>
+			<result name="callback">/manager/common/callbackDone.jsp</result> 
+			<result name="json">/manager/common/jsonDone.jsp</result> 
+			 <result name="success" type="redirect">/manager/resManagerAction!list.action</result>
+		</action>
+	</package>
+    <package name="resManage" namespace="/manager/res" extends="gv-default-manager">
+    <action name="upload" class="UploadManagerAction" method="uploadData">
+		  <result name="json" >/manager/common/editor_json.jsp</result>
+	</action>
+	<action name="uploadImg" class="UploadManagerAction" method="uploadImgData">
+		  <result name="json" >/manager/common/editor_json.jsp</result>
+	</action>
+    </package>	
+</struts>

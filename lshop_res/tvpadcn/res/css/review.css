@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+html,body {margin:0;padding: 0px; font-size:12px; font-family:"Microsoft YaHei","宋体"; color:#666666; height:100%}
+*{ margin:0; padding:0;}
+body img{border:none;}
+ul,li{list-style-type:none;}
+input,textarea {outline:none}
+*:focus{outline:none} 
+a{color:#817b78;text-decoration:none;}
+a:hover { text-decoration:underline;}
+table { border-collapse:collapse; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;} 
+.clearfix:after {content: "\200B"; display: block; height:0; clear:both;}
+.clearfix { *zoom:1;}
+/*--review_bananer--*/
+.review_bananer{ position:relative; width:1000px; margin:0 auto;}
+.review_chanp{ position:relative; width:750px; margin:0 auto; margin-top:32px;}
+/* 產品詳情_用戶評論 */
+.review_review{ position:relative; width:740px; margin:0 auto; overflow:hidden;}
+.review_review h1{ font-size:20px; color:#e60012; margin-top:48px;}
+.index_comments{ width:740px; height:auto; overflow:hidden; background:#fff;}
+.index_comments ul{ width:700px; padding:10px 20px ; border-bottom:1px #DCE6E7 solid; height:auto; overflow:hidden;}
+.index_comments li.short{ width:150px;}
+.index_comments ul.title{border-bottom:2px #ccc solid; height:25px; font-size:14px; font-weight:bold;}
+.index_comments li{ float:left; width:320px; line-height:24px; height:auto; padding-top:10px;  }
+.index_comments li img{ float:left; padding-right:10px;}
+.index_comments .title_s{ float:left; width:150px; font-size:14px;}
+.page{ width:740px; text-align:center; margin-top:20px;}
+.redfont{ color:#FF0000;}
+.redfont a{ color:#FF0000;}
+.redfont a:hover{color:#69b6ef; text-decoration:underline;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

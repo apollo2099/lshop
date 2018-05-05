@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="freeManage-default" namespace="/web" extends="gv-default">
+
+		<action name="free" class="FreeManageAction">
+			<result name="toFree">/web/${flag}/free/free_trial.jsp</result>
+			<result name="toFreeAction" type="redirect">/web/free!toFree.action?mark=${mark}</result>
+		</action>
+
+	</package>
+
+</struts>

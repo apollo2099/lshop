@@ -1,0 +1,88 @@
+﻿@charset "utf-8";
+/*top*/
+#sc_top{ width:auto; height:176px;}
+#sc_head{height:38px; background-color:#727272; color:#c8c8c8;}
+#header{width:1000px;line-height:40px;margin:0 auto 0 auto; position:relative;}
+#shoucang{ float:left; padding:0 0 0 6px; width:176px; height:38px;}
+#shoucang p{ float:left; padding:0 10px 0 0;}
+.shoucang1{ color:#c8c8c8;}
+a.shoucang1:link,a.shoucang1:visited{color:#c8c8c8;text-decoration:none;display: block; background:url(../images/shoucang.jpg) left 0 no-repeat; text-indent:2em;}
+a.shoucang1:hover{ color:#ffffff;}
+#help{width:670px;position: absolute;right: 0px; z-index:120;}
+#help ul{ list-style:none; margin:0; padding:0;}
+#help li{float:left;display:block;width:80px;text-align:center; overflow:hidden;}
+#help li.yh{width:95px; overflow:hidden; display:block;}
+#help li.line{width:145px; height:38px; overflow:hidden;}
+#help li.dl{width:45px; height:38px; overflow:hidden;}
+#help li.dl a{ color:#c8c8c8; text-decoration:none;}
+#help li.dl a:hover{ color:#ffffff; text-decoration:none;}
+#help li.tc{width:45px; height:38px; overflow:hidden;}
+#help li.tc a{ color:#00baff; text-decoration:underline;}
+#help li.tc a:hover{ color:#ffffff; text-decoration:underline;}
+#help li.dd{width:80px; height:38px;overflow:hidden;}
+#help li.dd a{ color:#c8c8c8; text-decoration:none;}
+#help li.dd a:hover{ color:#ffffff; text-decoration:none;}
+#help li a{color:#c8c8c8;}
+#help li a:hover{color:#EA752D;}
+#help ul.list li{clear:both; text-align:center; padding:0;background:#fff; height:22px; line-height:22px;}
+#help ul.list li a:link{color:#484848;width:80px;height:22px;display:block;}
+#help ul.list li a:visited{color:#484848;width:80px;height:22px;display:block;}
+#help ul.list li a:hover{color:#f3f3f3;width:80px;height:22px;display:block; background-color:#cc0000;}
+#help li.gouwu{width: 145px;height:38px;background:url(../images/gouwu_bg.jpg)  right bottom no-repeat;text-align:left;color:#ffffff;}
+#help li.gouwu a{ color:#ffffff;}
+#help li.gouwu a:hover{ color:#ffffff;}
+.gouwu p{ float:left; padding:0 0 0 13px; }
+.gouwu p.number{ float:left; padding:0 0 0 20px; font-weight:bold; }
+.menu1{width:80px;height:auto;overflow:hidden;background-color: #fff;}
+.menu2{width:80px;height:28px;overflow:hidden;background:url(../images/xiaosanjiao.jpg) no-repeat 68px 18px;}
+.sc_logo{ height:99px; background-color:#000000;}
+.sc_log{ width:1000px; height:99px; margin:0 auto 0 auto;}
+.sc_log p.logo1{float:left;display: block;height: 58px;width: 107px;padding-top: 30px;padding-right: 0;padding-bottom: 0;padding-left: 2px;}
+.search{ width:450px; height:58px; float:right; padding:35px 0 0 0; color:#a7a69f;}
+.sousuo_bg{width:390px;height:27px;margin: 0px;}
+.sousuo_bg input{ vertical-align:middle; padding:0; margin:0;}
+.sousuo{ width:15px; height:16px; position:absolute;top:6px; left:321px; z-index:10;}
+.sc_wb{width:261px;height:27px;background:url(../images/search_bg.jpg) left top no-repeat;border-style:none;line-height:27px; color:#c0c0c0;}
+.search p.reci a{ color:#69b6ef;}
+.search p.reci{display:block; line-height:28px; padding:2px 0 0 0;}
+.search span{ color:#69b6ef;}
+.sc_menu{ height:39px; background-color:#1a1a1a;}
+.sc_menu_A{ width:1000px;height:39px;margin:0 auto 0 auto; line-height:39px;}
+.sc_menu_A_l{width:auto; height:39px; float:left;}
+.sc_menu_A_r{width:198px;height:auto; float:right; background:#262626; position:relative;z-index:200;}
+.sc_menu_A_l a:link{width:120px;height:39px;text-align:center;float:left;color:#ffffff;font-size:14px; font-weight:bold;text-decoration:none;display:block;}
+.sc_menu_A_l a:visited{width:120px;height:39px;text-align:center;float:left;color:#ffffff;font-size:14px;font-weight:bold;text-decoration:none; display:block;}
+.sc_menu_A_l a:hover{background:url(../images/menu_bg.jpg) left top no-repeat;}
+.sc_menu_A_l .dangqian{background:url(../images/menu_bg.jpg) left top no-repeat;}
+.xuanze{font-size:14px;font-weight:normal;color:#c8c8c8;height:39px;cursor:pointer;display:block;background:url(../images/xuanzedianpu.gif) 175px 18px no-repeat;
+text-align: center;}
+.dp_menu{width:196px;border-left:1px #e2e2e2 solid;border-right:1px #e2e2e2 solid;text-align:center;background:#fff;position:absolute; margin:0;}
+.dp_menu1{width:196px;height:auto; margin:0;}
+.zhou{font-size:14px;font-weight:bold;height:32px;line-height:32px;width:196px;background:#ffffff;margin-top:1px;border-bottom:1px #e2e2e2 solid;border-top:1px #e2e2e2 solid;}
+.zhou a:link{background:#ffffff;width:196px;height:32px;display:block;color:#555555;}
+.zhou a:visited{background:#ffffff;width:196px;height:32px;display:block;color:#555555;}
+.zhou a:hover{background:#e9e3df;width:196px;height:32px;display:block;color:#555555;}
+.dp_menu ul{width:196px; height:auto;border-bottom:1px #e2e2e2 solid; margin:0;}
+.dp_menu ul li{width:196px;height:26px;background:#f7f7f7;color:#999999;line-height:26px;margin-bottom:1px;}
+.dp_menu ul li a:link{width:196px;height:26px;background:#f7f7f7;color:#999999;display:block;}
+.dp_menu ul li a:visited{width:196px;height:26px;background:#f7f7f7;color:#999999;display:block;}
+.dp_menu ul li a:hover{
+	width:196px;
+	height:26px;
+	color:#555555;
+	font-weight:bold;
+	display:block;
+	background:url(../images/xuanzezhou.gif) 10px 8px no-repeat;
+	background-color: #e9e3df;
+	background-image: url(../images/xuanzezhou.gif);
+	background-repeat: no-repeat;
+	background-position: 10px 8px;
+}
+.dp_menu2{position:absolute;right:198px;padding-bottom:30px;width:802px;height:auto;background-color: #fff;background-image: url(../images/ditu_bg.gif);
+background-repeat: no-repeat;background-position: 100px 10px;}
+.dp_menu2 dl{width:233px;float:right; padding:20px 15px 0 15px;list-style:none;line-height:20px;display:block;overflow:hidden;}
+.dp_menu2 dt{font-size:14px;color:#555555;font-weight:bold;border-bottom:2px #555555 solid;width:233px; padding-bottom:2px;}
+.dp_menu2 dd{width:233px; padding-top:5px; overflow:hidden;}
+.ggt{ width:1002px; height:80px; margin:0 auto 0 auto; padding:10px 0 0 0;}
+
+.user_center_bt02{width:80px;height:28px;color:#222222;text-align:center;border:none;background:url(../images/user_center_btn02.jpg) left top no-repeat; line-height:28px;overflow:hidden;}

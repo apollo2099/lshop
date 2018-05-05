@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TVpad推广返现联盟</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="js/FomrValidate.js" ></script>
+<script type="text/javascript">
+$(function (){
+	   var users=lshop.getCookieToJSON('exuser');
+		if(users.nickname!=null&&users.nickname!=''){
+		 $('#nicknameId').text(users.nickname);
+		 $("#div2").show();
+		}else{
+		 $('#showTopId').hide();
+		 $("#div1").show();
+		}
+}
+);
+</script>
+</head>
+<body>
+<!--顶部信息-->
+<div class="top">
+	<ul>
+		<li class="left"><a href="index.html"><img src="images/top_logo.gif" /></a></li>
+		<li class="right" id="showTopId">您好！ <span id="nicknameId"></span>  <a href="/excenter/promtManager!promtCodeList.action" class="link01">个人中心</a>  <a href="/excenter/excenter!logout.action">[退出]</a></li>
+	</ul>
+</div>
+<!--banner部份-->
+<div class="banner01">
+	<ul>
+		<li class="bg1"></li>
+		<li class="bg2"></li>
+		<li class="bg3">
+			<div class="bg4" id="div1" style="display: none">
+				<p><a href="regedit.html"><img src="images/button01.gif" /></a> <a href="login.jsp"><img src="images/button02.gif" /></a></p>
+				<p>新用户请点击“申请推广码”进入注册页，注册之后方可申请推广码，<br />老用户请直接点击“登录”按扭进入登录页面。</p>
+			</div>
+			<div class="bg4" id="div2" style="display: none;padding-left: 200px;padding-top: 20px">
+				<form action="promtManager!promtCodeList.action">
+		         <p>
+		          <input name="" type="submit"  value="查看我的推广码" class="button_01" />
+		         </p>
+		        </form>
+			</div>
+		</li>
+	</ul>
+</div>
+<!--推广返现流程图-->
+<div class="flow" id="flow">
+	<ul><li></li></ul>
+</div>
+<!--主要内容-->
+<div class="main_conten">
+	<!--推广获利-->	
+	<div class="diffusion01">
+		<div class="diffusion_title"><ul><li>推广获利</li></ul></div>	
+		<div class="diffusion01_nr">
+			<ul>
+				<li><img src="images/pic01.jpg" /></li>
+				<li><p class="button01"><a href="http://www.itvpad.com/" target="_blank">官网销售记录>>></a></p> <p class="button02"><a href="http://www.tvpadfans.com/forum.php" target="_blank">TVpad官方论坛>>></a></p></li>
+			</ul>
+		</div>
+	</div>
+	<!--推广百科-->
+	<div class="diffusion02">
+		<div class="diffusion_title"><ul><li>推广百科</li></ul></div>	
+		<div class="diffusion02_nr">
+			<ul>    
+				<li><a href="diffusionPB.html#pb01">1、TVpad是什么样的产品？</a></li>
+				<li><a href="diffusionPB.html#pb02">2、TVpad的用户是哪些人（我的推广目标人群）？</a></li>
+				<li><a href="diffusionPB.html#pb03">3、TVpad目前支持什么应用？</a></li>
+				<li><a href="diffusionPB.html#pb04">4、TVpad怎么购买？支付安全吗？</a></li>
+				<li><a href="diffusionPB.html#pb05">5、TVpad快递、售后问题怎么解决？</a></li>
+				<li class="more"><a href="diffusionPB.html#pb01"> 更多>> </a> </li>
+				<!--<li class="button03"><a href="diffusionPB.html" >我有问题>>></a></li>
+			--></ul>
+		</div>
+		<div class="diffusion_title"><ul><li>排行榜</li></ul></div>	
+	<iframe src="/excenter/promtManager!getUserDetail.action" width="338" height="149" scrolling="no" frameborder="0" allowtransparency>		
+		</iframe>
+	</div>	
+	<!--推广工具-->
+	<div class="clear_p"></div>
+	<div class="diffusion03"><a href="diffusionPB.html#pb09"><img src="images/pic02.jpg" /></a></div>	
+</div>
+<!--版权-->
+<div class="copyright">
+	<p><b>联系我们</b> —— 邮箱：market@tvpad.hk  &nbsp;&nbsp; QQ：41811026</p>
+	<p>Copyright &copy; 华扬国际科技有限公司（HUA YANG INTERNATIONAL TECHNOLOGY LIMITED） All Rights Reserved</p>
+</div>
+<div style="text-align:center;">
+   <script language="javascript" type="text/javascript" src="http://js.users.51.la/7189009.js"></script>
+   <noscript><a href="http://www.51.la/?7189009" target="_blank"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/7189009.asp" style="border:none" /></a></noscript>	
+</div>
+</body>
+</html>

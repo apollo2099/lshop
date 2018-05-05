@@ -1,0 +1,663 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TVpad2定制版智能系统网络智能机顶盒</title>
+<!-- top -->
+
+
+
+<link href="http://res.itvpad.com/tvpadcn/res/css/main.css" rel="stylesheet" type="text/css" />
+<link href="http://res.itvpad.com/tvpadcn/res/css/top_bottom.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://res.itvpad.com/tvpadcn/res/js/jquery-1.4.4.min.js" ></script>
+<script type="text/javascript" src="http://res.itvpad.com/tvpadcn/res/js/FomrValidate.js" ></script>
+<script type="text/javascript" src="http://res.itvpad.com/tvpadcn/res/js/jquery.validate.min.1.8.1.js" ></script>
+<script type="text/javascript" src="http://res.itvpad.com/tvpadcn/res/js/jquery_validate_extend.js" ></script>
+<script type="text/javascript" src="http://res.itvpad.com/tvpadcn/res/js/jquery.form.js" ></script>
+<script type="text/javascript" src="http://res.itvpad.com/tvpadcn/res/js/cookie.js"></script>
+<script type="text/javascript" src="http://res.itvpad.com/tvpadcn/res/js/header.js" ></script>
+<script type="text/javascript" src="http://res.itvpad.com/wwwhttp://res.itvpad.com/tvpadcn/res/js/bi.js"></script>
+<script type="text/javascript">
+	 $(function(){
+		 //初始化搜索栏
+		 if(true){
+			$("#searchContent").val("請輸入搜索商品");
+		 }
+	 });	
+</script>
+
+<link href="http://res.itvpad.com/tvpadcn/res/css/main.css" rel="stylesheet" type="text/css" />
+<link href="http://res.itvpad.com/tvpadcn/res/css/top_bottom.css" rel="stylesheet" type="text/css" />
+<link href="http://res.itvpad.com/tvpadcn/res/css/free.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+
+//表单验证
+$().ready(function() {
+	$("#myform").validate({
+		rules: {
+		    'name':{required: true,minlength:2,maxlength:32,isNotChinese:true},
+			'tel':{required: true,isChineseChar:true,maxlength:16},
+			'email':{required: true,email:true,maxlength:32},
+			'postCode':{required: true,isChineseChar:true,maxlength:16}
+		},
+		messages: {
+			'name':{
+				required: "<font color='red'>请输入申請人姓名</font>",
+				minlength: "<font color='red'>姓名不能少于2位字符！</font>",
+				maxlength: "<font color='red'>姓名不能大于32位字符</font>",
+				isNotChinese: "<font color='red'>姓名不能含有中文字符</font>"
+			},
+			'tel':{
+				 required: "<font color='red'>请输入電話</font>",
+				 isChineseChar: "<font color='red'>電話不能含有特殊字符</font>",
+				 maxlength: "<font color='red'>電話不能大于16位字符</font>"
+			},
+			'email':{
+				 required: "<font color='red'>请输入郵箱</font>",
+				 email: "<font color='red'>郵箱格式不正確</font>",
+				 maxlength: "<font color='red'>郵箱不能大于32位字符</font>"
+			},
+			'postCode':{
+				required: "<font color='red'>请输入郵編</font>",
+				isChineseChar: "<font color='red'>郵編不能含有特殊字符</font>",
+				maxlength: "<font color='red'>郵編不能大于16位字符</font>"
+			}
+		},
+		submitHandler:function(form){
+			var isChinese = /[\u4E00-\u9FA5]/i; 
+			var adress=$("#adress");
+			var cityName=$("#cityName");
+			var provinceName=$("#provinceName");
+			var contryId=$("#contryId");
+			if($.trim(adress.val())==''||$.trim(adress.val())=='街道詳細地址'){
+			  $("#addressInfo").html("<font color='red'>街道詳細地址不能為空！</font>");
+			  $("#infoUl").show();
+			  adress.focus();
+			  return ;
+		    }else if($.trim(cityName.val())==''||$.trim(cityName.val())=='縣/市'){
+		      $("#addressInfo").html("<font color='red'>縣/市不能為空！</font>");
+		      $("#infoUl").show();
+			  cityName.focus();
+			  return ;
+		    }else if($.trim(provinceName.val())==''||$.trim(provinceName.val())=='洲/省'){
+		      $("#addressInfo").html("<font color='red'>洲/省不能為空！</font>");
+		      $("#infoUl").show();
+			  provinceName.focus();
+			  return ;
+		    }else if($.trim($("#contryId").find("option:selected").val())==''){
+		      $("#addressInfo").html("<font color='red'>國家不能為空！</font>");
+		      $("#infoUl").show();
+			  contryId.focus();
+			  return ;
+		    }else if(isChinese.test(adress.val())) {
+			  $("#addressInfo").html("<font color='red'>街道詳細地址不能輸入中文！</font>");
+			  $("#infoUl").show();
+			  adress.focus();
+			  return ;
+		    }else if(isChinese.test(cityName.val())) {
+		      $("#addressInfo").html("<font color='red'>縣/市不能輸入中文！</font>");
+		      $("#infoUl").show();
+			  cityName.focus();
+			  return ;
+		    }else if(isChinese.test(provinceName.val())) {
+		      $("#addressInfo").html("<font color='red'>洲/省不能輸入中文！</font>");
+		      $("#infoUl").show();
+			  provinceName.focus();
+			  return ;
+		    }else if(adress.val().length>128){
+		      $("#addressInfo").html("<font color='red'>街道詳細地址不能超過128位字符！</font>");
+		      $("#infoUl").show();
+			  adress.focus();
+			  return ;
+		    }else if(cityName.val().length>32){
+		      $("#addressInfo").html("<font color='red'>縣/市不能超過32位字符！</font>");
+		      $("#infoUl").show();
+			  cityName.focus();
+			  return ;
+		    }else if(provinceName.val().length>32){
+		      $("#addressInfo").html("<font color='red'>洲/省不能超過32位字符！</font>");
+		      $("#infoUl").show();
+			  provinceName.focus();
+			  return ;
+		    }
+		    form.submit();
+		}
+		
+	});
+});
+
+function contryChange(){
+	//给国家名称赋值
+	$("#contrynameId").val($("#contryId").find("option:selected").text());
+	
+	//获取对应的省市
+	var provinceId=$("#provinceId");
+	$.ajax({
+	   type: "POST",
+	   url: "/web/userCenterManage!getProvinces.action",
+	   data: "parentid="+$("#contryId").val(),
+	   dataType:"JSON",
+	   success: function(jsonData){
+	   		var data=eval(jsonData);
+	   		if(data.length>=1){
+	   			$("#provinceName").remove();
+	   			$("#provinceNameId").remove();
+	   			$("#test").after("<select name='provinceId' id='provinceName' class='input2'  onchange='provinceChange()' >");
+	   			$("#provinceName").append("<option value=''>--請選擇洲/省--</option>");
+	   			for(var i=0;i<data.length;i++){
+	   				$("<option></option>").val(data[i].id).text(data[i].nameen).appendTo($("#provinceName"));
+	   			}
+	   			$("#provinceName").after("<input type='hidden' name='provinceName' id='provinceNameId'  value=''/>");
+	   		}else{
+	   			$("#provinceName").remove();
+	   			$("#provinceNameId").remove();
+	   			$("#test").after("<input type='text' name='provinceName' id='provinceName' class='input2' value='洲/省' onfocus='if(this.value==&quot;洲/省&quot;) this.value=&quot;&quot;' onblur='if(this.value==&quot;&quot;)this.value=&quot;洲/省&quot;'/>");
+
+	   		}
+	   	}
+	});
+}	
+
+function provinceChange(){
+	//给洲省名称赋值
+	$("#provinceNameId").val($("#provinceName").find("option:selected").text());
+}
+
+</script>
+</head>
+<body>
+
+<div class="project">
+<div class="banner">
+  <p class="p1"></p>
+  <p class="p2"><span><a href="#shiyong"><img src="http://res.itvpad.com/tvpadcn/res/images/free/anniu1.jpg" border="0" /></a></span></p>
+</div>
+<div class="main">
+
+  <div class="main1">
+    <ul>
+	  <li><img src="http://res.itvpad.com/tvpadcn/res/images/free/gaoqing.jpg" width="50" height="50" /><p><span>高清穩定</span><br />
+專為海外華人提供香港、澳門、台灣、大陸超過100個高清穩定的<br />
+中文電視直播頻道；</p>
+	  </li>
+	  <li><img src="http://res.itvpad.com/tvpadcn/res/images/free/zhengban.jpg" width="50" height="50" /><p><span>正版保證</span><br />
+中國最大廣電集團運營傳媒企業——華數入駐TVpad，正版認證，<br />
+片源穩定；</p>
+	  </li>
+	  <li><img src="http://res.itvpad.com/tvpadcn/res/images/free/new.jpg" width="50" height="50" />
+	  <p><span>每日更新</span><br />
+超過100,000部正版授權的影劇、綜藝、動漫和紀錄片每日更新；</p>
+	  </li>
+	  <li><img src="http://res.itvpad.com/tvpadcn/res/images/free/yule.jpg" width="50" height="50" />
+	  <p><span>娛樂體驗</span><br />
+卡拉OK，體感遊戲、VOIP電話燈全新娛樂功能體驗，操作簡單；</p>
+	  </li>
+	</ul>
+  </div>
+  
+  <div class="main2">
+    <p class="image1"><span>“每一個中國傳統佳節都牽動著億萬遊子的心。正所謂禮尚往來，一份<br />
+體面又有新意的好禮最能表達思念和慰問！”<br />
+<a href="#shiyong">立即免費試用>></a></span></p>
+	<p class="image2"></p>
+  </div>
+  
+  <div class="main3">
+   <p><img src="http://res.itvpad.com/tvpadcn/res/images/free/main3_image1.jpg" /></p>
+   <p><img src="http://res.itvpad.com/tvpadcn/res/images/free/main3_image2.jpg" /></p>
+  </div>
+  
+  <div class="main4" id="shiyong">
+    <div class="main4_top"></div>
+	<div class="main4_middle">
+	  <p class="bt"><img src="http://res.itvpad.com/tvpadcn/res/images/free/main4_bg_bt.jpg" /></p>
+	  <form action="/web/free!toEmail.action" method="post" id="myform">
+	  <ul>
+	    <li><p class="text"><span class="red">*</span> 申請人:</p><p class="input"><input name="name" class="input2"  type="text" /></p></li>
+		<li><p class="text"><span class="red">*</span> 電話:</p><p class="input"><input name="tel" class="input2"  type="text" /></p></li>
+		<li><p class="text"><span class="red">*</span> 郵箱:</p><p class="input"><input name="email" class="input2"  type="text" /></p></li>
+		<li><p class="text"><span class="red">*</span> 郵編:</p><p class="input"><input name="postCode" class="input2"  type="text" /></p></li>
+		<li><p class="text"><span class="red">*</span> 收貨地址:</p><p class="input"><input  name="adress" id="adress" type="text" class="input3" value="街道詳細地址" onfocus="if(this.value=='街道詳細地址')this.value=''" onblur="if(this.value=='')this.value='街道詳細地址'"/>  
+			- <input  name="cityName" id="cityName" type="text" class="input2" value="縣/市" onfocus="if(this.value=='縣/市')this.value=''" onblur="if(this.value=='')this.value='縣/市'"/>
+			- <input type="hidden" id="test" />
+			<input type="text" name="provinceName" id="provinceName" class="input2" value="洲/省"  onfocus="if(this.value=='洲/省')this.value=''" onblur="if(this.value=='')this.value='洲/省'"/> 
+			-<select name="contryId" id="contryId" onchange="contryChange()" class="input2">
+				<option value="">--請選擇國家--</option>
+				
+					<option value="100231">Zimbabwe</option>
+				
+					<option value="100118">Zambia</option>
+				
+					<option value="100230">Yugoslavia</option>
+				
+					<option value="100117">Yemen</option>
+				
+					<option value="100115">Vietnam</option>
+				
+					<option value="100228">Venezuela</option>
+				
+					<option value="100162">Vatican City</option>
+				
+					<option value="100114">Vanuatu</option>
+				
+					<option value="100227">Uzbekistan</option>
+				
+					<option value="100226">USA</option>
+				
+					<option value="100113">Uruguay</option>
+				
+					<option value="100225">United Arab Emirates</option>
+				
+					<option value="100111">Ukraine</option>
+				
+					<option value="100224">Uganda</option>
+				
+					<option value="100112">U.K</option>
+				
+					<option value="100110">Tuvalu</option>
+				
+					<option value="100109">Turkmenistan</option>
+				
+					<option value="100222">Turkey</option>
+				
+					<option value="100108">Tunisia</option>
+				
+					<option value="100107">Tonga</option>
+				
+					<option value="100220">Tokelau</option>
+				
+					<option value="100106">Togo</option>
+				
+					<option value="100219">The Gambia</option>
+				
+					<option value="100105">The Bahamas</option>
+				
+					<option value="100218">Thailand</option>
+				
+					<option value="100104">Tanzania</option>
+				
+					<option value="100217">Tajikistan</option>
+				
+					<option value="100103">Taiwan</option>
+				
+					<option value="100216">Syria</option>
+				
+					<option value="100102">Switzerland</option>
+				
+					<option value="100215">Sweden</option>
+				
+					<option value="100101">Swaziland</option>
+				
+					<option value="100100">Suriname</option>
+				
+					<option value="100213">Sudan</option>
+				
+					<option value="100099">Sri Lanka</option>
+				
+					<option value="100212">Spain</option>
+				
+					<option value="100211">South Africa</option>
+				
+					<option value="100098">Somalia</option>
+				
+					<option value="100097">Slovenia</option>
+				
+					<option value="100209">Slovakia</option>
+				
+					<option value="100096">Singapore</option>
+				
+					<option value="100208">Sierra Leone</option>
+				
+					<option value="100095">Seychelles</option>
+				
+					<option value="100094">Senegal</option>
+				
+					<option value="100206">Saudi Arabia</option>
+				
+					<option value="100205">San Marino</option>
+				
+					<option value="100092">Samoa</option>
+				
+					<option value="100203">Saint Lucia</option>
+				
+					<option value="100202">Saint Helena</option>
+				
+					<option value="100089">Rwanda</option>
+				
+					<option value="100201">Russia</option>
+				
+					<option value="100088">Romania</option>
+				
+					<option value="100200">Reunion</option>
+				
+					<option value="100087">Qatar</option>
+				
+					<option value="100199">Puerto Rico</option>
+				
+					<option value="100198">Portugal</option>
+				
+					<option value="100086">Poland</option>
+				
+					<option value="100085">Philippines</option>
+				
+					<option value="100197">Peru</option>
+				
+					<option value="100084">Paraguay</option>
+				
+					<option value="100083">Panama</option>
+				
+					<option value="100195">Palau</option>
+				
+					<option value="100082">Pakistan</option>
+				
+					<option value="100194">Oman</option>
+				
+					<option value="100081">Norway</option>
+				
+					<option value="100192">Niue</option>
+				
+					<option value="100079">Nigeria</option>
+				
+					<option value="100191">Niger</option>
+				
+					<option value="100078">Nicaragua</option>
+				
+					<option value="100190">New Zealand</option>
+				
+					<option value="100077">New Caledonia</option>
+				
+					<option value="100076">Netherlands</option>
+				
+					<option value="100188">Nepal</option>
+				
+					<option value="100075">Nauru</option>
+				
+					<option value="100187">Namibia</option>
+				
+					<option value="100074">Mozambique</option>
+				
+					<option value="100186">Morocco</option>
+				
+					<option value="100073">Montserrat</option>
+				
+					<option value="100185">Mongolia</option>
+				
+					<option value="100072">Monaco</option>
+				
+					<option value="100184">Moldova</option>
+				
+					<option value="100183">Mexico</option>
+				
+					<option value="100070">Mayotte</option>
+				
+					<option value="100182">Mauritius</option>
+				
+					<option value="100069">Mauritania</option>
+				
+					<option value="100181">Martinique</option>
+				
+					<option value="100067">Malta</option>
+				
+					<option value="100180">Mali</option>
+				
+					<option value="100066">Maldives</option>
+				
+					<option value="100179">Malaysia</option>
+				
+					<option value="100065">Malawi</option>
+				
+					<option value="100178">Madagascar</option>
+				
+					<option value="100177">Macao</option>
+				
+					<option value="100063">Luxembourg</option>
+				
+					<option value="100176">Lithuania</option>
+				
+					<option value="100062">Liechtenstein</option>
+				
+					<option value="100175">Libya</option>
+				
+					<option value="100061">Liberia</option>
+				
+					<option value="100174">Lesotho</option>
+				
+					<option value="100060">Lebanon</option>
+				
+					<option value="100173">Latvia</option>
+				
+					<option value="100059">Laos</option>
+				
+					<option value="100172">Kyrgyzstan</option>
+				
+					<option value="100058">Kuwait</option>
+				
+					<option value="100171">Korea,South</option>
+				
+					<option value="100057">Korea, North</option>
+				
+					<option value="100170">Kiribati</option>
+				
+					<option value="100056">Kenya</option>
+				
+					<option value="100169">Kazakhstan</option>
+				
+					<option value="100055">Jordan</option>
+				
+					<option value="100054">Japan</option>
+				
+					<option value="100168">Jamaica</option>
+				
+					<option value="100053">Italy</option>
+				
+					<option value="100167">Israel</option>
+				
+					<option value="100052">Ireland</option>
+				
+					<option value="100166">Iraq</option>
+				
+					<option value="100051">Iran</option>
+				
+					<option value="100165">Indonesia</option>
+				
+					<option value="100050">India</option>
+				
+					<option value="100164">Iceland</option>
+				
+					<option value="100049">Hungary</option>
+				
+					<option value="100163">Hong Kong</option>
+				
+					<option value="100048">Honduras</option>
+				
+					<option value="100161">Haiti</option>
+				
+					<option value="100047">Guyana</option>
+				
+					<option value="100160">Guinea-Bissau</option>
+				
+					<option value="100046">Guinea</option>
+				
+					<option value="100045">Guatemala</option>
+				
+					<option value="100158">Guam</option>
+				
+					<option value="100044">Guadeloupe</option>
+				
+					<option value="100157">Grenada</option>
+				
+					<option value="100043">Greenland</option>
+				
+					<option value="100156">Greece</option>
+				
+					<option value="100042">Gibraltar</option>
+				
+					<option value="100155">Ghana</option>
+				
+					<option value="100041">Germany</option>
+				
+					<option value="100154">Georgia</option>
+				
+					<option value="100040">Gabon</option>
+				
+					<option value="100153">French Guiana</option>
+				
+					<option value="100038">France</option>
+				
+					<option value="100152">Finland</option>
+				
+					<option value="100037">Fiji</option>
+				
+					<option value="100035">Ethiopia</option>
+				
+					<option value="100150">Estonia</option>
+				
+					<option value="100034">Eritrea</option>
+				
+					<option value="100033">El Salvador</option>
+				
+					<option value="100148">Egypt</option>
+				
+					<option value="100032">Ecuador</option>
+				
+					<option value="100147">Dominican Republic</option>
+				
+					<option value="100031">Dominica</option>
+				
+					<option value="100146">Djibouti</option>
+				
+					<option value="100030">Denmark</option>
+				
+					<option value="100145">Czech Republic</option>
+				
+					<option value="100029">Cyprus</option>
+				
+					<option value="100144">Cuba</option>
+				
+					<option value="100028">Croatia</option>
+				
+					<option value="100027">Costa Rica</option>
+				
+					<option value="100025">Comoros</option>
+				
+					<option value="100140">Colombia</option>
+				
+					<option value="100023">China</option>
+				
+					<option value="100138">Chile</option>
+				
+					<option value="100022">Chad</option>
+				
+					<option value="100137">Central African Republic</option>
+				
+					<option value="100136">Cape Verde</option>
+				
+					<option value="100020">Canada</option>
+				
+					<option value="100135">Cameroon</option>
+				
+					<option value="100019">Cambodia</option>
+				
+					<option value="100134">Burundi</option>
+				
+					<option value="100018">Burma</option>
+				
+					<option value="100133">Burkina Faso</option>
+				
+					<option value="100017">Bulgaria</option>
+				
+					<option value="100132">Brunei Darussalam</option>
+				
+					<option value="100015">Brazil</option>
+				
+					<option value="100014">Botswana</option>
+				
+					<option value="100013">Bolivia</option>
+				
+					<option value="100130">Bhutan</option>
+				
+					<option value="100012">Bermuda</option>
+				
+					<option value="100129">Benin</option>
+				
+					<option value="100011">Belize</option>
+				
+					<option value="100128">Belgium</option>
+				
+					<option value="100010">Belarus</option>
+				
+					<option value="100127">Barbados</option>
+				
+					<option value="100009">Bangladesh</option>
+				
+					<option value="100126">Bahrain</option>
+				
+					<option value="100008">Azerbaijan</option>
+				
+					<option value="100125">Austria</option>
+				
+					<option value="100007">Australia</option>
+				
+					<option value="100124">Aruba</option>
+				
+					<option value="100006">Armenia</option>
+				
+					<option value="100123">Argentina</option>
+				
+					<option value="100122">Antarctica</option>
+				
+					<option value="100004">Anguilla</option>
+				
+					<option value="100121">Angola</option>
+				
+					<option value="100003">Andorra</option>
+				
+					<option value="100120">American Samoa</option>
+				
+					<option value="100002">Algeria</option>
+				
+					<option value="100119">Albania</option>
+				
+					<option value="100001">Afghanistan</option>
+				
+			</select>
+			<input type="hidden" name="contryName" id="contrynameId"  value=""/>
+		<li id="infoUl" style="display:none"><span id="addressInfo"></span></li>
+		<li class="btn"><input type="image" src="http://res.itvpad.com/tvpadcn/res/images/free/tijiao.jpg" border="0" /></li>
+	  </ul>
+	  </form>	
+	  <div class="cb"></div>
+	</div>
+	<div class="main4_bottom"></div>
+  </div>
+</div>
+<!--End 试用-->
+
+<!-- 底部-->
+
+
+
+
+<!-- help center -->
+<div class='help'><div class='help_center'><ul><li><p><font class='fontwz bfont'>購物指南</font></p><p><a href=http://www.itvpad.com/help1.html#M_87>如何購買</a></p><p><a href=http://www.itvpad.com/help1.html#M_11>如何使用禮品券</a></p><p><a href=http://www.itvpad.com/help1.html#M_66>多幣種報價</a></p><p><a href=http://www.itvpad.com/help1.html#M_9>安全性</a></p><p><a href=http://www.itvpad.com/help1.html#M_8>購物流程</a></p></li><li><p><font class='fontwz bfont'>物流配送 </font></p><p><a href=http://www.itvpad.com/help2.html#M_30>簽收說明</a></p><p><a href=http://www.itvpad.com/help2.html#M_31>關稅說明</a></p><p><a href=http://www.itvpad.com/help2.html#M_13>配送方式</a></p><p><a href=http://www.itvpad.com/help2.html#M_12>配送範圍</a></p></li><li><p><font class='fontwz bfont'>支付方式</font></p><p><a href=http://www.itvpad.com/help3.html#M_16>支付寶支付</a></p><p><a href=http://www.itvpad.com/help3.html#M_14>國際信用卡</a></p><p><a href=http://www.itvpad.com/help3.html#M_64>西联汇款</a></p></li><li><p><font class='fontwz bfont'>我的訂單</font></p><p><a href=http://www.itvpad.com/help4.html#M_32>評價商品</a></p><p><a href=http://www.itvpad.com/help4.html#M_19>修改訂單</a></p><p><a href=http://www.itvpad.com/help4.html#M_18>訂單查詢</a></p></li><li><p><font class='fontwz bfont'>售後服務</font></p><p><a href=http://www.itvpad.com/help5.html#M_23>售後服務通道</a></p><p><a href=http://www.itvpad.com/help5.html#M_22>關於退換貨</a></p><p><a href=http://www.itvpad.com/help5.html#M_65>第三方應用安裝</a></p><p><a href=http://www.itvpad.com/help5.html#M_20>售後承諾</a></p></li><li><p><font class='fontwz bfont'>華揚聲明</font></p><p><a href=http://www.itvpad.com/help6.html#M_33>隱私聲明</a></p><p><a href=http://www.itvpad.com/help6.html#M_25>免責聲明</a></p><p><a href=http://www.itvpad.com/help6.html#M_24>客戶監督</a></p><p><a href=http://www.itvpad.com/help6.html#M_21>服務宗旨</a></p></li><li><p><font class='fontwz bfont'>關於我們</font></p><p><a href=http://www.itvpad.com/help7.html#M_29>媒體支持</a></p><p><a href=http://www.itvpad.com/help7.html#M_28>公司簡介</a></p><p><a href=http://www.itvpad.com/help7.html#M_27>產品社區</a></p><p><a href=http://www.itvpad.com/help7.html#M_26>聯繫我們</a></p></li><li class='tel'>(00852)2134-9910</li></ul><div class='cb'></div>	</div></div>
+<div class="bottom">
+  <div class="content"> 		
+  		Copyright(C) 2007-2015 華揚國際科技有限公司(商城)（HUA YANG INTERNATIONAL TECHNOLOGY LIMITED）.All Rights Reserved 
+  </div>
+</div>
+<!--End Bottom -->
+<!-- 第三方统计代码 -->
+<!-- 第三方统计代码 -->
+<div id="topcontrol" style="position: fixed; bottom: 50px; right: 10px; opacity: 1; cursor: pointer;" title="回到頂部">
+  <a href="#sc_top"><img src="/res/images/top1.png" border="0">第三方统计代码</a>————商城统计代码
+</div>
+<div style="color:red">中文店铺统计代码</div>
+	
+
+
+
+</body>
+</html>

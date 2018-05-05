@@ -1,0 +1,214 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.lshop.common.pojo.logic">
+    <class name="LvDeveloperApp" table="lv_developer_app">
+
+        <id name="id" column="id" type="java.lang.Integer">
+            <generator class="identity"/>
+        </id>
+		
+		
+		
+		<property 
+			name="name" 
+			column="name" 
+			update="true"
+            insert="true"
+            type="java.lang.String"
+			not-null="true" 
+			unique="false" 
+			length="32"/>
+		
+		<property 
+			name="url" 
+			column="url" 
+			update="true"
+            insert="true"
+            type="java.lang.String"
+			not-null="true" 
+			unique="false" 
+			length="128"/>
+		
+		<property 
+			name="appVersion" 
+			column="app_version" 
+			update="true"
+            insert="true"
+            type="java.lang.String"
+			not-null="false" 
+			unique="false" 
+			length="16"/>
+		
+		<property 
+			name="lang" 
+			column="lang" 
+			update="true"
+            insert="true"
+            type="java.lang.String"
+			not-null="false" 
+			unique="false" 
+			length="16"/>
+		
+		<property 
+			name="appType" 
+			column="app_type" 
+			update="true"
+            insert="true"
+            type="java.lang.String"
+			not-null="false" 
+			unique="false" 
+			length="16"/>
+		
+		<property 
+			name="keyWord" 
+			column="key_word" 
+			update="true"
+            insert="true"
+            type="java.lang.String"
+			not-null="false" 
+			unique="false" 
+			length="32"/>
+		
+		<property 
+			name="appDesc" 
+			column="app_desc" 
+			update="true"
+            insert="true"
+            type="java.lang.String"
+			not-null="false" 
+			unique="false" 
+			length="1500"/>
+		
+		<property 
+			name="proofUrl" 
+			column="proof_url" 
+			update="true"
+            insert="true"
+            type="java.lang.String"
+			not-null="false" 
+			unique="false" 
+			length="128"/>
+		
+		<property 
+			name="demoImgsUrl" 
+			column="demo_imgs_url" 
+			update="true"
+            insert="true"
+            type="java.lang.String"
+			not-null="false" 
+			unique="false" 
+			length="1000"/>
+		
+		<property 
+			name="isCharge" 
+			column="is_charge" 
+			update="true"
+            insert="true"
+            type="java.lang.Integer"
+			not-null="false" 
+			unique="false" 
+			length="0"/>
+		
+		<property 
+			name="isAd" 
+			column="is_ad" 
+			update="true"
+            insert="true"
+            type="java.lang.Integer"
+			not-null="false" 
+			unique="false" 
+			length="0"/>
+		
+		<property 
+			name="createTime" 
+			column="create_time" 
+			update="true"
+            insert="true"
+            type="java.util.Date"
+			not-null="false" 
+			unique="false" 
+			length="0"/>
+		
+		<property 
+			name="updateTime" 
+			column="update_time" 
+			update="true"
+            insert="true"
+            type="java.util.Date"
+			not-null="false" 
+			unique="false" 
+			length="0"/>
+		
+		<property 
+			name="reviewTime" 
+			column="review_time" 
+			update="true"
+            insert="true"
+            type="java.util.Date"
+			not-null="false" 
+			unique="false" 
+			length="0"/>
+		
+		<property 
+			name="email" 
+			column="email" 
+			update="true"
+            insert="true"
+            type="java.lang.String"
+			not-null="false" 
+			unique="false" 
+			length="60"/>
+		
+		<property 
+			name="code" 
+			column="code" 
+			update="true"
+            insert="true"
+            type="java.lang.String"
+			not-null="false" 
+			unique="false" 
+			length="32"/>
+		
+		<property 
+			name="reason" 
+			column="reason" 
+			update="true"
+            insert="true"
+            type="java.lang.String"
+			not-null="false" 
+			unique="false" 
+			length="128"/>
+					
+		<property 
+			name="status" 
+			column="a_status" 
+			update="true"
+            insert="true"
+            type="java.lang.Integer"
+			not-null="false" 
+			unique="false" 
+			length="1"/>
+		
+		
+		 <property name="bizline" type="java.lang.String">
+            <column name="bizline"  length="4">
+                <comment>业务线（0007 banana，0008 tvpad） </comment>
+            </column>
+		 </property>
+		 <property name="storeFlag" type="java.lang.String">
+            <column name="store_flag"  length="32">
+                <comment>店铺标识</comment>
+            </column>
+		 </property>
+	   <property name="isAgree" type="java.lang.Integer">
+            <column name="is_agree"  length="1">
+                <comment>是否同意注册开发者协议（0 不同意 1同意）</comment>
+            </column>
+        </property> 
+	
+
+    </class>
+</hibernate-mapping>
+

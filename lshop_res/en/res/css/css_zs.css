@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+body{font-family:Arial, Helvetica, sans-serif}
+.tvpad4_zt{width:100%; height:580px; background-image:url(../images/tvpad4zs/tv4_bg.jpg); background-repeat:repeat-x}
+.tav4_bananer{width:1000px; height:580px; background-image:url(../images/tvpad4zs/tv4_bananer.jpg); background-repeat:no-repeat; margin:0 auto; position:relative}
+.app_bt{position:absolute; left:54px; top:300px}
+#mailto{position:absolute; right:67px; bottom:35px; display: block; width:214px; height:28px; font-size:24px; color:#00a0ff}
+#mailto:hover{color:#fff}
+.infiint{width:100%; background-color:#ececec}
+.infiint_inner{width:1000px; height:917px; margin:0 auto; background-image:url(../images/tvpad4zs/infinite.jpg); background-repeat:no-repeat; position:relative}
+.in_iner_text{position:absolute;left:23px; top:261px; font-size:15px; color:#747474; line-height:24px}
+.first1{position:absolute; width:280px; left:90px; color:#1362ba; font-size:18px; top:476px}
+.first2{position:absolute; width:282px; left:412px; color:#1362ba; font-size:18px; top:428px}
+.first3{position:absolute; width:196px; left:736px; color:#1362ba; font-size:18px; top:504px}
+.tv4_brand{width:100%; background-color:#fff}
+.tv4_brand_inner{width:1000px; margin:0 auto; height:674px; position:relative; background-image:url(../images/tvpad4zs/brand_tvpad4.jpg); background-repeat:no-repeat}
+.tv4_brd_text{font-size:16px; color:#747474; font-weight:bold; position:absolute; left:82px; top:128px}
+.tv4_detial{font-size:14px; color:#747474; line-height:16px; margin-top:5px}
+.exlusive{width:190px; position:absolute; left:128px; top:250px}
+.exc_title{font-size:18px; font-weight:bold; color:#005fc9; line-height:20px}
+.Favorable{width:172px; position:absolute; left:464px; top:250px}
+.fav_title{font-size:18px; font-weight:bold; color:#5dbc0f; line-height:20px}
+.E_commerce{width:190px; position:absolute; left:784px; top:250px}
+.e_title{font-size:18px; font-weight:bold; color:#ff216a; line-height:20px}
+.Market{width:190px; position:absolute; left:128px; top:450px}
+.Market_title{font-size:18px; font-weight:bold; color:#f67f00; line-height:20px}
+.Value{width:190px; position:absolute; left:464px; top:450px}
+.Value_title{font-size:18px; font-weight:bold; color:#039d9f; line-height:20px}
+.Reward{width:190px; position:absolute; left:784px; top:450px}
+.Reward_title{font-size:18px; font-weight:bold; color:#f34e3b; line-height:20px}
+.tv4_best{width:100%; background-image:url(../images/tvpad4zs/best_bg.jpg); background-repeat:repeat-x}
+.tv4_best_inner{width:1000px; margin:0 auto; background-image:url(../images/tvpad4zs/tv4_best.jpg); background-repeat:no-repeat; height:1330px; position:relative}
+.tv4_Headquartered{position:absolute; left:23px; top:146px; font-size:15px; color:#373737; line-height:24px; width:485px}
+.tv4_Australia{position:absolute; left:558px; top:146px; font-size:15px; color:#373737; line-height:24px; width:424px}
+.tv4_ex{position:absolute; width:310px; left:83px; top:344px}
+.tv4_ex_pt{font-size:23px; font-weight:bold; color:#4d4d4d; width:310px}
+.tv4_ex_text{ font-size:14px; color:#373737; line-height:20px; margin-top:5px; width:266px}
+
+.tv4_Stable{position:absolute;left:614px; top:344px}
+.tv4_Stable_pt{font-size:23px; font-weight:bold; color:#4d4d4d; width:350px}
+.tv4_Stable_text{ font-size:14px; color:#373737; line-height:20px; margin-top:5px; width:380px}
+
+.tv4_Live{position:absolute;left:83px; top:676px}
+.tv4_Live_pt{font-size:23px; font-weight:bold; color:#4d4d4d; width:350px}
+.tv4_Live_text{ font-size:14px; color:#373737; line-height:20px; margin-top:5px; width:220px}
+
+.tv4_Big{position:absolute;left:617px; top:676px}
+.tv4_Big_pt{font-size:23px; font-weight:bold; color:#4d4d4d; width:350px}
+.tv4_Big_text{ font-size:14px; color:#373737; line-height:20px; margin-top:5px; width:330px}
+
+.tv4_Time{position:absolute;left:83px; top:1050px}
+.tv4_Time_pt{font-size:23px; font-weight:bold; color:#4d4d4d; width:176px}
+.tv4_Time_text{ font-size:14px; color:#373737; line-height:20px; margin-top:5px; width:140px}
+
+.tv4_how{width:100%; background-image:url(../images/tvpad4zs/tv4_how_bg.jpg); background-repeat:repeat-x}
+.tv4_how_inner{width:1000px; height:1022px; margin:0 auto; background-image:url(../images/tvpad4zs/tv4_how.jpg); background-repeat:no-repeat; position:relative}
+.tv4_Creatent{font-size:15px; color:#373737;position:absolute; left:23px; top:196px; line-height:24px; width:936px}
+.tv4_Warehouse{width:202px; position:absolute; left:287px; top:333px}
+.tv4_Financial{width:209px; position:absolute; left:524px; top:333px}
+.tv4_Resources{width:209px; position:absolute; left:770px; top:333px}
+.tv4_team{width:198px; position:absolute; left:45px; top:333px}
+.team_title{font-size:17px; color:#ff7800; font-weight:bold; padding-left:42px}
+.team_detail{font-size:13px; color:#373737; line-height:18px; margin-top:26px}
+.team2{padding-left:10px}
+.Cooperation{font-size:32px; color:#fff; font-weight:bold; position:absolute; left:42px; top:562px}
+.step{font-size:13px; color:#373737; width:105px; text-align:center; line-height:18px; position:absolute; top:766px}
+.step1{left:50px}
+.step2{left:250px}
+.step3{left:450px}
+.step4{left:650px}
+.step5{left:850px}
+.tv4_new{font-size:36px; color:#205ea2; position:absolute; left:97px; top:945px; font-weight:bold}
+.tv4_appform{font-size:21px; color:#fff; position:absolute; left:673px; top:954px; font-weight:bold}
+.tv4_appform a{color:#fff;}
+.tv4_tel{font-size:40px; font-weight:bold; color:#fff; position:absolute; left:285px; bottom:26px; letter-spacing:-1px}

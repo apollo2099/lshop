@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.lshop.common.pojo.logic">
+	<class name="LvPatternCountry" table="lv_pattern_country">
+
+		<id name="id" column="id" type="java.lang.Integer">
+			<generator class="identity" />
+		</id>
+
+        <property name="version" type="java.lang.Integer">
+            <column name="version" length="10">
+                <comment>version</comment>
+            </column>
+        </property>
+         <property name="patternCode" type="java.lang.Short">
+            <column name="pattern_code" length="3">
+                <comment>规格</comment>
+            </column>
+        </property>
+        <property name="countryName" type="java.lang.String">
+            <column name="country_name" length="32">
+                <comment>活动code</comment>
+            </column>
+        </property>
+        <property name="countryCode" type="java.lang.String">
+            <column name="country_code" length="32">
+                <comment>活动code</comment>
+            </column>
+        </property>
+        <property name="countryId" type="java.lang.Integer">
+            <column name="country_id" length="11">
+                <comment>活动code</comment>
+            </column>
+        </property>
+         <property name="status" type="java.lang.Integer">
+            <column name="status" length="3">
+                <comment>活动code</comment>
+            </column>
+        </property>
+
+		<property name="createdBy" type="java.lang.String">
+			<column name="created_by" length="32">
+				<comment>活动code</comment>
+			</column>
+		</property>
+
+		<property name="createdDate" type="java.util.Date">
+			<column name="created_date" >
+				<comment>活动code</comment>
+			</column>
+		</property>
+
+		<property name="lastUpdatedBy" type="java.lang.String">
+			<column name="last_updated_by" length="32">
+				<comment>活动code</comment>
+			</column>
+		</property>
+
+		<property name="lastUpdatedDate" type="java.util.Date">
+			<column name="last_updated_date">
+				<comment>活动code</comment>
+			</column>
+		</property>
+	</class>
+</hibernate-mapping>
+

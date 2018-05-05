@@ -1,0 +1,212 @@
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Details of TVpad purchasing, operation, Apps and others-HUA YANG MALL</title>
+		<link href="${resDomain}/en/res/css/css.css" rel="stylesheet" type="text/css" />
+		<link href="${resDomain}/en/res/css/user_center.css" rel="stylesheet" type="text/css" />
+		<!-- 加载公共JS -->
+		
+<link href="${resDomain}/en/res/css/css.css" rel="stylesheet" type="text/css" />
+<link href="${resDomain}/en/res/css/user_center.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="${resDomain}/en/res/js/jquery-1.4.4.min.js" ></script>
+<script type="text/javascript" src="${resDomain}/en/res/js/FomrValidate.js" ></script>
+<script type="text/javascript" src="${resDomain}/en/res/js/jquery.validate.min.1.8.1.js" ></script>
+<script type="text/javascript" src="${resDomain}/en/res/js/jquery_validate_extend.js" ></script>
+<script type="text/javascript" src="${resDomain}/en/res/js/jquery.form.js" ></script>
+<script type="text/javascript" src="${resDomain}/en/res/js/cookie.js"></script>
+<script type=text/javascript src="${resDomain}/en/res/js/slides.jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="${resDomain}/en/res/js/ymPrompt/skin/vista/ymPrompt.css" />
+<script type="text/javascript" src="${resDomain}/en/res/js/ymPrompt/ymPrompt.js" ></script>
+<script type="text/javascript" src="${resDomain}/en/res/js/header.js" ></script>
+<script type="text/javascript">
+	$(function(){
+		 //初始化搜索栏
+		 if(true){
+			$("#searchContent").val("Please enter item name");
+		 }
+	});		 
+</script>
+	</head>
+	
+	<body>
+		<!-- 获取商城头部文件 -->
+		
+
+
+
+<div id="sc_top">
+ 	<div id="sc_head">
+  		<div id="header">
+ 			<div id="shoucang">
+		  		<p><a href="javascript:addBookmark('HUA YANG Mall','http://www.tvpad.hk/')" class="shoucang1">Add HUA YANG Mall to Favorites</a></p><p><a href="http://weibo.com/tvpad" target="_blank"><img src="${resDomain}/en/res/images/xinlang.jpg" border="0" /></a></p><p><a class="fav_facebook" rel="nofollow" href="https://www.facebook.com/mytvpad" target="_blank"><img src="${resDomain}/en/res/images/f_book.jpg" border="0" /></a></p>
+   			</div>
+    		<div id="help">
+          		<ul>
+		          	<li class="yh" style="display:none;" id="nameId"><font id="nicknameId"></font>,</li>
+		        	<li class="line">Hello! welcome to HUA YANG Mall!</li>
+		            <li class="dl" id="loginId"><a href="javascript:onshow('tx_b','loginDiv');">Login</a></li>
+					<li class="dl" id="registerId"><a href="javascript:toRe('http://en.itvpad.com');">Register</a></li>
+					<li class="tc" style="display:none;" id="logoutId"><a href="http://en.itvpad.com/web/userCenterManage!logout.action" >Log out</a></li><!--登陆之后状态-->
+		            <li class="dd">| <a href="http://en.itvpad.com/web/userOrder!getOrderlist.action" >My Order</a> |</li>
+		            <li id="aa" class="menu2" onmouseover="showMenu1();"><a href="/web/userCenterManage!getAccount.action"> User Center</a>
+		        	   <ul class="list" id="bb" >
+		          		  <li class="cc"><a href="http://en.itvpad.com/web/userCenterManage!getAccount.action">My Account</a></li>
+		          		  <li class="cc"><a href="http://en.itvpad.com/web/userCenterManage!getInfoDetail.action">My Profile</a></li>
+		          		  <li class="cc"><a href="http://en.itvpad.com/web/userCenterManage!toUpdatePassword.action">Password</a></li>
+						  <li class="cc"><a href="http://en.itvpad.com/web/userCenterManage!getAddressList.action">Billing Addr.</a></li>
+						  <li class="cc"><a href="http://en.itvpad.com/web/userCenterManage!getCart.action">My Cart</a></li>
+						  <li class="cc"><a href="http://en.itvpad.com/web/userOrder!getOrderlist.action">My Order</a></li>
+						  <li class="cc"><a href="http://en.itvpad.com/web/userCenterManage!getCommentList.action">My Reviews</a></li>
+		        	   </ul>
+		      		</li>
+					<li class="dl">| <a href="http://en.itvpad.com/web/helpCenter!getHelps.action">Help</a> |</li>
+				    <li class="gouwu"><p><a href="#" onclick="toCar('http://en.itvpad.com');">My Cart</a></p>
+				    <p class="number">(<span id="shopCartNum"></span>)</p></li>	
+				    <li class="qiehuan"><a href="http://www.tvpad.com/index.html">[中文版]</a> <img src="${resDomain}/en/res/images/cn.gif" border="0" /></li>		
+         		</ul>
+       		</div>
+		</div>
+  	</div>
+  
+	<div class="sc_logo">
+	    <div class="sc_log">
+		  <p class="logo"><a href="/index.html"><img src="http://en.tvpad.com${resDomain}/en/res/upload/logo/201304161029144303.jpg"/></a></p>
+		  <div class="search">
+		  	<form action="" method="post" class="sousuo_bg" id="searchForm">
+		  		<input name="str" type="text" maxlength="50" class="sc_wb" id="searchContent" value="" onfocus="if(this.value=='Please enter item name')this.value=''" onblur="if(this.value=='')this.value='Please enter item name'"/><input name="" type="image" onclick="subSearch('product');" src="${resDomain}/en/res/images/soushangpin.gif"/><!--<input name="" type="image" onclick="subSearch('store')" src="${resDomain}/en/res/images/soudianpu.gif"/>  -->
+		  	</form>
+		  <p class="reci">Hot：<span><a href='new tag'><font color='#FF0000'><B>new tag</B></font></a>&nbsp;&nbsp;<a href='test'><font color='#00FF00'><I>test</I></font></a>&nbsp;&nbsp;<a href='1'><font color='#FFFF00'>style</font></a>&nbsp;&nbsp;</span></p>
+		  </div>
+		</div>
+	 </div>
+	
+	 <div class="sc_menu">
+	    <div class="sc_menu_A">
+	    	<div class="sc_menu_A_l">
+		 			<a href='http://en.itvpad.com/web/index!toIndex.action'>Home</a><a href='http://en.itvpad.com/web/tvpadTopic!toTvpadzt.action'>TVpad Center</a><a href='http://en.itvpad.com/web/blog/blogManage!list.action'>Blogs</a><a href='http://www.itvpadfans.com/forum.php' target='_blank'>TVpad Fans</a>
+		 	</div>
+		 	
+		</div>
+	 </div>
+
+	<!-- begin login -->
+	<div id="loginDiv"   style="display:none;background-color:#000000;width:800px;height:600px;position:absolute;top:0px;left:0px;text-align:center;z-index:9000;filter:alpha(opacity=10);opacity:0.3"></div>
+	<div id="tx_b" style="top:124px;position: absolute;display: none;z-index:9999;">
+		<div class="pop_up_box" style="background:white;">
+			<span class="box_l">User Login<span class="box_r"><a href="javascript:onhide('tx_b','loginDiv');"><img src="${resDomain}/en/res/images/close.gif" border="0" /></a></span></span>
+			<form id="login"  action="http://en.itvpad.com/web/userCenterManage!login.action" method="post">
+				<ul>
+					<li>
+						<span class="wd1"></span>
+						<span class="wd_input" id="msg"></span>
+					</li>
+					<li>
+						<span class="wd1"><font class="redfont">*</font>Email or Username：</span>
+						<span class="wd_input"><input name="uname" id="uname" class="input02" type="text"  value=""/></span>
+					</li>
+					<li class="tishiyu"></li>
+					<li><span class="wd1"><font class="redfont">*</font>Password：</span><span class="wd_input"><input name="pwd"  id="pwd" class="input02"  type="password" /></span></li>
+					<li class="tishiyu"></li>
+					<li><span class="wd1">&nbsp;</span><a href="http://en.itvpad.com/web/userCenterManage!toFindPassword.action"  class="ljh">Forget password?</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:toReg('http://en.itvpad.com');"  class="ljh">Register</a></li>
+					<li><span class="wd2"><input type="submit" value="Login" class="user_center_bt02" /></li>
+		  		</ul>
+		  	</form>
+		</div>
+	</div>
+	<!-- end login-->
+</div>
+<!--End top-->
+		<div class="content_main">
+		
+				<div class="left_frame">
+		    	<div class="cm_n_1"> 
+		        	<h3>Help</h3>
+		        	
+		        		<h4>en_help_1</h4>
+		        		<ul>
+		        		
+		        			
+		        				<li id="aa"><a href="/help21.html#M_20">ttttt</a></li>
+		        			
+		        		
+		        		</ul>
+		        	
+		        		<h4>3333</h4>
+		        		<ul>
+		        		
+		        			
+		        		
+		        		</ul>
+		        	
+		        		<h4>new style</h4>
+		        		<ul>
+		        		
+		        			
+		        		
+		        		</ul>
+		        	
+		        		<h4>question</h4>
+		        		<ul>
+		        		
+		        			
+		        		
+		        		</ul>
+		        	
+		        		<h4>en_help_2</h4>
+		        		<ul>
+		        		
+		        			
+		        		
+		        		</ul>
+		        		
+		        </div>
+				<!--left_ad-->
+				 <div class="cm_ad_left"><img src="${resDomain}/en/res/images/pic01.gif" width="198" height="248" /></div>
+		    </div> 
+		 	<!--End left_Frame-->
+		 	
+			 
+			 <div class="right_frame">
+			 		<h1><img src="${resDomain}/en/res/images/icon02.gif" /><font class="bfont"><a href="/index.html">Home</a>--> <a href="/web/helpCenter!getHelps.action">help</a></h1>
+			 	 		<div class="help_center_details">                  
+		                    
+		                    <p id="M_20"><font class="redfont fontwz">ttttt</font><br />
+							aaaaa
+							</p>
+							
+						</div>
+						<!--End 幫助中心-->
+			 </div>
+			 <!--End right_Frame-->
+		</div>
+		<!--End content-->
+		
+		<!-- 底部广告位-->
+		<div class="guanggaowei"><img alt="" src="${resDomain}/en/res/images/ggt.jpg" /></div>
+		<!-- footer -->
+		
+
+
+
+<!-- help center -->
+<div class='help'><div class='help_center'><ul><li><p><font class='fontwz bfont'>en_help_1</font></p><p><a href=http://en.itvpad.com/help21.html#M_20>ttttt</a></p></li><li><p><font class='fontwz bfont'>3333</font></p></li><li><p><font class='fontwz bfont'>new style</font></p></li><li><p><font class='fontwz bfont'>question</font></p></li><li><p><font class='fontwz bfont'>en_help_2</font></p></li><li class='tel'>(00852)2134-9910</li></ul><div class='cb'></div>	</div></div>
+<div class="bottom">
+  <div class="content"> 		
+  		 商城版权信息—Copyright(C) 2007-2015 （HUA YANG INTERNATIONAL TECHNOLOGY LIMITED）.All Rights Reserved
+  </div>
+</div>
+<!--End Bottom -->
+<!-- 第三方统计代码 -->
+<div id="topcontrol" style="position: fixed; bottom: 50px; right: 10px; opacity: 1; cursor: pointer;" title="回到頂部">
+  <a href="#sc_top"><img src="${resDomain}/en/res/images/top1.png" border="0">第三方统计代码</a>
+</div>
+
+		
+	</body>
+</html>

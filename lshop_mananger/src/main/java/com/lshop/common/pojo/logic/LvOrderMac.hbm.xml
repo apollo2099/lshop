@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.lshop.common.pojo.logic">
+	<class name="LvOrderMac" table="lv_order_mac">
+
+		<id name="id" column="id" type="java.lang.Integer">
+			<generator class="identity" />
+		</id>
+
+
+
+		<property name="orderId" column="order_id" update="true"
+			insert="true" type="java.lang.String" not-null="false" unique="false"
+			length="32" />
+
+		<property name="mac" column="mac" update="true" insert="true"
+			type="java.lang.String" not-null="false" unique="false" length="32" />
+
+		<property name="ip" column="ip" update="true" insert="true"
+			type="java.lang.String" not-null="false" unique="false" length="32" />
+
+		<property name="sourceUrl" column="source_url" update="true"
+			insert="true" type="java.lang.String" not-null="false" unique="false"
+			length="128" />
+
+		<property name="userEmail" column="user_email" update="true"
+			insert="true" type="java.lang.String" not-null="false" unique="false"
+			length="32" />
+
+		<property name="tel" column="tel" update="true" insert="true"
+			type="java.lang.String" not-null="false" unique="false" length="32" />
+
+		<property name="createTime" column="create_time" update="true"
+			insert="true" type="java.util.Date" not-null="false" unique="false"
+			length="0" />
+
+         <property name="status" type="java.lang.Short">
+            <column name="status">
+                <comment>mac状态</comment>
+            </column>
+        </property>
+        <property name="discountAmount" type="java.lang.Float">
+            <column name="discount_amount">
+                <comment>优惠金额</comment>
+            </column>
+        </property>
+
+
+
+	</class>
+</hibernate-mapping>
+

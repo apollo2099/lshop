@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="userCenterManage-default" namespace="/web" extends="gv-default">
+
+		<action name="userCenterManage" class="UserCenterManager">
+		
+			<!-- 注册登陆 -->
+			<result name="register">/web/${flag}/register.jsp</result>
+			<result name="input">/web/${flag}/login.jsp</result>
+		  	<result name="login" type="redirect">/web/${flag}/login_success.jsp?jumpurl=${jumpurl}</result>
+		  	<result name="pwdresult" type="redirect">/web/${flag}/pwdresult.jsp?email=${lvUser.email}</result>
+		    <result name="error" type="redirect">/web/${flag}/error.html</result>
+		    <result name="logout" type="redirect">/web/${flag}/index.jsp</result>
+		    <result name="register" type="redirect">/web/${flag}/register.jsp?jumpurl=${jumpurl}</result>
+		    <result name="password" type="redirect">/web/${flag}/password.jsp</result>
+		    
+		    <!-- 用户中心 -->
+		    <result name="myAccount">/web/${flag}/user_center/myAccount.jsp</result>
+		    <result name="myInfo">/web/${flag}/user_center/myInfo.jsp</result>
+		    <result name="edit" type="redirect">/web/userCenterManage!getInfoDetail.action</result>
+		    <result name="updatePassword">/web/${flag}/user_center/updatePassword.jsp</result>
+		    <result name="addressList">/web/${flag}/user_center/addressList.jsp</result>
+		    <result name="getAddressList" type="redirect">/web/userCenterManage!getAddressList.action</result>
+		    <result name="addAddress">/web/${flag}/user_center/addAddress.jsp</result>
+		    <result name="editAddress">/web/${flag}/user_center/editAddress.jsp</result>
+		    <result name="myShopCart">/web/${flag}/user_center/myShopCart.jsp</result>
+		    <result name="getCart" type="redirect">/web/userCenterManage!getCart.action</result>
+		    
+		    <!-- 用户中心——我的评论 -->
+		    <result name="myComments">/web/${flag}/user_center/myComments.jsp</result>
+		</action>
+		
+		<action name="regeditAccount" class="UserCenterManager"  method="regeditAccount">
+		  <result name="success" type="redirect">/web/${flag}/register_success.jsp?jumpurl=${jumpurl}</result>
+		  <result name="input">/web/${flag}/register.jsp</result>
+		</action>
+
+	</package>
+
+</struts>

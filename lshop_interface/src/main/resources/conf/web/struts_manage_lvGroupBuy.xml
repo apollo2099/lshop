@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="lvGroupBuyAction-default" namespace="/manager" extends="gv-default-manager" >
+	     <!--团购产品扩展属性信息管理配置-->
+	     <action name="lvGroupBuyAction" class="LvGroupBuyAction" >
+	            <result name="list">/manager/lvGroupBuy/lvGroupBuy_list.jsp</result>
+	            <result name="view">/manager/lvGroupBuy/lvGroupBuy_view.jsp</result> 	            
+	            <result name="edit">/manager/lvGroupBuy/lvGroupBuy_edit.jsp</result>
+	            <result name="befAdd">/manager/lvGroupBuy/lvGroupBuy_add.jsp</result>
+	     </action>
+	     </package>
+</struts>

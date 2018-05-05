@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="lvPubPackageAction-default" namespace="/manager" extends="gv-default-manager">
+        <action name="lvPubPackageAction" class="LvPubPackageAction">
+            <result name="list">/manager/lvPubPackage/lvPubPackage_list.jsp</result>
+			<result name="befSave">/manager/lvPubPackage/lvPubPackage_add.jsp</result>
+			<result name="view">/manager/lvPubPackage/lvPubPackage_view.jsp</result>
+			<result name="edit">/manager/lvPubPackage/lvPubPackage_edit.jsp</result>
+			<result name="selectSinglePackage">/manager/lvPubPackage/lvPubPackage_select_single.jsp</result>
+			
+		</action>
+	</package>
+	
+</struts>

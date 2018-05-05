@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body { font-size:12px; font-family:"Microsoft YaHei","宋体"; color:#666666; background:#FFF;min-width:1000px;}
+*{ margin:0; padding:0;}
+*:focus{outline:none}
+fieldset{border:0;}
+ol,ul,li{list-style-type:none;}
+body img{border:none;}
+a,input,textarea{outline:none;hide-focus: expression(this.hideFocus=true)}
+a{color:#817b78;text-decoration:none;}
+a:hover { text-decoration:underline;}
+table { border-collapse:collapse; }
+html {overflow-y: scroll;}
+td,th,caption { font-size:12px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;} 
+.clearfix:after {content: "\200B"; display: block; height:0; clear:both;}
+.clearfix { *zoom:1;}
+*html{background-image:url(about:blank);background-attachment:fixed;}/*低版本浏览器防止抖动*/
+/*bananer*/
+.mainpage1{ width:1000px; height:433px; background:url(../images/renew_bananerEn1.jpg) no-repeat center center; margin:0 auto;}
+/*立即換新*/
+.mainpage2{position:relative; width:100%; background:#FFF;}
+.mainpage2_top{ width:100%;overflow:hidden}
+.mainpage2_top .liuchen_tit{ width:517px; height:96px; margin:0 auto; margin-top:45px; background:url(../images/liuchen.jpg) no-repeat;}
+.mainpage2_top .liuchen_tet{ width:755px; height:70px; margin:0 auto; margin-top:25px; background:url(../images/liuchen2.jpg) no-repeat;}
+.liuchen_tet p{ color:#3e3a39; font-size:16px; text-align:center; float:left; margin-top:0px; display:block; line-height:20px; width:175px;  margin-left:68px;padding-left:30px; font-family:Arial, Helvetica, sans-serif;}
+.liuchen_tet .liuchen_p1{ margin-left:2px; margin-top:5px}
+.liuchen_tet .liuchen_p2{ margin-top:15px}
+.liuchen_tet .liuchen_p3{ margin-top:25px}
+.mainpage2_buttom{ width:1000px; margin:0 auto; margin-top:40px;overflow:hidden;}
+
+/*我要諮詢*/
+.mainpage7{position:relative;width:1000px; height:377px; background:url(../images/renew_bananerEn3bj.jpg) no-repeat center center;margin:0 auto; margin-top:40px; overflow:hidden; font-family:Arial, Helvetica, sans-serif}
+.mainpage7 .lianxi{ position:relative; width:1000px; margin:0 auto; overflow:hidden;}
+.mainpage7 .lianxi h1{ font-size:24px; color:#FFF; text-align:center; margin-top:48px; font-weight:bold}
+.lianxi .dianhua,.lianxi .qq,.lianxi .youjian{ position:relative; width:249px; height:127px;float:left; margin-top:25px;}
+.lianxi .dianhua p,.lianxi .qq p,.lianxi .youjian p{ color:#FFF; font-family:"微软雅黑"; font-size:16px; text-align:center}
+.lianxi .dianhua span,.lianxi .qq span,.lianxi .youjian span{ color:#FFF; font-family:Arial, Helvetica, sans-serif; font-size:19px; display:block; margin-top:10px;}
+.lianxi .dianhua,.lianxi .qq{ background:url(../images/baitiao.jpg) no-repeat top right;}
+.lianxi .dianhua{ margin-left:126px;}
+.lianxi .dianhua img{ position:absolute; top:1px; left:84px;}
+.lianxi .qq img{position:absolute; top:1px; left:80px}
+.lianxi .youjian img{position:absolute; top:1px; left:74px;}
+.mainpage7 .TV_weixin{ position:relative;width:154px; height:78px;margin:0 auto; margin-top:10px;background:url(../images/erweimaEn.jpg) no-repeat;}
+.mainpage7 .jieshiq{ position:relative; text-align:center;margin-top:15px; font-size:14px; color:#FFF; }
+
+
+
+
+

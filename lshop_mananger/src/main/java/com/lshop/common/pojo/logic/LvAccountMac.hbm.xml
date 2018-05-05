@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.lshop.common.pojo.logic">
+	<class name="LvAccountMac" table="lv_account_mac">
+
+		<id name="id" column="id" type="java.lang.Integer">
+			<generator class="identity" />
+		</id>
+
+		<property name="userCode" column="user_code" update="true"
+			insert="true" type="java.lang.String" not-null="false" unique="false"
+			length="32" />
+
+		<property name="userEmail" column="user_email" update="true"
+			insert="true" type="java.lang.String" not-null="false" unique="false"
+			length="32" />
+
+		<property name="mac" column="mac" update="true" insert="true"
+			type="java.lang.String" not-null="false" unique="false" length="32" />
+
+		<property name="createTime" column="create_time" update="true"
+			insert="true" type="java.util.Date" not-null="false" unique="false"
+			length="0" />
+			
+        <property name="contactPhone" type="java.lang.String">
+            <column name="contact_phone" length="32">
+                <comment>联系电话</comment>
+            </column>
+        </property>
+        <property name="contactTel" type="java.lang.String">
+            <column name="contact_tel" length="32">
+                <comment>联系电话</comment>
+            </column>
+        </property>
+        <property name="ip" type="java.lang.String">
+            <column name="ip" length="32">
+                <comment>ip</comment>
+            </column>
+        </property>
+        <property name="status" type="java.lang.Short">
+            <column name="status">
+                <comment>mac状态</comment>
+            </column>
+        </property>
+        <property name="code" type="java.lang.String">
+            <column name="code" length="32">
+                <comment>内部编码</comment>
+            </column>
+        </property>
+        <property name="sourceUrl" type="java.lang.String">
+            <column name="source_url" length="128">
+                <comment>兑换来源</comment>
+            </column>
+        </property>    
+	</class>
+</hibernate-mapping>
+

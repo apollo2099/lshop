@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="groupManage-default" namespace="/web" extends="gv-default">
+
+		<action name="group" class="GroupManageAction">
+			<result name="group_index">/web/${flag}/group/index.jsp</result>
+			<result name="group_orderInfo">/web/${flag}/mall/group_orderInfo.jsp</result>
+			<result name="error">/web/${flag}/mall/over.jsp</result>
+			<result name="over">/web/${flag}/mall/group_over.jsp</result>
+			<result name="toGroupBuy"  type="redirect">/web/group!toGroupBuy.action?code=${groupCode}</result>
+			<result name="toGroupOrderInfo"  type="redirect">/web/group!saveGroup.action?shopNum=${shopNum}&amp;lvGroupBuy.code=${lvGroupBuy.code}</result>
+			<result name="orderSuccess" type="redirect">/web/${flag}/mall/shopCart_oidSuccess.jsp?oid=${oid}</result>
+		</action>
+
+	</package>
+
+</struts>

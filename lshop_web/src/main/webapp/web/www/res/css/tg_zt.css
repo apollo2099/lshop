@@ -1,0 +1,33 @@
+@charset "utf-8";
+body {margin: 0px;padding: 0px; font-family:"宋体"; font-size:14px; color:#888888;}
+*{ margin:0; padding:0;}
+ul,li{ list-style:none;}
+body img{border:none;}
+.tg_banner{width:1000px; height:458px; margin:0 auto 0 auto; background:url(../images/tg/banner.jpg) 0 0 no-repeat;}
+.tg_banner ul{padding:320px 0 0 55px;}
+.tg_banner li{padding-bottom:24px;display:block;overflow:hidden;}
+.tg_banner li p{ float:left;}
+.tg_banner li p.cankaojia{ color:#626262; padding-right:25px;}
+.tg_banner li p.tiyan{color:#0093df; font-size:18px; text-decoration:underline;}
+.tg_banner li p.tiyan a:link{color:#0093df; font-size:18px; text-decoration:underline;}
+.tg_banner li p.tiyan a:visited{color:#0093df; font-size:18px; text-decoration:underline;}
+.tg_banner li p.tiyan a:hover{color:#ff0000; font-size:18px; text-decoration:underline;}
+.tg_ggw{width:1000px;margin:0 auto 0 auto;padding-top:10px;position:relative;}
+.tg_ggw p.tg_tu{position:relative;}
+.tg_ggw p.lipinquan{position:absolute; font-size:18px; color:#222222; top:45px; left:175px;}
+.tg_main{width:1000px;margin:0 auto 0 auto;height:auto;padding-top:20px;}
+.tg_main_left{width:300px; border:1px #e9e8e8 solid;float:left;}
+.tg_main_left1{width:298px; margin:0 auto 0 auto; border:1px #ffffff solid;background:#fdfdfd;}
+.yijian_bt{font-size:14px; font-weight:bold; color:#333333; padding:15px 0 0 10px;}
+.tg_main_left1 dl{width:278px; display:block; margin:0 auto 0 auto; border-bottom:1px #dedede dashed; padding:15px 0 12px 0;overflow:hidden;}
+.tg_main_left1 dl.none_line{border:none;}
+.tg_main_left1 dt{width:64px; height:72px; padding:1px;border:1px #e9e8e8 solid; float:left;}
+.tg_main_left1 dd{width:200px;float:right; line-height:26px; text-indent:2em;}
+.tg_main_left1 dd span{display:block;color:#0093df; text-indent:0;}
+.tg_main_right{width:688px; float:right; background:url(../images/tg/right_bg.jpg) 0 0 repeat-y; overflow:hidden;}
+.tg_main_right p{width:648px; margin:0 auto 0 auto;display:block;padding-top:15px;font-size:18px;font-weight:500;color:#333333;line-height:28px;}
+.tg_main_right p.chaxun{color:#0093df; font-weight:normal; text-decoration:underline;}
+.tg_main_right p.chaxun a:link{color:#0093df;text-decoration:underline;}
+.tg_main_right p.chaxun a:visited{color:#0093df;text-decoration:underline;}
+.tg_main_right p.chaxun a:hover{color:#ff0000;text-decoration:underline;}
+.red{ color:#ff0000;}

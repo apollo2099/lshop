@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+body{ margin:0; padding:0 background:#fff; }
+a{ color:#2694cc; text-decoration:none;}
+a:hover { text-decoration:underline;  }
+.shiy{ position:relative; width:100%; margin-top:20px;}
+.sox{ position:relative; width:100%; margin:0 auto;}
+.sox img{ width:100%;}
+.sox p{line-height:24px;color:#555; font-size:16px; font-family:"Microsoft YaHei",微软雅黑;}
+.sox .sox_one{ position:absolute; margin:0; top:66%; left:45%;}
+.sox .sox_p{position:absolute; margin:0;top:78%; left:45%; width:200px;}
+.sox .sox_p em{ margin-left:35%; font-style:normal}

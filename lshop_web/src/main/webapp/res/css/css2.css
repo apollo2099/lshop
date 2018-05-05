@@ -1,0 +1,9 @@
+@charset "utf-8";
+body {padding:0; margin:0; background-color:#008aca;}
+*{ padding:0; margin:0}
+body img{ border:none;}
+.box{ width:1001px; height:530px; margin:0 auto 0 auto; padding:70px 0 0 0;background:url(/res/images/msg/bg2.jpg) left top no-repeat;}
+.box p.wz2{ padding:0 0 0 578px;font-size:14px; color:#ffffff; line-height:24px; font-weight:bold;}
+.box p.wz{text-align:left;padding:0 0 167px 230px;}
+a:link,a:visited{color:#ffffff; text-decoration:none;}
+a:hover{ color:#ff5a00;}

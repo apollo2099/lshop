@@ -1,0 +1,5 @@
+﻿@charset "utf-8";
+body {margin: 0px;padding: 0px; font-family:Arial, Helvetica, sans-serif;}
+*{margin:0; padding:0;}
+ul,li{list-style:none;}
+.wt_banner{width:1000px; height:auto; margin:0 auto 0 auto;}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jaxws="http://cxf.apache.org/jaxws"
+	xsi:schemaLocation="   
+        http://www.springframework.org/schema/beans    
+        http://www.springframework.org/schema/beans/spring-beans-2.5.xsd   
+        http://cxf.apache.org/jaxws    
+        http://cxf.apache.org/schemas/jaxws.xsd">
+
+	<bean id="tvboxHandler" class="com.lshop.ws.util.WSClientHandler">
+	    <property name="accountNum" value="${tvbox.ws.account}"></property>
+	    <property name="password" value="${tvbox.ws.password}"></property>
+    </bean>	
+    
+	
+	<jaxws:client name="WSStbGuaranteeInfoService" serviceClass="com.lshop.ws.his.tvbox.WSStbGuaranteeInfoService" wsdlLocation="${tvbox.sys.url}/webservice/WSStbGuaranteeInfoService?wsdl">
+		<jaxws:handlers>
+			<ref bean="tvboxHandler" />
+		</jaxws:handlers>
+	</jaxws:client>
+	
+</beans>  
+

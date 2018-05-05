@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+img{display:block}
+.zt_banner{width:100%; margin-top:10px}
+.ti_jinru{text-align:center; margin-bottom:5px}
+.ti_jinru span{background-image:url(../images/merchants/ru_icon.jpg); background-repeat:no-repeat; background-position:left; font-size:16px; color:#595757; padding-left:20px}
+.cl_img{width:85%; margin:0 auto}
+.cl_jingru{ width:100%;margin-top:12px}
+.cl_deti{width:100%; text-align:center; color:#595757}
+.cl_deti>strong{display:block; font-size:16px}
+.cl_deti span{font-size:12px; margin-top:5px}
+.her_zt{ width:100%; position:relative;}
+.her_zt a{position:absolute; width:37%; height:16%; right:4%; bottom:8%;}
+.zt_dui{width:96%; margin:0 auto}
+.he_ti{border-top:1px solid #9fa0a0; width:96%; margin:15px auto 0}
+.he_ti span{width:243px; height:27px; line-height:27px; color:#fff; display:block; margin:0 auto; background-image:url(../images/merchants/ti_bg.png); background-repeat:no-repeat; background-size:cover; text-align:center}
+.sh_lef{height:20px; background-image:url(../images/merchants/zt_left.jpg); background-repeat:no-repeat; background-position:left; padding-left:12px; line-height:20px; display:block; color:#15177e; font-size:16px; margin-bottom:5px; margin-top:15px}
+.p_text{width:96%; margin:0 auto}
+.p_text1{width:96%; margin:0 auto}
+.p_text1>p{font-size:14px; color:#000; margin-top:15px}
+.p_text p{text-indent:2em; font-size:12px;color:#595757; line-height:18px}
+.p_img{width:55%; margin:20px auto 0; max-width:355px}
+.bg_zt{width:100%; background-color:#FFF; padding-top:10px}
+.ph_img{max-width:614px; margin:0 auto}
+.ph_img1{max-width:614px; padding:20px 0 35px; margin:0 auto;position:relative}
+.ph_img1 a{position:absolute; width:15%; height:34%; left:32%; top:9%}
+.hzyq_zt{width:96%; background-color:#fff; margin:0 auto}
+.zc_tt{width:100%; overflow:hidden}
+.zc_tt ul{margin:20px 0 20px 0; padding:0; list-style:none; width:100%;}
+.zc_tt ul li{width:33.3%; float:left}
+.zc_tt ul li>div{width:90%; margin:0 auto; max-width:135px}
+.zc_tt ul li p{font-size:12px; color:#727171; width:90%; margin:0 auto; max-width:110px}
+.zc_tt ul li>strong{width:90%; margin:0 auto; display:block; color:#15177e; font-size:14px; background-image:url(../images/merchants/hui_lef.jpg); background-repeat:no-repeat; background-position:left center;max-width:110px; text-indent:10px}
+.yq_zt{width:96%; margin:0 auto; background-color:#fff}
+.yq_zt ul{margin:0; list-style:none; padding:20px 0}
+.yq_zt ul li{width:33.3%; float:left; background-color:#fff;}
+.yq_zt ul li>div{height:90px; width:90%; text-align:center; font-size:44px; line-height:90px; margin:0 auto; max-width:135px; font-family:Arial, Helvetica, sans-serif}
+.yq_zt ul li>p{font-size:12px; color:#595757; width:90%; margin:0 auto; max-width:135px}
+.zt01{border-top:2px solid #2cac67; color:#2cac67}
+.zt02{border-top:2px solid #008cd6; color:#008cd6}
+.zt03{border-top:2px solid #ea5808; color:#ea5808}
+.zt_fanhui{ width:100%; text-align:center; color:#8b8c90; height:30px; line-height:30px; margin-top:10px}
+.zt_fanhui a{color:#8b8c90; font-family:"宋体"}
+

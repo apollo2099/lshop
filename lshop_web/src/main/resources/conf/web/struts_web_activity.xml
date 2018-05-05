@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="activityManage-default" namespace="/web" extends="gv-default">
+
+		<action name="activity" class="ActivityManageAction">
+			<result name="toSuccess">/web/${flag}/activity/coupons_success.jsp</result>
+			<result name="toFail">/web/${flag}/activity/coupons_fail.jsp</result>
+			<result name="toClose">/web/${flag}/activity/coupons_close.jsp</result>
+			<result name="toFuture">/web/${flag}/activity/coupons_future.jsp</result>
+			<result name="toValidate">/web/${flag}/activity/coupons_validate.jsp</result>
+			<result name="registActivity">/web/${flag}/activity/regist_activity.jsp</result>
+		</action>
+
+		<action name="cardAction" class="CardAction">
+			<result name="getList">/web/${flag}/card/templist.jsp</result>
+		</action>
+		<action name="card" class="CardAction" method="card">
+			<result name="card">/web/${flag}/card/index.jsp</result>
+			<result name="docard" type="redirect">/web/cardview.action?code=${code}&amp;type=${type}</result>
+		</action>
+		<action name="cardview" class="CardAction" method="cardview">
+			<result name="view">/web/${flag}/card/cardview.jsp</result>
+			<result name="card" type="redirect">/web/card.action?code={$code}</result>
+		</action>
+
+	</package>
+
+</struts>

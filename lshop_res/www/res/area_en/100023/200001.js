@@ -1,0 +1,1 @@
+var cityData=[{"id":300001,"name":"Beijing","nameCn":"北京","nameTw":"北京","icon":"","code":"Beijing"}];

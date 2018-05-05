@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.lshop.common.pojo.logic.LvRecharge" table="lv_recharge">
+
+		<id name="id" column="id" type="java.lang.Integer">
+			<generator class="native" />
+		</id>
+
+		<property name="code" column="code" update="true" insert="true"
+			type="java.lang.String" not-null="true" unique="false" length="32" />
+
+		<property name="rnum" column="r_num" update="true" insert="true"
+			type="java.lang.String" not-null="true" unique="false" length="32" />
+
+		<property name="money" column="money" update="true" insert="true"
+			type="java.lang.Float" not-null="true" unique="false" length="12" />
+			
+        <property name="currency" column="currency" update="true" insert="true"
+			type="java.lang.String" not-null="false" unique="false" length="16" />
+
+		<property name="rtype" column="r_type" update="true" insert="true"
+			type="java.lang.Integer" not-null="true" unique="false" length="10" />
+
+		<property name="rcardNum" column="r_card_num" update="true"
+			insert="true" type="java.lang.String" not-null="false" unique="false"
+			length="20" />
+
+		<property name="vbNum" column="vb_num" update="true" insert="true"
+			type="java.lang.Integer" not-null="false" unique="false" length="10" />
+
+		<property name="accounts" column="accounts" update="true"
+			insert="true" type="java.lang.String" not-null="false" unique="false"
+			length="50" />
+         <property name="payStatus" type="java.lang.Integer">
+            <column name="pay_status">
+                <comment>支付状态（0未支付，1支付成功）</comment>
+            </column>
+        </property>
+		<property name="status" column="status" update="true" insert="true"
+			type="java.lang.Integer" not-null="true" unique="false" length="10" />
+         
+         <property name="payDate" column="pay_date" update="true"
+			insert="true" type="java.util.Date" not-null="false" unique="false"
+			length="0" />
+		
+		<property name="createDate" column="create_date" update="true"
+			insert="true" type="java.util.Date" not-null="false" unique="false"
+			length="0" />
+
+		<property name="isForOther" column="is_for_other" update="true"
+			insert="true" type="java.lang.Integer" not-null="true" unique="false"
+			length="3" />
+
+		<property name="cuserEmail" column="c_user_email" update="true"
+			insert="true" type="java.lang.String" not-null="true" unique="false"
+			length="50" />
+
+		<property name="opCuserCode" column="op_c_user_code" update="true"
+			insert="true" type="java.lang.String"  unique="false"
+			length="32" />
+
+		<property name="opAccount" column="op_account" update="true"
+			insert="true" type="java.lang.String"  unique="false" not-null="true"
+			length="50" />
+			
+		<property name="storeFlag" column="store_flag" update="true"
+			insert="true" type="java.lang.String"  unique="false" not-null="true"
+			length="32" />
+
+	</class>
+</hibernate-mapping>
+

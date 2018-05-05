@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+body{font-size:100%; padding:0; margin:0; font-family:"微软雅黑"; background-color:#1771dd}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section,img {
+    display: block;
+}
+.tv4_q{background-color:#1771dd; background-image:url(../images/tv4_bg.jpg); background-repeat:repeat-x;}
+.tv4_mfn{ max-width:640px; margin:0 auto; position:relative}
+.tv4_mfn a{display:block; position:absolute; width:27%; left:37%; top:57%}
+.tv4_pm{width:100%;color:#fff; background-color:#1c73d4; line-height:33px}
+.tv4_pm dt{ text-align:center; font-size:175%}
+.tv4_pm dd{padding:0; margin:0; text-align:center; font-size:137.5%}
+.tip_h{color:#fff100}
+.tv4_bt a{ width:76%; display:block; background-color:#01b333; margin:22px auto; text-align:center; padding:15px 0; color:#fff; font-size:137.5%; text-decoration:none; border-bottom:3px solid #03681f}
+.tv4_bt a:last-child{background-color:#d96905; border-bottom:3px solid #9f4c01}
+.tv4_a{width:76%; margin:0 auto; height:80px}
+.tv4_a a{color:#fff; font-size:87.5%; text-decoration:none; display:block}
+.tv4_a a:first-child{float:left}
+.tv4_a a:last-child{float:right}
+.clear{clear:both}
+.lq a:first-child{background-color:#b1b3b1;border-bottom:3px solid #727472}
+.tip_tk{background-color:#fff; opacity:0.8; width:53%; height:26%; position:absolute; left:26%; top:30%; border-radius:10px;-moz-border-radius:10px; -ms-border-radius:10px; -o-border-radius:10px; -webkit-border-radius:10px; }
+.tip_tkboxy{width:100%;}
+.tip_txt{width:53%;position:absolute; left:26%; top:38%; text-align:center; font-size:187.5%; color:#000; margin:0 auto; min-width:140px;}
+.red{color:#F00}
+.fenxi{width:62.5%; max-width:400px; position:absolute; right:20px; top:0}
+.tv4_yhhd{width:100%;background-color:#d8271c}
+.tv4_yhhd1{width:100%}
+.gz{width:94%; margin:0 auto; border-radius:10px; -moz-border-radius:10px; -ms-border-radius:10px; -o-border-radius:10px; -webkit-border-radius:10px; background-color:#165ba7; color:#fff; max-width:600px; line-height:28px}
+.inner_gz{padding:10px 20px; font-size:87.5%}
+.big_str{font-size:112.5%}
+.enter_btn{width:78%; max-width:500px; height:58px; background-color:#01b333; border-bottom:2px solid #03681f; margin:20px auto}
+.enter_btn a{color:#fff; text-decoration:none; display:block; width:100%; height:100%; line-height:60px; text-align:center}
+.sp_han{color:#fff100; margin-left:30px}
+.tv4_mfn img{margin:0 auto}
+.phb{color:#fff; width:100%; max-width:640px; margin:20px auto 40px; border-top:1px solid #fff; border-bottom:1px solid #fff}
+.h_ti{text-align:center; color:#fff100; font-weight:bold; font-size:125%}
+.phb tr:last-child{color:#02d7fd}

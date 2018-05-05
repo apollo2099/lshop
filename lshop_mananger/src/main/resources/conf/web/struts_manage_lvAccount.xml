@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="lvAccountAction-default" namespace="/manager"
+		extends="gv-default-manager">
+		<!--用户信息管理配置 -->
+		<action name="lvAccountAction" class="LvAccountAction" method="list">
+			<result name="list">/manager/lvAccount/lvAccount_list.jsp</result>
+			<result name="view">/manager/lvAccount/lvAccount_view.jsp</result>
+			<result name="edit">/manager/lvAccount/lvAccount_edit.jsp</result>
+			<result name="befSave">/manager/lvAccount/lvAccount_add.jsp</result>
+		</action>
+		
+		<!--用户信息管理配置 -->
+		<action name="accountbind" class="LvAccountBindMngAction">
+			<result name="list">/manager/lvAccount/lvAccount_bind_list.jsp</result>
+		</action>
+	</package>
+</struts>

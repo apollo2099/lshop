@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TVpad推广返现联盟</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.1.8.1.js"></script>
+<script type="text/javascript" src="js/FomrValidate.js" ></script>
+</head>
+<script>
+$(function (){
+	   var users=lshop.getCookieToJSON('exuser');
+		if(users.nickname!=null&&users.nickname!=''){
+		  location.href="/excenter/promtManager!promtCodeList.action";
+		}
+}
+);
+function checkEmailOne(){
+	var email=$('#email');
+	var eInfo=$('#emailInfo')
+		 if(email.val()==""){
+			 eInfo.html("请填写您常用的邮箱");
+		 }else{
+			 $.ajax({   
+				 url: '/excenter/excenter!isExistsUser.action',
+				 data:"lvUser.email="+$.trim(email.val()),   
+				 type: 'POST',     
+				 success: function(num){   
+				  if(num==1){
+					  eInfo.html("<font color='red'>该邮箱已存在！</font>");
+				   }else if(num==0){
+					    eInfo.html("请填写您常用的邮箱");
+					   }
+				 }   
+				 });
+		}
+}
+var msg="";
+var  isuccessFalg=false;
+$().ready(function() {
+	$("#regedit").validate({
+		submitHandler:function(form){
+		  var email=$('#email');
+	      var eInfo=$('#emailInfo');
+	      var a7=$('#a7').val();
+	      if(a7.length>200){
+	       alert("推广优势填写内容不能大于200个字符");
+	       $('#a7').focus();
+	       return;
+	      }
+			 $.ajax({   
+				 url: '/excenter/excenter!isExistsUser.action',
+				 data:"lvUser.email="+$.trim(email.val()),   
+				 type: 'POST',     
+				 success: function(num){   
+				  if(num==1){
+					   eInfo.html("<font color='red'>该邮箱已存在！</font>");
+					   return;
+				   }else if(num==0){
+					     	for(var i=1;i<=7;i++){//赋值
+					     	 if(i==2){
+					     	   $('#b2').text($('#email').val());
+					     	 }else if(i==5){
+					     	 $('#b5').text($("#a5").find("option:selected").text());
+					     	 }else{
+					     	  $('#b'+i).text($('#a'+i).val());
+					     	 }
+					     	 $('#regedit_A').hide();
+					     	 $('#regedit_B').show();
+					         isuccessFalg=true;
+					   }
+					
+					     
+					}
+				 }   
+			 });
+    },
+	 rules: {
+		   "userp.realName": {
+				required: true,
+			},
+			"userp.email": {
+				required: true,
+				email:true
+			}
+			,
+			"userp.tel": {
+				required: true
+			}
+			,
+			"userp.adress": {
+				required: true
+			}
+			,
+			"userp.accountTypes": {
+				required: true
+			}
+			,
+			"userp.accountNumber": {
+				required: true
+			}
+			,
+			"userp.description": {
+				required: true
+			}
+			
+		},
+		messages: {
+			"userp.realName": {
+				required: "请输入真实姓名",
+				email:"请输入一个有效的email"
+			},
+		},
+/* 设置信息提示DOM */  
+errorPlacement: function(error, element) {       
+            msg=element.next();
+            msg.css('color','red'); 
+} 
+,
+success: function(element){
+    msg.css('color','');
+}
+});
+});
+var repeatSubmitFlag=true;//表单提交标志
+function doRegeditAction(){
+if(true==isuccessFalg&&true==repeatSubmitFlag){
+repeatSubmitFlag=false;
+document.myform.submit();
+}else{
+repeatSubmitFlag=true;
+}
+
+}
+function returnUpdate(){
+ $('#regedit_B').hide();
+ $('#regedit_A').show();
+}
+</script>
+  <style type="text/css">
+       .errorColor {    
+           color: #;    
+       }  
+     
+</style>
+<body>
+<!--顶部信息-->
+<div class="top">
+	<ul>
+		<li class="left"><a href="index.html"><img src="images/top_logo.gif" /></a></li>
+		<!--<li class="right">您好！ 某先生  <a href="Concenter.html" class="link01">个人中心</a>  <a href="#">[退出]</a></li>-->
+	</ul>
+</div>
+<div class="clear_p"></div>
+<!--banner部份-->
+<div class="banner02">
+	<ul>
+		<li><img src="images/banner02_01.gif" /><a href="diffusionPB.html"><img src="images/banner02_02.gif" /></a></li>		
+	</ul>
+</div>
+
+<!--主要内容-->
+<div class="main_conten2" id="regedit_A">
+	<div class="diffusion_title"><ul><li>申请帐户</li></ul></div>	
+	<div class="logon">
+		<form  method="post" id="regedit" name="myform" action="/excenter/regedit.action">
+		<ol>注：以下表单全部为必填项，请认真填写。注册通过之后方可领取推广码！</ol>
+		<ul>
+			<li>
+				<p class="logon_left">申请者姓名：</p>
+				<p class="logon_right"><input type="text" name="userp.realName" id="a1" size="30" maxlength="60" /> <span >请填写真实姓名</span></p>
+			</li>
+			<li>
+				<p class="logon_left">Email：</p>
+				<p class="logon_right"><input type="text" name="userp.email"  onblur="checkEmailOne()" id="email" size="30" maxlength="60" /> <span id="emailInfo" class="error">请填写您常用的邮箱</span></p>
+			</li>
+			<li>
+				<p class="logon_left">电话：</p>
+				<p class="logon_right"><input type="text" size="30" name="userp.tel" id="a3" maxlength="20" /> <span>请填写您的手机号码或固定电话 </span></p>
+			</li>
+			<li>
+				<p class="logon_left">所在地区：</p>
+				<p class="logon_right"><input type="text" size="30" name="userp.adress" id="a4" maxlength="60" /> <span>请填写详细地址如：*国*省*城市*区*路*门号 </span></p>
+			</li>
+			<li>
+				<p class="logon_left">收款帐户：</p>
+				<p class="logon_right"><select name="userp.accountTypes" id="a5">
+				  <option value="">请选择收款帐户</option>
+				  <!--<option value="1">PayPal</option>  -->
+				  <option value="2">支付宝</option>
+				</select> <span>请选择您方便收款的帐户</span></p>
+			</li>
+			<li>
+				<p class="logon_left">帐户：</p>
+				<p class="logon_right"><input type="text" name="userp.accountNumber" id="a6" size="30" maxlength="60" /> <span>请认真填写帐户，这将作为您最终收款的帐户 </span></p>
+			</li>
+			<li>
+				<p class="logon_left">我的推广优势：</p>
+				<p class="logon_right"><textarea name="userp.description" cols="60" id="a7" rows="10"></textarea> <span>请填写您的推广优势 </span></p>
+			</li>
+			<li>
+				<p class="logon_left">&nbsp;</p>
+				<p class="logon_right"><input name="提交" type="submit" class="button_01" value="提交申请" />
+				</p>
+			</li>			
+		</ul>
+		</form>
+	</div>
+</div>
+
+<div class="main_conten2" id="regedit_B" style="display:none;">
+	<div class="diffusion_title"><ul><li>申请帐户</li></ul></div>	
+		<!--注册信息确认弹出框-->
+		<div class="logon">
+			<form>
+			<ol>请确认您填写的资料是否正确</ol>
+			<ul>
+				<li>
+					<p class="logon_left">申请者姓名：</p> 
+					<p class="logon_right" id="b1"></p>
+				</li>
+				<li>
+					<p class="logon_left">Email：</p> 
+					<p class="logon_right" id="b2"></p>
+				</li>
+				<li>
+					<p class="logon_left">电话：</p>
+					<p class="logon_right" id="b3"></p>
+				</li>
+				<li>		
+					<p class="logon_left">所在地区：</p>
+					<p class="logon_right" id="b4"></p>
+				</li>
+				<li>
+					<p class="logon_left">收款账户：</p>
+					<p class="logon_right" id="b5"></p>
+				</li>
+				<li>
+					<p class="logon_left">账户：</p>
+					<p class="logon_right" id="b6"></p>
+				</li>
+				<li>
+					<p class="logon_left">我的推广优势（介绍）：</p>
+					<p class="logon_right" style="width:600px;" id="b7"></p>
+				</li>
+				<li class="tk">
+					<p class="logon_left">&nbsp;</p>
+					<p class="logon_right"><input type="button" onclick="doRegeditAction();" value="确认提交" class="button_01" /> <input type="button" value="返回修改"  onclick="returnUpdate()" class="button_01" /></p>
+				</li>		
+			</ul>
+			</form>
+		</div>
+</div>
+<!--版权-->
+<div class="copyright">
+	<p><b>联系我们</b> —— 邮箱：market@tvpad.hk  &nbsp;&nbsp; QQ：41811026</p>
+	<p>Copyright &copy; 华扬国际科技有限公司（HUA YANG INTERNATIONAL TECHNOLOGY LIMITED） All Rights Reserved</p>
+</div>
+	
+</body>
+</html>

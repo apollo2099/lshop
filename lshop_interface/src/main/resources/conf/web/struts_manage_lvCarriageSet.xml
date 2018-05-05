@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="lvCarriageSetAction-default" namespace="/manager" extends="gv-default-manager">
+	     <!--运费设置配置-->
+	     <action name="lvCarriageSetAction" class="LvCarriageSetAction" >
+	            <result name="list">/manager/lvCarriageSet/lvCarriageSet_list.jsp</result>
+	            <result name="view">/manager/lvCarriageSet/lvCarriageSet_view.jsp</result> 	            
+	            <result name="edit">/manager/lvCarriageSet/lvCarriageSet_edit.jsp</result>
+	            <result name="befAdd">/manager/lvCarriageSet/lvCarriageSet_add.jsp</result>
+	     </action>
+	     </package>
+</struts>

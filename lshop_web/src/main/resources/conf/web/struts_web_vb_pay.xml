@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<!-- 支付配置 -->
+<struts>
+	<package name="vbpay" namespace="/web/vbpay" extends="gv-default">
+	
+	  <!-- AliPay 内卡支付返回 -->
+		<action name="alipayreturn" class="VBAliPayReturnAction" method="ok">
+            <result name="success">/web/${flag}/recharge/pay_ok.jsp</result>
+		    <result name="fail">/web/${flag}/recharge/pay_fail.jsp</result>
+	    </action>
+	    
+	     <!-- AliPay 外卡支付返回 -->
+		<action name="alipayoutcardreturn" class="VBAliPayOutCardReturnAction" method="ok">
+           <result name="success">/web/${flag}/recharge/pay_ok.jsp</result>
+		   <result name="fail">/web/${flag}/recharge/pay_fail.jsp</result>
+	    </action>
+	    
+	    <!-- worldpay 支付 -->
+	    <action name="worldpayreturn" class="VBWorldPayReturnAction"></action>
+	    
+		<!-- 支付方式处理转向 -->
+	    <action name="payparam" class="VBPayParamAction"></action>
+	    
+	     <!-- paydollar支付返回 -->
+	     <action name="payDollarreturn" class="VBPayDollarReturnAction" method="ok">
+            <result name="success">/web/${flag}/recharge/pay_ok.jsp</result>
+		    <result name="fail">/web/${flag}/recharge/pay_fail.jsp</result>
+		    <result name="cancel">/web/${flag}/recharge/pay_cancel.jsp</result>
+	    </action>
+	    
+	</package>
+</struts>

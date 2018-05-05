@@ -1,0 +1,126 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.gv</groupId>
+	<artifactId>lshop</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+
+	<name>lshop</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<!-- application setting -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<popu.version>0.0.1-SNAPSHOT</popu.version>
+		<jdk.version>1.6</jdk.version>
+		<java.home>C:\Program Files\Java\jdk1.6.0_43</java.home>
+		<!-- Framework dependency versions -->
+		<spring.version>3.0.5.RELEASE</spring.version>
+		<hibernate.version>3.5.6-Final</hibernate.version>
+		<struts.version>2.3.15.1</struts.version>
+		<!-- Testing dependency versions -->
+		<jmock.version>1.1.0</jmock.version>
+		<junit.version>4.8</junit.version>
+		<servlet.version>2.4</servlet.version>
+		<jsp.version>2.0</jsp.version>
+		<tomcat.version>7.0.42</tomcat.version>
+		<!-- Database settings -->
+		<jdbc.groupId>mysql</jdbc.groupId>
+		<jdbc.artifactId>mysql-connector-java</jdbc.artifactId>
+		<jdbc.version>5.1.22</jdbc.version>
+	</properties>
+
+	<repositories>
+		<!-- gvtv respository -->
+		<repository>
+			<id>nexus</id>
+			<url>http://10.0.1.210:8081/nexus/content/repositories/central/</url>
+		</repository>
+		<repository>
+			<id>nexus-thirdparty</id>
+			<url>http://10.0.1.210:8081/nexus/content/repositories/thirdparty/</url>
+		</repository>
+		<repository>
+			<id>jboss-public-repository-group</id>
+			<name>JBoss Public Maven Repository Group</name>
+			<url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
+		</repository>
+		<repository>
+			<id>central</id>
+			<url>http://repo1.maven.org/maven2</url>
+		</repository>
+	</repositories>
+	<distributionManagement>
+       <repository>
+			<id>nexus-thirdparty</id>
+			<url>http://10.0.1.210:8081/nexus/content/repositories/thirdparty/</url>
+		</repository>
+    </distributionManagement>
+	<!-- <scm> <connection>scm:svn:svn://10.0.1.26/svn_dev/sw2/branch/gvos-3.0/gv_popu_alliance/trunk/</connection> 
+		<developerConnection>scm:svn:svn://10.0.1.26/svn_dev/sw2/branch/gvos-3.0/gv_popu_alliance/trunk/</developerConnection> 
+		</scm> -->
+	<build>
+		<finalName>${project.artifactId}</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.5</version>
+				<configuration>
+					<encoding>${project.build.sourceEncoding}</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>2.4</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.2</version>
+				<configuration>
+					<source>${jdk.version}</source>
+					<target>${jdk.version}</target>
+					<encoding>${project.build.sourceEncoding}</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.6</version>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.3</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-eclipse-plugin</artifactId>
+				<version>2.8</version>
+				<configuration>
+					<wtpmanifest>true</wtpmanifest>
+					<wtpapplicationxml>true</wtpapplicationxml>
+					<wtpversion>2.0</wtpversion>
+					<downloadSources>true</downloadSources>
+					<downloadJavadocs>true</downloadJavadocs>
+				</configuration>
+			</plugin>
+			<!-- svn <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-release-plugin</artifactId> 
+				<version>2.4</version> <configuration> <tagBase>svn://10.0.1.26/svn_dev/sw2/branch/gvos-3.0/gv_popu_alliance/tags/</tagBase> 
+				</configuration> </plugin> -->
+		</plugins>
+	</build>
+
+	<modules>
+		<module>lshop_mananger</module>
+		<module>lshop_web</module>
+		<module>lshop_interface</module>
+	</modules>
+</project>

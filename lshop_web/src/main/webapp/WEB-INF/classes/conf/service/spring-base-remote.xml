@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:jaxws="http://cxf.apache.org/jaxws"
+         xsi:schemaLocation="
+         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+         http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
+	
+	<!-- WEB SERVICE 服务配置
+	<import resource="classpath:META-INF/cxf/cxf.xml" />
+	<import resource="classpath:META-INF/cxf/cxf-extension-soap.xml" />
+	<import resource="classpath:META-INF/cxf/cxf-servlet.xml" />
+	 -->
+	<!-- WEB SERVICE TO ESB 
+	<jaxws:endpoint id="cxfServiceProxyToESB" implementor="com.gv.core.proxy.cxf.impl.CXFServiceProxyLocalImpl" address="/cxfServiceProxy" />
+-->
+	<!-- WEB SERVICE FROM ESB -->
+	<!-- 
+	<bean id="cxfServiceProxyFromESB" class="com.gv.core.proxy.cxf.CXFServiceProxy" factory-bean="cxfServiceProxyFromESBFactory" factory-method="create" />
+
+	<bean id="cxfServiceProxyFromESBFactory" class="org.apache.cxf.jaxws.JaxWsProxyFactoryBean">
+		<property name="serviceClass" value="com.gv.core.proxy.cxf.CXFServiceProxy" />
+		<property name="address" value="${esb.hosts}${service.exposure.webservice}" />
+	</bean>
+	 
+	<bean id="aegisDatabinding" class="org.apache.cxf.aegis.databinding.AegisDatabinding" />
+	
+	<bean id="cxfServiceProxyFromESB" class="com.gv.core.proxy.cxf.impl.CXFServiceProxyFromESBImpl">
+		<property name="address" value="${esb.hosts}${service.exposure.webservice}" />
+		<property name="aegisDatabinding" ref="aegisDatabinding" />
+	</bean>
+	-->
+	<!-- HTTP INVOKE 服务配置 -->
+	<!-- HTTP INVOKE TO ESB -->
+	<bean id="httpinvokeServiceProxyLocal" class="com.gv.core.proxy.httpinvoke.impl.HttpInvokeServiceProxyLocalImpl" />
+	
+	<bean id="httpinvokeServiceProxyToESB" class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter">
+		<property name="service" ref="httpinvokeServiceProxyLocal"></property>
+		<property name="serviceInterface">
+			<value>com.gv.core.proxy.httpinvoke.HttpInvokeServiceProxy</value>
+		</property>
+	</bean>
+	
+	<bean id="serviceProxyMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<props>
+				<prop key="httpinvokeServiceProxy">httpinvokeServiceProxyToESB</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<!-- HTTP INVOKE FROM ESB -->
+	<bean id="httpinvokeServiceProxyFromESB" class="org.springframework.remoting.httpinvoker.HttpInvokerProxyFactoryBean">
+		<property name="serviceUrl" value="" />
+		<property name="serviceInterface">
+			<value>com.gv.core.proxy.httpinvoke.HttpInvokeServiceProxy</value>
+		</property>
+	</bean>
+	
+</beans>

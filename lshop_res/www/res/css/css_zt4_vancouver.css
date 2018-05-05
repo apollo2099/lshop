@@ -1,0 +1,22 @@
+@charset "utf-8";
+html,body {margin:0 auto;padding: 0px; font-size:12px; font-family:"微软雅黑","宋体"; color:#666666; min-width:1000px; height:100%}
+*{ margin:0; padding:0;}
+body img{border:none; vertical-align:middle;}
+ul,li{list-style-type:none;}
+td{ text-align:center;}
+
+.banner_bg{width:100%; height:546px; background-image:url(../images/tvpad4zt_vancouver/banner.jpg); background-repeat:no-repeat; background-position: center top}
+.tv_hodon{width:100%; background-color:#ae1008; height:145px; padding:6px 0}
+.tv_hodoninner{width:940px; height:145px; background-image:url(../images/tvpad4zt_vancouver/houdon.jpg); background-repeat:no-repeat; margin:0 auto}
+.ptext{width:710px; height:114px; padding:16px 0px 16px 33px; font-size:16px; color:#000; line-height:25px}
+.h_bold{font-size:24px; color:#ae1008; margin-bottom:5px; display:block}
+.hon_tv4{font-size:22px; color:#fc0323; font-weight:bold}
+.tv_wen_bg{width:100%; background-image:url(../images/tvpad4zt_vancouver/bodybg.jpg); background-repeat:repeat; padding-top:25px}
+.tv4_pinpai{width:1060px; margin:0 auto 20px}
+.tv4_lipin{width:1060px; margin:0 auto}
+.tv4_wghz{width:1060px; margin:20px auto}
+.tv4_how{width:1060px; margin:0 auto}
+.gog_how{width:920px; height:430px; margin:10px auto 25px}
+.contact{width:1060px; margin:0 auto; height:226px; background-image:url(../images/tvpad4zt_vancouver/contact.jpg); background-repeat:no-repeat}
+.contact_us{width:660px; height:90px; font-size:24px; color:#76161b; padding:100px 0 0 256px}
+.contact_us strong{margin-right:30px; font-size:34px; font-family:Arial, Helvetica, sans-serif}

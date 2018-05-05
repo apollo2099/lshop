@@ -1,0 +1,78 @@
+*{margin:0;padding:0;}
+.clearfix:after{content:'.';display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{display:inline-block;}
+* html .clearfix{height:1%;}
+.clearfix{display:block;}
+body{overflow:hidden;font-size:16px;}
+.above{width:100%;position:relative;}
+.below{position:absolute;top:0px;width:100%;height:100%;z-index:-1;overflow:hidden;}
+.icon{width:100%;position:relative;}
+.icon img{width:100%;display:block;}
+.icon input{font-size:16px;font-weight:bold;font-style:normal;width:0px;height:0px;position:absolute;}
+.icon cite{font-size:20px;font-weight:bold;font-style:normal;cursor:pointer;display:inline-block;font-family:楷体;position:absolute;top:0px;left:0px;margin-left: 24%; margin-top: 44%;}
+.icon span{cursor:pointer;display:inline-block;position:absolute;top:0px;left:0px;margin-left:63%;margin-top:70%;width:30px;height:30px;}
+.objImg{position:absolute;top:0px;left:0px;}
+.content{padding-left:11%;padding-right:11%;background-color:#fff;-webkit-animation:cool 2s;-webkit-animation-iteration-count:300;-webkit-animation-timing-function:ease-in;color:#7a7a6f;}
+@-webkit-keyframes cool
+{
+	0% {color:red;}
+	15% {color:orange;}
+	30% {color:blue;}
+	45% {color:green;}
+	60% {color:purple;}
+	75% {color:black;}
+	90% {color:gray;}
+}
+.arrow{position:absolute;top:0px;right:0px;text-align:center;}
+.arrow img{width:90%;}
+.content input{margin-left:11%;border-width:0px;border-bottom:1px dashed #555;width:40%;margin-right:11%;font-size:1.2em;color:#7a7a6f;font-family:楷体;}
+.content textarea{margin-left:11%;border-width:0px;border-bottom:1px dashed #555;font-size:1.2em;color:#7a7a6f;font-family:楷体;}
+.content p{font-size:2.2em;font-family:楷体;width:40%;border-bottom:1px solid #7a7a6f;text-overflow:ellipsis;overflow:hidden;word-break:keep-all;white-space:nowrap;}
+.content p:nth-of-type(2){float:right;}
+<!--.sentimentAll{overflow:hidden;text-overflow:ellipsis;word-break:keep-all;}-->
+.sentimentAll{list-style:none;}
+.sentimentAll li{font-size:1.2em;font-family:楷体;text-align:left;border-bottom:1px solid #7a7a6f;}
+.senderPerson{text-align:right;}
+.bgBottom{width:100%;text-align:center;position:relative;}
+.bgBottom img{width:100%;display:block;}
+.bgBottom input{background:url(../images/objBtn.png) no-repeat;width:156px;height:51px;border:0px;background-size:100% 100%;position:absolute;left:36.9%;top:0px;width:26.8%;height:49.5%;}
+.bgBottom1{width:100%;text-align:center;position:relative;}
+.bgBottom1 img{width:100%;display:block;}
+.bgBottom1 input{background:url(../images/objBtn2.png) no-repeat;width:156px;height:51px;border:0px;background-size:100% 100%;position:absolute;left:36.9%;top:0px;width:26.8%;height:49.5%;}
+.interval{width:100%;height:100%;background-color:#fff;}
+.prompt{position:absolute;width:100%;height:100%;background-color:rgba(0,0,0,0.3);left:0px;top:0px;display:none;}
+.prompt canvas{width:100%;height:100%;}
+.move{position:relative;width:100%;}
+.move1{z-index:100;width:100%;}
+.error{width:100%;position:absolute;background-color:rgba(0,0,0,0.57);left:0px;top:0px;display:none;}
+.errorCon{width:90%;margin-left:5%;background:url(../images/error.png);background-size:100% 100%;}
+.errorCon p{width:100%;color:#fff;font-family:΢���ź�;font-size:1.2em;text-align:center;}
+.errorCon input{margin-left:35.8%;margin-top:61%;width:28.2%;height:18.4%;background:url(../images/btn.png) no-repeat;background-size:100% 100%;border-width:0px;}
+
+.sender{position:absolute;top:0px;left:0px;width:100%;background-size:100% 100%;background-color:rgba(0,0,0,0.57);display:none;}
+.senderCon{background:url(../images/recipient.png) no-repeat;background-size:100% 100%;width:90%;margin-left:5%;}
+.senderCon p{font-size:1.2em;color:#fff;margin-left:5%;font-family:楷体;}
+.sender_close{display:block;width:9.76%;height:16.72%;background:url(../images/close.png) no-repeat;background-size:100% 100%;float:right;}
+.senderCon input{border-radius:10px;border-width:0px;font-size:1.2em;font-family:微软雅黑;color:#7a7a6f;width:90%;height:20%;margin-left:5%;margin-top:3.5%;}
+.sender_btn{display:block;width:40%;height:18%;margin-top:5%;margin-left:30%;background:url(../images/btn.png) no-repeat;background-size:100% 100%;}
+
+.recipient{position:absolute;top:0px;left:0px;width:100%;background-size:100% 100%;background-color:rgba(0,0,0,0.57);display:none;}
+.recipientCon{background:url(../images/recipient.png) no-repeat;background-size:100% 100%;width:90%;margin-left:5%;}
+.recipientCon p{font-size:1.2em;color:#fff;margin-left:5%;font-family:楷体;}
+.recipient_close{display:block;width:9.76%;height:16.72%;background:url(../images/close.png) no-repeat;background-size:100% 100%;float:right;}
+.recipient input{border-radius:10px;border-width:0px;font-size:1.2em;font-family:微软雅黑;color:#7a7a6f;width:90%;height:20%;margin-left:5%;margin-top:3.5%;}
+.recipient_btn{display:block;width:40%;height:18%;margin-top:5%;margin-left:30%;background:url(../images/btn.png) no-repeat;background-size:100% 100%;}
+
+.sentiment{position:absolute;top:0px;left:0px;z-index:1000;width:100%;background-size:100% 100%;background-color:rgba(0,0,0,0.57);display:none;}
+.sentimentCon{background:url(../images/recipient.png) no-repeat;background-size:100% 100%;width:90%;margin-left:5%;}
+.sentimentCon p{font-size:1.2em;color:#fff;margin-left:5%;font-family:楷体;}
+.sentiment_close{display:block;width:9.76%;height:16.72%;background:url(../images/close.png) no-repeat;background-size:100% 100%;float:right;}
+.sentiment input{border-radius:10px;border-width:0px;font-size:1.2em;font-family:微软雅黑;color:#7a7a6f;width:90%;height:20%;margin-left:5%;margin-top:3.5%;}
+.sentiment_btn{display:block;width:40%;height:18%;margin-top:5%;margin-left:30%;background:url(../images/btn.png) no-repeat;background-size:100% 100%;}
+
+.template{width:100%;position:absolute;left:0px;top:0px;background-color:rgba(60%,100%,80%,0.6);}
+.temClose{text-align:right;padding:3px;}
+.temClose img{width:9%;}
+.template li{padding-left:5%;padding-right:5%;position:relative;display:block;margin-bottom:0.9em;}
+.template li img{width:100%;display:block;}
+.template p{position:absolute;bottom:0px;background-color:rgba(0,0,0,0.55);width:90%;color:#fff;font-size:0.9em;height:1.3em;line-height:1.4em;}

@@ -1,0 +1,297 @@
+
+
+
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,user-scalable=no" name="viewport">
+<title>banana 商城</title>
+<!-- 加载公共JS -->
+
+
+<link href="http://res.bananatv.com/mbmcn/res/css/style.css?time=1422352773546" rel="stylesheet" type="text/css">
+<link href="http://res.bananatv.com/mbmcn/res/css/development.css?time=1422352773546" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://res.bananatv.com/mbmcn/res/js/jquery-1.4.4.min.js" ></script>
+<script type="text/javascript" src="http://res.bananatv.com/mbmcn/res/js/header.js" ></script>
+<script type="text/javascript" src="http://res.bananatv.com/mbmcn/res/js/hammer.js" ></script>
+<script type="text/javascript" src="http://res.bananatv.com/mbmcn/res/js/FomrValidate.js" ></script>
+<script type="text/javascript" src="https://rds.alipay.com/merchant/merchant.js"></script>
+<script type="text/javascript">
+$(function(){
+	lshop.setCookie("jsReturnCookie",encodeURIComponent(window["alipay-merchant-result"]));
+});
+</script>
+
+
+
+</head>
+
+<body>
+<header>
+   <div class="top">
+      <div class="title">
+        <h1>banana 商城</h1>
+        <span><a href="#">English</a></span>
+      </div>
+      <div class="shopping">
+         <div class="shoplebg">
+            <div class="shopicon"><a href="javascript:toCar('http://m.bananatv.com');"></a><span id="shopCartNum" style="display:none;"></span></div>
+         </div>
+      </div>
+   </div>
+</header>
+<article>
+   <section>
+   	  <!-- 滚动图片 -->
+   	  <div class="adimg">        <ul id="tt">           <li><img src="/res/images/ads.jpg" width="100%" alt="" /></li>           <li><img src="/res/images/ab.jpg" width="100%" alt="" /></li>           <li><img src="/res/images/ac.jpg" width="100%" alt="" /></li><li><img src="/res/images/ad.jpg" width="100%" alt="" /></li>         </ul>               </div><div class="indexli">           <div class="indexinner">             <span id="cur"></span>             <span></span>             <span></span>             <span></span>             <span></span>             <span></span>             <span></span>           </div>         </div>
+   </section>
+   
+   <section>
+       <div class='navicon'> <ul><li><a href='http://m.bananatv.com/#'><img src='http://res.bananatv.com/mbmcn/res/images/Tbpadicon.gif' width='90%'></a><a href='http://m.bananatv.com/#'>Banana TV</a></li><li><a href='http://m.bananatv.com//web/userCenterManage!toRegister.action?jumpurl=${param.jumpurl }'><img src='http://res.bananatv.com/mbmcn/res/images/submiticon.gif' width='90%'></a><a href='http://m.bananatv.com//web/userCenterManage!toRegister.action?jumpurl=${param.jumpurl }'>注册</a></li><li><a href='http://m.bananatv.com/web/userCenterManage!getAccount.action'><img src='http://res.bananatv.com/mbmcn/res/images/usricon.gif' width='90%'></a><a href='http://m.bananatv.com/web/userCenterManage!getAccount.action'>我的账户</a></li><li><a href='http://m.bananatv.com/#'><img src='http://res.bananatv.com/mbmcn/res/images/selicon.gif' width='90%'></a><a href='http://m.bananatv.com/#'>售后服务</a></li><div class='clear'></div></ul><ul><li><a href='http://m.bananatv.com/help.html'><img src='http://res.bananatv.com/mbmcn/res/images/helpicon.gif' width='90%'></a><a href='http://m.bananatv.com/help.html'>帮助中心</a></li><li><a href='http://m.bananatv.com/#'><img src='http://res.bananatv.com/mbmcn/res/images/forum.gif' width='90%'></a><a href='http://m.bananatv.com/#'>论坛</a></li><li><a href='http://m.bananatv.com/#'><img src='http://res.bananatv.com/mbmcn/res/images/businessicon.gif' width='90%'></a><a href='http://m.bananatv.com/#'>招商</a></li><li><a href='http://www.bananatv.com'><img src='http://res.bananatv.com/mbmcn/res/images/computicon.gif' width='90%'></a></li><a href='http://www.bananatv.com'>电脑版</a><div class='clear'></div></ul></div>
+       <div class="clear"></div>
+       
+   </section>
+   
+   <!-- 商品信息 广告图及商品列表-->
+   <section class='pbg1'><div class='productlist'><ul><li><div class='libox'><a href='http://mbscn.bananatv.com/products/15afc7771b1146c4b540cdd5ee0b734b.html'><div class='proimg'><img src='http://res.bananatv.com/mbscn/res/images/product_1395385030487.jpg' width='80%'></div><div class='imtitile'><h2>产品名称16</h2></div><div class='imgjia'><span></span><span class='p_price' f='mbscn' p='15afc7771b1146c4b540cdd5ee0b734b'>CNY 232.0</span></a></div></li><div class='clear'></div></ul></div>
+</article>
+
+<!-- 分享 -->
+
+<article>
+  <section>
+       <div class="share">
+          <div class="share_sh">
+             <div class="sc">
+                 <a onclick="AddFavorite(window.location,document.title)">收藏</a>
+             </div>
+             <div class="shareicon">
+                <!-- <span>分享至:</span>
+              
+                <a href="#" class="kon"></a>
+                <a href="#" class="xin"></a>
+                <a href="#" class="wb"></a>
+                <a href="#" class="wxing"></a>
+                <a href="#" class="ren"></a>
+                <a href="#" class="jia"></a>
+                <div class="clear"></div>-->
+             <!-- JiaThis Button BEGIN -->
+             <div class="jiathis_style_32x32">
+                <span class="jiathis_txt" style="font-size:14px">分享到：</span>
+	            <a class="jiathis_button_tsina"></a>
+	            <a class="jiathis_button_fb"></a>
+	             <a class="jiathis_button_twitter"></a>
+	             <a class="jiathis_button_weixin"></a>
+              	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	            
+            </div>
+             <script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js" charset="utf-8"></script>
+            <!-- JiaThis Button END -->
+          </div>
+             <div class="clear"></div>
+             
+             
+             
+          </div>
+       </div>
+   </section>
+</article>
+
+<!-- footer -->
+
+
+<article>
+	<div class="fastchannel"></div>
+	<div class="mark1" id="mark1"></div>
+	<div class="maketips">
+		<div class="fastnav">
+			<a href="http://m.bananatv.com/web/userOrder!getOrderlist.action"
+				id="myorder"></a> <a
+				href="http://m.bananatv.com/web/mall!getShopCartList.action" id="mycatea"></a>
+			<a href="/web/userCenterManage!getAccount.action" id="usersa"></a> <a
+				href="#" id="tvpada"></a> <a
+				href="http://m.bananatv.com/" id="homscolse"></a>
+		</div>
+	</div>
+</article>
+<footer>
+	<div class="lo_su_top">
+		<a id="loginId" href="javascript:toLo('http://m.bananatv.com');">登录</a> <a
+			id="registerId" href="javascript:toRe('http://m.bananatv.com');"
+			class="suba">注册</a> <a id="myorderId" style="display: none;"
+			href="http://m.bananatv.com/web/userOrder!getOrderlist.action">我的订单</a> <a
+			id="logoutId" style="display: none;"
+			href="http://m.bananatv.com/web/userCenterManage!logout.action" class="suba">退出</a>
+		<a href="javascript:scroll(0,0)" class="totopa">返回顶部</a>
+	</div>
+	<div class="computer">
+		<a href="http://www.bananatv.com">电脑版</a>
+	</div>
+	<div class="coperight">
+		<dd>
+			Copyright <font style="font-family:Arial;">©</font> 2013-2021 BANANA JOINT STOCK LIMITED. All Rights Reserved.
+		</dd>
+	</div>
+</footer>
+<!-- 第三方统计代码 -->
+<div><div>
+<script type="text/javascript">
+$(function(){
+var mark1=document.getElementById("mark1");
+function markClose(){
+	$('#mark1').hide();
+	$(".maketips").hide();
+	$('.mark_tip').hide();
+	$(window).unbind("scroll");
+	   $(window).unbind("resize");
+	$(".fastchannel").removeAttr("id");
+}
+var hammertiem=Hammer(mark1,{
+ 		prevent_default:true
+ 	}).on("tap",markClose).on('drag', markClose);
+$(".fastchannel").click(function(){
+		chanCenter($(".maketips"));
+		$(this).attr("id","fastchannel");
+	});
+function chanCenter(obj){
+	var screenWidth = $(window).width(), screenHeight = $(window).height();
+	var objLeft = (screenWidth - obj.width())/2 ;
+	   var objTop = (screenHeight - obj.height())/2;
+	   var srollTop=$(document).scrollTop();
+	   obj.css({left:objLeft+"px",top:objTop+srollTop+"px","display":"block"});
+	$(".mark1").show();
+		
+	$(window).resize(function(){
+		var screenWidth = $(window).width(), screenHeight = $(window).height();
+		var objLeft = (screenWidth - obj.width())/2 ;
+	    var objTop = (screenHeight - obj.height())/2;
+		var srollTop=$(document).scrollTop();
+	    obj.css({left:objLeft+"px",top:objTop+srollTop+"px","display":"block"});
+	});
+	 $(window).scroll(function(){
+		var screenWidth = $(window).width(), screenHeight = $(window).height();
+		var objLeft = (screenWidth - obj.width())/2 ;
+	    var objTop = (screenHeight - obj.height())/2;
+		var srollTop=$(document).scrollTop();
+	    obj.css({left:objLeft+"px",top:objTop+srollTop+"px","display":"block"});
+	});
+}
+
+});
+</script>
+<script>
+//表单错误提示焦点问题
+$(document).delegate('.tip', 'click', function(e){
+	var $t = $(this);
+	if($t.is(':visible') == true){
+		$t.hide().prev('.inpu').focus();
+	}
+});
+$(document).delegate('select','change', function(e){
+	$(this).find('option[value=""]').remove();
+});
+</script>
+<script>
+(function(){
+	//幻灯片宽度
+	var $u = $('#tt');
+	var n = $u.find('li').length;
+	$u.css('width', n+'00%');
+	$u.find('li').css('width',(100/n)+'%');
+	var tw = (n*30)+'px';
+	$('.indexli').css('width', tw);
+	$('.indexinner').css('width', tw);
+})();
+(function(){
+	var $container = $('.adimg');
+	//bind touch event
+	var element, moved, startX, startY, lastX, step;
+	element = $container.find('ul')[0]; //element to delegate
+	moveX = 0;	//move x coordinate
+	startX = 0; //starting x coordinate
+	lastX = 0;	//last x coordinate
+	
+	moveY = 0;	//move y coordinate
+	startY = 0; //starting y coordinate
+	scrollH = 0;
+	scrollL = 0;
+	step = 2;	//the px amount to move
+	vstep = 20;//vertical px move
+	if (element.addEventListener) {
+		//touchstart           
+		element.addEventListener("touchstart", function(e) {
+		    moved = false;
+		    moveX = e.touches[0].clientX;
+		    startX = e.touches[0].clientX;
+		    lastX = e.touches[0].clientX;
+		    moveY = e.touches[0].clientY;
+		    startY = e.touches[0].clientY;
+		    scrollH = $(document).scrollTop();
+		    scrollL = $(document).scrollLeft();
+		}, false);
+		//touchmove
+		element.addEventListener("touchmove", function(e) {
+			e.preventDefault();
+		    if (Math.abs(e.touches[0].clientY - moveY) > vstep){
+		    	moveY = e.touches[0].clientY;
+		    	scrollH = scrollH - moveY + startY;
+		    	scroll(scrollL, scrollH);
+		    	startY = e.touches[0].clientY;
+		    	scrollH = $(document).scrollTop();
+		    }
+		    //horizen move
+		    if (Math.abs(e.touches[0].clientX - moveX) > step){
+		    	moveX = e.touches[0].clientX;
+		    }
+		    lastX = e.touches[0].clientX;
+		}, false);
+		//touchmove
+		element.addEventListener("touchend", function(e) {
+			if(Math.abs(lastX - startX) < step) return false;
+			if (lastX > startX){
+				$container.trigger('prev');
+			}else{
+				$container.trigger('next');
+			}
+		}, false);
+	}
+})();
+//容器移动事件
+function showPic($e, ind){
+	var wid = $e.width() / $e.find('li').length;
+	var mglt = '-'+ind*wid+'px';
+	$e.animate({"margin-left":mglt},500, function(){
+		$e.css('margin-left', mglt);
+	});
+	//cur point
+	$('#cur').attr('id', '');
+	$('.indexinner span:eq('+ind+')').attr('id','cur');
+}
+$('.adimg').bind('prev',function(e){
+	var $e = $(this).find('ul');
+	var wid = $e.find('li').width(), ml = $e.css('margin-left');
+	var mlt = -parseInt(ml.substring(0, ml.length-2));
+	var cur = Math.round(mlt / wid);
+	if(cur == 0){
+		showPic($e, 0);
+	} else {
+		showPic($e, cur-1);
+	}
+}).bind('next', function(e){
+	var $e = $(this).find('ul');
+	var len = $e.find('li').length, wid = $e.find('li').width(), ml = $e.css('margin-left');
+	var mlt = -parseInt(ml.substring(0, ml.length-2));
+	var cur = Math.round(mlt / wid);
+	if(cur == len-1){
+		showPic($e, cur);
+	} else {
+		showPic($e, cur+1);
+	}
+});
+</script>
+<script type="text/javascript" src="http://res.bananatv.com/mbmcn/res/js/html.js"></script>
+</body>
+</html>
+

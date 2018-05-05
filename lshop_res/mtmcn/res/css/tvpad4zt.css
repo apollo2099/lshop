@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body{font-family:"微软雅黑"; font-size:100%; font-style:normal}
+*{margin:0; padding:0}
+h2{font-weight:normal}
+img{border:none; display:block;}
+.banner{width:100%; background-image:url(../images/tvpad4zt/ban_bg.jpg); background-repeat:repeat-x}
+.banner a{width:100%; max-width:640px; height:300px; display:block; margin:0 auto}
+.banner img{max-width:640px; margin:0 auto}
+.tv4_product1{padding:30px 0; width:96%; margin:0 auto}
+.pro1_box{width:100%;background-color:#d4d4d5;}
+.tv4_product1 p{text-align:center; font-size:75%; color:#616060; line-height:24px}
+.tv4_pr_img{margin:20px 0}
+.tv4_pr_img img{width:65%; max-width:312px; margin:0 auto}
+.tv4_product1 h1{text-align:center; font-size:150%; color:#333333; font-weight:normal; margin-bottom:20px}
+.tv4_pro2{background-image:url(../images/tvpad4zt/tv4_pro2_bg.jpg); background-repeat:no-repeat; background-size: cover; background-position:center 0}
+.tv4_pro2 h2{font-size:125%; color:#fff}
+.pro2_c{font-size:87.5%; color:#fe4c06; margin:6px 0}
+.pro2_t{font-size:75%; color:#fff; line-height:24px}
+.pro_box{width:96%; max-width:480px; margin:0 auto; padding:27px 0 0 0}
+.div_span{width:100%; margin:5px 0 0 0}
+.div_span span{display:block; float:left; margin-right:10px; border-radius:5px; -moz-border-radius:5px; -ms-border-radius:5px;-o-border-radius:5px;-webkit-border-radius:5px; border:1px solid #a3a3a3; color:#fff; font-size:65%; height:20px; width:auto; padding:0 5px; line-height:20px; margin-bottom:15px}
+.div_span span:last-child{margin-right:0}
+.pro2_ce img{width:100%;}
+.pro2_ce{max-width:480px}
+.tv4_pro3 h2{font-size:125%; color:#333333; text-align:right}
+.tv4_pro3{background-image:url(../images/tvpad4zt/tv4_pro3_bg.jpg); background-repeat:no-repeat; background-position:center 0; background-color:#fff;}
+.pro3_c{font-size:87.5%; color:#fe4c06; margin:6px 0; text-align:right}
+.pro3_t{font-size:75%; color:#616060; line-height:22px; text-align:right}
+.pro3_box{width:96%; max-width:480px; margin:0 auto; padding:27px 0 0 0}
+.pro3_hei{height:250px}
+
+.pro4_ce img{width:100%;}
+.pro4_ce{max-width:480px; margin-top:54px}
+.tv4_pro4{background-image:url(../images/tvpad4zt/tv4_pro4_bg.jpg); background-repeat: repeat-x}
+.tv4_pro4 h2{font-size:125%; color:#fff}
+.pro4_c{font-size:87.5%; color:#fe4c06; margin:6px 0}
+.pro4_t{font-size:75%; color:#fff; line-height:24px}
+.pro4_box{width:96%; max-width:480px; margin:0 auto; padding:27px 0 0 0}
+
+.tv4_pro5 h2{font-size:125%; color:#333333; text-align:right}
+.tv4_pro5{ background-color:#fff}
+.pro5_c{font-size:87.5%; color:#fe4c06; margin:6px 0; text-align:right}
+.pro5_t{font-size:75%; color:#616060; line-height:22px; text-align:right}
+.pro5_box{width:96%; max-width:480px; margin:0 auto; padding:27px 0 0 0}
+.tv4_pro5_img{width:100%; margin-top:15px}
+.tv4_pro5_img img{width:77.2%; max-width:371px}
+
+
+.tv4_pro6{background-image:url(../images/tvpad4zt/tv4_pro6_bg.jpg); background-repeat:no-repeat; background-size: cover; background-position:center 0}
+.tv4_pro6 h2{font-size:125%; color:#fff}
+.pro6_c{font-size:87.5%; color:#fe4c06; margin:6px 0}
+.pro6_t{font-size:75%; color:#fff; line-height:24px}
+.pro6_box{width:96%; max-width:480px; margin:0 auto; padding:27px 0 0 0}
+.pro6_ce img{width:58%; max-width:279px; margin:0 auto}
+.pro6_ce{max-width:480px; margin-top:25px; padding-bottom:25px}
+.tv4_pro7_img{width:100%; max-width:480px; margin-top:25px}
+.tv4_pro7_img img{width:100%;}
+.tv4_pro8{background-image:url(../images/tvpad4zt/tv4_pro8_bg.jpg); background-repeat:no-repeat; background-size: cover; background-position:center 0;}
+.tv4_pro8 h2{font-size:125%; color:#fff}
+.pro8_ce{margin-top:20px}
+.pro8_ce img{width:88%; max-width:422px; margin:0 auto}
+.tv4_pro9{ background-color:#fff; border-bottom:1px solid #e5e5e5}
+.tv4_pro9 h2{font-size:125%; color:#333333; text-align:left; margin-bottom:10px}
+.pro9_t{font-size:75%; color:#616060; line-height:22px; text-align:left}
+.pro9_box{width:96%; max-width:480px; margin:0 auto; padding:27px 0 0 0}
+.tv4_pro9_img{width:100%; margin-top:60px}
+.tv4_pro9_img img{width:100%}
+.tv4_pro10_img{width:100%; margin-top:15px}
+.tv4_pro10_img img{width:100%;}
+.tv4_pro10_img table{font-size:75%; background-color:#e5e5e5; color:#616060; margin-bottom:20px; width:100%}

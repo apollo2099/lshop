@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="storeManage-default" namespace="/web" extends="gv-default">
+
+		<action name="store" class="StoreManageAction">
+			<result name="moreProductList">/web/${flag}/moreProductList.jsp</result>
+			<result name="pageMoreProductList">/web/${flag}/pageMoreProductList.jsp</result>
+			<result name="searchResultList">/web/${flag}/searchResultList.jsp</result>
+			<result name="specialStoreList">/web/${flag}/specialStoreList.jsp</result>
+			<result name="shopList">/web/${flag}/shopList.jsp</result>
+		</action>
+
+	</package>
+
+</struts>

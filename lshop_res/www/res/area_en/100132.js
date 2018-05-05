@@ -1,0 +1,1 @@
+var provinceData=[{"id":300724,"name":"Belait","nameCn":"Belait","nameTw":"Belait","code":"BE"},{"id":300725,"name":"Brunei-Muara","nameCn":"Brunei-Muara","nameTw":"Brunei-Muara","code":"BM"},{"id":300726,"name":"Temburong","nameCn":"Temburong","nameTw":"Temburong","code":"TE"},{"id":300727,"name":"Tutong","nameCn":"Tutong","nameTw":"Tutong","code":"TU"}];

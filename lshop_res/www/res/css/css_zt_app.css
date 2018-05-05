@@ -1,0 +1,36 @@
+﻿@charset "utf-8";
+html,body {margin:0 auto;padding: 0px; font-size:12px; font-family:"微软雅黑","宋体"; color:#666666; min-width:1000px; height:100%; overflow-x:hidden;overflow-y:auto;}
+*{ margin:0; padding:0;}
+body img{border:none; vertical-align:middle;}
+ul,li{list-style-type:none;}
+td{ text-align:center;}
+
+
+.application_top{ width:1920px; margin:0 auto; height:500px; }
+.application_part1{ width:1002px; margin:0 auto; height:auto; overflow:hidden; }
+.application_part1 ul{  padding:20px; height:auto; overflow:hidden; }
+.application_part1 ul li.application_part1_left{ width:600px; float:left;}
+.application_part1 ul li.application_part1_right{  padding-top:100px; font-size:18px; line-height:30px;  }
+
+.application_part2{ width:1002px; margin:0 auto; border-bottom:1px #e5e5e5 dashed; height:auto; overflow:hidden;}
+.application_part2 ul{  padding:20px; height:auto; overflow:hidden; }
+.application_part2 ul li.application_part2_left{  width:400px; float:left;padding-top:100px; font-size:18px; line-height:30px;}
+.application_part2 ul li.application_part2_right{ float:right;  }
+
+.application_part3{ width:1002px; margin:20px auto 0 auto; height:auto; overflow:hidden;}
+.application_part3 p.application_part3_t{ font-size:30px; color:#ea5504;}
+.application_part3 ul{ background:url(../images/appzt/application_04.jpg) no-repeat; width:1002px; height:410px; margin-top:20px; position:relative; }
+.application_part3 ul li.posit01{ position:absolute; top:160px; left:60px; font-size:18px;color:#ea5504;}
+.application_part3 ul li.posit02{ position:absolute; top:160px; left:305px; font-size:18px;color:#ea5504;}
+.application_part3 ul li.posit03{ position:absolute; top:160px; left:560px; font-size:18px;color:#ea5504;}
+.application_part3 ul li.posit04{ position:absolute; top:160px; left:850px; font-size:18px;color:#ea5504;}
+.application_part3 ul li.posit05{ position:absolute; top:360px; left:60px; font-size:18px;color:#ea5504;}
+.application_part3 ul li.posit06{ position:absolute; top:360px; left:315px; font-size:18px;color:#ea5504;}
+.application_part3 ul li.posit07{ position:absolute; top:360px; left:600px; font-size:18px;color:#ea5504;}
+.application_part3_b{ width:1002px; margin:20px auto 0 auto; text-align:center; padding:50px 0 100px 0; line-height:30px; }
+
+
+.application_part4{ width:1002px; margin:20px auto 0 auto; border-bottom:1px #e5e5e5 dashed; padding-bottom:50px; height:auto; overflow:hidden; }
+.application_part4 p.application_part4_t{ font-size:30px; color:#ea5504;}
+.application_part4 ul { padding-top:20px;}
+.application_part4 ul li{ float:left; width:100px; text-align:center; height:auto; margin-right:20px; font-size:18px; }

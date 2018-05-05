@@ -1,0 +1,1 @@
+var cityData=[{"id":374335,"name":"Whangarei","nameCn":"Whangarei","nameTw":"Whangarei","code":"Whangarei"}];

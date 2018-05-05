@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.lshop.common.pojo.logic">
+    <class name="LvVbPlans" table="lv_vb_plans">
+
+        <id name="id" column="id" type="java.lang.Integer">
+            <generator class="identity" />
+        </id>
+		
+		
+		
+		<property 
+			name="mallFlag" 
+			column="mall_flag" 
+			update="true"
+            insert="true"
+            type="java.lang.String"
+			not-null="true" 
+			unique="false" 
+			length="32"/>
+		
+		<property 
+			name="title" 
+			column="title" 
+			update="true"
+            insert="true"
+            type="java.lang.String"
+			not-null="false" 
+			unique="false" 
+			length="16"/>
+		
+		<property 
+			name="ptype" 
+			column="p_type" 
+			update="true"
+            insert="true"
+            type="java.lang.Boolean"
+			not-null="true" 
+			unique="false" 
+			length="0"/>
+		
+		<property 
+			name="vbNum" 
+			column="vb_num" 
+			update="true"
+            insert="true"
+            type="java.lang.Integer"
+			not-null="false" 
+			unique="false" 
+			length="10"/>
+		
+		<property 
+			name="minNum" 
+			column="min_num" 
+			update="true"
+            insert="true"
+            type="java.lang.Integer"
+			not-null="false" 
+			unique="false" 
+			length="10"/>
+		
+		<property 
+			name="isMul" 
+			column="is_mul" 
+			update="true"
+            insert="true"
+            type="java.lang.Boolean"
+			not-null="false" 
+			unique="false" 
+			length="0"/>
+		
+		<property 
+			name="createTime" 
+			column="create_time" 
+			update="true"
+            insert="true"
+            type="java.util.Date"
+			not-null="true" 
+			unique="false" 
+			length="0"/>
+		
+		<property 
+			name="updateTime" 
+			column="update_time" 
+			update="true"
+            insert="true"
+            type="java.util.Date"
+			not-null="false" 
+			unique="false" 
+			length="0"/>
+		
+		<property 
+			name="modifyUserName" 
+			column="modify_user_name" 
+			update="true"
+            insert="true"
+            type="java.lang.String"
+			not-null="false" 
+			unique="false" 
+			length="32"/>
+		
+		<property 
+			name="modifyUserId" 
+			column="modify_user_id" 
+			update="true"
+            insert="true"
+            type="java.lang.Integer"
+			not-null="false" 
+			unique="false" 
+			length="10"/>
+		
+		<property 
+			name="porder" 
+			column="p_order" 
+			update="true"
+            insert="true"
+            type="java.lang.Integer"
+			not-null="false" 
+			unique="false" 
+			length="10"/>
+		
+		
+
+	
+
+    </class>
+</hibernate-mapping>
+

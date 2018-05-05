@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="wxObtainNewsTplMngAction-default" namespace="/manager" extends="struts-default">
+        <action name="wxObtainNewsTplMngAction" class="WxObtainNewsTplMngAction">
+			<result name="befSave">/manager/weixin/wxObtainNewsTpl/wxObtainNewsTpl_add.jsp</result>
+			<result name="list">/manager/weixin/wxObtainNewsTpl/wxObtainNewsTpl_list.jsp</result>
+			<result name="view">/manager/weixin/wxObtainNewsTpl/wxObtainNewsTpl_view.jsp</result>
+			<result name="edit">/manager/weixin/wxObtainNewsTpl/wxObtainNewsTpl_edit.jsp</result>
+			<result name="ajax">/manager/common/ajaxDone.jsp</result>
+			<result name="callback">/manager/common/callbackDone.jsp</result> 
+			<result name="json">/manager/common/jsonDone.jsp</result> 
+		</action>
+	</package>
+	
+</struts>

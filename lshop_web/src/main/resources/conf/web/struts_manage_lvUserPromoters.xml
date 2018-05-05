@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="lvUserPromotersMngAction-default" namespace="/manager" extends="gv-default-web" >
+        <action name="lvUserPromotersMngAction" class="LvUserPromotersMngAction">
+			<result name="befSave">/manager/lvUserPromoters/lvUserPromoters_add.jsp</result>
+			<result name="bfEdit">/manager/lvUserPromoters/lvUserPromoters_edit.jsp</result>
+			<result name="list">/manager/lvUserPromoters/lvUserPromoters_list.jsp</result>
+			<result name="gradelist">/manager/lvUserPromoters/gradelist.jsp</result>
+			<result name="showGrade">/manager/lvUserPromoters/showGrade.jsp</result>
+			<result name="view">/manager/lvUserPromoters/lvUserPromoters_view.jsp</result>
+			<result name="edit">/manager/lvUserPromoters/lvUserPromoters_edit.jsp</result>
+			<result name="ajax">/manager/common/ajaxDone.jsp</result>
+			<result name="auditing">/manager/lvUserPromoters/auditing.jsp</result>
+			<result name="callback">/manager/common/callbackDone.jsp</result> 
+			<result name="json">/manager/common/jsonDone.jsp</result> 
+			<result name="rankPromoter">/manager/lvUserPromoters/lvRankPromoter_list.jsp</result>
+			<result name="bfadd">/manager/lvUserPromoters/lvRankPromoter_add.jsp</result>
+			<result name="bfEditPromoter">/manager/lvUserPromoters/lvRankPromoter_edit.jsp</result>
+			<result name="bfViewRankPromoter">/manager/lvUserPromoters/lvRankPromoter_view.jsp</result>
+			<result name="befCheck">/manager/lvUserPromoters/lvRankPromoter_check.jsp</result>
+			<result name="excel" type="stream">
+                    <param name="contentType">application/vnd.ms-excel</param>     
+                    <param name="inputName">excelStream</param>                    
+                    <param name="contentDisposition">filename="detail.xls"</param>
+                   	<param name="contentLength">${fileSize}</param>
+                    <param name="bufferSize">1024</param>
+            </result>
+            <result name="exportExcel" type="stream">
+                    <param name="contentType">application/vnd.ms-excel</param>     
+                    <param name="inputName">excelStream</param>                    
+                    <param name="contentDisposition">filename="detail.xls"</param>
+                   	<param name="contentLength">${fileSize}</param>
+                    <param name="bufferSize">1024</param>
+            </result>
+            <result name="orderdetail" type="stream">
+                    <param name="contentType">application/vnd.ms-excel</param>     
+                    <param name="inputName">excelStream</param>                    
+                    <param name="contentDisposition">filename="detail.xls"</param>
+                   	<param name="contentLength">${fileSize}</param>
+                    <param name="bufferSize">1024</param>
+            </result>
+            <result name="exportInfos" type="stream">
+                    <param name="contentType">application/vnd.ms-excel</param>     
+                    <param name="inputName">excelStream</param>                    
+                    <param name="contentDisposition">filename="detail.xls"</param>
+                   	<param name="contentLength">${fileSize}</param>
+                    <param name="bufferSize">1024</param>
+            </result>
+	        <result name="exportOrders" type="stream">
+	                <param name="contentType">application/vnd.ms-excel</param>     
+	                <param name="inputName">excelStream</param>                    
+	                <param name="contentDisposition">filename="detail.xls"</param>
+	                <param name="contentLength">${fileSize}</param>
+	                <param name="bufferSize">1024</param>
+            </result>
+            <result name="exportOrderGrade" type="stream">
+	                <param name="contentType">application/vnd.ms-excel</param>     
+	                <param name="inputName">excelStream</param>                    
+	                <param name="contentDisposition">filename="exportOrderGrade.xls"</param>
+	                <param name="contentLength">${fileSize}</param>
+	                <param name="bufferSize">1024</param>
+            </result>
+            
+            <result name="detailList">/manager/lvUserPromoters/detail_list.jsp</result>
+            <result name="accountManageList">/manager/lvUserPromoters/accountManage_list.jsp</result>
+            <result name="accountRecordList">/manager/lvUserPromoters/accountRecord_list.jsp</result>
+            <result name="orderList">/manager/lvUserPromoters/order_list.jsp</result>
+		</action>
+	</package>
+	
+</struts>

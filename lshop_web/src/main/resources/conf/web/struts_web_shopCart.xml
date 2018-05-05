@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="shopCartManage-default" namespace="/web" extends="gv-default">
+
+		<action name="shopCart" class="ShopCartManageAction">
+			<result name="orderInfo">/web/${flag}/mall/shopCart_orderInfo.jsp</result>
+			<result name="toOrderInfo"  type="redirect">/web/shopCart!toOrderInfo.action?shopFlag=${shopFlag}&amp;errorMsg=${errorMsg}</result>
+			<result name="toQuickOrder" type="redirect">/web/shopCart!toQuickOrder.action?shopFlag=${shopFlag}&amp;productCode=${productCode}&amp;sourceUrl=${sourceUrl}#defaultOrderMac</result>
+			<!-- 
+			<result name="toQuickOrder" type="redirectAction">
+               <param name="actionName">shopCart!toQuickOrder.action</param>
+               <param name="shopFlag">${shopFlag}</param>
+               <param name="productCode">${productCode}</param>
+               <param name="sourceUrl">${sourceUrl}</param>
+            </result>
+			-->
+			<result name="quickOrder">/web/${flag}/mall/shopCart_quickOrder.jsp</result>
+			<result name="quickOrderOver">/web/${flag}/mall/shopCart_quickOrder_over.jsp</result>
+			<result name="confirmOrderInfo">/web/${flag}/mall/shopCart_confirmOrderInfo.jsp</result>
+			<result name="payMothodCode">/web/${flag}/pay/pay_mothod_code.jsp</result>
+			<result name="pay">/web/${flag}/pay/pay.jsp</result>
+			<result name="installSuccess">/web/${flag}/mall/shopCart_installSuccess.jsp</result>
+			<result name="toWesternInfo">/web/${flag}/mall/shopCart_westernInfo.jsp</result>
+			<result name="westernInfo">/web/${flag}/mall/shopCart_westernInfo.jsp</result>
+			<result name="westernSuccess" type="redirect">/web/${flag}/mall/shopCart_westernSuccess.jsp?oid=${oid}</result>
+			<result name="getShopCartList" type="redirect">/web/mall!getShopCartList.action</result>
+			<result name="over">/web/${flag}/mall/over.jsp</result>
+			<result name="toConfirmOrder" type="redirectAction">/web/shopCart!toConfirmOrder?mark=1&amp;myAddress=${myAddress}&amp;payValue=${payValue}&amp;myCoupon=${myCoupon}&amp;orderRemark=${orderRemark}&amp;bestDeliveryValue=${bestDeliveryValue}&amp;shopFlag=${shopFlag}</result>
+			<result name="orderSuccess" type="redirect">/web/${flag}/mall/shopCart_oidSuccess.jsp?oid=${oid}</result>
+			<result name="getShopCartList" type="redirect">/web/mall!getShopCartList.action</result>
+			<result name="shopList">/web/${flag}/mall/shopList.jsp</result>
+			<result name="addressList">/web/${flag}/mall/shopCart_addressList.jsp</result>
+		    <result name="getAddressList" type="redirect">/web/shopCart!getAddressListMoblie.action?shopFlag=${shopFlag}</result>
+		    <result name="addAddress">/web/${flag}/mall/shopCart_addAddress.jsp</result>
+		    <result name="editAddress">/web/${flag}/mall/shopCart_editAddress.jsp</result>
+		    <result name="orderActivityTip">/web/${flag}/mall/shopCart_oderActivity_tip.jsp</result>
+		</action>
+	</package>
+
+</struts>

@@ -1,0 +1,373 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,user-scalable=no" name="viewport">
+<title>TVpad海外華人中文電視第一品牌—TVpad官方商城</title>
+<meta name="description" content="TVpad提供7*24小時收看港澳、臺灣、大陸、國際主流直播，超過10萬部高清影片即點既播，頂級TV應用供海外華人獨享，真正H.265高清畫質體驗，同時集穩定，豐富，流暢于一身。" />
+<meta name="keywords" content="TVpad4,TVpad4 CN 版介绍，TVpad4 CN版上市, TVpad4 CN Edition优点,TVpad评测, TVpad评价，TVpad4好不好用，TVpad4常见问题" />
+<!-- 加载公共JS -->
+<%@include file="/web/mtmcn/common/top.jsp" %>
+<link href="${resDomain}/mtmcn/res/css/css_zt4_cn.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header>
+   <div class="top">
+      <div class="title">
+        <h1>Tvpad 商城</h1>
+      </div>
+      <div class="shopping">
+         <div class="shoplebg">
+            <div class="shopicon"><a href="javascript:toCar('${storeDomain}');"></a><span id="shopCartNum" style="display:none;"></span></div>
+         </div>
+      </div>
+   </div>
+</header>
+
+<article>
+   <section>
+       <article>
+         <div class="banner">
+           <a href="http://mtscn.mtvpad.com/products/e8d5af471a5645a897a97270a8bd3c82.html" target="_blank">
+            <img src="${resDomain}/mtmcn/res/images/tvpad4zt_cn/tv4cn_1.jpg" width="100%" />
+          </a>
+       </div>
+       </article>
+   </section> 
+   
+   <section>
+      <article>
+          <div class="gcn_detial">
+            <div class="gcn_top">
+              <ul>
+                <li>
+                  <p class="img_itle"><img src="${resDomain}/mtmcn/res/images/tvpad4zt_cn/by.png" width="100%"/></p>
+                  <p class="img_titile">
+                    <span class="huan">全球包邮</span>
+                    <span class="bai">DHL/UPS/TNT/邮政3-5日速达</span>
+                  </p>
+                </li>
+                <li>
+                  <p class="img_itle"><img src="${resDomain}/mtmcn/res/images/tvpad4zt_cn/pz.png" width="100%"/></p>
+                  <p class="img_titile">
+                    <span class="huan">购买无忧</span>
+                    <span class="bai">质量问题7天退换1年保修</span>
+                  </p>
+                </li>
+                <li>
+                  <p class="img_itle"><img src="${resDomain}/mtmcn/res/images/tvpad4zt_cn/sh.png" width="100%"/></p>
+                  <p class="img_titile">
+                    <span class="huan">售后保障 </span>
+                    <span class="bai">7X24小时客服</span>
+                  </p>
+                </li>
+                <div class="clear"></div>
+              </ul>
+            </div>
+            
+            <div class="tv4_gcntext">
+              <div class="tvgcn_js">TVpad4 <span class="huan1">CN版</span>介绍</div>
+              <p>
+                <span class="tv4cn_t2">超高性价比</span>                 
+                <span class="tv4cn_t2detial">CN版针对海外国语节目用户推出的新品</span>
+              </p>
+              <p>
+                <span class="tv4cn_t2">大量独享应用</span>                 
+                <span class="tv4cn_t2detial">用户专享合作商推出的TVpad国语节目应用和海量第三方应用</span>
+              </p>
+              <p>
+                <span class="tv4cn_t2">内容更精彩</span>                 
+                <span class="tv4cn_t2detial">数十个国内直播频道和数十万部影视、综艺、热剧点播内容</span>
+              </p>
+            </div>
+            
+            <div class="gcn_bottom">
+              <div class="bottom_left">TVpad4 CN版，海外看<span class="huan1">国语节目</span>的最佳选择</div>
+              <div class="bottom_right"><span>更多版本选择</span><a href="http://m.mtvpad.com/tvpad4/index.html" target="_blank">GCN版介绍</a></div>
+              <div class="clear"></div>
+            </div>
+          </div>
+      </article>
+   </section>
+   
+   <section>
+      <article>
+         <div class="pro1_box">
+           <div class="tv4_product1">
+             <h1>海外华人中文电视第一品牌</h1>
+             <p>TVpad累计销量超百万台,全球千万华人长期使用TVpad观看中文电视<br />从TVpad1到TVpad4，产品日臻完美,销量每年极速递增<br />市场占有率稳步攀升,海外华人中文电视盒子销量第1</p>
+              <p class="tv4_pr_img"><img src="${resDomain}/mtmcn/res/images/tvpad4zt_cn/product2.jpg"/></p>
+              <p>TVpad系列产品成为大家购买中文电视盒子的首选，TVpad4作为最新一代产品，<br />
+性能更加强劲，同时也为用户提供了更加高清、稳定、丰富的中文视频节目。</p>
+          </div>    
+         </div>
+      </article>
+   </section>
+   
+   <section>
+      <div class="tv4_pro2">
+        <div class="pro_box">      
+         <h2>顶配更胜一筹</h2>
+         <p class="pro2_c">支持2K高清视频，清晰度是720P的4倍！</p>
+         <p class="pro2_t">
+         软硬件性能极速提升，效率更高，直播、点播、游戏，享受酣畅淋漓的体验。
+         </p>
+         <div class="div_span">
+            <span>首款H.265电视盒子</span>
+            <span>4核CPU</span>
+            <span>安卓4.4系统</span>
+            <div class="clear"></div>
+         </div>
+         <div class="div_span">
+            <span>1080P高清极致体验</span>
+            <span>流量超省，仅需H.264一半带宽</span>
+           
+            <div class="clear"></div>
+         </div>
+         <div class="pro2_ce">
+           <img src="${resDomain}/mtmcn/res/images/tvpad4zt_cn/pro2_img.jpg" />
+         </div>
+       </div>
+      </div>
+   </section>
+   
+
+   
+   <section>
+      <div class="tv4_pro4">
+        <div class="pro4_box">      
+         <h2>稳定才是王道</h2>
+         <p class="pro4_c">专享16道保障机制</p>
+         <p class="pro4_t">
+           全新安全机制登台，强大的后援支持，真正“让稳定压倒一切”。
+         </p>
+         <div class="div_span1">
+            <span>500人技术团队  </span>
+            <span>5年技术沉淀</span>
+            <span>APP安全检测上架</span>
+            <div class="clear"></div>
+         </div>
+         <div class="div_span1">
+            <span>累计30000小时以上测试</span>
+            <span>全天24小时保障服务</span>
+            <span>成熟应急事件处理机制</span>
+            <div class="clear"></div>
+         </div>
+         <div class="pro4_ce">
+           <img src="${resDomain}/mtmcn/res/images/tvpad4zt_cn/pro4_img.jpg" />
+         </div>
+       </div>
+      </div>
+   </section>
+   
+   
+   <section>
+      <div class="tv4_pro6">
+        <div class="pro_box">      
+         <h2>直播、点播、时移，海量内容无尽选择</h2>
+         <p class="pro2_c">知名应用入驻，定制专属海外华人APP</p>
+         <p class="pro2_t">
+        牵手数十家国内优质应用厂商，并拥抱其他第三方国内精选APP，<br />
+热门节目都在盒子里任你观看！
+         </p>
+         <div class="div_span">
+            <span>赛事直播</span>
+            <span>影视点播 </span>
+            <span>12小时延时重播</span>
+            <span>72小时重播</span>
+            <div class="clear"></div>
+         </div>
+         
+         <div class="pro2_ce">
+           <a href="http://www.tvpadfans.com/forum.php?mod=forumdisplay&fid=37&filter=typeid&typeid=137" target="_blank" class="find_bt"><img src="${resDomain}/mtmcn/res/images/tvpad4zt_cn/find_bt.png" width="100%"/></a>
+           <img src="${resDomain}/mtmcn/res/images/tvpad4zt_cn/pro6_img.png" />
+         </div>
+       </div>
+      </div>
+   </section>
+   
+   <section>
+     <div class="tv4_pro5">
+        <div class="pro5_box">      
+         <h2>操作简单，极速上手</h2>
+         <p class="pro5_c">不刷机、不越狱、不翻墙，开机观看只需2步！</p>
+         <p class="pro5_t">
+        开机自动快速连接服务器，简化操作步骤。<br />
+极快的操作回应和顺畅的交互体验，<br />
+让搜索和观看节目更便捷！
+   
+         </p>
+         
+         <div class="div_span2">
+            <span>遥控器遥控</span>
+            <span>有线键鼠操作</span>
+            <span>无线键鼠操控</span>
+            <span>手机APP遥控</span>
+            <div class="clear"></div>
+         </div>
+        <div class="tv4_pro7_img">
+          <img src="${resDomain}/mtmcn/res/images/tvpad4zt_cn/pro7_img.jpg" />
+        </div>
+         
+        
+       </div>
+      </div>
+      
+   </section>
+   
+   
+   <section>
+      <div class="tv4_pro8">
+        <div class="pro6_box">      
+         <h2>买大牌最放心</h2>
+         <p class="pro6_c">7x24小时电话客服+TVpad商城全天候在线客服</p>
+          <p class="procn_c">
+            <a href="#"><img src="${resDomain}/mtmcn/res/images/tvpad4zt_cn/tvlogoicon.jpg" /></a>
+            <a href="#"><img src="${resDomain}/mtmcn/res/images/tvpad4zt_cn/weixi.jpg" /></a>
+             <a href="#"><img src="${resDomain}/mtmcn/res/images/tvpad4zt_cn/taobao.jpg" /></a>
+              <a href="#"><img src="${resDomain}/mtmcn/res/images/tvpad4zt_cn/ali.jpg" /></a>
+               <a href="#"><img src="${resDomain}/mtmcn/res/images/tvpad4zt_cn/amazon.jpg" /></a>
+                <a href="#"><img src="${resDomain}/mtmcn/res/images/tvpad4zt_cn/ebay.jpg" /></a>
+                <div class="clear"></div>
+          </p>
+         <p class="pro6_t">
+           线下销售服务网点；遍布全球40多个国家，200多个城市；<br />
+咨询+支付+物流+售后一站式服务，全程为您保驾护航。
+         </p>
+        
+         <div class="pro8_ce">
+           <img src="${resDomain}/mtmcn/res/images/tvpad4zt_cn/pro8_img.png" />
+         </div>
+       </div>
+      </div>
+   </section>
+   
+   
+   <section>
+     <div class="tv4_pro9">
+        <div class="pro9_box">      
+         <h2>如何安装TVpad4</h2>
+        
+         
+        <div class="tv4_pro9_img">
+          <img src="${resDomain}/mtmcn/res/images/tvpad4zt_cn/pro9_img.jpg" />
+        </div>
+         
+        
+       </div>
+      </div>
+      
+   </section>
+   
+   
+   
+   <section>
+     <div class="tv4_pro9">
+        <div class="pro9_box">      
+         <h2>规格参数</h2>
+        <div class="tv4_pro10_img">
+           <table width="100%" cellspacing="1" cellpadding="0" border="0" bgcolor="#e5e5e5" >
+  <tbody><tr>
+    <td width="148" height="50" rowspan="2" align="center" bgcolor="#fafafa" style="color:#636363; font-weight:bold; font-size:14px"><p>基本参数</p></td>
+    <td width="152" height="50" align="center" bgcolor="#FFFFFF" style="color:#636363; font-size:12px"> 整机名称</td>
+    <td width="396" height="50" align="center" bgcolor="#FFFFFF" style="color:#636363; font-size:12px">TVpad4</td>
+  </tr>
+  <tr>
+    <td height="40" align="center" bgcolor="#FFFFFF" style="color:#636363; font-size:12px">设备型号</td>
+    <td height="40" align="center" bgcolor="#FFFFFF" style="color:#636363; font-size:12px">M418</td>
+  </tr>
+  <tr>
+    <td width="148" height="80" rowspan="8" align="center" bgcolor="#fafafa" style="color:#636363; font-weight:bold; font-size:14px"><p>规格参数</p></td>
+    <td width="152" height="40" align="center" bgcolor="#FFFFFF">网络环境</td>
+    <td height="40" align="center" bgcolor="#FFFFFF">2M以上带宽</td>
+  </tr>
+  <tr>
+    <td height="40" align="center" bgcolor="#FFFFFF">长*宽*高</td>
+    <td height="40" align="center" bgcolor="#FFFFFF">裸机：100*100*21mm&nbsp; 包装：149*149*82mm</td>
+  </tr>
+  <tr>
+    <td height="40" align="center" bgcolor="#FFFFFF">重 量</td>
+    <td height="40" align="center" bgcolor="#FFFFFF">裸机净重:135g； 整机毛重:620g</td>
+  </tr>
+  <tr>
+    <td height="40" align="center" bgcolor="#FFFFFF">CPU</td>
+    <td height="40" align="center" bgcolor="#FFFFFF">四核</td>
+  </tr>
+  <tr>
+    <td height="40" align="center" bgcolor="#FFFFFF">CPU频率</td>
+    <td height="40" align="center" bgcolor="#FFFFFF">1.4G</td>
+  </tr>
+  <tr>
+    <td height="40" align="center" bgcolor="#FFFFFF">FLASH（内置存储空间）</td>
+    <td height="40" align="center" bgcolor="#FFFFFF">4G</td>
+  </tr>
+  <tr>
+    <td height="40" align="center" bgcolor="#FFFFFF">RAM</td>
+    <td height="40" align="center" bgcolor="#FFFFFF">1G</td>
+  </tr>
+  <tr>
+    <td height="40" align="center" bgcolor="#FFFFFF">功 率</td>
+    <td height="40" align="center" bgcolor="#FFFFFF">正常功耗＜5W ,待机功耗＜0.5W</td>
+  </tr>
+  <tr>
+    <td width="148" height="80" rowspan="5" align="center" bgcolor="#fafafa" style="color:#636363; font-weight:bold; font-size:14px"><p>外围接口</p></td>
+    <td width="152" height="40" align="center" bgcolor="#FFFFFF">视频输出口</td>
+    <td height="40" align="center" bgcolor="#FFFFFF">HDMI/AV</td>
+  </tr>
+  <tr>
+    <td height="40" align="center" bgcolor="#FFFFFF">USB接口</td>
+    <td height="40" align="center" bgcolor="#FFFFFF">USB2.0接口1个</td>
+  </tr>
+  <tr>
+    <td height="40" align="center" bgcolor="#FFFFFF">存储卡插口</td>
+    <td height="40" align="center" bgcolor="#FFFFFF">TF卡插口1个</td>
+  </tr>
+  <tr>
+    <td height="40" align="center" bgcolor="#FFFFFF">网络接口</td>
+    <td height="40" align="center" bgcolor="#FFFFFF">以太网接口1个/内置无线WIFI</td>
+  </tr>
+  <tr>
+    <td height="40" align="center" bgcolor="#FFFFFF">电源口</td>
+    <td height="40" align="center" bgcolor="#FFFFFF">DC5V 2A输入</td>
+  </tr>
+  <tr>
+    <td width="148" height="40" align="center" bgcolor="#fafafa" style="color:#636363; font-weight:bold; font-size:14px"><p>软件系统</p></td>
+    <td height="40" align="center" bgcolor="#FFFFFF">系统语言</td>
+    <td height="40" align="center" bgcolor="#FFFFFF">简体中文、繁体中文、英文、日文、韩文</td>
+  </tr>
+  <tr>
+    <td height="80" rowspan="3" align="center" bgcolor="#fafafa" style="color:#636363; font-weight:bold; font-size:14px">音视频参数</td>
+    <td width="152" height="40" align="center" bgcolor="#FFFFFF">视频解码</td>
+    <td height="40" align="center" bgcolor="#FFFFFF">MPEG1/2/4、H.263、Xvid、WMV9、H.264、VC-1、H.265等</td>
+  </tr>
+  <tr>
+    <td height="40" align="center" bgcolor="#FFFFFF">视频格式</td>
+    <td height="40" align="center" bgcolor="#FFFFFF">AVI、MKV、WMV、MPG、VOB、MP4、ASF、TS、MOV等</td>
+  </tr>
+  <tr>
+    <td height="40" align="center" bgcolor="#FFFFFF">音频解码</td>
+    <td height="40" align="center" bgcolor="#FFFFFF">MP3、WMA、OGG、WAV、AAC、PCM、AC3、M4A等</td>
+  </tr>
+  <tr>
+    <td height="40" align="center" bgcolor="#fafafa" style="color:#636363; font-weight:bold; font-size:14px">认证</td>
+    <td width="152" height="40" align="center" bgcolor="#FFFFFF">认证</td>
+    <td height="40" align="center" bgcolor="#FFFFFF">CE,C-TICK,FCC,IC，RoHS，HDMI</td>
+  </tr>
+</tbody></table>
+        </div>
+         
+        
+       </div>
+      </div>
+      
+   </section>
+   
+</article>
+
+
+<!-- footer -->
+<%@include file="/web/mtmcn/common/footer.jsp" %>
+</body>
+</html>

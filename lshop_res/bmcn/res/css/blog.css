@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/* 站内博客*/
+.blog_banner{width:1002px;height:185px;margin:20px auto 10px auto;background:url(../images/blog.png) no-repeat;}
+.blog_banner ul{padding:132px 0 0 21px;display: block;}
+.blog_banner ul li{float:left; padding-right:10px;}
+.blog_banner ul li.google_reader{padding-top:8px;}
+
+.blog{width:1002px; margin:0 auto 0 auto; padding-top:10px;}
+.blog .blog_left_z{width:650px;float:left;}
+.blog .blog_left{border:1px #E5E5E5 solid; padding-bottom:20px;}
+.blog .blog_left ul{padding:10px;border-bottom:1px #ccc dashed;height:auto;overflow:hidden;display:block;}
+.blog .blog_left li{width:620px;padding:5px; overflow:hidden;line-height:20px;}
+.blog .blog_left li.title{font-weight:bold;font-size:14px;}
+.blog .blog_left li.text{line-height:24px;}
+.blog .blog_left li.more{text-align:right;}
+.blog .blog_left ul.info{border:none;}
+.blog .blog_left ul.info li{padding:7px 5px 7px 5px;}
+.blog .blog_left ul.info li.center{text-align:center;}
+.blog .blog_left ul.info li.text{line-height:26px;}
+.blog .blog_left ul.info li.text p{float:none; text-indent:2em;}
+.blog .blog_left ul.info li img{vertical-align:middle;}
+.blog .blog_left li p{float:left; padding-right:15px;}
+.blog .blog_right{float:right;display:block;width:320px;}
+
+
+/* 博客分類*/
+.blog_sort{width:320px;border:1px #E5E5E5 solid;height:auto;margin-bottom:10px;}
+.blog_sort .blog_sort_ban{width:312px;height:30px;line-height:30px;background-color:#f6f6f6;display:block;padding-left:8px;font-weight:bold;font-size:14px;}
+.blog_sort ul{padding:0 20px 20px 20px;}
+.blog_sort li{padding:10px 0 10px 0;border-bottom:1px #cccccc dashed;}
+.blog_sort li span{float:right; color:#959595;}
+
+/* 熱點博文*/
+.blog_hot{width:320px;border:1px #E5E5E5 solid;height:auto;margin-bottom:10px;}
+.blog_hot .blog_hot_ban{width:312px;height:30px;line-height:30px;background-color:#f6f6f6;display:block;padding-left:8px;font-weight:bold;font-size:14px;}
+.blog_hot ul{padding:0 20px 20px 20px;}
+.blog_hot li{padding:10px 0 10px 0;border-bottom:1px #cccccc dashed;}
+
+/* 熱門標籤*/
+.blog_label{width:320px;border:1px #E5E5E5 solid;height:auto;margin-bottom:10px;}
+.blog_label .blog_label_ban{width:312px;height:30px;line-height:30px;background-color:#f6f6f6;display:block;padding-left:8px;font-weight:bold;font-size:14px;}
+.blog_label ul{width:280px;height:auto;padding:20px;display:block;}
+.blog_label li{ line-height:24px;}
+.blog_label li a{padding-right:10px;}
+
+/* 評論*/
+.blog_comments{width:608px;overflow:hidden;margin:10px auto 0 auto;padding:20px; border:solid 1px #e5e5e5;}
+.blog_comments_ban{width:598px;height:30px;line-height:30px;background-color:#f6f6f6;display:block;padding-left:10px;font-size:14px;font-weight:bold;}
+.blog_comments ul.pl{padding:10px; overflow:hidden;}
+.blog_comments ul.pl li{line-height:24px;}
+.blog_comments ul.pl li.author{color:#37B4CC;}
+.blog_comments ul.pl li.reply{width:566px;background:#F2FBFC; height:auto; padding:10px; border:1px #e5e5e5 solid; color:#37B4CC;}
+.blog_comments ul.fenyea{padding:0 10px 0 10px;overflow:hidden;}
+.red{font-size:14px; font-weight:bold; color:#ff0000;}

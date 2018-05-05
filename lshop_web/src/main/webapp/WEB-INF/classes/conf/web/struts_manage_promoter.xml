@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="lvPromtPayMngAction-default" namespace="/manager" extends="gv-default-web">
+		<action name="lvPromtPayMngAction" class="LvPromtPayManageAction">
+		   <result name="list">/manager/lvPromoter/lvPreparePay_list.jsp</result>
+		   <result name="payList">/manager/lvPromoter/lvPay_list.jsp</result>
+		    <result name="orderList">/manager/lvPromoter/lvPayOrder_list.jsp</result>
+		    <result name="fundlist">/manager/lvPromoter/lvFund_list.jsp</result>
+		    <result name="befexpense">/manager/lvPromoter/lv_fund_expense.jsp</result>
+		    <result name="expenselist">/manager/lvPromoter/expense_list.jsp</result>
+		    <result name="contentlist">/manager/lvPromoter/promt_content_list.jsp</result>
+		    <result name="bfadd">/manager/lvPromoter/promt_content_add.jsp</result>
+		    <result name="befedit">/manager/lvPromoter/promt_content_edit.jsp</result>
+		    <result name="materiallist">/manager/lvPromoter/material_list.jsp</result>
+		    <result name="befaddmaterial">/manager/lvPromoter/material_add.jsp</result>
+		    <result name="befeditmaterial">/manager/lvPromoter/material_edit.jsp</result>
+		    <result name="videolist">/manager/lvPromoter/video_list.jsp</result>
+		    <result name="befaddvideo">/manager/lvPromoter/video_add.jsp</result>
+		    <result name="befeditvideo">/manager/lvPromoter/video_edit.jsp</result>
+		    <result name="excel" type="stream">
+                    <param name="contentType">application/vnd.ms-excel</param>     
+                    <param name="inputName">excelStream</param>                    
+                    <param name="contentDisposition">filename="PromptPay.xls"</param>
+                   	<param name="contentLength">${fileSize}</param>
+                    <param name="bufferSize">1024</param>
+            </result>
+             <result name="exportfund" type="stream">
+                    <param name="contentType">application/vnd.ms-excel</param>     
+                    <param name="inputName">excelStream</param>                    
+                    <param name="contentDisposition">filename="detail.xls"</param>
+                   	<param name="contentLength">${fileSize}</param>
+                    <param name="bufferSize">1024</param>
+            </result>
+            <result name="orderdetail" type="stream">
+                    <param name="contentType">application/vnd.ms-excel</param>     
+                    <param name="inputName">excelStream</param>                    
+                    <param name="contentDisposition">filename="detail.xls"</param>
+                   	<param name="contentLength">${fileSize}</param>
+                    <param name="bufferSize">1024</param>
+            </result>
+            <result name="exceldetail" type="stream">
+                    <param name="contentType">application/vnd.ms-excel</param>     
+                    <param name="inputName">excelStream</param>                    
+                    <param name="contentDisposition">filename="detail.xls"</param>
+                   	<param name="contentLength">${fileSize}</param>
+                    <param name="bufferSize">1024</param>
+            </result>
+		</action>
+		<action name="settledLogAction" class="LvSettledLogAction">
+		    <result name="list">/manager/lvPromoter/lvSettledLog_list.jsp</result>
+		    <result name="userDetail">/manager/lvPromoter/lvUserDetail.jsp</result>
+		    <result name="orderList">/manager/lvPromoter/lvOrder_list.jsp</result>
+		    <result name="excellog" type="stream">
+                    <param name="contentType">application/vnd.ms-excel</param>     
+                    <param name="inputName">excelStream</param>                    
+                    <param name="contentDisposition">filename="detail.xls"</param>
+                   	<param name="contentLength">${fileSize}</param>
+                    <param name="bufferSize">1024</param>
+            </result>
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="onlineMallManage-default" namespace="/web" extends="gv-default">
+
+		<action name="mall" class="OnlineMallManageAction">
+			<result name="mall">/web/${flag}/mall/online_mall.jsp</result>
+			<result name="getShopCartList" type="redirect">/web/mall!getShopCartList.action</result>
+			<result name="shopCartMain">/web/${flag}/mall/shopCart_list.jsp</result>
+			<result name="shopCartListForCookie">/web/${flag}/mall/shopCartListForCookie.jsp</result>
+			<result name="toOrderInfo" type="redirect">/web/shopCart!toOrderInfo.action</result>
+			<result name="ladderPrice">/web/${flag}/mall/ladder_price.jsp</result>
+			<result name="error">/web/${flag}/mall/over.jsp</result>
+		</action>
+
+	</package>
+
+</struts>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+     <!-- 一级推广商后台管理 -->
+	<package name="promotermanager" namespace="/promotermanager" extends="gv-default-manager">
+          <action name="rankpromt" class="RankPromoterManageAction">
+               <result name="login" type="redirect">rankpromt!getPromtCodeList.action</result>
+               <result name="logout" type="redirect">/promotermanager/login.jsp</result>
+               <result name="input">/promotermanager/login.jsp</result>
+               <result name="promtCodeList">/promotermanager/Concenter.jsp</result>
+               <result name="basic">/promotermanager/profile.jsp</result>
+               <result name="editpwd">/promotermanager/modifypw.jsp</result>
+               <result name="edit" type="redirect">rankpromt!basic.action</result>
+               <result name="editpwd">/promotermanager/modifypw.jsp</result>
+		       <result name="doEditpwd" type="redirect">rankpromt!editpwd.action</result>
+		       <result name="info">/promotermanager/rankDetail.jsp</result>
+		        <result name="error" type="redirect">error.html</result>
+		        <result name="pwdresult" type="redirect">pwdresult.jsp?email=${rankFirstLogin.email}</result>
+		        <result name="settleLog">/promotermanager/settleLog.jsp</result>
+		        <result name="payRequest">/promotermanager/settle_redirect.jsp</result>
+          </action>
+	</package>
+</struts>

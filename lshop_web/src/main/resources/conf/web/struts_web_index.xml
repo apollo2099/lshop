@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="indexManage-default" namespace="/web" extends="gv-default">
+
+		<action name="index" class="IndexManageAction">
+			<result name="toIndex">/web/${flag}/index.jsp</result>
+		</action>
+
+	</package>
+
+</struts>

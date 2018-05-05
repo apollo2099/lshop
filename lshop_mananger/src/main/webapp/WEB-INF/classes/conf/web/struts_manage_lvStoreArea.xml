@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="lvStoreAreaAction-default" namespace="/manager" extends="gv-default-manager">
+        <action name="lvStoreAreaAction" class="LvStoreAreaAction">
+            <result name="list">/manager/lvStoreArea/lvStoreArea_list.jsp</result>
+			<result name="befSave">/manager/lvStoreArea/lvStoreArea_add.jsp</result>
+			<result name="edit">/manager/lvStoreArea/lvStoreArea_edit.jsp</result>
+			<result name="cityList">/manager/lvStoreArea/lvStoreArea_cityList.jsp</result>
+			<result name="befSaveCity">/manager/lvStoreArea/lvStoreArea_addCity.jsp</result>
+			<result name="editcity">/manager/lvStoreArea/lvStoreArea_editCity.jsp</result>
+			<result name="selectArea">/manager/lvStoreArea/lvStoreArea_select.jsp</result>
+		</action>
+	</package>
+	
+</struts>

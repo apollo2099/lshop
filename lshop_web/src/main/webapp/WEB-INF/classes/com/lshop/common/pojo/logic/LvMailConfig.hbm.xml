@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.lshop.common.pojo.logic">
+	<class name="LvMailConfig" table="lv_mail_config">
+
+		<id name="id" column="Id" type="java.lang.Integer">
+			<generator class="identity" />
+		</id>
+
+
+
+		<property name="sendSmtpHost" column="send_smtp_host" update="true"
+			insert="true" type="java.lang.String" not-null="false" unique="false"
+			length="32" />
+
+		<property name="sendUserName" column="send_user_name" update="true"
+			insert="true" type="java.lang.String" not-null="false" unique="false"
+			length="255" />
+
+		<property name="sendPassword" column="send_password" update="true"
+			insert="true" type="java.lang.String" not-null="false" unique="false"
+			length="32" />
+
+		<property name="mailFrom" column="mail_from" update="true"
+			insert="true" type="java.lang.String" not-null="false" unique="false"
+			length="255" />
+
+		<property name="mallSystem" column="mall_system" update="true"
+			insert="true" type="java.lang.String" not-null="false" unique="false"
+			length="32" />
+
+		<property name="code" column="code" update="true" insert="true"
+			type="java.lang.String" not-null="false" unique="false" length="32" />
+
+		<property name="createTime" column="create_time" update="true"
+			insert="true" type="java.util.Date" not-null="false" unique="false"
+			length="0" />
+
+		<property name="modifyTime" column="modify_time" update="true"
+			insert="true" type="java.util.Date" not-null="false" unique="false"
+			length="0" />
+
+		<property name="modifyUserId" column="modify_user_id" update="true"
+			insert="true" type="java.lang.Integer" not-null="false" unique="false"
+			length="10" />
+
+		<property name="modifyUserName" column="modify_user_name"
+			update="true" insert="true" type="java.lang.String" not-null="false"
+			unique="false" length="32" />
+
+
+
+
+
+	</class>
+</hibernate-mapping>
+

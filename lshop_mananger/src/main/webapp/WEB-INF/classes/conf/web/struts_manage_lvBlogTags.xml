@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="lvBlogTagsAction-default" namespace="/manager" extends="gv-default-manager" >
+	     <!--博客标签管理-->
+	     <action name="lvBlogTagsAction" class="LvBlogTagsAction" method="list">
+	            <result name="list">/manager/lvBlogTags/lvBlogTags_list.jsp</result>
+	            <result name="select">/manager/lvBlogTags/lvBlogTags_select.jsp</result>
+	            <result name="view">/manager/lvBlogTags/lvBlogTags_view.jsp</result> 	            
+	            <result name="edit">/manager/lvBlogTags/lvBlogTags_edit.jsp</result>
+	            <result name="befSave">/manager/lvBlogTags/lvBlogTags_add.jsp</result>
+	            <result name="ajax">/manager/common/ajaxDone.jsp</result>
+			    <result name="callback">/manager/common/callbackDone.jsp</result> 
+			    <result name="json">/manager/common/jsonDone.jsp</result> 
+	     </action>
+	     </package>
+</struts>

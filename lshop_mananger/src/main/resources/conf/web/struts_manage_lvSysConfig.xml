@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="sysconfigMngAction-default" namespace="/manager" extends="gv-default-manager" >
+	     <!--商城VB套餐管理配置-->
+	     <action name="sysConfigMngAction" class="SysConfigMngAction" method="list">
+	            <result name="list">/manager/lvSysConfig/list.jsp</result>
+	            <result name="bfadd">/manager/lvSysConfig/add.jsp</result>
+	            <result name="view">/manager/lvSysConfig/view.jsp</result>
+	            <result name="edit">/manager/lvSysConfig/edit.jsp</result>
+	     </action>
+	</package>
+</struts>

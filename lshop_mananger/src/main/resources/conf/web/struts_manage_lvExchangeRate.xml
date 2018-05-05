@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="lvExchangeRateAction-default" namespace="/manager" extends="gv-default-manager">
+        <action name="lvExchangeRateAction" class="LvExchangeRateAction">
+            <result name="list">/manager/lvExchangeRate/lvExchangeRate_list.jsp</result>
+			<result name="befSave">/manager/lvExchangeRate/lvExchangeRate_add.jsp</result>
+			<result name="view">/manager/lvExchangeRate/lvExchangeRate_view.jsp</result>
+			<result name="edit">/manager/lvExchangeRate/lvExchangeRate_edit.jsp</result>
+			<result name="ajax">/manager/common/ajaxDone.jsp</result>
+			<result name="callback">/manager/common/callbackDone.jsp</result> 
+			<result name="json">/manager/common/jsonDone.jsp</result> 
+		</action>
+	</package>
+	
+</struts>

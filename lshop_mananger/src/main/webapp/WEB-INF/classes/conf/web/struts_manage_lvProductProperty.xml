@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="lvProductPropertyAction-default" namespace="/manager" extends="gv-default-manager" >
+	     <!--产品类型管理配置-->
+	     <action name="lvProductPropertyAction" class="LvProductPropertyAction" >
+	            <result name="list">/manager/lvProductProperty/lvProductProperty_list.jsp</result>
+	            <result name="view">/manager/lvProductProperty/lvProductProperty_view.jsp</result> 	            
+	            <result name="edit">/manager/lvProductProperty/lvProductProperty_edit.jsp</result>
+	            <result name="befAdd">/manager/lvProductProperty/lvProductProperty_add.jsp</result>
+	            <result name="befShopAdd">/manager/lvProductProperty/shopProductProperty_add.jsp</result>
+	            <result name="befShopEdit">/manager/lvProductProperty/shopProductProperty_edit.jsp</result>
+	            <result name="shopView">/manager/lvProductProperty/shopProductProperty_view.jsp</result>
+	     </action>
+	     </package>
+</struts>

@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+body{font-family:Arial, Helvetica, sans-serif}
+.tvpad4_cn{width:100%; background-image:url(../images/tvpad4zt_gcn/banner_GCN_bg.jpg); background-repeat:repeat-x}
+.tvpad4_cn{background-color:#008dde; width:100%}
+.tav4_bananer{width:1002px; margin:0 auto;}
+.tav5_bananer{width:1002px; margin:0 auto; position:relative}
+.tvcn_febg{ background-image:url(../images/tvpad4zt_gcn/tvcn_febg.jpg); background-position:center center; width:100%}
+.tav5_bananer a{position:absolute; font-size:16px}
+.tav5_bananer span{ position:absolute; font-size:16px}
+.more{right:50px; bottom:122px}
+.tvcn_bt{right:20px; bottom:64px}
+.part3{width:100%; background-color:#d4d4d5}
+.part3_inner{width:1002px; margin:0 auto}
+.tv4cn_title{font-size:50px; color:#333333; text-align:center; padding:92px 0 54px 0}
+.part3_inner p{font-size:16px; color:#616060; text-align:center; line-height:26px; margin-bottom:45px}
+#p_bottom{text-align:left; margin-bottom:0; padding-bottom:40px}
+.part4{width:100%; background-image:url(../images/tvpad4zt_gcn/part4_bg.jpg); background-position:center center}
+.part4_inner{width:1002px; margin:0 auto; padding-top:80px}
+.psf{color:#fff; font-size:46px}
+.ps_2k{font-size:26px; color:#fe4c06; margin-top:16px}
+.psf_de{font-size:16px; color:#fff; margin-top:12px}
+.psf_list{width:530px;}
+.psf_list ul{margin:0; padding:0; list-style:none}
+.psf_list ul li{ border-radius:5px; border:1px solid #fff; float:left;height:30px; line-height:30px; color:#fff; font-size:16px; padding:0 12px; margin-right:18px; margin-top:15px;-moz-border-radius:5px; -ms-border-radius:5px; -o-border-radius:5px; -webkit-border-radius:5px;}
+.par4_img{margin-top:20px}
+.part5{background-color:#ffffff; width:100%}
+.psf5{color:#333333; font-size:46px}
+.psf_de5{font-size:16px; color:#333333; margin-top:12px; padding-bottom:10px}
+.pspan{height:30px; margin-top:10px}
+.pspan span{background-color:#333333; color:#fff; font-size:16px; padding:5px 12px; height:30px; margin-right:14px; border-radius:5px; -moz-border-radius:5px; -ms-border-radius:5px; -o-border-radius:5px; -webkit-border-radius:5px;}
+.par5_img{margin-top:50px}
+.psf6{color:#fff; font-size:38px}
+.ps_2k6{font-size:20px; color:#fe4c06; margin-top:12px; padding-bottom:10px}
+.psf_de6{font-size:16px; color:#fff; margin-top:0px; padding-bottom:20px}
+.pspan6{height:30px}
+.pspan6 span{color:#fff; font-size:16px; padding:5px 12px; height:30px; margin-right:14px; border-radius:5px; -moz-border-radius:5px; -ms-border-radius:5px; -o-border-radius:5px; -webkit-border-radius:5px; border:1px solid #fff}
+.par6_img{width:1000px; margin:0 auto; position:relative}
+.par6_img a{position:absolute; display:block; width:184px; height:54px; left:0; top:20px;}
+.part6{width:100%; background-image:url(../images/tvpad4zt_gcn/part6_bg.jpg); background-position:center center; background-repeat:no-repeat}
+.part7{width:100%; background-color:#fff}
+.psf7{color:#333333; font-size:38px; text-align:right; width:780px}
+.ps_2k7{font-size:20px; color:#fe4c06; margin-top:12px; padding-bottom:10px; text-align:right; width:780px}
+.psf_de7{font-size:16px; color:#333333; margin-top:0px; padding-bottom:20px; text-align:right; width:780px}
+.pspan7{height:30px; margin-top:10px; text-align:right; width:780px}
+.pspan7 span{background-color:#333333; color:#fff; font-size:16px; padding:5px 12px; height:30px; margin-left:14px; border-radius:5px; -moz-border-radius:5px; -ms-border-radius:5px; -o-border-radius:5px; -webkit-border-radius:5px;}
+.part7_inner{width:1002px; background-image:url(../images/tvpad4zt_gcn/tvpad_bg.jpg); background-position:left bottom; margin:0 auto; height:715px; background-repeat:no-repeat; padding-top:80px}
+.part8{background-image:url(../images/tvpad4zt_gcn/part8bg.jpg); background-repeat:repeat-x}
+.pspan6 a{margin-right:20px}
+.part8_tv{color:#fff; font-size:16px; line-height:26px; margin:30px 0}
+.par8_img{margin-top:49px}
+.part9{width:100%; background-color:#fff}
+.part9_img{margin-top:40px}
+.part10{width:100%; background-color:#fff}
+.tabde{margin-top:20px; padding-bottom:20px}

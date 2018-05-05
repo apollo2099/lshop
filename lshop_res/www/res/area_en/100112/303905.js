@@ -1,0 +1,1 @@
+var cityData=[{"id":357823,"name":"Highbury","nameCn":"Highbury","nameTw":"Highbury","code":"Highbury"},{"id":357824,"name":"Islington","nameCn":"Islington","nameTw":"Islington","code":"Islington"},{"id":357825,"name":"Upper Holloway","nameCn":"Upper Holloway","nameTw":"Upper Holloway","code":"Upper Holloway"}];

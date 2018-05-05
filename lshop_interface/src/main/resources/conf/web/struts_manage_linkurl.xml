@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="lvlinkMngAction-default" namespace="/manager"  extends="gv-default-manager">
+		<action name="linkUrl" class="LinkUrlManageAction">
+		  <result name="list" >/manager/linkurl/list.jsp</result>
+		   <result name="info" >/manager/linkurl/updateres.jsp</result>
+		   <result name="bufAdd">/manager/linkurl/addres.jsp</result>
+		</action>
+	</package>
+</struts>

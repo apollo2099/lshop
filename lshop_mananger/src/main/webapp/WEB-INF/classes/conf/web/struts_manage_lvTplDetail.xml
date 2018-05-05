@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="lvTplDetailMngAction-default" namespace="/manager" extends="gv-default-manager" >
+        <action name="lvTplDetailMngAction" class="LvTplDetailMngAction">
+			<result name="befSave">/manager/lvTplDetail/lvTplDetail_add.jsp</result>
+			<result name="list">/manager/lvTplDetail/lvTplDetail_list.jsp</result>
+			<result name="view">/manager/lvTplDetail/lvTplDetail_view.jsp</result>
+			<result name="edit">/manager/lvTplDetail/lvTplDetail_edit.jsp</result>
+			<result name="ajax">/manager/common/ajaxDone.jsp</result>
+			<result name="callback">/manager/common/callbackDone.jsp</result> 
+			<result name="json">/manager/common/jsonDone.jsp</result> 
+		</action>
+	</package>
+	
+</struts>

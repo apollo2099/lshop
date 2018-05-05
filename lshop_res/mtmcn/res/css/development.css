@@ -1,0 +1,15 @@
+/**���ļ�Ϊ�����Զ�����ʽ**/
+
+/**register**/
+.user_reg_bt,.user_reg_bt_disable{width:100%; height:70px; line-height:70px; background-color:#0099ff; color:#FFF; border:none; cursor:pointer; font-size:30px; font-family:"΢���ź�"}
+.user_reg_bt_disable{background-color:#bbb;}
+
+
+/*可搜索下来列表组件*/
+.searchSelect{width:122px;height:25px;}
+.searchSelect .searchSelectDown{float:left;display:inline-block;background:#fff url("../images/searchselect/ss-down.png") no-repeat center center;width:20px;height:20px;border:1px solid #7f9db9;border-left: 0px solid #fff;}
+.searchSelect .searchSelectInput{float:left;width:100px;height:20px;border:1px solid #7f9db9;border-right: 0px solid #fff;}
+.searchSelectList{position:absolute;left:-999px;top:-999px;width:120px;border:1px solid #ccc;display:none;overflow:auto;background-color:#fff;z-index:999999;}
+.searchSelectList ul{padding:0px;margin:0px;}
+.searchSelectList ul li{list-style:none;height:25px;line-heigth:25px;padding:0px 10px;cursor:default;overflow:hidden;white-space:nowrap;}
+.searchSelectList .selected{background-color:#ccc;}

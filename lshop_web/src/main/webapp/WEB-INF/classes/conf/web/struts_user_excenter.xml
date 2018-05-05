@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="user_excenter" namespace="/excenter" extends="gv-default-web">
+	     <action name="excenter" class="ExcenterUserAction" >
+		  <result name="login" type="redirect">/excenter/promtManager!promtCodeList.action</result>
+		  <result name="input">/excenter/login.jsp</result>
+		  <result name="account">/excenter/usercenter_my_account.jsp</result>
+		  <result name="basic">/excenter/profile.jsp</result>
+		  
+		  <result name="detail" type="redirect">/excenter/excenter!basic.action</result>
+		  
+		  <result name="edit" type="redirect">/excenter/excenter!basic.action</result>
+		  <result name="editpwd">/excenter/modifypw.jsp</result>
+		  <result name="doEditpwd" type="redirect">/excenter/excenter!editpwd.action</result>
+		  <result name="logout" type="redirect">/excenter/index.html</result>
+		</action>
+		<action name="password" class="ExcenterUserAction"  method="password">
+		  <result name="pwdresult" type="redirect">/excenter/pwdresult.jsp?email=${lvUser.email}</result>
+		  <result name="error" type="redirect">/excenter/error.html</result>
+		</action>
+		<action name="regedit" class="ExcenterUserAction"  method="regedit">
+		  <result name="success" type="redirect">/excenter/logon_ts.jsp?email=${userp.email}</result>
+		  <result name="input">/excenter/register.jsp</result>
+		</action>
+	    <action name="promtManager" class="PromoterManageAction">
+          <result name="codeList">/excenter/Concenter.jsp</result>	    
+          <result name="befPayRequest">/excenter/check.jsp</result>
+          <result name="payRequest">/excenter/settle_redirect.jsp</result>
+          <result name="detailList">/excenter/theOrder.jsp</result>
+          
+          <result name="thePromtDetailOrder">/excenter/thePromtDetailOrder.jsp</result>
+          <result name="theSettledDetailOrder">/excenter/theSettledDetailOrder.jsp</result>
+          <result name="theSettleOrder">/excenter/theSettleOrder.jsp</result>
+          <result name="theNsettleOrder">/excenter/theNsettleOrder.jsp</result>
+          
+          
+          <result name="settleLog">/excenter/query.jsp</result>
+          <result name="fundrelate">/excenter/ad_fund.jsp</result>
+          
+          <result name="userdetail">/excenter/userdetail.jsp</result>
+          <result name="tooldetail">/excenter/promt_tool.jsp</result>
+          <result name="content">/excenter/content.jsp</result>
+          <result name="htmlcontent">/excenter/htmlcontent.jsp</result>
+          <result name="promtpage">/excenter/index.jsp</result>
+	    </action>
+	</package>
+</struts>

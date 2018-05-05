@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="tvpadTopicManage-default" namespace="/web" extends="gv-default">
+
+		<action name="tvpadTopic" class="TvpadTopicManageAction">
+			<result name="toTvpadzt">/web/${flag}/tvpadzt/project.jsp</result>
+			<result name="serviceNetwork">/web/${flag}/serviceNetwork.jsp</result>
+			<result name="app" type="redirect">/web/${flag}/business/ApplicationForm.jsp</result>
+		</action>
+
+	</package>
+
+</struts>

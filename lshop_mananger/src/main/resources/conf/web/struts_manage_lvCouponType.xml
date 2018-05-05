@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="lvCouponTypeAction-default" namespace="/manager" extends="gv-default-manager">
+        <action name="lvCouponTypeAction" class="LvCouponTypeAction">
+            <result name="list">/manager/lvCouponType/lvCouponType_list.jsp</result>
+			<result name="befSave">/manager/lvCouponType/lvCouponType_add.jsp</result>
+			<result name="view">/manager/lvCouponType/lvCouponType_view.jsp</result>
+			<result name="edit">/manager/lvCouponType/lvCouponType_edit.jsp</result>
+			<result name="selectMultipleProduct">/manager/lvCouponType/lvProduct_select_multiple.jsp</result>
+			<result name="selectMultipleProductType">/manager/lvCouponType/lvProductType_select_multiple.jsp</result>
+			<result name="selectSimpleCouponType">/manager/lvCouponType/lvCouponType_select_simple.jsp</result>
+			<result name="befAddNumber">/manager/lvCouponType/lvCouponType_add_number.jsp</result>
+			<result name="befExtendDate">/manager/lvCouponType/lvCouponType_extent_date.jsp</result>
+			<result name="befDisable">/manager/lvCouponType/lvCouponType_disable.jsp</result>
+			<result name="befDownload">/manager/lvCouponType/lvCouponType_download.jsp</result>
+			<result name="excel" type="stream">
+                    <param name="contentType">application/vnd.ms-excel</param>     
+                    <param name="inputName">excelStream</param>                    
+                    <param name="contentDisposition">filename="couponTypeList.xls"</param>
+                   	<param name="contentLength">${fileSize}</param>
+                    <param name="bufferSize">1024</param>
+            </result>
+		</action>
+	</package>
+	
+</struts>

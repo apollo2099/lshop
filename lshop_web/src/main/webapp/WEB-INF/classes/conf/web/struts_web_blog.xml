@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="blogManage-default" namespace="/web/blog" extends="gv-default">
+
+		<action name="blogManage" class="BlogManageAction">
+			<result name="success">/web/${flag}/test.jsp</result>
+			<result name="list" >/web/${flag}/blog/blog.jsp</result>
+			<result name="view" >/web/${flag}/blog/blog_info.jsp</result>
+			<result name="review" type="redirect">/web/blog/blogManage!view.action?lvBlogContent.id=${contentId}</result>
+		</action>
+
+	</package>
+
+</struts>

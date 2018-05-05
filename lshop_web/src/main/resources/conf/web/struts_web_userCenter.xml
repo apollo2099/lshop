@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="userCenterManage-default" namespace="/web" extends="gv-default">
+
+		<action name="userCenterManage" class="UserCenterManager">
+		
+			<!-- 注册登陆 -->
+			<result name="register">/web/${flag}/register.jsp</result>
+			<result name="input">/web/${flag}/login.jsp</result>
+		  	<result name="login" type="redirect">/web/${flag}/login_success.jsp?jumpurl=${jumpurl}</result>
+		  	<result name="pwdresult" type="redirect">/web/${flag}/pwdresult.jsp?email=${lvUser.email}</result>
+		    <result name="error" type="redirect">/web/${flag}/error.html</result>
+		    <result name="logout" type="redirect">/index.html</result>
+		    <result name="register" type="redirect">/web/${flag}/register.jsp?jumpurl=${jumpurl}</result>
+		    <result name="loginRegister">/web/${flag}/loginRegister.jsp?jumpurl=${jumpurl}</result>
+		    <result name="password" type="redirect">/web/${flag}/password.jsp</result>
+
+		    <result name="login_erro">/web/${flag}/noLoginInfo.jsp?jumpurl=${jumpurl}</result>
+		    <result name="findpwd_erro">/web/${flag}/password.jsp</result>
+		    <result name="findpwd_suc" type="redirect">/web/${flag}/password1.jsp?flag=${flag}</result>
+		    <result name="resetpwd_erro">/web/${flag}/password4.jsp</result>
+		    <result name="resetpwd_suc" type="redirect">/web/${flag}/password3.jsp?flag=${flag}</result>
+
+		    <!--调整到快速下单页面 -->
+		    <result name="toQuickOrder"  type="redirect">/web/shopCart!toQuickOrder.action?shopFlag=${shopFlag}&amp;productCode=${productCode}</result>
+		   
+		    <!-- 用户中心 -->
+		    <result name="myAccount">/web/${flag}/user_center/myAccount.jsp</result>
+		    <result name="myInfo">/web/${flag}/user_center/myInfo.jsp</result>
+		    <result name="edit" type="redirect">/web/userCenterManage!getInfoDetail.action</result>
+		    <result name="updatePassword">/web/${flag}/user_center/updatePassword.jsp</result>
+		    <result name="addressList">/web/${flag}/user_center/addressList.jsp</result>
+		    <result name="getAddressList" type="redirect">/web/userCenterManage!getAddressList.action</result>
+		    <result name="addAddress">/web/${flag}/user_center/addAddress.jsp</result>
+		    <result name="editAddress">/web/${flag}/user_center/editAddress.jsp</result>
+		    <result name="myShopCart">/web/${flag}/user_center/myShopCart.jsp</result>
+		    <result name="getCart" type="redirect">/web/userCenterManage!getCart.action</result>
+		    
+		    <!-- 用户中心——我的评论 -->
+		    <result name="myComments">/web/${flag}/user_center/myComments.jsp</result>
+		    <result name="pageMyComments">/web/${flag}/user_center/pageMyComments.jsp</result>
+		</action>
+		
+		<action name="regeditAccount" class="UserCenterManager"  method="regeditAccount">
+		  <result name="success" type="redirect">/web/${flag}/register_success.jsp?jumpurl=${jumpurl}</result>
+		  <result name="input">/web/${flag}/register.jsp</result>
+		</action>
+		
+		<!-- 授权部分 -->
+		<action name="auth" class="Authorize">
+			<result name="430">/web/${flag}/authorize/codetimeout.jsp</result>
+			<result name="erro">/web/${flag}/authorize/erro.jsp</result>
+		</action>
+		<action name="auth_redirect" class="Authorize"  method="authRedirect">
+			<result name="430">/web/${flag}/authorize/codetimeout.jsp</result>
+			<result name="erro">/web/${flag}/authorize/erro.jsp</result>
+		    <result name="authlogin">/web/${flag}/authorize/${authtype}/login.jsp</result>
+		    <result name="authcomfirm">/web/${flag}/authorize/${authtype}/confirm.jsp</result>
+		</action>
+		<action name="authorize" class="Authorize"  method="authorize">
+			<result name="430">/web/${flag}/authorize/codetimeout.jsp</result>
+			<result name="erro">/web/${flag}/authorize/erro.jsp</result>
+			<result name="goto">/web/${flag}/authorize/goauth.jsp</result>
+		    <result name="authlogin">/web/${flag}/authorize/${authtype}/login.jsp</result>
+		    <result name="authcomfirm">/web/${flag}/authorize/${authtype}/confirm.jsp</result>
+		</action>
+		<!-- 第三方授权登录 -->
+        <action name="threeauth" class="ThreeAuthorize">
+            <result name="success">/web/${flag}/threeauthorize/success.jsp</result>
+            <result name="index" type="redirect">/index.html</result>
+            <result name="authorize" type="redirect">/web/threeauth!authorize.action?token=${token}&amp;thnick=${thnick}&amp;lvUserTh.thType=${lvUserTh.thType}</result>
+            <result name="redirectauthorize">/web/${flag}/threeauthorize/authorize.jsp</result>
+        </action>
+		<!--充值 -->
+		<action name="recharge" class="RechargeAction">
+			<result name="list">/web/${flag}/recharge/choose.jsp</result>
+			<result name="success">/web/${flag}/recharge/pay_mothod_code.jsp</result>
+			<result name="input">/web/${flag}/recharge/card.jsp</result>
+			<result name="trueorder">/web/${flag}/recharge/online_true.jsp</result>
+			<result name="doorder" type="redirect">/web/recharge!trueOrder.action?rnum=${rnum}</result>
+			<result name="consumelist">/web/${flag}/recharge/consumelist.jsp</result>
+			<result name="online">/web/${flag}/recharge/online.jsp</result>
+			<result name="card">/web/${flag}/recharge/card.jsp</result>
+		</action>
+		
+		<!-- 充值卡充值 -->
+		<action name="docard" class="RechargeAction" method="doCard">
+		   <result name="input">/web/${flag}/recharge/card.jsp</result>
+		   <result name="success" type="redirect">/web/${flag}/recharge/card_ok.jsp</result>
+		   <result name="cardfail">/web/${flag}/recharge/card_fail.jsp</result>
+		</action>
+		
+		
+		<action name="device" class="DeviceAction" >
+		   <result name="mydevice">/web/${flag}/user_center/myDevice.jsp</result>
+		   <result name="checkwarranty">/web/${flag}/user_center/checkwarranty.jsp</result>
+		   <result name="toUnbinding">/web/${flag}/user_center/removebinding.jsp</result>
+		</action>
+		<action name="validatecode" class="UserCenterManager"  method="validateCode"></action>
+
+	</package>
+
+</struts>

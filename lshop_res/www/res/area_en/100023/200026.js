@@ -1,0 +1,1 @@
+var cityData=[{"id":300309,"name":"Tianjin","nameCn":"天津","nameTw":"天津","icon":"","code":"Tianjin"}];

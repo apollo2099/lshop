@@ -1,0 +1,43 @@
+@charset "utf-8";
+.business_c_header{ width:100%; background:#15177e; height:498px; }
+.business_c_header_t{ width:1002px; margin:0 auto;}
+
+.business_c_p{ width:100%; height:26px; background:#dcdddd; border-bottom:1px #ccc solid;}
+.business_c_p_t{ width:1002px; margin:0 auto; text-align:right; line-height:30px;}
+.business_c_p_t img{ vertical-align:middle;}
+
+.business_c_banner{ width:1002px; margin:40px auto 0 auto;}
+.business_c_banner1{ width:1002px; margin:0 auto;}
+
+.business_c_d{ width:1002px; margin:0 auto; height:auto; overflow:hidden; clear:both; }
+.business_c_d li.wd2{ width:500px; float:left; text-align:right; }
+
+.business_c_d li.wd1{  width:462px;float:left; padding:20px; line-height:26px; font-size:15px; }
+.business_c_d li.wd1 p.title{ font-size:25px; font-weight:bold; color:#15177e; text-indent:none; padding-bottom:20px;}
+.business_c_d li.wd1 p.title img{ vertical-align:middle; }
+
+.business_c_d li.wd3{ width:442px; float:left; padding:80px 20px 20px 40px; line-height:26px; font-size:14px; }
+.business_c_d li.wd3 p.title{ font-size:25px; font-weight:bold; color:#15177e; text-indent:none; padding-bottom:20px;}
+
+.business_c_e{ width:1002px; margin:0 auto; }
+.business_c_e p.business_c_e_t{ font-size:24px; padding-left:20px; padding-top:40px;}
+.business_c_e ul{ width:1002px; height:120px; padding-top:10px; }
+.business_c_e li{ float:left; width:260px; font-size:14px; padding-left:80px;}
+.business_c_e li.wd1{ float:left; width:220px; font-size:14px; }
+.business_c_e li.wd2{ float:left; width:180px; font-size:14px;padding-left:140px; }
+.business_c_e li p.tt{ font-weight:bold; font-size:18px; color:#15177e;}
+.business_c_e li img{ vertical-align:middle;}
+
+.business_c_f{ margin:0 auto;  background:url(../images/business/business_cooperation_12.jpg) no-repeat; width:1002px; height:431px;}
+.business_c_f ul{ width:960px; padding:220px 0px 50px 50px; font-size:16px;}
+.business_c_f ul li{ float:left; width:150px; margin-right:25px; padding-left:8px; line-height:24px;}
+
+.business_c_g{ width:1002px; margin:0 auto; padding:20px 0 0 0px; height:400px; overflow:hidden;}
+.business_c_g ul{ padding:10px 0 0 100px; font-size:14px;}
+.business_c_g ul li{ float:left; width:120px; padding-right:125px;}
+.business_c_g ul li.wd1{ float:left; width:210px; padding-right:45px; }
+.business_c_g ul li.wd2{ float:left; width:120px; padding-right:20px; }
+.business_c_g  img{ padding-top:20px;}
+
+.business_c_gg{ width:100%; background:#15177e; height:202px;}
+.business_c_gg_c{ width:1002px; margin:0 auto;}

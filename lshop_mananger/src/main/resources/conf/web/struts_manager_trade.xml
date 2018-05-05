@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="trade-default" namespace="/manager" extends="gv-default-manager">
+		<action name="userorder" class="UserOrderMngAction">
+			<result name="list">/manager/vbtrade/userorder_list.jsp</result>
+		</action>
+		
+		<action name="accountorder" class="AccountOrderMngAction">
+			<result name="list">/manager/vbtrade/account_list.jsp</result>
+			<result name="buyList">/manager/vbtrade/account_buyorder_list.jsp</result>
+			<result name="consumeList">/manager/vbtrade/account_consumeorder_list.jsp</result>
+		</action>
+	</package>
+
+</struts>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="lvOrderAction-default" namespace="/manager" extends="gv-default-manager" >
+	     <!--订单信息管理配置-->
+	     <action name="lvOrderAction" class="LvOrderAction" >
+	            <result name="list">/manager/lvOrder/lvOrder_list.jsp</result>
+	            <result name="view">/manager/lvOrder/lvOrder_view.jsp</result> 	            
+	            <result name="edit">/manager/lvOrder/lvOrder_edit.jsp</result>
+	            <result name="befAdd">/manager/lvOrder/lvOrder_add.jsp</result>
+	            <result name="audit">/manager/lvOrder/lvOrder_audit.jsp</result>
+	            <result name="sendRemark">/manager/lvOrder/lvOrder_send_remark.jsp</result>
+	            <result name="breakRemark">/manager/lvOrder/lvOrder_break_remark.jsp</result>
+	            <result name="busShop">/manager/lvOrder/lvOrder_busShop.jsp</result>
+	            <result name="comment">/manager/lvOrder/lvOrder_comment.jsp</result>
+	            <result name="notice">/manager/lvOrder/lvOrder_notice.jsp</result>
+	            <result name="orderStat">/manager/lvOrder/lvOrder_orderStat.jsp</result>
+	            <result name="productStat">/manager/lvOrder/lvOrder_productStat.jsp</result>
+	            <result name="userOrderStat">/manager/lvOrder/userOrderStat.jsp</result>
+	            <result name="shopTypeState">/manager/lvOrder/lvOrder_shopTypeState.jsp</result>
+	            <result name="userOrderList">/manager/lvOrder/userOrderList.jsp</result>
+	            <result name="updatePrice">/manager/lvOrder/lvOrder_update_price.jsp</result>
+	            <result name="updateStatus">/manager/lvOrder/lvOrder_update_status.jsp</result>
+	            <result name="sendOrder">/manager/lvOrder/lvOrder_send.jsp</result>
+	            <result name="shopOrderList">/manager/lvOrder/shopOrderList.jsp</result>
+	            <result name="befChangeStore">/manager/lvOrder/lvOrder_changeStore.jsp</result>
+	            <result name="befChangeProduct">/manager/lvOrder/lvOrder_changeProduct.jsp</result>
+	            <result name="excel" type="stream">
+                    <param name="contentType">application/vnd.ms-excel</param>     
+                    <param name="inputName">excelStream</param>                    
+                    <param name="contentDisposition">filename="orderInfoList.xls"</param>
+                   	<param name="contentLength">${fileSize}</param>
+                    <param name="bufferSize">1024</param>
+                </result>
+                 <result name="exportOrderStat" type="stream">
+                    <param name="contentType">application/vnd.ms-excel</param>     
+                    <param name="inputName">excelStream</param>                    
+                    <param name="contentDisposition">filename="exportOrderStat.xls"</param>
+                   	<param name="contentLength">${fileSize}</param>
+                    <param name="bufferSize">1024</param>
+                </result>
+                 <result name="exportProductStat" type="stream">
+                    <param name="contentType">application/vnd.ms-excel</param>     
+                    <param name="inputName">excelStream</param>                    
+                    <param name="contentDisposition">filename="exportProductStat.xls"</param>
+                   	<param name="contentLength">${fileSize}</param>
+                    <param name="bufferSize">1024</param>
+                </result>
+                <result name="exportUserOrder" type="stream">
+                    <param name="contentType">application/vnd.ms-excel</param>     
+                    <param name="inputName">excelStream</param>                    
+                    <param name="contentDisposition">filename="exportUserOrder.xls"</param>
+                   	<param name="contentLength">${fileSize}</param>
+                    <param name="bufferSize">1024</param>
+                </result>
+                <result name="exportShopTypeState" type="stream">
+                    <param name="contentType">application/vnd.ms-excel</param>     
+                    <param name="inputName">excelStream</param>                    
+                    <param name="contentDisposition">filename="exportShopTypeState.xls"</param>
+                   	<param name="contentLength">${fileSize}</param>
+                    <param name="bufferSize">1024</param>
+                </result>
+	     </action>
+	     </package>
+</struts>

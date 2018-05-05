@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+    "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	
+
+    <!-- jms lshop_web banana begin  -->
+    <!-- jms 发送 -->                             
+    <bean id="messageQueueSenderLshopWebBanana" class="com.gv.core.message.jms.activemq.ActivemqMessageQueueSender">
+         <property name="jmsTemplate" ref="jmsTemplate" />
+         <property name="destination" >
+             <bean class="org.apache.activemq.command.ActiveMQQueue">
+		        <constructor-arg index="0">
+					<value>${jms.lshop.web.destination.queueSender}</value>
+		        </constructor-arg>
+		    </bean>
+         </property>
+    </bean>
+    <!-- jms 接受 -->
+    <bean id="jmsContainerLshopWebBanana" class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+    	 <property name="connectionFactory" ref="connectionFactory" />
+    	 <property name="destination" >
+    	     <bean  class="org.apache.activemq.command.ActiveMQQueue">
+		        <constructor-arg index="0">
+					<value>${jms.lshop.banana.web.destination.queueReceiver}</value>
+		        </constructor-arg>
+		    </bean>
+    	 </property>
+    	 <property name="messageListener" >
+    	 	  <bean  class="com.lshop.common.message.jms.activemq.ActiveMessageQueueReceiverStoreImpl">
+		    </bean>
+    	 </property> 
+    	 <property name="sessionTransacted" value="true"/>
+    	 <property name="recoveryInterval" value="10000"/>
+    	 <property name="maxMessagesPerTask" value="1000"/>    	 
+    </bean>
+    <!-- jms lshop_web banana end  -->
+
+
+	<bean id="connectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
+         <property name="brokerURL" value="${jms.brokerURL}" />
+    </bean>
+    <bean id="jmsTransactionManager" class="org.springframework.jms.connection.JmsTransactionManager">
+         <property name="connectionFactory" ref="connectionFactory" />
+    </bean>
+    <bean id="jmsTemplate" class="org.springframework.jms.core.JmsTemplate">
+         <property name="connectionFactory" ref="connectionFactory" />
+    </bean>
+</beans>

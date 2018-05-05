@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+    xmlns:beans="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/security
+           http://www.springframework.org/schema/security/spring-security-3.0.xsd">
+	
+	<beans:description>SpringSecurity</beans:description>
+
+  	<beans:bean id="customWebInvocationPrivilegeEvaluator" class="org.springframework.security.web.access.DefaultWebInvocationPrivilegeEvaluator">
+     <beans:constructor-arg  ref="baseFilter" />
+    </beans:bean> 
+	<!-- http安全配置 -->
+ 	 <http auto-config="true" use-expressions="true" > 
+ 		<intercept-url pattern="/manager/mainfream/login.jsp" filters="none"  />
+ 		<intercept-url pattern="/manager/mainfream/index.jsp" filters="none"  />
+		<intercept-url pattern="/manager/mainfream/*" access="isAuthenticated()"  />
+		<intercept-url pattern="/manager/base/**/*" access="isAuthenticated()"  />
+		<intercept-url pattern="/manager/business/**/*" access="isAuthenticated()"  />
+		<!-- authentication-success-handler-ref 成功之后处理类 -->
+		<form-login login-page="/manager/mainfream/login.jsp" default-target-url="/manager/mainfream/index_index.jsp" authentication-failure-url="/manager/mainfream/login.jsp?error=true" authentication-success-handler-ref="baseSuccessHandler"/>
+		<!-- 尝试访问没有权限的页面时跳转的页面 -->   
+		<access-denied-handler error-page="/manager/mainfream/common/405.jsp"/> 
+		
+		<logout invalidate-session="true" logout-success-url="/manager/mainfream/index.jsp?error=1" />
+		 
+		<!-- 配置session失效时的重定向地址 -->
+		<session-management invalid-session-url="/manager/mainfream/index.jsp?error=2" session-fixation-protection="none">
+       		<concurrency-control max-sessions="1" expired-url="/manager/mainfream/index.jsp?error=3"/>
+  		</session-management>
+
+		<!-- 增加一个filter，这点与Acegi是不一样的，不能修改默认的filter了，
+		这个filter位于FILTER_SECURITY_INTERCEPTOR之前  -->
+         <custom-filter ref="baseFilter" before="FILTER_SECURITY_INTERCEPTOR"/>
+        <!--   <custom-filter ref="mySuccessHandlerFilter" after="FORM_LOGIN_FILTER" />  -->
+	 </http>
+
+	<!-- 一个自定义的filter，必须包含authenticationManager,accessDecisionManager,securityMetadataSource三个属性，
+    	我们的所有控制将在这三个类中实现，解释详见具体配置  -->
+   
+    <beans:bean id="baseFilter" class="com.gv.base.springSecurity.web.interceptor.BaseFilterSecurityInterceptor">
+        <beans:property name="authenticationManager" ref="authenticationManager" />
+        <beans:property name="accessDecisionManager" ref="accessDecisionManagerBean" />
+        <beans:property name="securityMetadataSource" ref="securityMetadataSource" />
+    </beans:bean>
+    
+    <!-- 用户的密码加密或解密 -->
+    <beans:bean id="passwordEncoder" class="org.springframework.security.authentication.encoding.Md5PasswordEncoder"> </beans:bean>
+ 
+   
+	<!-- 验证配置 ， 认证管理器，实现用户认证的入口，主要实现UserDetailsService接口即可 -->
+ 	<authentication-manager alias="authenticationManager"> 
+		<authentication-provider user-service-ref="userDetailsService">
+           <password-encoder ref="passwordEncoder">
+                <!-- 用户Code做为盐值 -->
+                <salt-source user-property="userCode" />
+           </password-encoder>
+		</authentication-provider>
+	</authentication-manager>
+	
+	<!-- 项目实现的用户查询服务,将用户信息查询出来  -->
+	<beans:bean id="userDetailsService" class="com.gv.base.springSecurity.service.impl.BaseUserDetailsServiceImpl" />
+
+	<!-- 访问决策器，决定某个用户具有的角色，是否有足够的权限去访问某个资源     -->
+    <beans:bean id="accessDecisionManagerBean" class="com.gv.base.springSecurity.web.support.BaseAccessDecisionManager"></beans:bean>
+ 
+    <!-- 资源源数据定义，将所有的资源和权限对应关系建立起来，即定义某一资源可以被哪些角色访问 	-->
+    <beans:bean id="securityMetadataSource" class="com.gv.base.springSecurity.service.impl.FilterInvocationSecurityMetadataSourceImpl">
+   	<beans:constructor-arg name="dao" ref="dao"></beans:constructor-arg>  
+    </beans:bean>
+    
+    <!-- 定义国际化 -->
+    <beans:bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+ 		 <beans:property name="basename" value="classpath:message_zh_CN"/>
+	</beans:bean>
+
+	 <!-- 成功之后处理类 该类继承springsecurity 成功后的处理类 处理一些自己的操作后再交给 springsecurity成功后的处理类 跳转-->
+	<beans:bean id="baseSuccessHandler" class="com.gv.base.springSecurity.web.support.BaseAuthenticationSuccessHandler">
+	 <beans:property name="defaultTargetUrl" value="/manager/mainfream/index_index.jsp"></beans:property>
+	 <beans:property name="alwaysUseDefaultTargetUrl" value="false"></beans:property>
+	</beans:bean>
+
+
+</beans:beans>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="lvShopProductAction-default" namespace="/manager" extends="gv-default-manager">
+        <action name="lvShopProductAction" class="LvShopProductAction">
+            <result name="list">/manager/lvShopProduct/lvShopProduct_list.jsp</result>
+			<result name="befSave">/manager/lvShopProduct/lvShopProduct_add.jsp</result>
+			<result name="view">/manager/lvShopProduct/lvShopProduct_view.jsp</result>
+			<result name="edit">/manager/lvShopProduct/lvShopProduct_edit.jsp</result>
+			<result name="showPic">/manager/lvShopProduct/lvShopProduct_showPic.jsp</result>
+		</action>
+	</package>
+	
+</struts>

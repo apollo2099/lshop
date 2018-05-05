@@ -1,0 +1,1 @@
+var cityData=[{"id":366256,"name":"Broughty Ferry","nameCn":"Broughty Ferry","nameTw":"Broughty Ferry","code":"Broughty Ferry"},{"id":366257,"name":"Dundee","nameCn":"Dundee","nameTw":"Dundee","code":"Dundee"}];

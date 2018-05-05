@@ -1,0 +1,39 @@
+@charset "utf-8";
+body {margin:0px;padding:0px;font-family:"宋体"; font-size:12px; font-weight:normal;color:#666;background:url(../images/index/bg.gif) top center repeat-x;background-color:#f2f2f2;}
+body img{ margin:0px; padding:0px; border:none;}
+*{margin:0px; padding:0px;}
+.top{width:1000px; height:85px; margin:0 auto 0 auto; padding:4px 0 0 0;}
+.top img{ float:left;}
+.top ul{float:right;line-height:85px;list-style-type:none; padding:0 13px 0 0; display:block;}
+.top li{ float:left; padding:0 0 0 35px; display:block;}
+.cb{ clear:both;}
+a:link,a:visited{color:#ff6600;text-decoration: underline;}
+a:hover{color:#008aca; text-decoration:underline;}
+a.bt1:link,a.bt1:visited{color:#444444;text-decoration: none; font-weight:bold; font-size:14px;}
+a.bt1:hover{color:#008aca;}
+.main{ width:1000px; height:630px; margin:0 auto 0 auto;}
+.main img{display:block;}
+
+
+.images_3{ width:1000px; height:210px; background:url(../images/index/images_3.jpg)  top left no-repeat;}
+.images_3a{width:644px; height:76px; display:block; padding:98px 0 0 39px; background:url(../images/index/choose_bg.gif) right 98px no-repeat;}
+.images_3 ul{list-style-type:none;padding:0 0 0 158px;}
+.images_3 li{width:90px; height:73px; float:left; padding:3px 10px 0 0; display:block; text-align: center; line-height:24px;}
+.images_3 li.choose3{width:auto; height:73px; padding:0 0 0 20px; line-height:30px; font-weight:bold; color:#fff;}
+.choose1{ width:80px; height:73px; display:block;}
+
+a.choose1:link,a.choose1:visited{color:#fff; font-weight:bold;text-decoration: none;}
+a.choose1:hover{display:block;background:url(../images/index/zw_bg.gif) left top no-repeat; color:#222222;}
+
+.choose2{ width:100px; height:73px; display:block;}
+a.choose2:link,a.choose2:visited{color:#fff; font-weight:bold;text-decoration: none;}
+
+a.choose2:hover{display:block;background:url(../images/index/hg.gif) left top no-repeat; color:#222222;}
+
+.bottom{ height:81px; background:url(../images/index/bottom_bg.gif) top center repeat; line-height:81px; text-align:center;} 
+.about_banner{ width:1000px; height:323px; margin:0 auto 0 auto; background: url(../images/index/about_banner.jpg) left top no-repeat; }
+.about_banner p{ width:134px; height:34px; padding:171px 0 0 16px;}
+.main_about{ width:1000px;background-color:#FFFFFF; padding:0px; margin:0 auto 30px auto; }
+.main_about p{ padding:0 0 30px 30px; line-height:24px;}
+.bt{ font-size:14px; font-weight:bold; color:#008aca; display:block;}
+.ch{ color:#ff6600;}

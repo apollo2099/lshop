@@ -1,0 +1,527 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>套餐二_TVpad</title>
+		<link href="http://res.itvpad.com/tvpadcn/res/css/css.css" rel="stylesheet" type="text/css" />
+		<link href="http://res.itvpad.com/tvpadcn/res/css/buy.css" rel="stylesheet" type="text/css" />
+		<link href="http://res.itvpad.com/tvpadcn/res/css/layout.css" rel="stylesheet" type="text/css" />
+		<link href="http://res.itvpad.com/www/res/css/development.css" rel="stylesheet" type="text/css" />
+		<!-- 加载公共JS -->
+		<script type="text/javascript" src="http://res.itvpad.com/tvpadcn/res/js/jquery-1.4.4.min.js" ></script>
+		<script type="text/javascript" src="http://res.itvpad.com/tvpadcn/res/js/FomrValidate.js" ></script>
+		<script type="text/javascript" src="http://res.itvpad.com/tvpadcn/res/js/jquery.validate.min.1.8.1.js" ></script>
+		<script type="text/javascript" src="http://res.itvpad.com/tvpadcn/res/js/jquery_validate_extend.js" ></script>
+		<script type="text/javascript" src="http://res.itvpad.com/tvpadcn/res/js/jquery.form.js" ></script>
+		<script type="text/javascript" src="http://res.itvpad.com/tvpadcn/res/js/cookie.js"></script>
+		<script type="text/javascript" src="http://res.itvpad.com/tvpadcn/res/js/header.js" ></script>
+		<script type="text/javascript" src="http://res.itvpad.com/tvpadcn/res/js/myjs.js"></script>
+		<script type="text/javascript" src="http://res.itvpad.com/www/res/js/bi.js"></script>
+		<script type="text/javascript">
+			 $(function(){
+				 //初始化搜索栏
+				 if(true){
+					$("#searchContent").val("請輸入搜索商品");
+				 }
+			 });	
+		</script>
+		<script type="text/javascript">
+				
+			$().ready(function() {
+				//修改推荐样式
+				changeRecommendDiv(0);
+				//调整切换tab样式
+				changeTabCss(0,2);
+				
+			});	
+		</script>
+		<script src="http://res.itvpad.com/tvpadcn/res/js/yu.js" type="text/javascript"></script>
+		<script src="http://res.itvpad.com/tvpadcn/res/js/tb.js" type="text/javascript"></script>	
+		<script type="text/javascript" src="http://res.itvpad.com/tvpadcn/res/js/js.js"></script>
+		<script type="text/javascript" src="http://res.itvpad.com/tvpadcn/res/js/cookie.js"></script>
+		<link rel="stylesheet" type="text/css" href="http://res.itvpad.com/tvpadcn/res/js/ymPrompt/skin/vista/ymPrompt.css" />
+		<script type="text/javascript" src="http://res.itvpad.com/tvpadcn/res/js/ymPrompt/ymPrompt.js" ></script>	
+		<script src="http://res.itvpad.com/tvpadcn/res/js/zoom.lib.js" type="text/javascript">//实现小图滚动效果js</script>
+		<script src="http://res.itvpad.com/tvpadcn/res/js/zoom.js" type="text/javascript">//实现放大镜效果js</script>
+		<script src="http://res.itvpad.com/tvpadcn/res/js/product.js" type="text/javascript"></script>
+	</head>
+	
+	<body > 
+		<!-- 获取店铺头部文件 -->
+		
+
+
+
+
+
+
+<div id="sc_top">
+ 	<div id="sc_head">
+ 	<!-- 顶部信息 -->
+  		<div id="header">
+   			<div id="shoucang">
+		  		<p><a href="javascript:addBookmark('TVpad商城','http://www.itvpad.com/')" class="shoucang1">收藏TVpad商城</a></p><p><a href="http://weibo.com/tvpad" target="_blank"><img src="http://res.itvpad.com/tvpadcn/res/images/xinlang.jpg" border="0" /></a></p><p><a class="fav_facebook" rel="nofollow" href="https://www.facebook.com/mytvpad" target="_blank"><img src="http://res.itvpad.com/tvpadcn/res/images/f_book.jpg" border="0" /></a></p>
+   			</div>
+    		<div id="help">
+          		<ul>
+		        	<li class="yh" style="display:none;" id="nameId"><font id="nicknameId"></font>，</li>
+		        	<li class="line">您好，歡迎光臨TVpad商城！</li>
+		            <li class="dl" id="loginId"><a href="javascript:onshow('tx_b','loginDiv');">請登錄</a></li>
+					<li class="dl" id="registerId"><a href="javascript:toRe('http://www.itvpad.com');">註冊</a></li>
+					<li class="tc" style="display:none;" id="logoutId"><a href="http://www.itvpad.com/web/userCenterManage!logout.action" >退出</a></li><!--登录之后状态-->
+		            <li class="dd">| <a href="http://www.itvpad.com/web/userOrder!getOrderlist.action" >我的訂單</a> |</li>
+		            <li class="menu2" onmouseover="this.className='menu1'" onmouseout="this.className='menu2'"><a href="http://www.itvpad.com/web/userCenterManage!getAccount.action"> 用戶中心 </a>
+		        	   <ul class="list">
+		          		  <li><a href="http://www.itvpad.com/web/userCenterManage!getAccount.action">我的帳戶</a></li>
+		          		  <li><a href="http://www.itvpad.com/web/userCenterManage!getInfoDetail.action">我的資料</a></li>
+		          		  <li><a href="http://www.itvpad.com/web/userCenterManage!toUpdatePassword.action">密碼管理</a></li>
+						  <li><a href="http://www.itvpad.com/web/userCenterManage!getAddressList.action">收貨地址</a></li>
+						  <li><a href="http://www.itvpad.com/web/userCenterManage!getCart.action">我的購物車</a></li>
+						  <li><a href="http://www.itvpad.com/web/userOrder!getOrderlist.action">我的訂單</a></li>
+						  <li><a href="http://www.itvpad.com/web/userCenterManage!getCommentList.action">我的評論</a></li>
+		        	   </ul>
+		      		</li>
+					<li class="dd">| <a href="http://www.itvpad.com/web/helpCenter!getHelps.action">幫助中心</a> |</li>
+				    <li class="gouwu"><p><a href="#" onclick="toCar('http://www.itvpad.com');">我的購物車</a></p>
+				    <p class="number">（<span id="shopCartNum"></span>）</p></li>	
+         		</ul>
+       		</div>
+		</div>
+  	</div>
+  
+	<div class="sc_logo">
+   		<div class="sc_log">
+   	  		<!-- 店铺标志 -->
+	  		<p class="logo"><a href="http://www.itvpad.com/index.html"><img src="http://res.itvpad.com/upload/www/res/images/201408221048558046.jpg"/></a></p>
+	  		<!-- 搜索框 -->
+	  		<div class="search">
+	  			<form action="" method="post" class="sousuo_bg" id="searchForm">
+	  				<input name="str" type="text"   maxlength="30" class="sc_wb" id="searchContent" value="" onfocus="if(this.value=='請輸入搜索商品')this.value=''" onblur="if(this.value=='')this.value='請輸入搜索商品'"/><input name="" type="image" onclick="subSearch('product','http://www.itvpad.com');" src="http://res.itvpad.com/tvpadcn/res/images/soushangpin.gif"/>
+	  			</form>
+	  			<p class="reci">熱門搜索：<span><a href='http://www.baidu.com'><font color='#FF00FF'><I>tv</I></font></a>&nbsp;&nbsp;<a href='数码'><font color='#FF0000'>数码</font></a>&nbsp;&nbsp;<a href='www.baidu.com'><font color='#FF0000'><B>tvpad</B></font></a>&nbsp;&nbsp;<a href='www.baidu.com'><font color='#FFF000'><S>iphone5</S></font></a>&nbsp;&nbsp;<a href='http://www.xiaomi.com'><font color='#FF00FF'><b>小米M2</b></font></a>&nbsp;&nbsp;</span></p>
+		  	</div>
+		</div>
+  	</div>
+  	
+	<!-- 商城导航 -->
+	<div class="sc_menu">
+    	<div class="sc_menu_A">
+    		<div class="sc_menu_A_l">
+	 			<a href='http://www.itvpad.com/web/index!toIndex.action'>首页</a><a href='http://www.itvpad.com/web/tvpadTopic!toTvpadzt.action'>TVpad專題</a><a href='http://www.itvpad.com/web/blog/blogManage!list.action'>新聞中心</a><a href='http://www.itvpad.com/web/tvpadTopic!toServiceNetwork.action'>服務網點</a><a href='http://www.itvpad.com/web/www/tvpadZs.jsp' target='_blank'>招商加盟</a>
+	 		</div>
+		 	
+		</div>
+  	</div>
+
+
+	<!-- 登录框 -->
+	<div id="loginDiv"   style="display:none;background-color:#000000;width:800px;height:600px;position:absolute;top:0px;left:0px;text-align:center;z-index:9000;filter:alpha(opacity=10);opacity:0.3"></div>
+	<div id="tx_b" style="top:124px;position: absolute;display: none;z-index:9999;">
+		<div class="pop_up_box" style="background:white;">
+			<span class="box_l">用戶登錄<span class="box_r"><a href="javascript:onhide('tx_b','loginDiv');"><img src="http://res.itvpad.com/tvpadcn/res/images/close.gif" border="0" /></a></span></span>
+			<div style="color: red; margin: 10px 0 0 90px;"><span id="h_emsg"></span></div>
+			<form action="http://www.itvpad.com/web/userCenterManage!login.action" id="divlogin"
+			method="post" onsubmit="">
+				<input type="hidden" name="loginstyle" value="0"/>
+				<input type="hidden" name="jumpurl" id="h_jumpurl" value=""/>
+				<ul>
+					<li><span class="wd1"><font class="redfont">*</font>賬號：</span><input name="uname" id="h_uname" class="input02" type="text"  value=""/></li>
+					<li><span class="wd1"><font class="redfont">*</font>密 碼：</span><input name="pwd"  id="h_pwd" class="input02"  type="password" /></li>
+					<li><span class="wd1">&nbsp;</span><a href="http://www.itvpad.com/web/userCenterManage!toFindPassword.action">忘記密碼？</a>&nbsp;&nbsp;<a href="javascript:toReg('http://www.itvpad.com');">註冊</a></li>
+					<li><span class="wd2"><input type="submit" value="登錄" class="user_center_bt02" /></span></li>
+		  		</ul>
+	  		</form>
+		</div>
+	</div>
+</div>
+
+<!-- 店铺顶部广告位 -->	  
+<div class="ggt"><img src="/res/images/ggt.jpg" alt="" /></div>
+
+<!-- 店铺导航 -->	  
+
+<!--End banner-->
+		
+		<!--ad-->
+		<div id="MainPromotionBanner">
+	<div class="banner_f1" id="SlidePlayer">
+	  <ul class="Slides">
+        <li><img src="/res/images/product01.png" /></li>
+	    <li><img src="/res/images/product01.png" /></li>
+	    <li><img src="/res/images/product01.png" /></li>
+      </ul>
+	</div>
+	<script type="text/javascript">TB.widget.SimpleSlide.decoration('SlidePlayer', {eventType:'mouse', effect:'scroll'});</script>
+</div>
+		
+		<!--End focus-->
+		<div class="content_main">
+			<!--left_Frame-->
+			<div class="left_frame">
+				<!--left_店铺信息-->
+				<div class="cm_n_1">
+		        	<h3>店鋪信息</h3>
+					<ul class="xinxi_ul">
+					  <li class="xinxi"><p class="x1">店 鋪 名：</p><p class="x2"><span><a href="#">中文店铺</a></span></p></li>
+					 
+					  <li class="xinxi"><p class="x1">服務電話：</p><p class="x2">1321212</p></li>
+					  <li class="xinxi"><p class="x1">店鋪地址：</p><p class="x2">中国广州深圳福田皇岗福明路</p></li>
+					  <li class="xinxi"><p class="x1">服務承諾：</p><p class="x2">质量就是保障</p></li>
+					  <li class="xinx2"><img src="http://res.itvpad.com/tvpadcn/res/images/chengnuo.gif" /></li>
+					</ul>
+		         </div>
+				<!--left_app-->
+				<div class='cm_n_1'><h3>产品/配件</h3><h4>tvpad </h4><ul><li><a href='/products/CD1341391343046.html' title='套餐一'>套餐一</a></li><li class='first'><a href='/products/CD1341908229765.html' title='套餐二'>套餐二</a></li><li><a href='/products/4fb5364623854834b5efed59e7928116.html' title='套餐2号'>套餐2号</a></li><li><a href='/products/2bcabeb2de054849ac7f47833593c159.html' title='套餐5号'>套餐5号</a></li><li><a href='/products/270e9cada488419da5286b3f54b0328b.html' title='TVpad 2型網路智能機頂盒'>TVpad 2型網路智能機頂盒</a></li><li><a href='/products/b922ee47ad2d4ce69c85e9cc64984fc6.html' title='公共套餐一'>公共套餐一</a></li><li><a href='/products/CD1341308735749.html' title='TVpad M121型網路智能機頂盒'>TVpad M121型網路智能機頂盒</a></li><li><a href='/products/d81826af7bb0495e90ed6dc74a691c96.html' title='套餐测试'>套餐测试</a></li><li><a href='/products/30c65811539b4784b578369d2aab7361.html' title='商品库j1商品1'>商品库j1商品1</a></li><li><a href='/products/3d530f20e701482ea3a5d5f0b1af9d5d.html' title='t'>t</a></li><li><a href='/products/22e6447c7bfb4a729eaa0c099d56401d.html' title='TVpad3全新智能機頂盒'>TVpad3全新智能機頂盒</a></li><li><a href='/products/CD1343799962484.html' title='a'>a</a></li><li><a href='/products/1b4d07e6383a4368af70aa13a88eadc7.html' title='购物袋'>购物袋</a></li><li><a href='/products/27ae299cedee4e4496e1afc7ba432ed7.html' title='中产三（阶梯价）'>中产三（阶梯价）</a></li><li><a href='/products/51a748ec165c4441bec3efae7ee835c8.html' title='中产四（限时之前）'>中产四（限时之前）</a></li></ul><h4>tvpad配件</h4><ul><li><a href='/products/123456.html' title='电力猫'>电力猫</a></li><li><a href='/products/CD1341475825526.html' title='电源线'>电源线</a></li><li><a href='/products/14b9354e0fea44febf7ff337f4209747.html' title='TVpad M121型網路智能機頂盒测试版'>TVpad M121型網路智能機頂盒测试版</a></li><li><a href='/products/880317be2e0042af97fa212c4ef1b8d4.html' title='商品库j2'>商品库j2</a></li><li><a href='/products/7ac30b575ec24b2c8807e742ccbcaf07.html' title='商品库j1'>商品库j1</a></li><li><a href='/products/c37fe69efe2245fb8cba09af6720d0c6.html' title='中产五（限时之后）'>中产五（限时之后）</a></li><li><a href='/products/7a28c1fcc3fc47bea6c65417b0829cf2.html' title='中产五（限量）（限量）（限量）（限量）（限量）（限量）（限量）（限量）（限量）（限量）（限量）（限量）（限量）（限量）（限量）（'>中产五（限量）（限量）（限量）（限量）（限量）（限量）（限量）（限量）（限量）（限量）（限量）（限量）（限量）（限量）（限量）（</a></li></ul><h4><a href='/web/applist!toApplist.action'>tvpad应用</a></h4><ul></ul><h4>122</h4><ul></ul></div>
+				<!--left_ad-->
+				<div class="cm_ad_left"><img src="/res/images/pic01.gif" width="200" height="250" /></div>
+			</div>
+		  <!--End left_Frame-->
+		  <div class="right_frame">
+		    <h1><img src="http://res.itvpad.com/tvpadcn/res/images/icon02.gif" /><font class="bfont"><a href="/web/mall!toMall.action">首頁</a>--></font> 產品/配件 </h1>
+		    <div class="product">
+		      <!--End产品图-->
+			  <div class="showPro">
+		           	<div class="showProLeft">
+						  <div class="jqzoom" id="spec-n1" onclick="window.open('#')">
+							<img height=284 src="http://res.itvpad.com/tvpadcnhttp://res.itvpad.com/tvpadcn/res/images/product.gif" jqimg="http://res.itvpad.com/tvpadcnhttp://res.itvpad.com/tvpadcn/res/images/product.gif" width=350 />
+						  </div>
+		           	  <div id="spec-n5">
+		              			 <div class="control" id="spec-left"><img src="http://res.itvpad.com/tvpadcn/res/images/left.gif" /></div>
+		                        <div id="spec-list">
+		                         <ul>
+		                           <li><img src="http://res.itvpad.com/tvpadcnhttp://res.itvpad.com/tvpadcn/res/images/product.gif"></li>
+					          	
+		                         </ul>
+		                       </div>
+							<div class="control" id="spec-right"><img src="http://res.itvpad.com/tvpadcn/res/images/right.gif" /></div>
+		                 </div>
+		               </div>
+		      <div class="product_intro">
+		      <form id="buyForm" action="" method="post">
+		      	<input type="hidden" name="lvShopCart.productCode" value="CD1341908229765"/>
+		      	<input type="hidden" name="lvShopCart.storeId" value="tvpadcn"/>
+			  	<input type="hidden" name="cookieStr" id="cookieStr" value=""/>
+		        <ul>
+		          <li class="pm">套餐二</li>
+				  <li id="p_orgin_price_area" p="CD1341908229765">
+		            <p class="dt">價 格：</p>
+		            <p id="p_orign_price" class="pm2">USD 194.21</p>
+		            <p class="lk"><a href="http://www.itvpad.com/help1.html#M_66" target="_blank">查看多幣種報價</a></p>
+		          </li>
+		          <li id="p_prod_ac" style="display:none;">
+				  	<p class="ac"><span id="p_ac_til"></span><span>：</span></p>
+				  	<p id="p_ac_price" class="pm2"></p>
+				  	<p>(<span id="p_ac_tip"></span>:<span id="curCount" style="display:none;"></span><span id="curTime" style="display:none;"></span>）</p>
+				  </li>
+				  <li style="display:none;">
+				  	<p class="dt">下單贈券：</p>
+				  	<p id="p_order_ac"></p>
+				  </li>
+		          <li>
+		            <p class="dt">運 費：</p>
+		            <p>免費包郵</p>
+		            <p class="redfont">（偏遠地區例外）</p>
+		            <p class="lk"><a href="http://www.itvpad.com/help2.html#M_12" target="_blank">查看配送範圍</a></p>
+		          </li>
+		          <li class="tishi">服      務：由 <a href="http://cn.itvpad.com/index.html"><span class="bluewz">中文店铺</span> </a>發貨并提供售後服務。</li>
+		          <div class="box">
+		            <ul>
+		              <li>
+		                <p class="dt">購買數量：</p>
+		                <a href="javascript:changeNum('del');"><img src="http://res.itvpad.com/tvpadcn/res/images/jian.gif" border="0"/></a>
+		                 <input type="text"  class="input0" id="num" name="lvShopCart.shopNum" value="1" onkeypress="onlyNumber(event)" maxlength=4/>
+		                <a href="javascript:changeNum('add');"><img src="http://res.itvpad.com/tvpadcn/res/images/jia.gif" border="0"/></a></li>
+		              <li>
+		                <p><input type="button" value=" 立即購買" class="btn01" onclick="toSub('tvpadcn','CD1341908229765','http://www.itvpad.com');" style="CURSOR: pointer; "/></p>
+		                <p><input type="button" value="加入購物車" class="btn02" onclick="toPut('CD1341908229765','tvpadcn');" style="CURSOR: pointer; "/></p>
+		              </li>
+		            </ul>
+		          </div>
+		            <div><span>溫馨說明：海外購物產生的關稅由用戶承擔</span></div>
+		            <div id="p_ladder" style="display:none;"><a href="javascript:showLadder('CD1341908229765');" class="lk">查看批量購買優惠</a></div>
+		         </ul>
+		         </form>
+		      </div>
+			  </div>
+			  <!--End产品簡介-->
+			 
+		      
+		      
+		      <div class="produt_details">
+		        <!-- TabbedPanels-->
+		        <div class="indextj commargin1">
+		          <div class="product_item">
+		            <ul>
+			              
+			              		<li id="index1"><a href="javascript:MainItem(1,2);">规格说明</a></li>
+			              
+		            	  <li id="index2" ><a href="javascript:MainItem(2,2);">用戶評價<font class="redfont">（4）</font></a></li>
+		            </ul>
+		          </div>
+		
+		          	
+			          	 	<div id="f_Pic1" class="tjcontent"  style="display:none;" >333333333333333</div>
+		          	
+		   	  	 	<div class="tjcontent3"  style="display:none;" id="f_Pic2">
+		   	  			<div class="index_comments">
+			              <ul class="title" id="productComment">
+			                <li class="title_s">買家</li>
+			                <li class="title_s">交易詳情</li>
+			                <li>評價</li>
+			              </ul>
+			              
+				              
+				              	<ul class="mytest">
+					              	<li class="short"><br /><img src="http://res.itvpad.com/tvpadcn/res/images/country/zm.gif" /></li>
+					              	<li class="short">3臺<br />2014-7-21 9:35:54</li>
+					              	<li>
+					              		
+					              			 <img src="http://res.itvpad.com/tvpadcn/res/images/wjx.gif" width="30" height="29" />
+					              		
+					              			 <img src="http://res.itvpad.com/tvpadcn/res/images/wjx.gif" width="30" height="29" />
+					              		
+					              			 <img src="http://res.itvpad.com/tvpadcn/res/images/wjx.gif" width="30" height="29" />
+					              		
+					              			 <img src="http://res.itvpad.com/tvpadcn/res/images/wjx.gif" width="30" height="29" />
+					              		
+					              			 <img src="http://res.itvpad.com/tvpadcn/res/images/wjx.gif" width="30" height="29" />
+					              		
+					              		<br />好评！
+					              	</li>
+				              	</ul>
+				              
+				              	<ul class="mytest">
+					              	<li class="short">tetsss<br /><img src="http://res.itvpad.com/tvpadcn/res/images/country/cn.gif" /></li>
+					              	<li class="short">1臺<br />2014-2-21 16:58:10</li>
+					              	<li>
+					              		
+					              			 <img src="http://res.itvpad.com/tvpadcn/res/images/wjx.gif" width="30" height="29" />
+					              		
+					              			 <img src="http://res.itvpad.com/tvpadcn/res/images/wjx.gif" width="30" height="29" />
+					              		
+					              			 <img src="http://res.itvpad.com/tvpadcn/res/images/wjx.gif" width="30" height="29" />
+					              		
+					              			 <img src="http://res.itvpad.com/tvpadcn/res/images/wjx.gif" width="30" height="29" />
+					              		
+					              			 <img src="http://res.itvpad.com/tvpadcn/res/images/wjx.gif" width="30" height="29" />
+					              		
+					              		<br />111
+					              	</li>
+				              	</ul>
+				              
+				              	<ul class="mytest">
+					              	<li class="short">9999<br /><img src="http://res.itvpad.com/tvpadcn/res/images/country/cn.gif" /></li>
+					              	<li class="short">1臺<br />2012-8-31 15:54:48</li>
+					              	<li>
+					              		
+					              			 <img src="http://res.itvpad.com/tvpadcn/res/images/wjx.gif" width="30" height="29" />
+					              		
+					              			 <img src="http://res.itvpad.com/tvpadcn/res/images/wjx.gif" width="30" height="29" />
+					              		
+					              			 <img src="http://res.itvpad.com/tvpadcn/res/images/wjx.gif" width="30" height="29" />
+					              		
+					              			 <img src="http://res.itvpad.com/tvpadcn/res/images/wjx.gif" width="30" height="29" />
+					              		
+					              			 <img src="http://res.itvpad.com/tvpadcn/res/images/wjx.gif" width="30" height="29" />
+					              		
+					              		<br />好评！
+					              	</li>
+				              	</ul>
+				              
+				              	<ul class="mytest">
+					              	<li class="short"><br /><img src="http://res.itvpad.com/tvpadcn/res/images/country/cn.gif" /></li>
+					              	<li class="short">1臺<br />2012-8-31 15:18:12</li>
+					              	<li>
+					              		
+					              			 <img src="http://res.itvpad.com/tvpadcn/res/images/wjx.gif" width="30" height="29" />
+					              		
+					              		<br />测试！
+					              	</li>
+				              	</ul>
+				              
+				              
+			               
+			               
+			          	</div>
+			     	 </div> 
+		        </div>
+		      </div>
+		    </div>
+			
+			<div id="boxcenter02">
+			   	<p>推薦商品</p>
+			  	<div class="news">
+				  	<div class="leftbotton"  onmousedown="ISL_GoUp()" onmouseup="ISL_StopUp()" onmouseout="ISL_StopUp()"><img src="http://res.itvpad.com/tvpadcn/res/images/icon19.gif" /></div>
+				  	<div class="newscon" id="ISL_Cont">
+				    	<div class="max">
+				      		<div id="List1">
+						        <ul>
+						            
+						            	<li><a href="/products/123456.html"><img src="http://res.itvpad.com/tvpadcnhttp://res.itvpad.com/tvpadcn/res/images/pj_02.gif" /></a><br /><a href="/products/123456.html">电力猫</a><br />
+						            	<font class="redfont">價格<font class="p_price" f="tvpadcn" p="123456" >USD 10.0</font></font></li>
+						            
+						            	<li><a href="/products/CD1341391343046.html"><img src="http://res.itvpad.com/tvpadcnhttp://res.itvpad.com/tvpadcn/res/images/product_ad01.png" /></a><br /><a href="/products/CD1341391343046.html">套餐一</a><br />
+						            	<font class="redfont">價格<font class="p_price" f="tvpadcn" p="CD1341391343046" >USD 55.1</font></font></li>
+						            
+						            	<li><a href="/products/CD1341308735749.html"><img src="http://res.itvpad.com/tvpadcnhttp://res.itvpad.com/tvpadcnhttp://res.itvpad.com/tvpadcn//res/images/product_ad01.png" /></a><br /><a href="/products/CD1341308735749.html">TVpad M121型網路智能機頂盒</a><br />
+						            	<font class="redfont">價格<font class="p_price" f="tvpadcn" p="CD1341308735749" >USD 200.0</font></font></li>
+						            
+						            	<li><a href="/products/CD1343799962484.html"><img src="http://res.itvpad.com/tvpadcnhttp://res.itvpad.com/tvpadcn/res/images/product_ad01.png" /></a><br /><a href="/products/CD1343799962484.html">a</a><br />
+						            	<font class="redfont">價格<font class="p_price" f="tvpadcn" p="CD1343799962484" >USD 45.0</font></font></li>
+						            
+						            	<li><a href="/products/27ae299cedee4e4496e1afc7ba432ed7.html"><img src="http://res.itvpad.com/tvpadcnhttp://res.itvpad.com/tvpadcn/res/images/product_1385540576171.jpg" /></a><br /><a href="/products/27ae299cedee4e4496e1afc7ba432ed7.html">中产三（阶梯价）</a><br />
+						            	<font class="redfont">價格<font class="p_price" f="tvpadcn" p="27ae299cedee4e4496e1afc7ba432ed7" >USD 65.0</font></font></li>
+						            
+						            	<li><a href="/products/51a748ec165c4441bec3efae7ee835c8.html"><img src="http://res.itvpad.com/tvpadcnhttp://res.itvpad.com/tvpadcn/res/images/product_1385540618625.jpg" /></a><br /><a href="/products/51a748ec165c4441bec3efae7ee835c8.html">中产四（限时之前）</a><br />
+						            	<font class="redfont">價格<font class="p_price" f="tvpadcn" p="51a748ec165c4441bec3efae7ee835c8" >USD 456.0</font></font></li>
+						            
+						            	<li><a href="/products/c37fe69efe2245fb8cba09af6720d0c6.html"><img src="http://res.itvpad.com/upload/tvpadcn/res/images/product_1408524630703.jpg" /></a><br /><a href="/products/c37fe69efe2245fb8cba09af6720d0c6.html">中产五（限时之后）</a><br />
+						            	<font class="redfont">價格<font class="p_price" f="tvpadcn" p="c37fe69efe2245fb8cba09af6720d0c6" >USD 67.0</font></font></li>
+						            
+				            	</ul>
+				      		</div>
+				      		<div id="List2"></div>
+				      		<script type="text/javascript" src="http://res.itvpad.com/tvpadcn/res/js/product_scroll.js"></script>
+				    	</div>
+				  	</div>
+			  		<div class="rightbotton" onmousedown="ISL_GoDown()" onmouseup="ISL_StopDown()" onmouseout="ISL_StopDown()"><img src="http://res.itvpad.com/tvpadcn/res/images/icon20.gif" /></div>
+				</div>
+			</div>
+			
+		  </div>
+		  <!--End right_Frame-->
+		</div>
+		<!--End content-->
+		<!-- footer-->
+		
+
+
+
+<!-- help center -->
+<div class='help'><div class='help_center'><ul><li><p><font class='fontwz bfont'>購物指南</font></p><p><a href=http://www.itvpad.com/help1.html#M_87>如何購買</a></p><p><a href=http://www.itvpad.com/help1.html#M_11>如何使用禮品券</a></p><p><a href=http://www.itvpad.com/help1.html#M_66>多幣種報價</a></p><p><a href=http://www.itvpad.com/help1.html#M_9>安全性</a></p><p><a href=http://www.itvpad.com/help1.html#M_8>購物流程</a></p></li><li><p><font class='fontwz bfont'>物流配送 </font></p><p><a href=http://www.itvpad.com/help2.html#M_30>簽收說明</a></p><p><a href=http://www.itvpad.com/help2.html#M_31>關稅說明</a></p><p><a href=http://www.itvpad.com/help2.html#M_13>配送方式</a></p><p><a href=http://www.itvpad.com/help2.html#M_12>配送範圍</a></p></li><li><p><font class='fontwz bfont'>支付方式</font></p><p><a href=http://www.itvpad.com/help3.html#M_16>支付寶支付</a></p><p><a href=http://www.itvpad.com/help3.html#M_14>國際信用卡</a></p><p><a href=http://www.itvpad.com/help3.html#M_64>西联汇款</a></p></li><li><p><font class='fontwz bfont'>我的訂單</font></p><p><a href=http://www.itvpad.com/help4.html#M_32>評價商品</a></p><p><a href=http://www.itvpad.com/help4.html#M_19>修改訂單</a></p><p><a href=http://www.itvpad.com/help4.html#M_18>訂單查詢</a></p></li><li><p><font class='fontwz bfont'>售後服務</font></p><p><a href=http://www.itvpad.com/help5.html#M_23>售後服務通道</a></p><p><a href=http://www.itvpad.com/help5.html#M_22>關於退換貨</a></p><p><a href=http://www.itvpad.com/help5.html#M_65>第三方應用安裝</a></p><p><a href=http://www.itvpad.com/help5.html#M_20>售後承諾</a></p></li><li class='tel'>(00852)2134-9910</li></ul><div class='cb'></div>	</div></div>
+<div class="bottom">
+  <div class="content"> 		
+  		Copyright(C) 2007-2015 啟創科技（香港）公司（CREATE NEW TECHNOLOGY(HK) LIMITED ）.All Rights Reserved
+  </div>
+</div>
+<!--End Bottom -->
+<!-- 第三方统计代码 -->
+<!-- 第三方统计代码 -->
+<div id="topcontrol" style="position: fixed; bottom: 50px; right: 10px; opacity: 1; cursor: pointer;" title="回到頂部">
+  <a href="#sc_top"><img src="/res/images/top1.png" border="0">第三方统计代码</a>————商城统计代码
+</div>
+<div style="color:red">中文店铺统计代码</div>
+	<script type="text/javascript">
+	var PageConfig = {Product_Status_Normal: 1, Type_Activity_LimitTime: 1, Type_Activity_LimitCount: 2, Type_Activity_Ladder: 3};
+	var ProdLimitTime = 0;
+	$(function() {
+		//限时活动倒计时
+		function countLimitTime() {
+			var tmpDay,tmpHour,tmpMinute,tmpSecond; 
+		    tmpDay=parseInt(ProdLimitTime/(24*60*60));
+		    tmpHour=parseInt((ProdLimitTime%(24*60*60))/(60*60)); 
+		    tmpMinute=parseInt((ProdLimitTime%(24*60*60)%(60*60))/60); 
+		    tmpSecond=parseInt((ProdLimitTime%(24*60*60)%(60*60))%60);  
+		    if(ProdLimitTime>0&&tmpDay>=0&&tmpHour>=0&&tmpMinute>=0&&tmpSecond>=0){
+		    	t=1;
+				$("#curTime").html(tmpDay+"天"+tmpHour+"小時"+tmpMinute+"分"+tmpSecond+"秒"); 
+				ProdLimitTime=ProdLimitTime-1;
+				setTimeout(countLimitTime,1000);
+		    }else{
+		    	$p.trigger('loadDetailActivity');
+			}
+		}
+		//限量活动更新库存
+		function updateProdStore() {
+			var pcode = $p.attr('p');
+			$.ajax({
+				   type: "get",
+				   url: "/web/mall!getLimitCount.action",
+				   data: "productCode="+pcode,
+				   success: function(data){
+			   	 		$("#curCount").html(data);
+			   	 		setTimeout(updateProdStore, 10000);
+				   	 }
+				});
+		}
+		//加载商品详情实时价格
+		var $p = $('#p_orgin_price_area');
+		$p.bind('loadDetailActivity', function(e){
+			var pcode = $p.attr('p');
+			var $a = $('#p_prod_ac');
+			//reset
+			$('#p_orign_price').attr('class', 'pm2');
+			$('#curCount').hide();
+			$('#curTime').hide();
+			$a.hide();
+			$('#p_ladder').hide();
+			$('#p_order_ac').parent().hide();
+			//load data
+			$.post('/web/product!getProdDetailPrice.action', {prodCode: pcode}, function(data){
+				if(data.prodStatus != PageConfig.Product_Status_Normal) {
+					$('.box').hide().after('<img src="http://res.itvpad.com/tvpadcn/res/images/sold_out.jpg" style="padding:5px;"/>');
+				}
+				$('#p_orign_price').text(data.currency+' '+data.orignPrice);
+				switch(data.activityType) {
+				case PageConfig.Type_Activity_LimitTime :
+					$('#p_ac_til').text(data.activityName);
+					$('#p_ac_price').text(data.currency+' '+data.activityPrice);
+					var restTime;
+					if(data.beginTime > data.curTime) {
+						restTime = data.beginTime - data.curTime;
+						ProdLimitTime = parseInt(restTime/1000);
+						if(ProdLimitTime < 0) break;
+						$('#p_orign_price').attr('class', 'pm2');
+						$('#p_ac_price').attr('class', 'pm1');
+						$('#p_ac_tip').text('離開始');
+						$a.show();
+						$('#curTime').show();
+					} else {
+						restTime = data.endTime - data.curTime;
+						ProdLimitTime = parseInt(restTime/1000);
+						if(ProdLimitTime < 0) break;
+						$('#p_orign_price').attr('class', 'pm1');
+						$('#p_ac_price').attr('class', 'pm2');
+						$('#p_ac_tip').text('離結束');
+						$a.show();
+						$('#curTime').show();
+					}
+					//开始倒计时
+					countLimitTime();
+
+					break;
+				case PageConfig.Type_Activity_LimitCount :
+					if(data.limitCount > 0) {
+						$('#p_orign_price').attr('class', 'pm1');
+						$('#p_ac_price').attr('class', 'pm2');
+						$('#p_ac_til').text(data.activityName);
+						$('#p_ac_price').text(data.currency+' '+data.activityPrice);
+						$('#p_ac_tip').text('剩餘庫存');
+						updateProdStore();
+						$a.show();
+						$('#curCount').show();
+					}
+					break;
+				case PageConfig.Type_Activity_Ladder :
+					$('#p_ladder').show();
+					break;
+				}
+				//下单赠券
+				data.orderActivityTitle && $('#p_order_ac').text(data.orderActivityTitle).parent().show();
+			});
+		});
+		$p.trigger('loadDetailActivity');
+	});
+	</script>
+	<script type="text/javascript" src="http://res.itvpad.com/tvpadcn/res/js/html.js"></script>
+	</body>
+</html> 

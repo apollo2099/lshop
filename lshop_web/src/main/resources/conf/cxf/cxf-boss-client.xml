@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jaxws="http://cxf.apache.org/jaxws"
+	xsi:schemaLocation="   
+        http://www.springframework.org/schema/beans    
+        http://www.springframework.org/schema/beans/spring-beans-2.5.xsd   
+        http://cxf.apache.org/jaxws    
+        http://cxf.apache.org/schemas/jaxws.xsd"> 
+
+	<bean id="bossHandler" class="com.gv.business.ws.boss.util.BossClientHandler">
+	    <property name="accountNum" value="${boss.ws.account}"></property>
+	    <property name="password" value="${boss.ws.password}"></property>
+    </bean>	
+    	 <bean class="com.gv.business.ws.boss.util.model.spring.ApplicationContextHolder" lazy-init="false"/> 
+    <!-- 前台用户中心boss webservice -->
+   	<!--用户注册账号-->
+	<jaxws:client name="registerWs" serviceClass="com.gv.business.ws.boss.register.WSRegisterService" wsdlLocation="${boss.sys.url}/webservice/WSRegisterService?wsdl">
+		<jaxws:handlers>
+			<ref bean="bossHandler" />
+		</jaxws:handlers>
+	</jaxws:client>  
+   	<!--用户激活账号-->
+	<jaxws:client name="activateWs" serviceClass="com.gv.business.ws.boss.activate.WSActivateUserService" wsdlLocation="${boss.sys.url}/webservice/WSActivateUserService?wsdl">
+		<jaxws:handlers>
+			<ref bean="bossHandler" />
+		</jaxws:handlers>
+	</jaxws:client>  
+   	<!--查看账户信息-->
+	<jaxws:client name="userinfoWs" serviceClass="com.gv.business.ws.boss.userinfo.WSUserInfoService" wsdlLocation="${boss.sys.url}/webservice/WSUserInfoService?wsdl">
+		<jaxws:handlers>
+			<ref bean="bossHandler" />
+		</jaxws:handlers>
+	</jaxws:client>  
+   	<!--修改密码-->
+	<jaxws:client name="modifypwdWs" serviceClass="com.gv.business.ws.boss.modifypwd.WSModifyPwdService" wsdlLocation="${boss.sys.url}/webservice/WSModifyPwdService?wsdl">
+		<jaxws:handlers>
+			<ref bean="bossHandler" />
+		</jaxws:handlers>
+	</jaxws:client>  
+   	<!--找回密码-生成校验码-->
+	<jaxws:client name="retrievepwdWs" serviceClass="com.gv.business.ws.boss.retrievepwd.WSRetrievePwdApplicationService" wsdlLocation="${boss.sys.url}/webservice/WSRetrievePwdApplicationService?wsdl">
+		<jaxws:handlers>
+			<ref bean="bossHandler" />
+		</jaxws:handlers>
+	</jaxws:client>  
+   	<!--找回密码 通过校验码 修改密码-->
+	<jaxws:client name="retrieveWs" serviceClass="com.gv.business.ws.boss.retrieve.WSRetrievePwdService" wsdlLocation="${boss.sys.url}/webservice/WSRetrievePwdService?wsdl">
+		<jaxws:handlers>
+			<ref bean="bossHandler" />
+		</jaxws:handlers>
+	</jaxws:client>  
+	
+
+
+  <!--          充值相关                     -->
+  
+    <!-- 充值卡充值 -->
+  	<jaxws:client name="chargecardWs" serviceClass="com.gv.business.ws.boss.rechargeCard.WSRechargeableService" wsdlLocation="${boss.sys.url}/webservice/WSRechargeService?wsdl">
+		<jaxws:handlers>
+			<ref bean="bossHandler" />
+		</jaxws:handlers>
+	</jaxws:client>  
+  
+    <!-- 充值记录查询 -->
+  	<jaxws:client name="rechargeRecordWs" serviceClass="com.gv.business.ws.boss.rechargeRecord.WSSynRechargeRecordService" wsdlLocation="${boss.sys.url}/webservice/WSSynRechargeRecordService?wsdl">
+		<jaxws:handlers>
+			<ref bean="bossHandler" />
+		</jaxws:handlers>
+	</jaxws:client>  
+  
+    <!-- 消费记录查询 -->
+  	<jaxws:client name="resumeRecordWs" serviceClass="com.gv.business.ws.boss.resumeRecord.WSStbResumeRecordService" wsdlLocation="${boss.sys.url}/webservice/WSStbResumeRecordService?wsdl">
+		<jaxws:handlers>
+			<ref bean="bossHandler" />
+		</jaxws:handlers>
+	</jaxws:client>  
+	
+	
+		<!-- 在线充值接口 -->
+		<jaxws:client name="onlineWs" serviceClass="com.gv.business.ws.boss.online.WSOnlineRechargeService" wsdlLocation="${boss.sys.url}/webservice/WSOnlineRechargeService?wsdl">
+	<jaxws:handlers>
+		<ref bean="bossHandler" />
+	</jaxws:handlers>
+	</jaxws:client>
+  
+    	<!--更新密码  同步注册接口-->
+	<jaxws:client name="accountCenterWs" serviceClass="com.gv.business.ws.boss.accountcenter.WSAccountCenterService" wsdlLocation="${boss.sys.url}/webservice/accountcenter?wsdl">
+		<jaxws:handlers>
+			<ref bean="bossHandler" />
+		</jaxws:handlers>
+	</jaxws:client>  
+</beans>  

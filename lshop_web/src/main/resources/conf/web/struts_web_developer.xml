@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="developerManage-default" namespace="/web" extends="gv-default">
+		<action name="developer" class="DeveloperAction">
+		  <result name="applyType"  type="redirect">/web/${flag}/developer/developertype.jsp</result>
+		  <result name="personalApply">/web/${flag}/developer/personalApply.jsp</result>
+		  <result name="companyApply">/web/${flag}/developer/companyApply.jsp</result>
+		  <result name="reviewOn" type="redirect">/web/${flag}/developer/reviewOn.jsp</result>
+		  <result name="reviewFail">/web/${flag}/developer/reviewFail.jsp</result>
+		  <result name="app" type="redirect">/web/app!appList.action</result>
+		</action>
+		<action name="app" class="DeveloperAppAction">
+		  <result name="list" >/web/${flag}/developer/applist.jsp</result>
+		  <result name="toadd" >/web/${flag}/developer/appadd.jsp</result>
+		  <result name="toedit" type="redirect">/web/app!toEditInfo.action?code=${code}</result>
+		  <result name="edit">/web/${flag}/developer/appeditinfo.jsp</result>
+		  <result name="ok" >/web/${flag}/developer/appok.jsp</result>
+		  <result name="fail" >/web/${flag}/developer/appfail.jsp</result>
+		  <result name="info" >/web/${flag}/developer/appinfo.jsp</result>
+		</action>
+	</package>
+
+</struts>

@@ -1,0 +1,1 @@
+var cityData=[{"id":374284,"name":"Waimiha","nameCn":"Waimiha","nameTw":"Waimiha","code":"Waimiha"},{"id":374285,"name":"Wanganui","nameCn":"Wanganui","nameTw":"Wanganui","code":"Wanganui"}];

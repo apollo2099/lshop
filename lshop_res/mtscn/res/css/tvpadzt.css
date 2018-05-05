@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section,img {
+    display: block;
+}
+body, h1, h2, h3, h4, h5, h6, p, div, ul, ol, li, dl, dt, dd, h1 ,ul,input {
+    margin: 0;
+    padding: 0;
+	
+}
+body{margin:0 auto; background-color:#fffefe; font-family:"微软雅黑"; position:relative;}
+.clear{clear:both}
+.tvpadnew{width:100%; position:relative}
+.tvpadnew img{display:block}
+.tvpadnew a{position:absolute; left:6%; bottom:24%;width:25%; height:8%; display:block; z-index:99}
+.monthly_0{ width:100%; background-color:#fffefe} 
+.demand{ width:100%;}
+.demand img{display:block}
+.demand_text{width:100%;background-color:#fffefe;font-size:12px; font-family:"宋体"; color:#595757; padding:20px 0}
+.HD{width:100%}
+.HD img{display:block}
+.HD_text{width:100%;background-color:#fffefe;font-size:12px; font-family:"宋体";color:#595757}
+.teach{width:100%}
+.teach img{display:block}
+.teach_text{width:100%; background-color:#fffefe;font-size:12px; font-family:"宋体";color:#595757; padding:20px 0}
+.Wonderful{width:100%}
+.Wonderful img{display:block}
+.Wonderful_text{width:100%;background-color:#fffefe; font-size:12px; font-family:"宋体";color:#595757}
+.Live{width:100%}
+.Live img{display:block}
+.Live_text{width:100%;background-color:#fffefe;font-size:12px; font-family:"宋体";color:#595757; padding:20px 0}
+.klok{width:100%}
+.klok img{display:block}
+.klok_text{width:100%; background-color:#fffefe;font-size:12px; font-family:"宋体";color:#595757}
+.canews{width:100%}
+.canews img{display:block}
+.canews_text{width:100%;background-color:#fffefe;font-size:12px; font-family:"宋体";color:#595757; padding:20px 0 60px}
+.monthly_text{width:89.2%; margin:0 auto; padding:20px 0;font-size:12px; font-family:"宋体";color:#595757; line-height:16px}
+.monthly_p{width:60%; float:left}
+.monthly_img{width:35%; float:right; text-align:right; padding-top:10px; max-width:182px}
+.fon16{font-family:"微软雅黑"; font-size:16px; color:#595757; margin-bottom:5px; display:block; line-height:22px}
+.demad_text_img{width:94.6%}
+.left_img{width:40%; float:left; padding-top:10px; max-width:232px}
+.righ_text{width:55%; float:right}
+.righ_text p{line-height:16px}
+.tv_new_img{width:40%; float:left}
+.tv_new_text{width:55%; float:right}
+.three{background-color:#fffefe}
+.three h2{width:89.2%; margin:20px auto 5px; color:#0656b8; font-size:20px;}
+.three p{width:89.2%; margin:0 auto; font-size:14px; color:#595757}
+.coplay{background-color:#fffefe}
+.coplay h2{font-size:18px; color:#595757; width:89.2%; margin:0 auto; padding:20px 0 10px}
+.coplay p{width:89.2%; max-width:403px; margin-left:5.4%}
+.morecoplay{background-color:#fffefe; padding-top:20px}
+.morecoplay a{color:#3804e4; font-size:16px; margin-left:5.4%; font-weight:bold; text-decoration:none}
+.coplay_footer{background-color:#fffefe; padding:20px 0  60px}
+.coplay_footer dt{width:89.2%; margin:0 auto; color:#595757}
+.coplay_footer dt:first-child{font-size:18px; font-weight:bold; line-height:28px}
+.coplay_footer dt:last-child{ font-size:14px; margin-top:8px}
+.steps{ background-color:#fffefe; padding:30px 0}
+.steps p{width:89.2%;max-width:412px; margin-left:5.4%}
+.fufooter{width:100%; background-color:#fffefe}
+.tvpadfuwu{width:100%; height:45px; line-height:45px; background-color:#0656b8; color:#fff; font-size:22px; font-weight:bold; text-align:center}
+.jixiao{width:100%; margin:0 auto; padding-bottom:40px}
+.jixiao h2{ color:#0656b8; font-size:18px; text-align:center; font-weight:normal; padding:10px 0 20px}
+.jixiao p{width:82%; margin:0 auto; max-width:412px}
+.jixiao a{ width:154px; height:56px;margin:0 auto; display:block; margin-top:20px}
+
+.zaoshan{background-color:#fff; width:100%}
+.zaoshan div img{display:block}
+.why{background-color:#cfeeff; background-image:url(../images/why.jpg); background-repeat:no-repeat; background-position:left top;  border-radius:5px; margin-top:30px; border:1px solid #b8e5ff;padding:20px 10px}
+.why_left{width:52%; font-size:12px; font-family:"宋体"; color:#fff; background-image:url(../images/why_left.png); background-repeat:no-repeat; height:145px; background-size:100% 145px;  max-width:232px; float:left; background-position:left  top; padding-top:10px}
+.why_box{width:90%; margin-left:10px; padding-top:10px; line-height:16px}
+.why_box strong{font-size:14px; display:block; margin-bottom:5px}
+.why_rith{width:46%; font-family:"宋体"; font-size:12px; line-height:16px; color:#01468e; float:right}
+.why_rith strong{font-family:"微软雅黑"; font-size:16px; display:block; margin-bottom:5px}
+.why_rith a{float:right; color:#ce5700}

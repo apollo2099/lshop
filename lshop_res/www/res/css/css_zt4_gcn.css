@@ -1,0 +1,162 @@
+@charset "utf-8";
+html,body {margin:0 auto;padding: 0px; font-size:12px; font-family:"微软雅黑","宋体"; color:#666666; min-width:1000px; height:100%}
+*{ margin:0; padding:0;}
+body img{border:none; vertical-align:middle;}
+ul,li{list-style-type:none;}
+td{ text-align:center;}
+
+/*头部广告*/
+.tvpad4_top_kg{ width:100%; height:auto; overflow:hidden; }
+
+/*1第一品牌*/
+.tvpad4_part1_kg{ width:100%; height:900px; background:#d4d4d5;}
+.tvpad4_part1{ width:1002px; margin:0 auto; background:url(../images/tvpad4zt_gcn/tvpad4_part1_bg.jpg) center 430px  no-repeat; height:900px;}
+.tvpad4_part1 p.tvpad4_part1_title{ width:1002px; text-align:center; font-size:50px; padding-top:80px; color:#333333;}
+.tvpad4_part1 p.tvpad4_part1_zw{ text-align:center; width:1002px; padding-top:40px; font-size:16px; line-height:30px;}
+.tvpad4_part1 p.tvpad4_part1_zw1{ text-align:center; width:1002px; padding-top:380px; font-size:18px; line-height:30px;}
+
+/*2高清*/
+.tvpad4_part2_kg{ width:100%; height:900px; background:#000;}
+.tvpad4_part2{ width:1002px; height:900px; margin:0 auto;background:url(../images/tvpad4zt_gcn/tvpad4_part2_bg.jpg) no-repeat;}
+.tvpad4_part2 .tvpad4_part2_title{ font-size:50px; padding-top:40px; color:#fff;}
+.tvpad4_part2 .tvpad4_part2_title1{ font-size:26px;  color:#fe4c06;}
+.tvpad4_part2 .tvpad4_part2_zw{width:1002px; padding-top:10px; font-size:16px; line-height:30px;color:#fff;}
+.tvpad4_part2 .tvpad4_part2_zw1{font-size:16px;color:#fff;padding-top:25px; padding-left:20px; position:relative;}
+.tvpad4_part2 .tvpad4_part2_zw1 a{ color:#fff;}
+.tvpad4_part2 .tvpad4_part2_zw1 a.p1{ position:absolute; top:25px; padding:5px 10px; left:0px;border: 1px solid #fff;
+    -moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius:5px;    }
+.tvpad4_part2 .tvpad4_part2_zw1 a.p2{ position:absolute; top:25px; padding:5px 10px; left:180px;border: 1px solid #fff;
+    -moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius:5px;    }
+.tvpad4_part2 .tvpad4_part2_zw1 a.p3{ position:absolute; top:25px;padding:5px 10px;  left:280px; border: 1px solid #fff;
+    -moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius:5px;    }
+	
+	.tvpad4_part2 .tvpad4_part2_zw1 a.p4{ position:absolute; top:25px;padding:5px 10px;  left:410px; border: 1px solid #fff;
+    -moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius:5px;    }
+
+
+.tvpad4_part2 .tvpad4_part2_zw1 a.p5{ position:absolute; top:25px;padding:5px 10px;  left:590px; border: 1px solid #fff;
+    -moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius:5px;    }
+
+
+/*4稳定*/
+.tvpad4_part4_kg{ height:900px; background:#fff;}
+.tvpad4_part4{ width:1002px; height:900px; margin:0 auto;background:url(../images/tvpad4zt_gcn/tvpad4_part4_bg.jpg) bottom no-repeat;}
+.tvpad4_part4 .tvpad4_part4_title{ font-size:50px; padding-top:40px;color:#333;}
+.tvpad4_part4 .tvpad4_part4_title1{ font-size:26px;  color:#fe4c06; padding-top:10px;}
+.tvpad4_part4 .tvpad4_part4_zw{width:1002px; padding-top:10px; font-size:16px; line-height:30px;  }
+.tvpad4_part4 .tvpad4_part4_zw1{font-size:16px;color:#fff;padding-top:25px; padding-left:20px; position:relative;}
+.tvpad4_part4 .tvpad4_part4_zw1 a{ background:#333; color:#fff;}
+.tvpad4_part4 .tvpad4_part4_zw1 a.p1{  position:absolute; padding:5px 10px;  top:22px; left:0px; border: 1px solid #fff;
+    -moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius:5px;   }
+.tvpad4_part4 .tvpad4_part4_zw1 a.p2{ position:absolute;  padding:5px 10px; top:22px; left:150px;  border: 1px solid #fff;
+    -moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius:5px;}
+.tvpad4_part4 .tvpad4_part4_zw1 a.p3{ position:absolute; padding:5px 10px;  top:22px; left:280px;  border: 1px solid #fff;
+    -moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius:5px;}
+.tvpad4_part4 .tvpad4_part4_zw1 a.p4{ position:absolute;  padding:5px 10px; top:43px; left:0px;  border: 1px solid #fff;
+    -moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius:5px;}
+
+.tvpad4_part4 .tvpad4_part4_zw1 a.p5{ position:absolute;  padding:5px 10px; top:43px; left:215px;  border: 1px solid #fff;
+    -moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius:5px;}
+.tvpad4_part4 .tvpad4_part4_zw1 a.p6{ position:absolute;  padding:5px 10px; top:43px; left:400px;  border: 1px solid #fff;
+    -moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius:5px;}
+
+
+
+/*6安全*/
+.tvpad4_part6_kg{ width:100%; height:1056px;background:url(../images/tvpad4zt_gcn/tvpad4_part6_bg.jpg)  no-repeat;}
+.tvpad4_part6{ width:1002px; height:1056px; margin:0 auto; }
+.tvpad4_part6 .tvpad4_part6_title{ font-size:50px; padding-top:60px; color:#fff;}
+.tvpad4_part6 .tvpad4_part6_title1{ font-size:26px;  color:#fe4c06; padding-top:10px; }
+.tvpad4_part6 .tvpad4_part6_zw{width:1002px; padding-top:10px; font-size:16px; line-height:30px;color:#fff;}
+.tvpad4_part6 .tvpad4_part6_zw1{font-size:16px;color:#fff;padding-top:25px; padding-left:20px; position:relative; }
+.tvpad4_part6 .tvpad4_part6_zw2{font-size:16px;color:#fff;padding-top:50px;  position:relative; }
+.tvpad4_part6 .tvpad4_part2_zw1 a{ color:#fff;}
+.tvpad4_part6 .tvpad4_part6_zw1 a.p1{color:#fff; position:absolute; top:25px; padding:5px 10px; left:0px;border: 1px solid #fff;
+    -moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius:5px;    }
+.tvpad4_part6 .tvpad4_part6_zw1 a.p2{color:#fff; position:absolute; top:25px; padding:5px 10px; left:110px;border: 1px solid #fff;
+    -moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius:5px;    }
+.tvpad4_part6 .tvpad4_part6_zw1 a.p3{color:#fff; position:absolute; top:25px;padding:5px 10px;  left:220px; border: 1px solid #fff;
+    -moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius:5px;    }
+	
+	.tvpad4_part6 .tvpad4_part6_zw1 a.p4{color:#fff; position:absolute; top:25px;padding:5px 10px;  left:380px; border: 1px solid #fff;
+    -moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius:5px;    }
+
+
+
+/*7 简单*/
+.tvpad4_part7_kg{ width:100%; height:900px; background:#fff;}
+.tvpad4_part7{ width:1002px; height:900px; margin:0 auto;background:url(../images/tvpad4zt_gcn/tvpad4_part7_bg.jpg) center bottom  no-repeat; }
+.tvpad4_part7 .tvpad4_part7_title{ font-size:50px; padding-top:40px; width:800px; text-align:right;color:#333;  }
+.tvpad4_part7 .tvpad4_part7_title1{ font-size:26px;  color:#fe4c06; padding-top:10px; width:800px; text-align:right; }
+.tvpad4_part7 .tvpad4_part7_zw{ padding-top:10px; font-size:16px; line-height:30px; width:800px; text-align:right; }
+.tvpad4_part7 .tvpad4_part7_zw1{font-size:16px;color:#fff;padding-top:25px; padding-left:20px; position:relative;}
+.tvpad4_part7 .tvpad4_part7_zw1 a{ background:#333; color:#fff;}
+.tvpad4_part7 .tvpad4_part7_zw1 a.p1{  position:absolute; padding:5px 10px;  top:22px; right:210px; border: 1px solid #fff;
+    -moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius:5px;   }
+.tvpad4_part7 .tvpad4_part7_zw1 a.p2{ position:absolute;  padding:5px 10px; top:22px; right:340px;  border: 1px solid #fff;
+    -moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius:5px;}
+.tvpad4_part7 .tvpad4_part7_zw1 a.p3{ position:absolute; padding:5px 10px;  top:22px; right:470px;  border: 1px solid #fff;
+    -moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius:5px;}
+	.tvpad4_part7 .tvpad4_part7_zw1 a.p4{ position:absolute; padding:5px 10px;  top:22px; right:600px;  border: 1px solid #fff;
+    -moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius:5px;}
+
+/*8省心*/
+.tvpad4_part8_kg{ width:100%; height:900px; background:url(../images/tvpad4zt_gcn/tvpad4_part8_bg.jpg)  no-repeat;}
+.tvpad4_part8{ width:1002px; height:900px; margin:0 auto; }
+.tvpad4_part8 .tvpad4_part8_title{ font-size:50px; padding-top:80px; width:1002px; color:#fff; }
+.tvpad4_part8 .tvpad4_part8_title1{ font-size:26px;  color:#fe4c06; padding-top:10px; width:1002px; }
+.tvpad4_part8 .tvpad4_part8_zw{ padding-top:10px; font-size:16px; line-height:30px; width:1002px;color:#fff; }
+
+/*9 安装*/
+.tvpad4_part9_kg{ width:100%; height:900px; background:#fff;border-bottom:1px #e5e5e5 solid;}
+.tvpad4_part9{ width:1002px; height:900px; margin:0 auto; background:url(../images/tvpad4zt_gcn/tvpad4_part9_bg.jpg) center bottom  no-repeat; }
+.tvpad4_part9 .tvpad4_part9_title{ font-size:50px; padding-top:80px; width:1002px; color:#333; }
+.tvpad4_part9 .tvpad4_part9_zw{ padding-top:10px; font-size:16px; line-height:30px; width:1002px; }
+
+/*10最新应用*/
+.tvpad4_part10_kg{ width:100%; height:900px; background:#fff;border-bottom:1px #e5e5e5 solid;}
+.tvpad4_part10{ width:1002px; height:900px; margin:0 auto; background:url(../images/tvpad4zt_gcn/tvpad4_part10_bg.jpg) center bottom  no-repeat;}
+.tvpad4_part10 .tvpad4_part10_title{ font-size:50px; padding-top:80px; width:1002px; color:#333; }
+
+
+/*11 参数*/
+.tvpad4_part11{ width:1002px; height:auto; margin:0 auto 20px auto; clear:both; }
+.tvpad4_part11 .tvpad4_part11_title{ font-size:50px; padding-top:20px; width:1002px; color:#333; }

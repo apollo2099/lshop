@@ -1,0 +1,7 @@
+@charset "utf-8";
+body {background-image: url(../images/bg.gif);background-repeat: repeat;background-position: center;margin: 0px;padding: 0px;font-family: "宋体";}
+* {margin: 0px;padding: 0px;}
+.main {height:370px;width:508px;margin:0 auto;padding-top:117px;background:url(../images/bg_1.png) left bottom no-repeat;	}
+.main img{border:none;}
+.main p{text-align:center;line-height:36px;font-weight:600;}
+.main p.wz{text-align:left;padding-bottom:165px;}

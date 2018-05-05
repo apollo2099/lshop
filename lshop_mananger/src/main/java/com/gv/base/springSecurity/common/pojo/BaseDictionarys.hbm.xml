@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.gv.base.springSecurity.common.pojo">
+	<class name="BaseDictionarys" table="base_dictionary">
+
+		<id name="id" column="id" type="java.lang.Integer">
+			<generator class="increment" />
+		</id>
+
+		<version name="version" column="version" type="java.lang.Integer"/> 
+
+		<property name="dictionaryCode" column="dictionary_code" update="true" insert="true"
+			type="java.lang.String" not-null="false" unique="false" length="32" />
+
+		<property name="parentCode" column="parent_code" update="true"
+			insert="true" type="java.lang.String" not-null="false" unique="false"
+			length="32" />
+			
+	    <property name="codeName" column="code_Name" update="true"
+			insert="true" type="java.lang.String" not-null="false" unique="false"
+			length="64" />
+
+		<property name="description" column="description" update="true"
+			insert="true" type="java.lang.String" not-null="false" unique="false"
+			length="200" />
+
+		<property name="levelNo" column="level_no" update="true"
+			insert="true" type="java.lang.Integer" not-null="false" unique="false"
+			length="10" />
+
+		<property name="status" column="status" update="true" insert="true"
+			type="java.lang.Integer" not-null="true" unique="false" length="10" />
+
+		<property name="createdBy" column="created_by" update="true"
+			insert="true" type="java.lang.String" not-null="false" unique="false"
+			length="32" />
+
+		<property name="createdDate" column="created_date" update="true"
+			insert="true" type="java.sql.Timestamp" not-null="false" unique="false"
+			length="0" />
+
+		<property name="lastUpdatedBy" column="last_updated_by"
+			update="true" insert="true" type="java.lang.String" not-null="false"
+			unique="false" length="32" />
+
+		<property name="lastUpdatedDate" column="last_updated_date"
+			update="true" insert="true" type="java.sql.Timestamp" not-null="false"
+			unique="false" length="0" />
+
+		<!-- One-To-Many attributes -->
+
+		<!-- Many-To-One attributes -->
+
+	</class>
+</hibernate-mapping>
+

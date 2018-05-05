@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="weixin-default" namespace="/web" extends="gv-default">
+		<action name="obtainAction" class="WxObtainAction">
+			<result name="self">/web/${flag}/weixin/obtain/self.jsp</result>
+			<result name="friend">/web/${flag}/weixin/obtain/friend.jsp</result>
+			<result name="rank">/web/${flag}/weixin/obtain/rank.jsp</result>
+		</action>
+		<!-- 授权部分 -->
+		<action name="wxAuth" class="WxAuthorize">
+		</action>		
+		<action name="wxAuth_redirect" class="WxAuthorize"  method="authRedirect">
+		    <result name="authlogin">/web/${flag}/weixin/authorize/login.jsp</result>
+		    <result name="webIndex" type="redirect">/index.html?t=${timestamp}</result>
+		</action>
+		<action name="wxAuthorize" class="WxAuthorize"  method="authorize">
+		</action>		
+	</package>
+</struts>

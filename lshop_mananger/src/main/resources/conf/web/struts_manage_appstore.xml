@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<!-- add by dingh 应用入住后台管理 -->
+
+<struts>
+	<package name="appstore-default" namespace="/manager" extends="gv-default-manager">
+
+		<action name="devMngAction" class="DeveloperMngAction">
+			<result name="list">/manager/appstore/developer/list.jsp</result>
+			<result name="view">/manager/appstore/developer/view.jsp</result>
+			<result name="verify">/manager/appstore/developer/verify.jsp</result>
+		</action>
+		<action name="appMngAction" class="AppMngAction">
+			<result name="list">/manager/appstore/app/list.jsp</result>
+			<result name="view">/manager/appstore/app/view.jsp</result>
+			<result name="verify">/manager/appstore/app/verify.jsp</result>
+		</action>
+		<action name="emailMngAction" class="EmailMngAction">
+			<result name="list">/manager/appstore/emailtemp/list.jsp</result>
+			<result name="view">/manager/appstore/emailtemp/view.jsp</result>
+			<result name="add">/manager/appstore/emailtemp/add.jsp</result>
+			<result name="bfedit">/manager/appstore/emailtemp/edit.jsp</result>
+		</action>
+	</package>
+</struts>

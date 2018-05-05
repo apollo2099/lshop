@@ -1,0 +1,1 @@
+var provinceData=[{"id":303305,"name":"Hhohho","nameCn":"Hhohho","nameTw":"Hhohho","code":"HH"},{"id":303306,"name":"Lubombo","nameCn":"Lubombo","nameTw":"Lubombo","code":"LU"},{"id":303307,"name":"Manzini","nameCn":"Manzini","nameTw":"Manzini","code":"MA"},{"id":303308,"name":"Shiselweni","nameCn":"Shiselweni","nameTw":"Shiselweni","code":"SH"}];

@@ -1,0 +1,1 @@
+var provinceData=[{"id":302989,"name":"Ascension","nameCn":"Ascension","nameTw":"Ascension","code":"AC"},{"id":302990,"name":"Saint Helena","nameCn":"Saint Helena","nameTw":"Saint Helena","code":"HL"},{"id":302991,"name":"Tristan da Cunha","nameCn":"Tristan da Cunha","nameTw":"Tristan da Cunha","code":"TA"}];

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="base" namespace="/manager" extends="gv-default-manager">
+		<!-- 菜单 -->
+		<action name="baseMenu" class="BaseMenuAction">
+			<result name="list">/manager/base/menu/menu_list.jsp</result>
+			<result name="bfedit">/manager/base/menu/menu_update.jsp</result>
+			<result name="bfadd">/manager/base/menu/menu_add.jsp</result>
+		</action>
+		
+		<!-- 用户 -->
+		<action name="baseUser" class="BaseUserAction">
+			<result name="list">/manager/base/user/user_list.jsp</result>
+			<result name="bfedit">/manager/base/user/user_edit.jsp</result>
+			<result name="bfadd">/manager/base/user/user_add.jsp</result>
+			<result name="bfChangePassword">/manager/base/user/user_changePassword.jsp</result>
+		</action>
+		
+		<!-- 资源 -->
+		<action name="baseResources" class="BaseResourcesAction">
+			<result name="menuResources">/manager/base/resources/resources.jsp</result>
+			<result name="list">/manager/base/resources/resources_list.jsp</result>
+			<result name="bfedit">/manager/base/resources/resources_edit.jsp</result>
+			<result name="bfadd">/manager/base/resources/resources_add.jsp</result>
+		</action>
+		
+		<!-- 权限 -->
+		<action name="baseAuthorities" class="BaseAuthoritiesAction">
+			<result name="list">/manager/base/authorities/authorities_list.jsp</result>
+			<result name="bfedit">/manager/base/authorities/authorities_edit.jsp</result>
+			<result name="bfadd">/manager/base/authorities/authorities_add.jsp</result>
+			<result name="itemList">/manager/base/authorities/authoritiesItem_list.jsp</result>
+		</action>
+		
+		<!-- 权限-资源 -->
+		<action name="baseAuthoritiesResources" class="BaseAuthoritiesResourcesAction">
+			<result name="list">/manager/base/authorities/authoritiesResources_list.jsp</result>
+			<result name="bfadd">/manager/base/authorities/authoritiesResources_add.jsp</result>
+		</action>
+		
+		<!-- 部门 -->
+		<action name="baseDepartment" class="BaseDepartmentAction">
+			<result name="list">/manager/base/department/department.jsp</result>
+			<result name="bfadd">/manager/base/department/department_add.jsp</result>
+			<result name="bfedit">/manager/base/department/department_edit.jsp</result>
+		</action>
+		
+		<!-- 角色 -->
+		<action name="baseRoles" class="BaseRoleAction">
+			<result name="list">/manager/base/role/role_list.jsp</result>
+			<result name="bfadd">/manager/base/role/role_add.jsp</result>
+			<result name="bfedit">/manager/base/role/role_edit.jsp</result>
+		</action>
+		
+	    <!-- 角色-权限 -->
+		<action name="baseRolesAuthorities" class="BaseRolesAuthoritiesAction">
+			<result name="list">/manager/base/role/roleAuthorities_list.jsp</result>
+			<result name="bfadd">/manager/base/role/roleAuthorities_add.jsp</result>
+		</action>
+		
+		<!--用户-角色 -->
+		<action name="baseUsersRoles" class="BaseUsersRolesAction">
+			<result name="list">/manager/base/user/userRole_list.jsp</result>
+			<result name="bfadd">/manager/base/user/userRole_add.jsp</result>
+		</action>
+		
+		<!-- 数据字典 -->
+		<action name="baseDictionarys" class="BaseDictionaryAction">
+			<result name="dictionaryTree">/manager/base/dictionary/dictionary.jsp</result>
+			<result name="list">/manager/base/dictionary/dictionary_list.jsp</result>
+			<result name="bfedit">/manager/base/dictionary/dictionary_edit.jsp</result>
+			<result name="bfadd">/manager/base/dictionary/dictionary_add.jsp</result>
+		</action>
+		
+		
+		<!-- 进度条异步调用 -->
+		<action name="progress" class="ProgressBarAction">
+			<result name="json">/manager/common/done_json.jsp</result>
+		</action>
+	</package>
+
+</struts>

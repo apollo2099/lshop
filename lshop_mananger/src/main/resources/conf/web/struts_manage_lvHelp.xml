@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="lvHelpMngAction-default" namespace="/manager" extends="gv-default-manager">
+        <action name="lvHelpMngAction" class="LvHelpMngAction">
+			<result name="befSave">/manager/lvHelp/lvHelp_add.jsp</result>
+			<result name="list">/manager/lvHelp/lvHelp_list.jsp</result>
+			<result name="view">/manager/lvHelp/lvHelp_view.jsp</result>
+			<result name="edit">/manager/lvHelp/lvHelp_edit.jsp</result>
+		</action>
+	</package>
+	
+</struts>

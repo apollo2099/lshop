@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.lshop.common.pojo.logic">
+	<class name="LvPubProduct" table="lv_pub_product">
+
+		<id name="id" column="Id" type="java.lang.Integer">
+			<generator class="identity" />
+		</id>
+
+
+
+		<property name="productName" column="product_name" update="true"
+			insert="true" type="java.lang.String" not-null="false" unique="false"
+			length="64" />
+
+		<property name="productModel" column="product_model" update="true"
+			insert="true" type="java.lang.String" not-null="false" unique="false"
+			length="32" />
+
+		<property name="pcode" column="pcode" update="true" insert="true"
+			type="java.lang.String" not-null="false" unique="false" length="32" />
+
+		<property name="status" type="java.lang.Short">
+			<column name="status">
+				<comment>商品状态(0正常，-1删除)</comment>
+			</column>
+		</property>
+		<property name="code" column="code" update="true" insert="true"
+			type="java.lang.String" not-null="false" unique="false" length="32" />
+
+		<property name="orderValue" column="order_value" update="true"
+			insert="true" type="java.lang.Integer" not-null="false" unique="false"
+			length="10" />
+
+		<property name="createTime" column="create_time" update="true"
+			insert="true" type="java.util.Date" not-null="false" unique="false"
+			length="0" />
+
+		<property name="modifyTime" column="modify_time" update="true"
+			insert="true" type="java.util.Date" not-null="false" unique="false"
+			length="0" />
+
+		<property name="modifyUserId" column="modify_user_id" update="true"
+			insert="true" type="java.lang.Integer" not-null="false" unique="false"
+			length="10" />
+
+		<property name="modifyUserName" column="modify_user_name"
+			update="true" insert="true" type="java.lang.String" not-null="false"
+			unique="false" length="32" />
+
+
+
+
+
+	</class>
+</hibernate-mapping>
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="wxUserAction-default" namespace="/manager" extends="gv-default-manager" >
+	     <!--微信用户列表信息管理配置-->
+	     <action name="wxUserMngAction" class="WxUserMngAction" >
+	            <result name="list">/manager/weixin/wxUser/wxUser_list.jsp</result>
+	            <result name="view">/manager/weixin/wxUser/wxUser_view.jsp</result> 	            
+	            <result name="edit">/manager/weixin/wxUser/wxUser_edit.jsp</result>
+	            <result name="befAdd">/manager/weixin/wxUser/wxUser_add.jsp</result>
+	            <result name="befSave">/manager/weixin/wxUser/wxUser_add.jsp</result>
+	     </action>
+	     </package>
+</struts>

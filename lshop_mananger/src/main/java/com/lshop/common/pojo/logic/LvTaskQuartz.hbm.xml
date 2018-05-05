@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.lshop.common.pojo.logic">
+	<class name="LvTaskQuartz" table="lv_task_quartz">
+
+		<id name="id" column="id" type="java.lang.Integer">
+			<generator class="identity" />
+		</id>
+		<property name="taskName" column="task_name" update="true"
+			insert="true" type="java.lang.String" not-null="true" unique="false"
+			length="64" />
+
+		<property name="targetObject" column="target_object" update="true"
+			insert="true" type="java.lang.String" not-null="true" unique="false"
+			length="64" />
+
+		<property name="targetMethod" column="target_method" update="true"
+			insert="true" type="java.lang.String" not-null="true" unique="false"
+			length="64" />
+
+		<property name="targetTime" column="target_time" update="true"
+			insert="true" type="java.lang.String" not-null="true" unique="false"
+			length="64" />
+
+		<property name="description" column="description" update="true"
+			insert="true" type="java.lang.String" not-null="false" unique="false"
+			length="225" />
+
+		<property name="status" column="status" update="true" insert="true"
+			type="java.lang.Integer" not-null="true" unique="false" length="10" />
+
+		<property name="createTime" column="create_time" update="true"
+			insert="true" type="java.util.Date" not-null="false" unique="false"
+			length="0" />
+
+		<property name="modifyTime" column="modify_time" update="true"
+			insert="true" type="java.util.Date" not-null="false" unique="false"
+			length="0" />
+
+		<property name="modifyUserId" column="modify_user_id" update="true"
+			insert="true" type="java.lang.Integer" not-null="false" unique="false"
+			length="10" />
+
+		<property name="modifyUserName" column="modify_user_name"
+			update="true" insert="true" type="java.lang.String" not-null="false"
+			unique="false" length="64" />
+	</class>
+</hibernate-mapping>
+

@@ -1,0 +1,1 @@
+var cityData=[{"id":300360,"name":"Chongqing","nameCn":"重庆","nameTw":"重慶","icon":"","code":"Chongqing"}];

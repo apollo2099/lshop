@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="lvLotteryLogsAction-default" namespace="/manager" extends="gv-default-manager">
+        <action name="lvLotteryLogsAction" class="LvLotteryLogsAction">
+            <result name="list">/manager/lvLotteryLogs/lvLotteryLogs_list.jsp</result>
+			<result name="befSave">/manager/lvLotteryLogs/lvLotteryLogs_add.jsp</result>
+			<result name="view">/manager/lvLotteryLogs/lvLotteryLogs_view.jsp</result>
+			<result name="edit">/manager/lvLotteryLogs/lvLotteryLogs_edit.jsp</result>
+			<result name="toShipment">/manager/lvLotteryLogs/lvAccountPrize_shipment.jsp</result>
+		</action>
+	</package>
+	
+</struts>

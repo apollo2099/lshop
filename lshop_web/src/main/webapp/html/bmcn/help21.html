@@ -1,0 +1,260 @@
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>banana商城帮助中心</title>
+		<link href="http://res.bananatv.com/bmcn/res/css/user_center.css" rel="stylesheet" type="text/css" />
+		<!-- 加载公共JS -->
+		
+<link href="http://res.bananatv.com/bmcn/res/css/css.css" rel="stylesheet" type="text/css" />
+<link href="http://res.bananatv.com/bmcn/res/css/style1.css" rel="stylesheet" type="text/css" />
+<link href="http://res.bananatv.com/bmcn/res/css/development.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://res.bananatv.com/bmcn/res/js/jquery-1.4.4.min.js" ></script>
+<script type="text/javascript" src="http://res.bananatv.com/bmcn/res/js/FomrValidate.js" ></script>
+<script type="text/javascript" src="http://res.bananatv.com/bmcn/res/js/jquery.validate.min.1.8.1.js" ></script>
+<script type="text/javascript" src="http://res.bananatv.com/bmcn/res/js/jquery_validate_extend.js" ></script>
+<script type="text/javascript" src="http://res.bananatv.com/bmcn/res/js/jquery.form.js" ></script>
+<script type="text/javascript" src="http://res.bananatv.com/bmcn/res/js/cookie.js"></script>
+<script type="text/javascript" src="http://res.bananatv.com/bmcn/res/js/slides.jquery.js"></script>
+<script type="text/javascript" src="http://res.bananatv.com/bmcn/res/js/header.js"></script>
+<script type="text/javascript" src="http://res.bananatv.com/bmcn/res/js/regandlog.js"></script>
+<script type="text/javascript" src="http://res.bananatv.com/bmcn/res/js/bi.js"></script>
+<script type="text/javascript" src="https://rds.alipay.com/merchant/merchant.js"></script>
+<script type="text/javascript">
+$(function(){
+	lshop.setCookie("jsReturnCookie",encodeURIComponent(window["alipay-merchant-result"]));
+});
+</script>
+<link rel="icon" href="http://res.bananatv.com/bmcn/res/favicon.ico" />
+
+		
+	</head>
+	
+	<body>
+		<!-- 获取商城头部文件 -->
+		
+
+
+
+<!--top -->
+	<div class="top" id="sc_top">
+		<div class="top_line"></div>
+		<div class="top_submenu">
+			<div class="top_submenu1">
+				<p class="collection">
+					<img src="http://res.bananatv.com/bmcn/res/images/collect.gif" /> 
+					<a href="javascript:addBookmark('banana商城','http://www.bananatv.com/')">收藏banana商城</a>
+				</p>
+				<p  class="p1">
+					<span style="display:none;" id="nameId"><font id="nicknameId"></font>，</span>您好！欢迎光临banana商城
+				</p>
+				<p class="submenu">
+					<span id="loginId"><a href="javascript:onshow('tx_b','loginDiv');">登录</a> |</span>
+					<span id="registerId"><a href="javascript:toRe('http://www.bananatv.com');">注册</a> |</span>
+					<span id="logoutId" style="display:none;"><a href="javascript:userlogout();" >退出</a> |</span>
+					<a href="http://www.bananatv.com/web/userOrder!getOrderlist.action">我的订单</a> |
+					
+					<a href="http://www.bananatv.com/web/helpCenter!getHelps.action">帮助中心</a> |
+					<a href="http://tg.bananatv.com/" target="_blank">推广联盟</a> |
+					<img src="http://res.bananatv.com/bmcn/res/images/buy.gif" /> <a href="javascript:toCar('http://www.bananatv.com');">购物车</a><font class="white">（<span id="shopCartNum"></span>）</font>
+					|
+					<a href="http://en.bananatv.com/index.html" class="white">[English]</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<!--end top-->
+
+	<div class="menu">
+		<div class="menu_a">
+			<p>
+				<a href="/index.html"><img src="http://res.bananatv.com/upload/bmcn/res/images/201407011648306998.gif" /></a>
+			</p>
+			<ul>
+				<li><a href='http://www.bananatv.com/web/index!toIndex.action'>首页</a><li><a href='http://www.bananatv.com/btvpt.html'>Banana TV</a><li><a href='null'>配件</a><li><a href='http://www.bananatv.com/help2.html#M_5'>服务</a><li><a href='/btvfbd.html '>招商</a><li><a href='http://www.bananatv.com/web/blog/blogManage!list.action'>博客</a>
+			</ul>
+		</div>
+	</div>
+	<!--end menu-->
+
+	<!--login -->
+	<div id="loginDiv"   style="display:none;background-color:#000000;width:800px;height:600px;position:absolute;top:0px;left:0px;text-align:center;z-index:9000;filter:alpha(opacity=10);opacity:0.3"></div>
+	<div id="tx_b" style="top:124px;position: absolute;display: none;z-index:9999;">
+		<div class="pop_up_box" style="background:white;">
+			<span class="box_l">用户登录<span class="box_r"><a href="javascript:onhide('tx_b','loginDiv');"><img src="http://res.bananatv.com/bmcn/res/images/close.gif" border="0" /></a></span></span>
+			<form id="divlogin"  action="http://www.bananatv.com/web/userCenterManage!login.action" method="post" onsubmit="">
+				<input type="hidden" name="loginstyle" value="0"/>
+				<input type="hidden" name="jumpurl" id="jumpurl" value=""/>
+				<ul>
+					<li id="erro_msg" style="display: none;"><span id="msg" class="redfont" style="margin-left: 90px;"></span></li>
+					<li><span class="wd1">邮箱或昵称：</span><span class="wd_input"><input name="uname" id="uname" class="input02" type="text"  value="" maxlength="60"/></span></li>
+					<li><span class="wd1">密 码：</span><span class="wd_input"><input name="pwd"  id="pwd" class="input02"  type="password" /></span></li>
+					<li class="btn"><font class="redfont"><a href="http://www.bananatv.com/web/userCenterManage!toFindPassword.action">忘记密码？</a></font> <font class="redfont"><a href="javascript:toReg('http://www.bananatv.com');">注册</a></font></li>
+					<li class="btn"><input type="submit" value="登录" class="user_center_bt02"/></li>
+		  		</ul>
+	  		</form>
+	  			<div class="he_dl">
+         <h3>合作网站账号登陆</h3>
+        <a href="/web/threeauth!qq.action"><img src="http://res.bananatv.com/bmcn/res/images/QQ.png" alt="QQ登陆"/>QQ</a>
+        <a href="/web/threeauth!weibo.action"><img src="http://res.bananatv.com/bmcn/res/images/xl.png" alt="微博登陆"/>微博</a>
+ 		<!-- 
+         <a href="#"><img src="http://res.bananatv.com/bmcn/res/images/wx.png" alt="微信登陆"/></a>
+         <a href="#"><img src="http://res.bananatv.com/bmcn/res/images/zfb.png" alt="支付宝"/></a>
+         -->
+      </div>  
+		</div>
+	</div>
+
+
+
+	
+		<div class="content_main">
+			<div class="left_frame">
+	    		<div class="cm_n_1"> 
+		        	<h3>帮助中心</h3>
+		        	
+		        		<h4 class="choose">关于banana TV</h4>
+		        		<ul>
+		        		
+		        			<li><a href="/help21.html#M_89">交易条款</a></li>
+		        		
+		        			<li><a href="/help21.html#M_90">购物流程</a></li>
+		        		
+		        			<li><a href="/help21.html#M_108">公司简介</a></li>
+		        		
+		        			<li><a href="/help21.html#M_106">招商加盟</a></li>
+		        		
+		        			<li><a href="/help21.html#M_105">联系我们</a></li>
+		        		
+		        			<li><a href="/help21.html#M_163">应用入驻</a></li>
+		        		
+		        		</ul>
+	   				
+		        		<h4 >物流配送</h4>
+		        		<ul>
+		        		
+		        			<li><a href="/help22.html#M_91">签收说明</a></li>
+		        		
+		        			<li><a href="/help22.html#M_104">如何购买</a></li>
+		        		
+		        			<li><a href="/help22.html#M_177">售后服务</a></li>
+		        		
+		        			<li><a href="/help22.html#M_176">交易条款</a></li>
+		        		
+		        			<li><a href="/help22.html#M_175">常见问题</a></li>
+		        		
+		        		</ul>
+	   				
+		        		<h4 >支付方式</h4>
+		        		<ul>
+		        		
+		        			<li><a href="/help23.html#M_174">签收说明</a></li>
+		        		
+		        			<li><a href="/help23.html#M_173">配送方式</a></li>
+		        		
+		        			<li><a href="/help23.html#M_172">配送范围</a></li>
+		        		
+		        		</ul>
+	   				
+		        		<h4 >售后服务</h4>
+		        		<ul>
+		        		
+		        			<li><a href="/help24.html#M_170">支付宝支付</a></li>
+		        		
+		        			<li><a href="/help24.html#M_171">国际信用卡支付</a></li>
+		        		
+		        			<li><a href="/help24.html#M_169">西联汇款</a></li>
+		        		
+		        			<li><a href="/help24.html#M_168">安全性</a></li>
+		        		
+		        		</ul>
+	   				
+		        		<h4 >订单服务</h4>
+		        		<ul>
+		        		
+		        			<li><a href="/help25.html#M_103">应用入驻列表</a></li>
+		        		
+		        			<li><a href="/help25.html#M_167">订单查询</a></li>
+		        		
+		        			<li><a href="/help25.html#M_166">订单修改</a></li>
+		        		
+		        			<li><a href="/help25.html#M_165">商品评价</a></li>
+		        		
+		        			<li><a href="/help25.html#M_164">退换货流程</a></li>
+		        		
+		        		</ul>
+	   				
+	        	</div>
+	        	
+				<!--left_ad-->
+				
+	    	</div> 
+		 	<!--End left_Frame-->
+		 	
+			<div class="right_frame">
+		 		<h1><img src="http://res.bananatv.com/bmcn/res/images/icon02.gif" /><font class="bfont"><a href="/index.html">首页</a>--> <a href="/web/helpCenter!getHelps.action">帮助中心</a></font> </h1>
+	 	 		<div class="help_center_details">                  
+					
+		   				<p id="M_89"><font class="redfont fontwz">交易条款：</font><br />
+							华扬国际不会向任何第三方披露、转让、出租或者出售交易用户名单、交易记录等涉及消费者个人资讯的数据以及您保存在华扬国际各项服务中的非公开内容，除非您明确授权华扬国际，或华扬国际在诚信基础上认为透露这些资讯是必要的。您瞭解并同意，华扬国际有权根据相应法律法规的要求，或应政府部门（包括司法及行政部门）的要求，向其提供您在华扬国际填写的注册资讯和交易纪录等必要资讯。 华扬国际不会向任何第三方披露、转让、出租或者出售交易用户名单、交易记录等涉及消费者个人资讯的数据以及您保存在华扬国际各项服务中的非公开内容，除非您明确授权华扬国际，或华扬国际在诚信基础上认为透露这些资讯是必要的。您瞭解并同意，华扬国际有权根据相应法律法规的要求，或应政府部门（包括司法及行政部门）的要求，向其提供您在华扬国际填写的注册资讯和交易纪录等必要资讯。 华扬国际不会向任何第三方披露、转让、出租或者出售交易用户名单、交易记录等涉及消费者个人资讯的数据以及您保存在华扬国际各项服务中的非公开内容，除非您明确授权华扬国际，或华扬国际在诚信基础上认为透露这些资讯是必要的。您瞭解并同意，华扬国际有权根据相应法律法规的要求，或应政府部门（包括司法及行政部门）的要求，向其提供您在华扬国际填写的注册资讯和交易纪录等必要资讯。 华扬国际不会向任何第三方披露、转让、出租或者出售交易用户名单、交易记录等涉及消费者个人资讯的数据以及您保存在华扬国际各项服务中的非公开内容，除非您明确授权华扬国际，或华扬国际在诚信基础上认为透露这些资讯是必要的。您瞭解并同意，华扬国际有权根据相应法律法规的要求，或应政府部门（包括司法及行政部门）的要求，向其提供您在华扬国际填写的注册资讯和交易纪录等必要资讯。 华扬国际不会向任何第三方披露、转让、出租或者出售交易用户名单、交易记录等涉及消费者个人资讯的数据以及您保存在华扬国际各项服务中的非公开内容，除非您明确授权华扬国际，或华扬国际在诚信基础上认为透露这些资讯是必要的。您瞭解并同意，华扬国际有权根据相应法律法规的要求，或应政府部门（包括司法及行政部门）的要求，向其提供您在华扬国际填写的注册资讯和交易纪录等必要资讯。 华扬国际不会向任何第三方披露、转让、出租或者出售交易用户名单、交易记录等涉及消费者个人资讯的数据以及您保存在华扬国际各项服务中的非公开内容，除非您明确授权华扬国际，或华扬国际在诚信基础上认为透露这些资讯是必要的。您瞭解并同意，华扬国际有权根据相应法律法规的要求，或应政府部门（包括司法及行政部门）的要求，向其提供您在华扬国际填写的注册资讯和交易纪录等必要资讯。 华扬国际不会向任何第三方披露、转让、出租或者出售交易用户名单、交易记录等涉及消费者个人资讯的数据以及您保存在华扬国际各项服务中的非公开内容，除非您明确授权华扬国际，或华扬国际在诚信基础上认为透露这些资讯是必要的。您瞭解并同意，华扬国际有权根据相应法律法规的要求，或应政府部门（包括司法及行政部门）的要求，向其提供您在华扬国际填写的注册资讯和交易纪录等必要资讯。 华扬国际不会向任何第三方披露、转让、出租或者出售交易用户名单、交易记录等涉及消费者个人资讯的数据以及您保存在华扬国际各项服务中的非公开内容，除非您明确授权华扬国际，或华扬国际在诚信基础上认为透露这些资讯是必要的。您瞭解并同意，华扬国际有权根据相应法律法规的要求，或应政府部门（包括司法及行政部门）的要求，向其提供您在华扬国际填写的注册资讯和交易纪录等必要资讯。 华扬国际不会向任何第三方披露、转让、出租或者出售交易用户名单、交易记录等涉及消费者个人资讯的数据以及您保存在华扬国际各项服务中的非公开内容，除非您明确授权华扬国际，或华扬国际在诚信基础上认为透露这些资讯是必要的。您瞭解并同意，华扬国际有权根据相应法律法规的要求，或应政府部门（包括司法及行政部门）的要求，向其提供您在华扬国际填写的注册资讯和交易纪录等必要资讯。 
+						</p>
+		   			
+		   				<p id="M_90"><font class="redfont fontwz">购物流程：</font><br />
+							华扬国际不会向任何第三方披露、转让、出租或者出售交易用户名单、交易记录等涉及消费者个人资讯的数据以及您保存在华扬国际各项服务中的非公开内容，除非您明确授权华扬国际，或华扬国际在诚信基础上认为透露这些资讯是必要的。您瞭解并同意，华扬国际有权根据相应法律法规的要求，或应政府部门（包括司法及行政部门）的要求，向其提供您在华扬国际填写的注册资讯和交易纪录等必要资讯。 华扬国际不会向任何第三方披露、转让、出租或者出售交易用户名单、交易记录等涉及消费者个人资讯的数据以及您保存在华扬国际各项服务中的非公开内容，除非您明确授权华扬国际，或华扬国际在诚信基础上认为透露这些资讯是必要的。您瞭解并同意，华扬国际有权根据相应法律法规的要求，或应政府部门（包括司法及行政部门）的要求，向其提供您在华扬国际填写的注册资讯和交易纪录等必要资讯。 华扬国际不会向任何第三方披露、转让、出租或者出售交易用户名单、交易记录等涉及消费者个人资讯的数据以及您保存在华扬国际各项服务中的非公开内容，除非您明确授权华扬国际，或华扬国际在诚信基础上认为透露这些资讯是必要的。您瞭解并同意，华扬国际有权根据相应法律法规的要求，或应政府部门（包括司法及行政部门）的要求，向其提供您在华扬国际填写的注册资讯和交易纪录等必要资讯。 华扬国际不会向任何第三方披露、转让、出租或者出售交易用户名单、交易记录等涉及消费者个人资讯的数据以及您保存在华扬国际各项服务中的非公开内容，除非您明确授权华扬国际，或华扬国际在诚信基础上认为透露这些资讯是必要的。您瞭解并同意，华扬国际有权根据相应法律法规的要求，或应政府部门（包括司法及行政部门）的要求，向其提供您在华扬国际填写的注册资讯和交易纪录等必要资讯。 华扬国际不会向任何第三方披露、转让、出租或者出售交易用户名单、交易记录等涉及消费者个人资讯的数据以及您保存在华扬国际各项服务中的非公开内容，除非您明确授权华扬国际，或华扬国际在诚信基础上认为透露这些资讯是必要的。您瞭解并同意，华扬国际有权根据相应法律法规的要求，或应政府部门（包括司法及行政部门）的要求，向其提供您在华扬国际填写的注册资讯和交易纪录等必要资讯。 华扬国际不会向任何第三方披露、转让、出租或者出售交易用户名单、交易记录等涉及消费者个人资讯的数据以及您保存在华扬国际各项服务中的非公开内容，除非您明确授权华扬国际，或华扬国际在诚信基础上认为透露这些资讯是必要的。您瞭解并同意，华扬国际有权根据相应法律法规的要求，或应政府部门（包括司法及行政部门）的要求，向其提供您在华扬国际填写的注册资讯和交易纪录等必要资讯。 华扬国际不会向任何第三方披露、转让、出租或者出售交易用户名单、交易记录等涉及消费者个人资讯的数据以及您保存在华扬国际各项服务中的非公开内容，除非您明确授权华扬国际，或华扬国际在诚信基础上认为透露这些资讯是必要的。您瞭解并同意，华扬国际有权根据相应法律法规的要求，或应政府部门（包括司法及行政部门）的要求，向其提供您在华扬国际填写的注册资讯和交易纪录等必要资讯。 华扬国际不会向任何第三方披露、转让、出租或者出售交易用户名单、交易记录等涉及消费者个人资讯的数据以及您保存在华扬国际各项服务中的非公开内容，除非您明确授权华扬国际，或华扬国际在诚信基础上认为透露这些资讯是必要的。您瞭解并同意，华扬国际有权根据相应法律法规的要求，或应政府部门（包括司法及行政部门）的要求，向其提供您在华扬国际填写的注册资讯和交易纪录等必要资讯。 华扬国际不会向任何第三方披露、转让、出租或者出售交易用户名单、交易记录等涉及消费者个人资讯的数据以及您保存在华扬国际各项服务中的非公开内容，除非您明确授权华扬国际，或华扬国际在诚信基础上认为透露这些资讯是必要的。您瞭解并同意，华扬国际有权根据相应法律法规的要求，或应政府部门（包括司法及行政部门）的要求，向其提供您在华扬国际填写的注册资讯和交易纪录等必要资讯。 
+						</p>
+		   			
+		   				<p id="M_108"><font class="redfont fontwz">公司简介：</font><br />
+							<strong>公司介绍与品牌实力</strong>　　<br />&nbsp;&nbsp;&nbsp; banana TV是深圳市金香蕉信息技术有限公司旗下品牌，公司总部位于深圳，在深圳、上海、北京三地拥有数百人的研发中心，拥有上百项国际、国内专利技术。5年多的技术研发和市场实践，于2014年初正式推出最新的基于Andriod系统深度定制的智能机顶盒。&nbsp;<br />&nbsp;&nbsp;&nbsp; 公司以“服务与创新”为核心价值观，以“家文化的倡导者”为品牌理念，深度挖掘家庭视听需求，为家庭提供丰富多彩的电视应用，满足家庭成员对教育、娱乐、育儿、游戏等个性化的需求，营造共享、共融、和谐的家庭文化氛围，畅享幸福多姿的家庭文化生活。<br /><br /><strong>家文化的倡导者　</strong>　　<br />&nbsp;&nbsp;&nbsp; 家是社会的基础，家文化更是中华文化的根本，是中华民族千百年来传统的延续。智能化时代的今天，智能终端设备的风靡，改变了人与人之间的关系，融洽的家庭氛围正因个人电子产品过渡使用而淡化，家庭文化被逐渐侵蚀。&nbsp;<br />&nbsp;&nbsp;&nbsp; banana TV从家出发，重视对中国传统家庭文化的承袭与创新，倡导快乐、温馨、分享、传承的和谐家文化。始终关注家庭幸福，孩子成长，家人健康，塑造良好的家庭氛围，致力于成为每个家庭成员情感互联的纽带，让每个家庭、每个成员都能从中寻找到共享、共融的空间。<br /><br /><strong>最贴心的服务保障&nbsp;<br /></strong>&nbsp;&nbsp;&nbsp; banana始终坚持品质为重，服务先行的价值理念，为用户提供优质服务是我们立足全球的根本。一份贴心的服务是对企业合作伙伴、用户的最真诚的承诺。&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;技术支持: 软件、硬件一体的解决方案&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;运营支持: 专业、高效的运营团队<br />&nbsp;&nbsp;&nbsp;&nbsp;客服支持: 7*24小时多语种无时差在线客服<br /><br /><strong>服务宗旨</strong><br />&nbsp; &nbsp; 快乐购物、安全放心；周到服务、便利快捷！<br />&nbsp; &nbsp; 快乐购物：banana TV商城先进的智能化导购系统，充分体现了一切为网友服务这一人性化的特点；页面和产品设计制作精美，并配以直观的视频介绍，全新的购物体验，给你带来愉悦的视觉美感，同时也将banana TV商城产品的特性诠释得准确到位！<br />&nbsp; &nbsp; 安全放心：banana TV商城各种针对消费者的购物安全保障条款，并支持通过第三方支付平台与我们交易，购物更安全，更放心；banana TV商城产品采用3包的方式，让您没有后顾之忧。<br />&nbsp;&nbsp;&nbsp; 周到服务：您在购买banana TV商城产品过程中，有任何疑问和建议，都可通过在线客服与我们进行互动交流，我们将对您提供详细的解答，直到您满意为止。<br />&nbsp; &nbsp; 便利快捷：购物流程化繁为简，从注册到订购，不到1分钟，其他一切事情交给我们，您只要在家放心等候，我们将通过特快专递为您提供送货上门服务！ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />&nbsp; &nbsp; 售后承诺：<br />&nbsp; &nbsp; 时间与精力是您最大的成本！<br />&nbsp; &nbsp; 舒适的购物体验是我们彼此信任的开始！<br />&nbsp; &nbsp; “零”风险购物是我们郑重的官方承诺！<br />&nbsp; &nbsp; 您对我们服务的认可是banana商城前行最大的动力！<br />&nbsp; &nbsp; 为消除广大华人同胞在订购banana商城系列产品时对购物安全性及出现问题后的处理成本所产生的疑虑，banana商城特在官网公示以下售后服务保障内容：<br />&nbsp;&nbsp;&nbsp; 15天无条件包退、30天包换 、1年免费维修、终身免费贴心维护服务。
+						</p>
+		   			
+		   				<p id="M_106"><font class="redfont fontwz">招商加盟：</font><br />
+							联系电话：+86 0755-26520101<br />邮箱：market@bananatv.com
+						</p>
+		   			
+		   				<p id="M_105"><font class="redfont fontwz">联系我们：</font><br />
+							深圳市金香蕉信息技术有限公司&nbsp;<br />&nbsp;&nbsp;&nbsp; 1.banana TV订购：点击<a href="http://chat.53kf.com/webCompany.php?arg=lulucute&amp;style=2" target="_blank"><img alt="" src="http://res.bananatv.com/bmcn/res/images/help_20140505135917720.jpg" /></a>联系我们的客服人员或发邮件到<a href="mailto:service@bananatv.com">service@bananatv.com</a>&nbsp;<br />&nbsp; &nbsp; 2.24小时国内服务专线：0755-26520101<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24小时全球服务专线：00852-31-158-518<br />
+						</p>
+		   			
+		   				<p id="M_163"><font class="redfont fontwz">应用入驻：</font><br />
+							<font color="#666666" size="2" face="Microsoft YaHei"><b>点击进入&nbsp;</b></font> <a href="http://www.bananatv.com/web/developer!developerIndex.action"><img alt="" src="http://res.bananatv.com/bmcn/res/upload/app_loginbut_zh.jpg" /></a>&nbsp; <br />
+						</p>
+		   			
+				</div>
+				<!--End 幫助中心-->
+			</div>
+			<!--End right_Frame-->
+			
+		</div>
+		<!--End content-->
+		
+		<!-- 底部广告位-->
+		<div class="guanggaowei"><img src="http://res.bananatv.com/bmcn/res/images/ggt.jpg" alt="" /></div>
+		<!-- footer -->
+		
+
+
+
+
+
+<!-- service ad -->
+<div class="service"> <div class="service1">   <dl>     <dt><img src="http://res.bananatv.com/bmcn/res/images/service_1.jpg" alt="" /></dt> <dd>正品保障<br /><font style="font-size:14px;">所有产品都是原装正品</font></dd>   </dl>   <dl>     <dt><img src="http://res.bananatv.com/bmcn/res/images/service_2.jpg" alt="" /></dt> <dd>交易保障<br /><font style="font-size:14px;">知名的第三方支付平台</font></dd>   </dl>   <dl>     <dt><img src="http://res.bananatv.com/bmcn/res/images/service_3.jpg" alt="" /></dt> <dd>DHL/UPS/TNT包邮<br /><font style="font-size:14px;">全球范围安全放心</font></dd>   </dl>   <dl>     <dt><img src="http://res.bananatv.com/bmcn/res/images/service_4.jpg" alt="" /></dt> <dd>售后保障<br /><font style="font-size:14px;">15天退换1年保修</font></dd>   </dl> </div></div>
+
+<!-- help center -->
+<div class='help'><div class='help1'><ul><li class='title'>关于banana TV</li><li><a href=http://www.bananatv.com/help21.html#M_89>交易条款</a></li><li><a href=http://www.bananatv.com/help21.html#M_90>购物流程</a></li><li><a href=http://www.bananatv.com/help21.html#M_108>公司简介</a></li><li><a href=http://www.bananatv.com/help21.html#M_106>招商加盟</a></li><li><a href=http://www.bananatv.com/help21.html#M_105>联系我们</a></li><li><a href=http://www.bananatv.com/help21.html#M_163>应用入驻</a></li></ul><ul><li class='title'>物流配送</li><li><a href=http://www.bananatv.com/help22.html#M_91>签收说明</a></li><li><a href=http://www.bananatv.com/help22.html#M_104>如何购买</a></li><li><a href=http://www.bananatv.com/help22.html#M_177>售后服务</a></li><li><a href=http://www.bananatv.com/help22.html#M_176>交易条款</a></li><li><a href=http://www.bananatv.com/help22.html#M_175>常见问题</a></li></ul><ul><li class='title'>支付方式</li><li><a href=http://www.bananatv.com/help23.html#M_174>签收说明</a></li><li><a href=http://www.bananatv.com/help23.html#M_173>配送方式</a></li><li><a href=http://www.bananatv.com/help23.html#M_172>配送范围</a></li></ul><ul><li class='title'>售后服务</li><li><a href=http://www.bananatv.com/help24.html#M_170>支付宝支付</a></li><li><a href=http://www.bananatv.com/help24.html#M_171>国际信用卡支付</a></li><li><a href=http://www.bananatv.com/help24.html#M_169>西联汇款</a></li><li><a href=http://www.bananatv.com/help24.html#M_168>安全性</a></li></ul><ul><li class='title'>订单服务</li><li><a href=http://www.bananatv.com/help25.html#M_103>应用入驻列表</a></li><li><a href=http://www.bananatv.com/help25.html#M_167>订单查询</a></li><li><a href=http://www.bananatv.com/help25.html#M_166>订单修改</a></li><li><a href=http://www.bananatv.com/help25.html#M_165>商品评价</a></li><li><a href=http://www.bananatv.com/help25.html#M_164>退换货流程</a></li></ul></div><a href='http://www8.53kf.com/webCompany.php?arg=lulucute&style=2' target='_blank'> <div class='phone'> <ul><li>7*24小时服务</li><li>国内：         <p class="blue2">0755-26520101</p> </li> <li>海外： <p class="blue2">00852-31-158-518</p></li>   <li class="bt"> <img src='http://res.bananatv.com/bmcn/res/images/phone.jpg' /></li></ul></div></a></div>
+
+<div class="bottom"> 		
+  Copyright <font style="font-family:Arial;">©</font> 2013-2021 深圳市金香蕉信息技术有限公司. All Rights Reserved.<br/><span style="color:#9c9c9c;">增值电信业务经营许可证：</span>粤B2-20140250<b style="margin: 0 3px;color:#9c9c9c;">|</b><a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备14059061号</a>
+
+</div>
+<!--End Bottom -->
+<!-- 第三方统计代码 -->
+banana商城统计代码
+<div id="goTopBtn"><a href="#sc_top"><img border=0 src="http://res.bananatv.com/bmcn/res/images/lanren_top.jpg" /></a></div>
+	
+	</body>
+</html>

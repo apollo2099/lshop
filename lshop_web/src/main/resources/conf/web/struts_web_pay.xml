@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="pay" namespace="/web" extends="gv-default">
+		<action name="pay" class="OrderAction" method="pay">
+		  <result name="success" >/web/${flag}/pay/pay_mothod_code.jsp</result>
+		  <result name="error" >/index.html</result>
+		</action>	
+		<!-- 95epay 支付返回 -->
+		<action name="95epayreturn" class="EpayreturnResultAction" method="ok">
+            <result name="success">/web/${flag}/mall/shopCart_paySuccess.jsp</result>
+		      <result name="fail">/web/${flag}/mall/shopCart_payfail.jsp</result>
+	    </action>
+		<!-- paypal 支付返回 -->
+		<action name="paypalreturn" class="PayPalPayReturnAction" method="ok">
+             <result name="success">/web/${flag}/mall/shopCart_paySuccess.jsp</result>
+		      <result name="fail">/web/${flag}/mall/shopCart_payfail.jsp</result>
+	    </action>
+	    <!-- AliPay 内卡支付返回 -->
+		<action name="alipayreturn" class="AliPayReturnAction" method="ok">
+            <result name="success">/web/${flag}/mall/shopCart_paySuccess.jsp</result>
+		     <result name="fail">/web/${flag}/mall/shopCart_payfail.jsp</result>
+	    </action>
+	     <!-- AliPay 外卡支付返回 -->
+		<action name="alipayoutcardreturn" class="AliPayOutCardReturnAction" method="ok">
+            <result name="success">/web/${flag}/mall/shopCart_paySuccess.jsp</result>
+		     <result name="fail">/web/${flag}/mall/shopCart_payfail.jsp</result>
+	    </action>
+	    <action name="kqreturn" class="KQPayReturnAction" >
+	        <result name="success">/web/${flag}/mall/shopCart_paySuccess.jsp</result>
+		     <result name="fail">/web/${flag}/mall/shopCart_payfail.jsp</result>
+	    </action>
+	    <action name="westernpay" class="WesternPayAction" method="pay">
+	            <result name="success">/web/${flag}/pay/western_result.jsp</result>
+	            <result name="fail">/web/${flag}/mall/shopCart_payfail.jsp</result>
+	    </action>
+	    
+	    <!-- paydollar支付返回 -->
+	    <action name="payDollarreturn" class="PayDollarReturnAction" method="ok">
+            <result name="success">/web/${flag}/mall/shopCart_paySuccess.jsp</result>
+		    <result name="fail">/web/${flag}/mall/shopCart_payfail.jsp</result>
+		    <result name="cancel">/web/${flag}/mall/shopCart_cancel.jsp</result>
+	    </action>
+	    
+	    
+	    <!-- 钱海支付返回 -->
+	    <action name="qhPayReturn" class="QHPayReturnAction" method="ok">
+            <result name="success" type="redirect">/web/${flag}/mall/shopCart_paySuccess.jsp?out_trade_no=${oid}</result>
+		    <result name="fail" >/web/${flag}/mall/shopCart_payfail_jump.jsp?out_trade_no=${oid}</result>
+	    </action>
+	    
+	    <!-- 支付宝国际银行卡 
+	     <action name="alipayInitial" class="AlipayInitialPayAction" method="ok">
+            <result name="success">/web/${flag}/mall/shopCart_paySuccess.jsp</result>
+		    <result name="fail">/web/${flag}/mall/shopCart_payfail.jsp</result>
+	    </action>
+	    -->
+	    
+		<!-- 支付方式处理转向 -->
+	    <action name="payparam" class="PayParamAction"></action>
+	</package>
+</struts>

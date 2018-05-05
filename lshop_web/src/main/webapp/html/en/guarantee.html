@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Check Warranty</title>
+<link href="http://res.itvpad.com/en/res/css/css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://res.itvpad.com/en/res/js/jquery-1.4.4.min.js" ></script>
+<style>
+.cx_bx{width:750px; height:auto;  padding:5px 20px 5px 0px; color:#666; table-layout: fixed;}
+.cx_bx h2{width:750px;  height:auto; color:#444;  text-align:left; font-weight:bold; font-size:14px;}
+.cx_bx div{font-size:14px; line-height:32px; margin-bottom:10px; margin-top:7px;}
+.cx_bx div h1{color:#0284be; font-size:14px;}
+
+.cx_bx div P{text-indent:35px; margin-bottom:15px; word-break: break-all; word-wrap:break-word;}
+.cx_bx div P.mac{overflow:hidden;display:block;text-indent:0;height:44px;line-height:44px;padding-top:0px;}
+.cx_bx div P.mac span{float:left; display:block;}
+
+.input1{width:300px; color:#666;border:solid 1px #CAE5E8;  height:33px; background:#fff; font-size:12px; line-height:20px;}
+</style>
+</head>
+<body>
+    <div class="cx_bx">
+        <h2 style="display:none;">Check Warranty </h2>
+        <div style="overflow:hidden;">
+             <p class="mac">
+			  <span style="padding-left:5px;font-family:Arial, Helvetica, sans-serif; line-height:30px;">MAC：</span>
+			  <span style="margin:0 10px 0 0;"><input id="mac" name="" type="text" class="input1"/></span>
+			  <span ><a href="javascript:searchGuarantee();"><img src="http://res.itvpad.com/en/res/images/chaxun.gif" border="0"/></a></span>
+		 	 </p>
+			 <p id="searchResult" style="display: none; text-indent:0; padding:0 0 0 48px;line-height:24px;">
+			    MAC：<span id="macCode"></span><br />
+			   	Warranty：<span id="macMsg"></span>
+			 </p>
+		 </div>
+    </div>
+<script type="text/javascript">
+	function searchGuarantee() {
+		var mac = $.trim($("#mac").val());
+		if (mac == "") {
+			$("#searchResult").hide();
+			return;
+		}
+		$.ajax({
+			type:	"POST",
+			url:	"/web/guarantee!query.action",
+			data:	"mac="+ mac,
+			dataType: "json",
+			success:function(data){
+				var msg = '';
+				if (data.status == "0") {
+					msg = data.msg;
+				} else if (data.status == "1") {
+					msg = 'Expired';
+				}  else if (data.status == "2") {
+					msg = 'Not activated';
+				}else if (data.status == "3") {
+					$("#searchResult").hide();
+					return;
+				} else if (data.status == "4") {
+					msg = 'Not activated';
+				}
+				$("#macCode").text(data.mac);
+				$("#macMsg").text(msg);
+				$("#searchResult").show();
+			}
+		});
+	}
+	
+</script>    
+</body>
+</html>

@@ -1,0 +1,16 @@
+﻿@charset "utf-8";
+body {margin: 0px;padding: 0px;}
+*{margin:0; padding:0;}
+ul,li{list-style:none;}
+.wt_banner{width:1000px; height:302px; margin:0 auto 0 auto;}
+.wt_main{width:1000px; height:auto; border:solid 1px #ececec; margin:10px auto 0 auto; overflow:hidden; font-family:"微软雅黑"; font-size:14px;}
+.wt_main p{width:1000px;}
+.wt_main p.line{width:920px; margin:0 auto 20px auto; border-bottom:solid 1px #ececec;}
+.wt_main ul{width:920px; padding:20px 0 0 80px; line-height:24px;}
+.wt_main ul li.ask{background:url(../upload/questions/wt_images3.jpg) 0 0 no-repeat;font-size:16px;color:#3f3f3f;font-weight:bold;padding:0 0 15px 30px;}
+.wt_main ul li.answer{background:url(../upload/questions/wt_images4.jpg) 0 0 no-repeat;color:#6a6a6a;padding:0 0 30px 30px;}
+.wt_main ul li.answer span{color:#15a2de; display:block;}
+.wt_main ul li.answer span.btn{padding:10px 0 0 408px;}
+.wt_main ul li.answer a{color:#0050a1;}
+.wt_main ul li.answer a:hover{color:#0050a1; text-decoration:none;}
+.wt_blue{ color:#15a2de;}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="lvBlogLeaveAction-default" namespace="/manager" extends="gv-default-manager" >
+	     <!--博客留言管理配置-->
+	     <action name="lvBlogLeaveAction" class="LvBlogLeaveAction" method="list">
+	            <result name="list">/manager/lvBlogLeave/lvBlogLeave_list.jsp</result>
+	            <result name="view">/manager/lvBlogLeave/lvBlogLeave_view.jsp</result> 	            
+	            <result name="edit">/manager/lvBlogLeave/lvBlogLeave_edit.jsp</result>
+	            <result name="befSave">/manager/lvBlogLeave/lvBlogLeave_add.jsp</result>
+	            <result name="ajax">/manager/common/ajaxDone.jsp</result>
+			    <result name="callback">/manager/common/callbackDone.jsp</result> 
+			    <result name="json">/manager/common/jsonDone.jsp</result> 
+			    <result name="replyLook">/manager/lvBlogLeave/lvBlogLeave_reply.jsp</result>
+	     </action>
+	</package>
+</struts>

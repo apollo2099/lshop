@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="lvOrderCommentAction-default" namespace="/manager" extends="gv-default-manager" >
+	     <!--评论信息管理配置-->
+	     <action name="lvOrderCommentAction" class="LvOrderCommentAction" method="list">
+	            <result name="list">/manager/lvOrderComment/lvOrderComment_list.jsp</result>
+	            <result name="view">/manager/lvOrderComment/lvOrderComment_view.jsp</result> 	            
+	            <result name="edit">/manager/lvOrderComment/lvOrderComment_edit.jsp</result>
+	            <result name="befAdd">/manager/lvOrderComment/lvOrderComment_add.jsp</result>
+	            <result name="reply">/manager/lvOrderComment/lvOrderComment_reply.jsp</result>
+	     </action>
+	     </package>
+</struts>

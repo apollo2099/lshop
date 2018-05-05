@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+    "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+	<!-- jms gv_bz begin -->
+	<!-- jms 发送 -->
+	<bean id="messageQueueSender"
+		class="com.gv.core.message.jms.activemq.ActivemqMessageQueueSender">
+		<property name="jmsTemplate">
+			<bean class="org.springframework.jms.core.JmsTemplate">
+				<property name="connectionFactory" ref="connectionFactory" />
+			</bean>
+		</property>
+		<property name="destination">
+			<bean class="org.apache.activemq.command.ActiveMQQueue">
+				<constructor-arg index="0">
+					<value>${jms.destination.queueSender}</value>
+				</constructor-arg>
+			</bean>
+		</property>
+	</bean>
+	<!-- jms 接收 -->
+	<bean id="jmsContainer"
+		class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+		<property name="connectionFactory" ref="connectionFactory" />
+		<property name="destination">
+			<bean class="org.apache.activemq.command.ActiveMQQueue">
+				<constructor-arg index="0">
+					<value>${jms.destination.queueReceiver}</value>
+				</constructor-arg>
+			</bean>
+		</property>
+		<property name="messageListener">
+			<bean
+				class="com.lshop.common.message.jms.activemq.ActiveMessageQueueReceiverImpl">
+				<property name="serviceNameID" value="OrderMsgService" />
+				<property name="methodName" value="processOrderMSGToWMS" />
+			</bean>
+		</property>
+		<property name="sessionTransacted" value="true" />
+		<property name="recoveryInterval" value="10000" />
+		<property name="maxMessagesPerTask" value="1000" />
+	</bean>
+	<!-- jms gv_bz end -->
+
+
+	<!-- jms lshop_manager begin -->
+	<!-- jms 发送 (订阅发布模式)-->
+	<bean id="messageQueueSenderLshopManager"
+		class="com.gv.core.message.jms.activemq.ActivemqMessageQueueSender">
+		<property name="jmsTemplate">
+			<bean class="org.springframework.jms.core.JmsTemplate">
+				<property name="connectionFactory" ref="connectionFactory" />
+				<!-- 订阅发布模式 -->
+				<property name="pubSubDomain" value="true" />
+				<property name="receiveTimeout" value="60000" />  
+			</bean>
+		</property>
+		<property name="destination">
+			<bean class="org.apache.activemq.command.ActiveMQTopic">
+				<constructor-arg index="0">
+                      <value>${jms.lshop.web.destination.queueSender}</value>
+				</constructor-arg>
+			</bean>
+		</property>
+	</bean>
+	
+	
+	<!-- jms 发送 （点对点模式） -->
+	<bean id="messageQueueSenderLshopManagerPTP"
+		class="com.gv.core.message.jms.activemq.ActivemqMessageQueueSender">
+		<property name="jmsTemplate">
+			<bean class="org.springframework.jms.core.JmsTemplate">
+				<property name="connectionFactory" ref="connectionFactory" />
+			</bean>
+		</property>
+		<property name="destination">
+			<bean class="org.apache.activemq.command.ActiveMQQueue">
+				<constructor-arg index="0">
+					<value>${jms.lshop.web.ptp.destination.queueSender}</value>
+				</constructor-arg>
+			</bean>
+		</property>
+	</bean>
+
+	<!-- jms lshop_manager end -->
+
+	<bean id="connectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
+		<property name="brokerURL" value="${jms.brokerURL}" />
+	</bean>
+	<bean id="jmsTransactionManager"
+		class="org.springframework.jms.connection.JmsTransactionManager">
+		<property name="connectionFactory" ref="connectionFactory" />
+	</bean>
+
+</beans>

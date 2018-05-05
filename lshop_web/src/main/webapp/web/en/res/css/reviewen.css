@@ -1,0 +1,29 @@
+@charset "utf-8";
+body {margin:0px;padding:0px;font-family:Arial, Helvetica, sans-serif; color:#696969;}
+*{margin:0; padding:0;}
+ul,li{list-style:none;}
+body img{border:none;}
+.banner_pl{width:1002px;height:302px;margin:0 auto 0 auto;}
+.main_pl{width:1002px;height:auto;margin:0 auto 0 auto;background-color:#f2fbfe; padding-bottom:20px;font-size:14px;}
+.main_pl h1{width:920px;height:77px;line-height:77px;margin:0 auto 0 auto;font-size:26px;background:url(../upload/review/images_1.jpg) 0 20px no-repeat;padding-top:30px;display:block; text-indent:60px; border-bottom:solid 1px #eaeaea;}
+.ask_as{width:900px;height:auto;margin:0 auto 0 auto;}
+.main_pl dl{padding-top:20px; width:900px;display:block;overflow:hidden;}
+.main_pl dl p{display:block;}
+.main_pl dl dt{width:66px;height:66px; float:left;display:block;background:url(../upload/review/guoqi_1.jpg) 0 0 no-repeat;}
+.main_pl dl dt p{width:55px;height:56px;margin:0 auto 0 auto;padding-top:4px;}
+.main_pl dl dd{width:814px;float:right;display:block;overflow:hidden;}
+.main_pl dl dd p.tou{width:75px;float:left;text-align:center;background:url(../upload/review/touxiang.jpg) 15px 10px no-repeat;overflow:hidden;}
+.main_pl dl dd p.tou span{padding-top:57px;display:block;line-height:18px;}
+.main_pl dl dd .text{width:730px; float:right; position:relative;}
+.main_pl dl dd .text ul{width:720px;display:block;overflow:hidden; padding-left:11px;}
+.main_pl dl dd .text li{display:block;overflow:hidden;}
+.main_pl dl dd .text li.shang{width:718px;height:16px;background:url(../upload/review/shang.jpg) 0 0 no-repeat;}
+.main_pl dl dd .text li.zhong{width:718px;height:auto;background:url(../upload/review/zhong.jpg) 0 0 repeat-y;}
+.main_pl dl dd .text li.zhong p{width:698px;margin:0 auto 0 auto;color:#fff;line-height:24px;}
+.main_pl dl dd .text li.xia{width:718px;height:16px;background:url(../upload/review/xia.jpg) 0 0 no-repeat;}
+.main_pl dl dd .text li.sanjiao{position:absolute;left:1px;top:25px;z-index:20;}
+.main_pl dl dd .text li.shang01{width:718px;height:16px;background:url(../upload/review/shang_01.jpg) 0 0 no-repeat;}
+.main_pl dl dd .text li.zhong01{width:718px;height:auto;background:url(../upload/review/zhong_01.jpg) 0 0 repeat-y;}
+.main_pl dl dd .text li.zhong01 p{width:698px;margin:0 auto 0 auto;line-height:24px;}
+.main_pl dl dd .text li.xia01{width:718px;height:16px;background:url(../upload/review/xia_01.jpg) 0 0 no-repeat;}
+.cb{clear:both;}

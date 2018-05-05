@@ -1,0 +1,68 @@
+@charset "utf-8";
+body {margin: 0px;padding: 0px; font-size:12px; font-family:"微软雅黑","宋体"; color:#666666; overFlow-x: hidden; background:#ece4ce;}
+*{ margin:0; padding:0;}
+body img{border:none; vertical-align:middle;}
+ul,li{list-style-type:none;}
+h1,h2{ font-size:12px; font-weight:100; color:#8c8c8c;}
+a:link{ color:#636363; text-decoration:none;}
+a:hover{ color:#636363; text-decoration:none; }
+.clear{clear:both}
+.lucky_draw_topbg{ width:100%; margin:0 auto; height:184px; overflow:hidden; background:url(../images/lucky_draw_01.jpg) no-repeat center center;}
+.lucky_draw_top{ width:1002px; height:184px; position:relative; margin:0 auto;}
+.lucky_draw_share{ position:absolute; right:0px; top:10px; height:30px; line-height:30px;}
+.lucky_draw_share img{ padding:0px 5px;}
+.lucky_draw_t{ padding-left:300px; padding-top:50px;}
+.lucky_draw_t li.title{ font-size:30px; font-weight:bold; color:#FF0;overflow:hidden; height:45px;  width:415px; white-space:nowrap;}
+.lucky_draw_t li{ font-size:14px; color:#fff; font-weight:bold; width:415px; padding-top:5px; height:20px; overflow:hidden; white-space:nowrap;}
+
+.lucky_draw_top_b{ width:100%; }
+.lucky_hei{height:52px; background-color:#f7d800}
+.lucky_draw_top_b_t{ width:1002px; margin:-52px auto 0;position:relative; height:auto;}
+.lucky_draw_zp{ position:absolute; top:0px; left:0px; width:1002px; margin:0 auto; background:url(../images/lucky_draw_02.jpg) no-repeat; height:518px; overflow:hidden; position:relative;}
+.lucky_draw_zp p.title{ position:absolute; top:140px; left:100px; font-size:16px; font-weight:bold;}
+.lucky_draw_zp_zz{ position:absolute; right:190px; top:200px;}
+.lucky_draw_zp ul{ width:500px; position:absolute; top:200px; left:30px;}
+.lucky_draw_zp ul li{ width:140px; float:left; padding:10px 15px 0px 0px;}
+
+.lucky_draw_list{ width:575px; float:left; height:auto; overflow:hidden; }
+.lucky_draw_list_title{ width:575px; height:98px; background:url(../images/lucky_draw_03.jpg) no-repeat;}
+.lucky_draw_list_title ul{ padding-top:20px;}
+.lucky_draw_list_title ul li.t1{ float:left; padding-left:100px; font-size:16px; font-weight:bold;}
+.lucky_draw_list_title ul li.t2{ float:right; padding-right:20px; font-size:14px;}
+.lucky_draw_list_title ul li.t2 a{ color:#a40000; }
+
+.lucky_draw_list_c{ width:575px; background:#f6eacb; height:300px; overflow:hidden;}
+.lucky_draw_list_c ul{ padding:0px 10px 20px 40px; }
+.lucky_draw_list_c li{ padding-left:20px; padding-right:10px; padding-bottom:10px;   overflow:hidden; word-break:break-all; word-wrap:break-word}
+.lucky_draw_list_c li span{display:block; float:left}
+.spwd{width:264px}
+.lucky_draw_list_c li span.wd{ width:200px; display:inline; float:left; height:30px; overflow:hidden;}
+
+
+
+
+.lucky_draw_rules{ width:380px; float:right; height:auto; overflow:hidden; }
+.lucky_draw_rules_title{ width:380px; height:98px; background:url(../images/lucky_draw_03.jpg) no-repeat;}
+.lucky_draw_rules_title ul{ padding-top:20px;}
+.lucky_draw_rules_title ul li.t1{ float:left; padding-left:100px; font-size:16px; font-weight:bold;}
+
+.lucky_draw_rules_c{ width:340px; background:#f6eacb; height:260px; overflow:hidden; line-height:24px; padding:0 20px 20px 20px; word-break:break-all;}
+
+
+.lucky_draw_part{  clear:both; margin:20px auto 0 auto;  width:1002px; height:auto; overflow:hidden; background:#f6eacb; }
+.lucky_draw_part p.lucky_draw_part_t{ width:1002px; height:78px; background:url(../images/lucky_draw_04.jpg) no-repeat; font-size:16px; font-weight:bold;padding-left:100px; padding-top:20px; }
+.lucky_draw_part_c{padding:0px 20px 10px 20px; line-height:24px;}
+
+
+/*bottom*/
+.bottom{border-top:solid 1px #e9e9e9; margin-top:20px; background:#504e4d; color:#fff; height:auto;}
+.bottom .content{width:1000px; height:auto; line-height:24px;text-align:center;padding-top:10px;margin-right: auto;margin-left: auto;padding-bottom: 20px;}
+.bottom .content a{ padding-right:5px;}
+.bottom .content span {margin-right: 10px; margin-left: 10px;}
+
+.box{ width:400px; height:200px; border-top:4px #2d97d5 solid;border-left:4px #2d97d5 solid;border-right:4px #2d97d5 solid; border-bottom:15px #2d97d5 solid;position:relative; }
+.box p.box_close{ position:absolute; top:10px; right:10px; }
+.box_c{ font-size:16px; text-align:center; width:400px; padding-top:60px; line-height:40px;}
+
+.red{ font-size:20px; color:#2d97d5; font-weight:bold; }
+.btn_box{ width:80px; height:30px; background:#2d97d5; color:#fff; border:none;}

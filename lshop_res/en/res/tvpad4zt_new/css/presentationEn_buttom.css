@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+.section8_bottom{width:100%; z-index:888; height:235px;position:relative; margin-top:70%;background:#fff;}
+.help{ clear:both; height:auto; border-top:1px #EFEFEF solid; margin-top:10px;}
+.help_center{width:1000px;background-color:#ffffff;margin-top: 0;margin-right: auto;margin-bottom: 0;margin-left: auto;padding-top: 0;padding-right: 0px;padding-bottom: 0;padding-left: 0px;}
+.help_center ul li{width:150px;padding-top:10px;padding-bottom:10px;float: left;line-height: 22px;display: block; overflow:hidden;}
+.help_center ul li a{color:#999999; }
+.help_center ul li a:hover{ text-decoration:underline; color:#999999; }
+.help_center li.tel{float:right;width:228px;font-weight: bold;}
+.help_center ul li p{overflow:hidden;word-break:break-all;}
+
+/*bottom*/
+.bottom{height:62px;border-top:solid 1px #e9e9e9;margin-top:20px;}
+.bottom .content{width:1000px;height:62px;line-height:24px;text-align:center;line-height:62px; margin:0 auto; color:#999999;font-family: "Arial","微软雅黑";}
+.bottom .content a{ padding-right:5px;}
+.bottom .content span {margin-right: 10px; margin-left: 10px;}
+.fontwz{ font-weight:bold;font-family: "Arial","微软雅黑";}
+.bfont{ color:#666;}
+.tel_contect{margin-top:15px; background-image:url(../images/cotact.jpg); background-repeat:no-repeat; background-position:left top; height:78px; font-size:22px; color:#0263b2; padding-left:45px; padding-top:6px;font-family: "Arial","微软雅黑";}

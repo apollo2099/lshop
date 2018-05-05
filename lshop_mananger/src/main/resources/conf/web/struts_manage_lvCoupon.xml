@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="lvCouponAction-default" namespace="/manager" extends="gv-default-manager">
+        <action name="lvCouponAction" class="LvCouponAction">
+            <result name="list">/manager/lvCoupon/lvCoupon_list.jsp</result>
+			<result name="befSave">/manager/lvCoupon/lvCoupon_add.jsp</result>
+			<result name="view">/manager/lvCoupon/lvCoupon_view.jsp</result>
+			<result name="edit">/manager/lvCoupon/lvCoupon_edit.jsp</result>
+			<result name="befEditValidityDate">/manager/lvCoupon/lvCoupon_validityDate.jsp</result>
+			<result name="befExportCoupon">/manager/lvCoupon/lvCoupon_export.jsp</result>
+			<result name="exportCoupon" type="stream">
+                    <param name="contentType">application/vnd.ms-excel</param>     
+                    <param name="inputName">excelStream</param>                    
+                    <param name="contentDisposition">filename="couponList.xls"</param>
+                   	<param name="contentLength">${fileSize}</param>
+                    <param name="bufferSize">1024</param>
+            </result>
+            <result name="listForApply">/manager/lvCoupon/lvCouponForApply_list.jsp</result>
+            <result name="listForObtain">/manager/lvCoupon/lvCouponForObtain_list.jsp</result>
+		</action>
+	</package>
+	
+</struts>

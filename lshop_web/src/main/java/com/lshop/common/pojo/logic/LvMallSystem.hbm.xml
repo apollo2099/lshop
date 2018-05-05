@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.lshop.common.pojo.logic">
+	<class name="LvMallSystem" table="lv_mall_system">
+
+		<id name="id" column="Id" type="java.lang.Integer">
+			<generator class="identity" />
+		</id>
+		<property name="mallSystemName" column="mall_system_name"
+			update="true" insert="true" type="java.lang.String" not-null="false"
+			unique="false" length="64" />
+
+		<property name="mallSystemFlag" column="mall_system_flag"
+			update="true" insert="true" type="java.lang.String" not-null="false"
+			unique="false" length="32" />
+
+		<property name="domainPostfix" column="domain_postfix"
+			update="true" insert="true" type="java.lang.String" not-null="false"
+			unique="false" length="32" />
+
+		<property name="code" column="code" update="true" insert="true"
+			type="java.lang.String" not-null="false" unique="false" length="32" />
+
+		<property name="createTime" column="create_time" update="true"
+			insert="true" type="java.util.Date" not-null="false" unique="false"
+			length="0" />
+
+		<property name="modifyTime" column="modify_time" update="true"
+			insert="true" type="java.util.Date" not-null="false" unique="false"
+			length="0" />
+
+		<property name="modifyUserId" column="modify_user_id" update="true"
+			insert="true" type="java.lang.Integer" not-null="false" unique="false"
+			length="10" />
+
+		<property name="modifyUserName" column="modify_user_name"
+			update="true" insert="true" type="java.lang.String" not-null="false"
+			unique="false" length="32" />
+
+	</class>
+</hibernate-mapping>
+

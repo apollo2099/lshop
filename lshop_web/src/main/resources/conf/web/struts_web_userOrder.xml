@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="userOrderAction-default" namespace="/web" extends="gv-default">
+
+		<action name="userOrder" class="UserOrderAction">
+		    <result name="orderList">/web/${flag}/user_center/orderList.jsp</result>
+		    <result name="orderInfo">/web/${flag}/user_center/orderInfo.jsp</result>
+		    <result name="westernSuccess" type="redirect">/web/${flag}/user_center/order_westernSuccess.jsp?oid=${oid}</result>
+		    <result name="confirmOrderInfo">/web/${flag}/user_center/confirmOrderInfo.jsp</result>
+		    <result name="payMothodCode">/web/${flag}/pay/pay_mothod_code.jsp</result>
+		    <result name="orderWestern">/web/${flag}/user_center/order_western.jsp</result>
+		    <result name="getOrderlist" type="redirect">/web/userOrder!getOrderlist.action</result>
+		    <result name="pageOrderList">/web/${flag}/user_center/pageOrderList.jsp</result>
+		    <result name="express">/web/${flag}/user_center/express.jsp</result>
+		    <result name="orderComment">/web/${flag}/user_center/orderComment.jsp</result>
+		    <result name="getCommentList" type="redirect">/web/userCenterManage!getCommentList.action</result>
+		</action>
+
+	</package>
+
+</struts>

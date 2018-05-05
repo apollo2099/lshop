@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"
+                        "http://java.sun.com/dtd/web-jsptaglibrary_1_1.dtd">
+<taglib>
+ <tlibversion>1.0</tlibversion>
+ <jspversion>1.1</jspversion>
+ <shortname>st</shortname>
+ <!-- 首页搜索框下方标签样式 -->
+ <tag>
+  <name>tagStyle</name>
+  <tagclass>com.lshop.common.tag.StyleTag</tagclass>
+ </tag>
+ <!-- 首页商品信息展示 -->
+ <tag>
+  <name>shopProduct</name>
+  <tagclass>com.lshop.common.tag.ShopProductTag</tagclass>
+  <attribute>
+   <name>image</name>
+   <rtexprvalue>true</rtexprvalue>
+  </attribute>
+  <attribute>
+   <name>name</name>
+   <rtexprvalue>true</rtexprvalue>
+  </attribute>
+  <attribute>
+   <name>price</name>
+   <rtexprvalue>true</rtexprvalue>
+  </attribute>
+  <attribute>
+   <name>address</name>
+   <rtexprvalue>true</rtexprvalue>
+  </attribute>
+  <attribute>
+   <name>language</name>
+   <rtexprvalue>true</rtexprvalue>
+  </attribute>
+  <attribute>
+   <name>style</name>
+   <rtexprvalue>true</rtexprvalue>
+  </attribute>
+ </tag>
+ <!-- 首页商家信息展示 -->
+ <tag>
+  <name>shopPartner</name>
+  <tagclass>com.lshop.common.tag.ShopPartnerTag</tagclass>
+ </tag>
+ <!-- 首页促销活动信息展示 -->
+ <tag>
+  <name>shopActivity</name>
+  <tagclass>com.lshop.common.tag.ShopActivityTag</tagclass>
+  <attribute>
+   <name>name</name>
+   <rtexprvalue>true</rtexprvalue>
+  </attribute>
+  <attribute>
+   <name>time</name>
+   <rtexprvalue>true</rtexprvalue>
+  </attribute>
+  <attribute>
+   <name>language</name>
+   <rtexprvalue>true</rtexprvalue>
+  </attribute>
+ </tag>
+ <!-- 首页推荐店铺信息展示 -->
+ <tag>
+  <name>recommendStore</name>
+  <tagclass>com.lshop.common.tag.RecommendStoreTag</tagclass>
+  <attribute>
+   <name>logo</name>
+   <rtexprvalue>true</rtexprvalue>
+  </attribute>
+  <attribute>
+   <name>name</name>
+   <rtexprvalue>true</rtexprvalue>
+  </attribute>
+  <attribute>
+   <name>address</name>
+   <rtexprvalue>true</rtexprvalue>
+  </attribute>
+  <attribute>
+   <name>language</name>
+   <rtexprvalue>true</rtexprvalue>
+  </attribute>
+ </tag>
+ <!-- 首页博客信息展示 -->
+ <tag>
+  <name>blog</name>
+  <tagclass>com.lshop.common.tag.BlogTypeTag</tagclass>
+ <attribute>
+   <name>language</name>
+   <rtexprvalue>true</rtexprvalue>
+  </attribute>
+ </tag>
+</taglib>

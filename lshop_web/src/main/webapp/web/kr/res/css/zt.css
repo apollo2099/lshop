@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+/*公共区域*/
+body {margin:0px;padding:0px;font-family:Arial, Helvetica, sans-serif;font-size:12px;color:#666666;}
+*{padding:0;margin:0;}
+ul,li{list-style:none;}
+a:link,a:visited{color:#555555;text-decoration:none;}
+a:hover{color:#f26721;text-decoration:none;}
+.top{width:1002px;height:67px;margin:0 auto 0 auto;padding-top:10px;border-bottom:solid 2px #f26721;}
+.top p{float:left; width:118px; height:57px; display:block;}
+.top ul{height:18px;float:right;padding-top:39px; display:block;}
+.top ul li{float:left; padding:0 20px 0 20px; border-right:solid 1px #999999; display:block;}
+.top ul li.none_pd{padding:0 0 0 20px; border:none;}
+.top ul li a{font-size:14px;}
+.top ul li a.dangqian{font-weight:bold; color:#f26721;}
+.banner{width:1002px; height:202px; margin:0 auto 0 auto; padding:10px 0 20px 0;}
+.gong{width:1000px; height:297px; margin:0 auto 0 auto; border:solid 1px #ebebeb; background:url(../images/zt/gong_bg.gif) 0 0 repeat-x;}
+.gong p.chanpintu{width:455px; height:297px; float:left;}
+.gong ul{width:470px; height:277px; float:right; padding-top:20px;}
+.gong ul li{font-size:16px; padding-bottom:9px;}
+.gong ul li p{float:left; padding-right:10px; display:block;}
+.gong ul li span{color:#ff0000;}
+.gong ul li.price{padding:6px 0 0 0;}
+.gong ul li.price span{font-weight:bold;font-family:AvantGarde Md BT;}
+.gong ul li.price span.jiage{font-size:36px;}
+
+/*正文*/
+.main{width:1002px; background:#fafafa; margin:10px auto 0 auto;}
+.main1{width:1002px; padding:20px 0 20px 0; border-bottom:solid 1px #e8e8ea; text-align:center;}
+.main1 p{width:805px;padding:10px 0 10px 0; margin:0 auto 0 auto;}
+.main2{width:1002px; height:300px;border-bottom:solid 1px #e8e8ea; background:url(../images/zt/main2_image.jpg) 0 0 no-repeat;}
+.main2_text{width:456px; height:250px; float:right; padding-top:50px;}
+.main p{line-height:24px; padding-top:10px;}
+.main3{width:1002px; height:359px;border-bottom:solid 1px #e8e8ea; background:url(../images/zt/main3_image.jpg) right 0 no-repeat;}
+.main3_text{height:259px; padding:100px 0 0 53px;}
+.main4{width:1002px; height:377px;border-bottom:solid 1px #e8e8ea; background:url(../images/zt/main4_image.jpg) 0 0 no-repeat;}
+.main4_text{width:430px; height:300px; float:right; padding-top:77px;}
+.main5{width:1002px; height:293px;border-bottom:solid 1px #e8e8ea;background:url(../images/zt/main5_image.jpg) right 0 no-repeat;}
+.main5_text{height:237px; padding:56px 0 0 53px;}
+.app_main1{width:982px; padding:20px 0 0 20px; border-bottom:solid 1px #e8e8ea;}
+.app_main1_1{height:202px; padding-top:20px; overflow:hidden;}
+.app_main1_text{width:430px; height:202px;float:left;}
+.app_main1_text li{background:url(../images/zt/dian.jpg) 5px 15px no-repeat; text-indent:20px; padding:10px 0 0 0;}
+.app_main1_introduction{width:552px; height:202px;float:right;}
+.app_main1_introduction ul{ padding:0 0 0 20px; display:block; overflow:hidden;}
+.app_main1_introduction ul li{width:75px;height:80px;float:left;padding:0 12px 12px 0;text-align:center;}
+.app_main1_introduction ul li span{display:block;padding-top:3px;}
+.app_main2{width:982px; padding:10px 0 0 20px; border-bottom:solid 1px #e8e8ea;}
+.app_main2 ul{padding-top:15px; overflow:hidden; display:block;}
+.app_main2 ul li{width:75px; height:80px; float:left; padding:0 30px 15px 0; text-align:center;}
+.app_main2 ul li span{padding-top:4px; display:block;}
+.app_main3{width:982px; padding:20px 0 0 20px; border-bottom:solid 1px #e8e8ea;}
+.video{border-bottom:solid 1px #e8e8ea;}
+.video1{width:521px; height:445px; margin:0 auto 0 auto; padding-top:30px;}
+.video1 p{font-size:16px; color:#222222; display:block; padding:0 0 5px 0;}
+.bottom{width:1002px; height:71px; margin:60px auto 0 auto; background:url(../images/zt/bottom_bg.jpg) 0 0 repeat-x; line-height:71px; text-align:center;}
+
+/*文字*/
+h1{font-size:26px; color:#333333; font-weight:bold;}
+h2{font-size:22px; color:#999999; font-weight:normal;}
+.h1{font-size:24px; color:#333333; font-weight:bold;}
+.h2{font-size:20px; color:#999999; font-weight:normal;}
+.h3{display:block; font-size:14px; padding-top:10px;}
+.cb{clear:both;}

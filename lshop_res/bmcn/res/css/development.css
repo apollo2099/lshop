@@ -1,0 +1,16 @@
+/**该文件为开发自定义样式**/
+
+/**register**/
+.user_reg_bt,.user_reg_bt_disable{width:101px;height:34px;color:#ffffff;text-align:center;border:none;background:url(../images/user_center_btn.jpg) left top no-repeat;line-height:34px;font-weight:bold;cursor:pointer;}
+.user_reg_bt,.user_reg_bt_disable{background:url(../images/user_center_register_btn.jpg);background-position:0px 34px;}
+.user_reg_bt_disable{background-position: 0px 0px;}
+
+.fileupload{ width: 100%;  position:relative; overflow:hidden;  background-repeat:no-repeat; float:left; display:inline}
+.fileupload_cancelbut{cursor: pointer;}
+/*用户中心--重要提醒*/
+.im_remind{ width:800px; height:470px; background:#DEDDDD; padding-top:30px; border:1px #e5e5e5 solid; position:relative; height:auto; overflow:auto;}
+.im_remind ul{ width:800px; height:470px; display:block; background:#fff; overflow:auto; }
+.im_remind p.close{ position:absolute; top:5px; left:740px;}
+.im_remind p.title{ position:absolute; top:10px; left:20px; color:#636363; font-weight:bold;}
+.im_remind ul li{ padding:10px; line-height:24px;}
+.im_remind ul li.btn{ text-align:center;}

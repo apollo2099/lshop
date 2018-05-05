@@ -1,0 +1,57 @@
+@charset "utf-8";
+body{ padding:0; margin:0;font-size:14px; color:#595757;font-family:Arial; }
+*{ padding:0; margin:0;}
+
+.head_zt{background-image:url(../images/head_zt.jpg); background-repeat:no-repeat; height:680px; background-position:center top; }
+img{border:none}
+.head_ztbox{width:1002px; height:680px; margin:0 auto;position:relative}
+.head_ztbox a{display:block; position:absolute;}
+.head_a_first{width:188px; height:45px; right:0px; top:321px;}
+.head_a_last{width:110px; height:45px; right:0px; top:321px}
+.brand_zt{width:1039px; margin:0 auto; height:526px; background-image:url(../images/brand_zt.jpg); background-repeat:no-repeat; margin-top:-87px; height:auto}
+.brand_zt_boxt{width:999px; margin:0 auto; border:1px solid #e8e9e9}
+.br_hei{width:1002px; height:13px; margin:0 auto}
+.home_top{width:100%; height:52px; line-height:52px; position:relative; font-size:14px}
+.home_top a{color:#727171; text-decoration:none; position:absolute; right:28px}
+.home_top a:hover{color:#ff4e00}
+.brand_hei{width:100%; height:465px}
+.bra_p{font-size:14px; line-height:20px; width:954px; margin:0 auto; color:#595757; margin-top:10px}
+.bra_p p{width:400px; float:left; margin-left:30px; display:inline; word-wrap:break-word}
+.clear{clear:both}
+.br_bg{background-image:url(../images/ba_bg.jpg); background-repeat:no-repeat; height:82px; color:#ffffff; padding:10px; margin-top:10px; display:block}
+.img_qiuty{width:966px; margin:0 auto}
+.hU_ti1{width:954px; margin:0 auto; background-image:url(../images/HU_ti1.jpg); background-repeat:no-repeat; height:41px; margin-top:20px}
+.hU_ti2{width:954px; margin:0 auto; background-image:url(../images/HU_ti2.jpg); background-repeat:no-repeat; height:41px;}
+.hU_ti3{width:954px; margin:0 auto; background-image:url(../images/HU_ti3.jpg); background-repeat:no-repeat; height:41px; margin-top:20px}
+.hU_ti4{width:954px; margin:0 auto; background-image:url(../images/HU_ti4.jpg); background-repeat:no-repeat; height:41px; }
+.hU_ti5{width:954px; margin:40px auto 0; background-image:url(../images/HU_ti5.jpg); background-repeat:no-repeat; height:41px; }
+.hU_ti6{width:954px; margin:20px auto 0; background-image:url(../images/HU_ti6.jpg); background-repeat:no-repeat; height:41px; }
+.Ht1_te{width:954px;  margin:0 auto}
+.Ht1_te ul{padding:40px 20px; list-style:none}
+.ti_li_fir{width:385px; color:#595757; line-height:20px; float:left}
+.ti_li_rig{width:456px; float:right}
+.Ht1_te2{background-image: url(../images/com_bg.jpg); background-repeat:no-repeat; height:535px; width:954px; margin:10px auto 0; position:relative}
+.ht_tin{position:absolute; width:356px; right:0; bottom:144px; line-height:20px}
+.Ht1_te3{text-align:center; position:relative; width:954px; margin:0 auto}
+.box_siv{width:954px; margin:0 auto; overflow:hidden}
+.Ht1_te4{width:954px; margin:0 auto; padding:10px 0 0}
+.sm_bg{float:left;  height:232px; padding-top:50px; font-size:13px}
+.sm_bg ul{list-style:none; background-image:url(../images/sm_bg.jpg); background-repeat:no-repeat; background-position:left;padding-left:154px;  }
+.sm_bg ul li{height:28px; line-height:28px; margin-bottom:6px}
+.sm_left{float:left; width:340px; overflow:hidden; height:318px}
+.Ht1_te5{width:954px; height:354px; background-image:url(../images/wer_tv.jpg); background-repeat:no-repeat; background-position:right; padding:25px 0; margin:0 auto}
+.Ht1_te5 ul{list-style:none; width:558px; line-height:20px; padding-top:30px}
+.Ht1_te5 ul li{margin-bottom:10px; background-image:url(../images/leftjian.jpg); background-position:left 3px; background-repeat:no-repeat; padding-left:30px}
+.Ht1_te6{width:954px; height:198px; background-image:url(../images/simp_step.jpg); background-repeat:no-repeat; background-position:right top; padding:25px 0; margin:10px auto 0}
+.globa{font-size:24px; color:#1c51a8; padding-left:30px; padding-top:10px}
+.Ht_ti{width:680px; color:#1c51a8; line-height:20px; font-size:14px; font-weight:bold; padding-left:15px}
+.Ht1_te6 ul{list-style:none; margin-top:20px; padding-left:20px}
+.Ht1_te6 ul li{ background-image:url(../images/leftjian.jpg); background-position:left 3px; background-repeat:no-repeat; padding-left:30px; margin-bottom:10px}
+.step1{width:958px; margin:0 auto; background-image:url(../images/step1.jpg); background-repeat:no-repeat; height:265px; position:relative}
+.step1 a{width:198px; height:70px; display:block;position:absolute; right:66px; bottom:56px; text-indent:-9999px}
+.bottom_zt{width:100%; height:414px; background-image:url(../images/bottom.jpg); background-position:center top; background-repeat:no-repeat}
+.mail_bottom{width:1000px; margin:0 auto; position:relative; height:415px}
+.mail_bottom a{width:258px; height:30px; display:block; position:absolute; left:120px; bottom:200px; text-indent:-9999px}
+.leftdown{position:absolute;width:43px; height:43px; cursor:pointer; top:157px; left:0}
+.upright{position:absolute;width:43px; height:43px; cursor:pointer; top:157px; right:0}
+#homeimage{right:82px; top:18px}

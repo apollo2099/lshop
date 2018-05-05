@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+    "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+    <bean id="FlushCacheData" class="com.gv.epg.common.cache.FlushCacheData">   </bean>
+	<bean id="epgConfigurer"
+		class="com.lshop.common.spring.PropertyPlaceholderConfigurerImpl">
+		<property name="locations">
+			<list>
+				<value>classpath*:gvuc_epg.properties</value>
+			</list>
+		</property>
+	</bean>
+	<!-- 定时更新缓存 -->
+	<bean id="syncCache" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail">
+			<bean class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+				<property name="targetObject" ref="FlushCacheData" />
+				<property name="targetMethod" value="flush" />
+			</bean>
+		</property>
+		<property name="cronExpression" value="${cache.flush.time.second} ${cache.flush.time.minute} ${cache.flush.time.hour} * * ?" />
+	</bean>
+	
+    <!-- 加入任务 -->
+	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list>
+				<ref local="syncCache" />
+			</list>
+		</property>
+	</bean>
+	
+		<import resource="classpath:conf/ucepg/spring-mq-queue.xml" />
+</beans>

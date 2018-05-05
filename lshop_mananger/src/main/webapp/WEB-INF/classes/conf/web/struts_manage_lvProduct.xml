@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="lvProductAction-default" namespace="/manager" extends="gv-default-manager" >
+	     <!--产品信息管理配置-->
+	     <action name="lvProductAction" class="LvProductAction" method="list">
+	            <result name="list">/manager/lvProduct/lvProduct_list.jsp</result>
+	            <result name="view">/manager/lvProduct/lvProduct_view.jsp</result> 	            
+	            <result name="edit">/manager/lvProduct/lvProduct_edit.jsp</result>
+	            <result name="befAdd">/manager/lvProduct/lvProduct_add.jsp</result>
+	            <result name="showPic">/manager/lvProduct/lvProduct_showPic.jsp</result>
+	            <result name="commendList">/manager/lvProduct/lvProduct_commend.jsp</result>
+	            <result name="recycle">/manager/lvProduct/lvProduct_recycle.jsp </result>
+	            <result name="select">/manager/lvProduct/lvProduct_select.jsp</result>
+	            <result name="selectSimpleProduct">/manager/lvProduct/lvProduct_select_simple.jsp</result>
+	            <result name="shopProductList">/manager/lvProduct/shopProduct_list.jsp</result>
+	            <result name="befChangeType">/manager/lvProduct/shopProduct_changeType.jsp</result>
+	            <result name="befUnSupport">/manager/lvProduct/lvProduct_unsupport.jsp</result>
+	            <result name="befShopEdit">/manager/lvProduct/shopProduct_edit.jsp</result>
+	            <result name="befToNotice">/manager/lvProduct/shopProduct_notice.jsp</result>
+	            <result name="productImage">/manager/lvProduct/shopProduct_image.jsp</result>
+	            <result name="productProperty">/manager/lvProduct/shopProduct_property.jsp</result>
+	            <result name="productLadder">/manager/lvProduct/shopProduct_ladder.jsp</result>
+	            <result name="unSupportDetails">/manager/lvProduct/lvProduct_unSupportDetails.jsp</result>
+	            
+	     </action>
+	     </package>
+</struts>

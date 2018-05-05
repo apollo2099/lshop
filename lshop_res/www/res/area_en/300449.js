@@ -1,0 +1,1 @@
+var provinceData=[{"id":301271,"name":"Chuuk","nameCn":"Chuuk","nameTw":"Chuuk","code":"TRK"},{"id":301272,"name":"Kosrae","nameCn":"Kosrae","nameTw":"Kosrae","code":"KSA"},{"id":301273,"name":"Pohnpei","nameCn":"Pohnpei","nameTw":"Pohnpei","code":"PNI"},{"id":301274,"name":"Yap","nameCn":"Yap","nameTw":"Yap","code":"YAP"}];

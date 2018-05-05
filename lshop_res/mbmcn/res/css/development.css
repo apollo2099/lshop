@@ -1,0 +1,5 @@
+/**该文件为开发自定义样式**/
+
+/**register**/
+.user_reg_bt,.user_reg_bt_disable{width:100%; height:70px; line-height:70px; background-color:#0099ff; color:#FFF; border:none; cursor:pointer; font-size:30px; font-family:"微软雅黑"}
+.user_reg_bt_disable{background-color:#bbb;}

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee   http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath*:conf/service/spring-*.xml</param-value>
+	</context-param>
+<!-- 配置spiring security -->  
+    <filter>  
+        <filter-name>springSecurityFilterChain</filter-name>  
+        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>  
+    </filter>  
+    <filter-mapping>  
+        <filter-name>springSecurityFilterChain</filter-name>  
+        <url-pattern>/manager/*</url-pattern>  
+    </filter-mapping> 
+     <!-- 
+    <filter>
+    	<filter-name>excenterFilter</filter-name>
+		<filter-class>com.lshop.excenter.filter.UserLoginFilter</filter-class>
+	 </filter>
+	 <filter-mapping>
+		<filter-name>excenterFilter</filter-name>
+		<url-pattern>/excenter/*</url-pattern>
+	</filter-mapping>
+	    
+    <filter>
+	    <filter-name>promoterFilter</filter-name>
+	    <filter-class>com.lshop.promotermanager.filter.UserLoginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+		<filter-name>promoterFilter</filter-name>
+		<url-pattern>/promotermanager/*</url-pattern>
+	</filter-mapping>
+	 -->
+	<!-- 
+	<filter>
+	    <filter-name>accountFilter</filter-name>
+	    <filter-class>com.lshop.web.userCenter.filter.UserLoginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+		<filter-name>accountFilter</filter-name>
+		<url-pattern>/web/*</url-pattern>
+	</filter-mapping>
+	-->
+	
+    <!-- 配置spiring security 监听session --> 
+    <listener> 
+	  	<listener-class> 
+	     org.springframework.security.web.session.HttpSessionEventPublisher 
+	  	</listener-class> 
+	</listener> 
+<!-- 配置spiring security结束 -->  
+	<filter>
+		<filter-name>struts2</filter-name>
+		<!-- <filter-class>com.lshop.common.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class> -->
+		<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>struts2</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	<servlet>
+		<servlet-name>InitSysServlet</servlet-name>
+		<servlet-class>com.gv.core.proxy.ServiceInitServlet</servlet-class>
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+	<login-config>
+		<auth-method>BASIC</auth-method>
+	</login-config>
+	
+	<servlet>   
+		<servlet-name>remote</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>classpath*:conf/service/spring-sys-remote.xml</param-value>
+		</init-param>
+		<load-on-startup>3</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>remote</servlet-name>
+		<url-pattern>/remote/*</url-pattern>
+	</servlet-mapping>
+	
+	<!-- start encodingFilter  -->
+	<filter>
+		<filter-name>encodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param> 
+			<param-name>forceEncoding</param-name> 
+			<param-value>true</param-value> 
+		</init-param>
+	</filter>
+	<!-- start encoding Filter mapping-->
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>*</url-pattern>
+	</filter-mapping>	
+	<!-- end encodingFilter  -->
+	
+	<!-- web service config
+	<servlet>  
+        <servlet-name>cxf</servlet-name>  
+        <servlet-class>org.apache.cxf.transport.servlet.CXFServlet</servlet-class>  
+        <load-on-startup>1</load-on-startup>  
+    </servlet>  
+    <servlet-mapping>  
+        <servlet-name>cxf</servlet-name>  
+        <url-pattern>/ws/*</url-pattern>  
+    </servlet-mapping>  
+    -->
+</web-app>

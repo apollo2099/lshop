@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="lvStoreMngAction-default" namespace="/manager" extends="gv-default-manager" >
+        <action name="lvStoreMngAction" class="LvStoreMngAction">
+			<result name="befSave">/manager/lvStore/lvStore_add.jsp</result>
+			<result name="list">/manager/lvStore/lvStore_list.jsp</result>
+			<result name="view">/manager/lvStore/lvStore_view.jsp</result>
+			<result name="edit">/manager/lvStore/lvStore_edit.jsp</result>
+			<result name="ajax">/manager/common/ajaxDone.jsp</result>
+			<result name="callback">/manager/common/callbackDone.jsp</result> 
+			<result name="json">/manager/common/jsonDone.jsp</result> 
+			<result name="storeInfo">/manager/lvStore/lvStore_info.jsp</result>
+			<result name="shopInfo">/manager/lvStore/lvStore_shopInfo.jsp</result>
+			<result name="befOrderValue">/manager/lvStore/updateStoreOrderValue.jsp</result>
+			<result name="befStoreArea">/manager/lvStore/updateStoreArea.jsp</result>
+			<result name="befStoreHot">/manager/lvStore/updateStoreHot.jsp</result>
+			<result name="befStoreCommend">/manager/lvStore/updateStoreCommend.jsp</result>
+		</action>
+	</package>
+	
+</struts>

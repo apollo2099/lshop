@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="lvActivityAction-default" namespace="/manager" extends="gv-default-manager">
+        <action name="lvActivityAction" class="LvActivityAction">
+            <result name="list">/manager/lvActivity/lvActivity_list.jsp</result>
+            <!-- 限时活动 -->
+            <result name="befLimitTimeAdd">/manager/lvActivityLimitTime/lvActivityLimitTime_add.jsp</result>
+            <result name="befLimitTimeView">/manager/lvActivityLimitTime/lvActivityLimitTime_view.jsp</result>
+            <result name="befLimitTimeEdit">/manager/lvActivityLimitTime/lvActivityLimitTime_edit.jsp</result>
+            <!-- 限量活动 -->
+            <result name="befLimitNumAdd">/manager/lvActivityLimited/lvActivityLimited_add.jsp</result>
+            <result name="befLimitNumView">/manager/lvActivityLimited/lvActivityLimited_view.jsp</result>
+            <result name="befLimitNumEdit">/manager/lvActivityLimited/lvActivityLimited_edit.jsp</result>
+            <!-- 订单满就送活动 -->
+            <result name="befLimitOrderAdd">/manager/lvActivityLimitOrder/lvActivityLimitOrder_add.jsp</result>
+            <result name="befLimitOrderView">/manager/lvActivityLimitOrder/lvActivityLimitOrder_view.jsp</result>
+            <result name="befLimitOrderEdit">/manager/lvActivityLimitOrder/lvActivityLimitOrder_edit.jsp</result>
+            <!-- 点击连接就送活动 -->
+            <result name="befLimitLinkAdd">/manager/lvActivityLink/lvActivityLink_add.jsp</result>
+            <result name="befLimitLinkView">/manager/lvActivityLink/lvActivityLink_view.jsp</result>
+            <result name="befLimitLinkEdit">/manager/lvActivityLink/lvActivityLink_edit.jsp</result>
+            <!-- 抽奖活动 -->
+            <result name="befLotteryAdd">/manager/lvActivityLottery/lvActivityLottery_add.jsp</result>
+            <result name="befLotteryView">/manager/lvActivityLottery/lvActivityLottery_view.jsp</result>
+            <result name="befLotteryEdit">/manager/lvActivityLottery/lvActivityLottery_edit.jsp</result>
+            <result name="selectACLottery">/manager/lvActivityLottery/lvActivityLottery_select_simple.jsp</result>
+            <!-- 注册就送活动 -->
+            <result name="befRegisterAdd">/manager/lvActivityRegister/lvActivityRegister_add.jsp</result>
+            <result name="befRegisterView">/manager/lvActivityRegister/lvActivityRegister_view.jsp</result>
+            <result name="befRegisterEdit">/manager/lvActivityRegister/lvActivityRegister_edit.jsp</result>
+            <!-- 分享就送活动 -->
+			<result name="befShareAdd">/manager/lvActivityShare/lvActivityShare_add.jsp</result>
+            <result name="befShareView">/manager/lvActivityShare/lvActivityShare_view.jsp</result>
+            <result name="befShareEdit">/manager/lvActivityShare/lvActivityShare_edit.jsp</result>
+            <!-- 购买指定商品就送活动 -->
+			<result name="befPointAdd">/manager/lvActivityAppointProduct/lvActivityAppointProduct_add.jsp</result>
+			<result name="befPointView">/manager/lvActivityAppointProduct/lvActivityAppointProduct_view.jsp</result>
+			<result name="befPointEdit">/manager/lvActivityAppointProduct/lvActivityAppointProduct_edit.jsp</result>
+			<!-- 输入mac就送活动 -->
+			<result name="befMacAdd">/manager/lvActivityMac/lvActivityMac_add.jsp</result>
+			<result name="befMacView">/manager/lvActivityMac/lvActivityMac_view.jsp</result>
+			<result name="befMacEdit">/manager/lvActivityMac/lvActivityMac_edit.jsp</result>
+		</action>
+	</package>
+</struts>

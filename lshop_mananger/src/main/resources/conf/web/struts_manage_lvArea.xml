@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="lvAreaAction-default" namespace="/manager" extends="gv-default-manager">
+        <action name="lvAreaAction" class="LvAreaAction">
+            <result name="list">/manager/lvArea/lvArea_list.jsp</result>
+			<result name="befSave">/manager/lvArea/lvArea_add.jsp</result>
+			<result name="view">/manager/lvArea/lvArea_view.jsp</result>
+		</action>
+	</package>
+</struts>

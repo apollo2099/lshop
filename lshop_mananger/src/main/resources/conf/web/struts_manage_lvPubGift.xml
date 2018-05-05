@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="lvPubGiftAction-default" namespace="/manager" extends="gv-default-manager">
+        <action name="lvPubGiftAction" class="LvPubGiftAction">
+            <result name="list">/manager/lvPubGift/lvPubGift_list.jsp</result>
+			<result name="befSave">/manager/lvPubGift/lvPubGift_add.jsp</result>
+			<result name="view">/manager/lvPubGift/lvPubGift_view.jsp</result>
+			<result name="edit">/manager/lvPubGift/lvPubGift_edit.jsp</result>
+			<result name="selectMultipleGift">/manager/lvPubGift/lvPubGift_select_multiple.jsp</result>
+			
+		</action>
+	</package>
+	
+</struts>

@@ -1,0 +1,69 @@
+@charset "utf-8";
+body{ padding:0; margin:0; font-family:"宋体"; font-size:13px; color:#595757;}
+*{ padding:0; margin:0;}
+
+.zs_banner1{height:367px; background:url(../images/zs_banner01.jpg) center top no-repeat;}
+.zs_banner2{ height:208px;background:url(../images/zs_banner02.jpg)  center top no-repeat;}
+.zs_btn{ width:1003px; height:43px; margin:0 auto 0 auto; padding:320px 0 0 0;} 
+.zs_btn1{ width:160px; height:43px; float: right; padding:0 20px 0 0; display:block; }
+.left{ float:left;}
+.right{ float:right;}
+.main{background:url(../images/main_bg1.jpg) top  center no-repeat; padding:0 0 0 0;}
+.fhsy{ width:951px; height:90px; margin:0 auto 0 auto;}
+.fhsy p{ padding:50px 2px 0 0; float:right;}
+.sy{ color:#595757;}
+a.sy:link,a.sy:visited{ color:#595757; text-decoration:none;}
+a.sy:hover{ color:#ff4e00;}
+.main_A{ width:1001px; margin:0 auto 0 auto; border-left:1px solid #e8e9e9; border-right:1px solid #e8e9e9;}
+.main_A1{ width:951px;margin:0 auto 0 auto;}
+.main_A1_p1{ padding:33px 0 0 0; display:block;}
+.main_A1 ul{ height:134px; line-height:24px; padding:15px 0 0 25px; list-style:none;}
+.main_A1 ul li{ width:424px; float:left; line-height:25px;text-indent:2em;}
+.main_A1 ul li.p2{ width:398px; float:right; padding:0 30px 0 0;text-indent:2em; line-height:22px;}
+.guojia{ color:#2456a3;}
+.main_A1_3{height:147px; padding:15px 0 0 0;}
+.main_A2{ width:951px; margin:0 auto 0 auto;}
+.P_T{padding:20px 0 0 0;}
+.main_A2 p{ width:926px; height:299px; background:url(../images/main_A2_img.jpg) bottom right no-repeat; padding:0 0 0 25px; line-height:24px;}
+.main_A2 span.text{ padding:60px 0 5px 0; text-indent:2em; display:block;}
+.ct{ font-size:16px; font-weight:bold;}
+.lv{ color:#44a13d;}
+.main_A3{ width:951px; margin:0 auto 0 auto;}
+.main_A3 p.text0{ width:951px; height:440px; background:url(../images/main_A3_img1.jpg) left top no-repeat;}
+.main_A3 span.text{ padding:155px 0 0 0; float:right; line-height:24px; text-indent:2em;}
+.main_A3_a{ width:951px; height:210px; background:url(../images/main_A3_bg.jpg) 0 0 no-repeat;}
+.main_A3_a ul{ list-style:none; padding:60px 0 0 55px;}
+.main_A3_a ul li.text{ float:left;}
+.main_A3 p.text01{ line-height:24px;}
+.lan{ font-size:22px; font-weight:bold; color:#1e4c96; padding:0 0 10px 0; display:block;}
+.lan1{color:#1e4c96;display:block; padding:0 0 5px 0;}
+.huang{ font-size:20px; font-weight:bold; color:#f08300;}
+.huang b{ text-decoration:underline;}
+.main_A3_a ul li.btn{ float:right; padding: 81px 102px 0 0;}
+.main_A4{ width:951px; margin:0 auto 0 auto;}
+.main_A5{ width:951px; margin:0 auto 0 auto;}
+.A5_main{ width:951px; height:336px; background:url(../images/main_A5_img1.jpg) 0 0 no-repeat;}
+.main_A5 p.img{ padding:70px 0 0 390px; float:left;}
+.main_A5 p.text{float:left;padding:70px 0 0 10px; line-height:33px;}
+.main_A6{ width:951px; margin:0 auto 0 auto;}
+.main_A6_bg{ width:951px; height:411px; background:url(../images/main_A6_img.jpg) top right no-repeat;}
+.main_A6_bg ul{ list-style:none; padding:60px 0 0 25px; line-height:24px;}
+.main_A6_bg ul li {display:block; padding:0 0 12px 0; }
+.main_A6_bg p{ padding:0px;}
+.lan2{ font-size:24px; color:#1c51a8; line-height:28px; font-weight:bold; padding:10px 0 0 0; display:block;}
+.main_A7{ width:951px; margin:0 auto 0 auto;}
+.main_A7_bg{ width:951px; height:261px; background:url(../images/main_A7_img.jpg) top right no-repeat;}
+.main_A7_bg p{ padding: 53px 0 0 45px;color:#1c51a8;display:block; line-height:24px; font-weight:bold;}
+.main_A7_bg ul{ list-style:none; padding:10px 0 0 25px;}
+.main_A7_bg ul li{background:url(../images/jiantou2.jpg) 0 2px no-repeat;display:block; padding:0 0 12px 0; text-indent:20px;}
+.main_A7_bg2{ width:951px; height:263px; background:url(../images/main_A7_img2.jpg) top left no-repeat;}
+.main_A7_bg2 p{ float:right; padding:141px 0 0 0;}
+.bt{ background:url(../images/bt_bg.jpg) center top no-repeat; height:415px;}
+.bt_A{ width:951px; margin:0 auto 0 auto;}
+.bt_A p{padding:90px 0 0 0; line-height:26px;}
+.huang1{color:#fdd000; font-size:36px; font-weight:bold; display:block; padding:0 0 10px 0;}
+.rexian{ color:#b7dfff; font-size:26px; font-weight:bold;}
+.huang2{color:#fdd000; font-size:30px; font-weight:bold;}
+.mail{ color:#fdd000; font-size:30px; font-weight:bold;}
+a.mail:link,a.mail:visited{ color:#fdd000; text-decoration:underline;}
+a.mail:hover{ color:#b7dfff;text-decoration:underline;}

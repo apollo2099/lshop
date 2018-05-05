@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="lvPayLogsAction-default" namespace="/manager" extends="gv-default-manager" >
+	     <!--订单日志配置-->
+	     <action name="lvPayLogsAction" class="LvPayLogsAction" >
+	            <result name="list">/manager/lvPayLogs/lvPayLogs_list.jsp</result>
+	            <result name="view">/manager/lvPayLogs/lvPayLogs_view.jsp</result> 	            
+	            <result name="edit">/manager/lvPayLogs/lvPayLogs_edit.jsp</result>
+	            <result name="befAdd">/manager/lvPayLogs/lvPayLogs_add.jsp</result>
+	     </action>
+	     </package>
+</struts>

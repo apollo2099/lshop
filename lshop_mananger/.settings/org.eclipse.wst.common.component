@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="lshop_mananger">
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <property name="context-root" value="lshop_mananger"/>
+        <property name="java-output-path" value="/lshop_mananger/target/classes"/>
+    </wb-module>
+</project-modules>

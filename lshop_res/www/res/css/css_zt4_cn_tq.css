@@ -1,0 +1,35 @@
+img{border:none}
+.tvpad_hod{width:100%; height:752px; background-image:url(../images/tvpad4zt_cn_tq/tvpad4_cn_bg.jpg); background-position:center 0; background-repeat:no-repeat}
+.tvpad_img1{width:1000px; margin:0 auto; position:relative}
+.tv4_detial{font-size:18px; color:#fff; position:absolute; left:197px; bottom:164px; line-height:30px}
+.tvpad_tq{width:100%; height:248px; background-color:#f9c809}
+.tvpad_tq_inner{width:1000px; height:248px; margin:0 auto; background-image:url(../images/tvpad4zt_cn_tq/tv4_tq.jpg); background-repeat:no-repeat; position:relative}
+.tv4_yw a{color:#12faf7}
+.tvpad_tq_inner p{position:absolute;}
+.tv4_tq{left:54px; top:74px; font-size:14px; color:#573801; font-weight:bold; line-height:28px}
+.tv4_red{font-size:16px; color:#e62f9d}
+.tv4_yw{left:580px; top:96px; color:#fff; font-size:14px; width:403px; line-height:24px}
+.yhj_bg{width:1000px; margin:40px auto 0; background-color:#e8e8e8; padding-top:1px}
+.tv4_bm{width:998px;margin:0 auto; background-color:#fff}
+.tv4_box{width:710px; margin:0 auto;font-size:16px; color:#000; padding:40px 0 20px}
+.tv4_box_left{float:left; width:312px;}
+.tv4_box_right{float:right; width:312px}
+.clear{clear:both}
+.tv4_box_right p input{width:190px; height:26px; border:1px solid #7325ac; background-color:#e3d3ee; padding:0 10px; font-family:"微软雅黑", "宋体"}
+.tv4_box_right p textarea{width:190px; height:58px; border:1px solid #7325ac; background-color:#e3d3ee; padding:10px; font-family:"微软雅黑", "宋体"}
+.tv4_box_right p{margin-bottom:12px}
+.tv4_box_right span{display:block; float:left}
+.fir_span{width:100px; text-align:right}
+#lastp{padding-left:100px;}
+#lastp input{width:136px; height:37px; background-color:#7325ac; color:#fff; font-size:20px; font-family:"微软雅黑", "宋体"; border-radius:5px; -moz-border-radius:5px; -ms-border-radius:5px; -o-border-radius:5px; -webkit-border-radius:5px;}
+.sygz{width:1000px; margin:54px auto 0; padding-bottom:24px}
+.sygz_inner{width:920px; height:360px; background-image:url(../images/tvpad4zt_cn_tq/sygz.jpg); background-repeat:no-repeat; margin:0 auto; position:relative}
+.sygz_inner p{position:absolute; left:1px; top:94px; font-size:16px; color:#494949; line-height:35px; width:440px}
+.sygz_inner p a{color:#00479f}
+.tv4_gfhd{width:1000px; margin:0 auto}
+.tv4_gf_title{font-size:30px; color:#303131; margin:40px 0 15px;}
+.tv4_link{border-bottom:1px dashed #929292; padding-bottom:12px; position:relative}
+.tv4_link a{margin-right:30px}
+.tvpad_bq{width:1000px; margin:30px 0; font-size:14px; color:#232323}
+.erm{position:absolute; left:336px; top:-16px}
+.errortips{color:#F00; text-align:right; height:30px; line-height:30px; display:none;}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="lvAdAction-default" namespace="/manager" extends="gv-default-manager" >
+	     <!--广告管理配置-->
+	     <action name="lvAdAction" class="LvAdAction" >
+	            <result name="list">/manager/lvAd/lvAd_list.jsp</result>
+	            <result name="view">/manager/lvAd/lvAd_view.jsp</result> 	            
+	            <result name="edit">/manager/lvAd/lvAd_edit.jsp</result>
+	            <result name="befAdd">/manager/lvAd/lvAd_add.jsp</result>
+	     </action>
+	     </package>
+</struts>

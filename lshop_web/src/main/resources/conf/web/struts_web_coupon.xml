@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="couponManage-default" namespace="/web" extends="gv-default">
+
+		<action name="couponManage" class="CouponManageAction">
+			<result name="myCouponList">/web/${flag}/user_center/myCouponList.jsp</result>
+			<result name="moreCouponList">/web/${flag}/user_center/moreCouponList.jsp</result>
+		</action>
+
+	</package>
+
+</struts>

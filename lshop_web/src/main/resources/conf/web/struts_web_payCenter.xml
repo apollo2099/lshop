@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="payCenter-default" namespace="/web" extends="gv-default">
+		<!-- 支付请求处理支付返回 -->
+		<action name="payCenter" class="PaymentCenterAction" method="toPayCenter">
+			<result name="success">/web/${flag}/mall/shopCart_paySuccess.jsp</result>
+			<result name="fail">/web/${flag}/mall/shopCart_payfail.jsp</result>
+			<result name="cancel">/web/${flag}/mall/shopCart_cancel.jsp</result>
+		</action>
+	</package>
+</struts>

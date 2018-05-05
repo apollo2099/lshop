@@ -1,0 +1,1 @@
+var provinceData=[{"id":303414,"name":"Gorno-Badakhshan ru tg","nameCn":"Gorno-Badakhshan ru tg","nameTw":"Gorno-Badakhshan ru tg","code":"GB"},{"id":303415,"name":"Khatlon","nameCn":"Khatlon","nameTw":"Khatlon","code":"KT"},{"id":303416,"name":"Sughd","nameCn":"Sughd","nameTw":"Sughd","code":"SU"}];
